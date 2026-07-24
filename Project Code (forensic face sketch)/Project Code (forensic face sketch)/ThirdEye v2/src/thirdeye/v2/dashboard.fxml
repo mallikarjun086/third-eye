@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1500.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thirdeye.v2.DashboardController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="guideline" prefHeight="615.0" prefWidth="40.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="35.0" />
+      
+      <!-- Premium Flat Header Top Bar -->
+      <AnchorPane prefHeight="50.0" prefWidth="1500.0" style="-fx-background-color: #0f2035; -fx-border-color: #1e3a5c; -fx-border-width: 0 0 1 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox spacing="8.0" layoutX="15.0" layoutY="12.0" alignment="CENTER_LEFT">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Transparent%20Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="— FORENSIC SKETCH STUDIO" textFill="#64b5f6" style="-fx-font-weight: bold; -fx-font-size: 13px;">
+                     <font>
+                        <Font name="Futura Md BT Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="8.0">
+               <children>
+                  <HBox alignment="CENTER" onMousePressed="#onSave" spacing="5.0" style="-fx-background-color: #1565C0; -fx-padding: 6 15 6 15; -fx-background-radius: 4; -fx-cursor: hand;">
+                     <children>
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 11px;" text="💾 SAVE SKETCH" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" onMousePressed="#onLoadProject" spacing="5.0" style="-fx-background-color: #00897B; -fx-padding: 6 15 6 15; -fx-background-radius: 4; -fx-cursor: hand;">
+                     <children>
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 11px;" text="📂 LOAD PROJECT" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" onMousePressed="#onSaveProject" spacing="5.0" style="-fx-background-color: #00796B; -fx-padding: 6 15 6 15; -fx-background-radius: 4; -fx-cursor: hand;">
+                     <children>
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 11px;" text="💾 SAVE PROJECT" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" onMousePressed="#onReset" spacing="5.0" style="-fx-background-color: #c62828; -fx-padding: 6 15 6 15; -fx-background-radius: 4; -fx-cursor: hand;">
+                     <children>
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 11px;" text="🔄 RESET" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" onMousePressed="#onCompare" spacing="5.0" style="-fx-background-color: #4a148c; -fx-padding: 6 15 6 15; -fx-background-radius: 4; -fx-cursor: hand;">
+                     <children>
+                        <Label style="-fx-font-weight: bold; -fx-font-size: 11px;" text="🔍 COMPARE EVIDENCE" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+
+      <!-- toolkit Category Toolbar -->
+      <AnchorPane fx:id="toolkit" prefHeight="615.0" prefWidth="80.0" style="-fx-background-color: #173F5F;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="35.0">
+         <children>
+            <VBox alignment="CENTER" spacing="5.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <!-- Head -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="head" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/head_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Head" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Hair -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="hair" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/hair_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Hair" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Eyes -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="eyes" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/eye_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Eyes" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Eyebrows -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="eyebrows" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/eyebrow_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Eyebrows" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Nose -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="nose" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/nose_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Nose" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Lips -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="lips" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/lip_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Lips" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Mustache -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="mustach" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/mostache_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Mustache" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Beard -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="beard" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/beard_icon.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Beard" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Ears -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="ear" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/more.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Ears" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Neck -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="neck" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/more.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Neck" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="10.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <!-- Accessories / Glasses / Marks -->
+                  <VBox alignment="CENTER" spacing="2.0">
+                     <children>
+                        <ImageView fx:id="accessories" fitHeight="38.0" fitWidth="38.0" onMousePressed="#toolKit" pickOnBounds="true" preserveRatio="true">
+                           <image><Image url="@elements/more.png" /></image>
+                           <cursor><Cursor fx:constant="HAND" /></cursor>
+                        </ImageView>
+                        <Label opacity="0.8" text="Glasses/Marks" textFill="WHITE">
+                           <font><Font name="Century Gothic" size="9.0" /></font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <!-- Right sidebar container HBox -->
+      <HBox fx:id="right_sidebar" alignment="CENTER_RIGHT" layoutX="769.0" layoutY="50.0" prefHeight="615.0"
+            AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="35.0">
+         <children>
+            <!-- Collapsible selection drawer VBox -->
+            <VBox fx:id="elements_container" prefWidth="471.0" prefHeight="615.0"
+                  managed="${elements_panel.visible}" visible="${elements_panel.visible}"
+                  style="-fx-background-color: #173F5F;">
+               <children>
+                  <!-- Drawer Header -->
+                  <AnchorPane prefHeight="40.0" prefWidth="471.0" style="-fx-background-color: #112e4c; -fx-border-color: #1e3a5c; -fx-border-width: 0 0 1 0;">
+                     <children>
+                        <Label layoutX="15.0" layoutY="12.0" text="📁 SELECT TEMPLATE SHAPE" textFill="#64b5f6">
+                           <font><Font name="System Bold" size="12.0" /></font>
+                        </Label>
+                        <Label layoutX="440.0" layoutY="10.0" onMousePressed="#onCloseElementsPanel" text="✕" textFill="#90a4ae" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-cursor: hand;">
+                           <tooltip><Tooltip text="Close Panel" /></tooltip>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <!-- elements_panel ScrollPane -->
+                  <ScrollPane fx:id="elements_panel" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" prefHeight="575.0" prefWidth="471.0"
+                              style="-fx-background-color: transparent; -fx-background: #173F5F; -fx-border-color: transparent;">
+                     <content>
+                        <AnchorPane fx:id="element_anchor" prefHeight="652.0" prefWidth="474.0" style="-fx-background-color: #173F5F;">
+               <children>
+                  <AnchorPane fx:id="head_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="HEAD SHAPES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="head_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onHeadSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="head_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%201.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%202.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%203.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="29.0" layoutY="263.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%204.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="164.0" layoutY="263.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%205.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="297.0" layoutY="263.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%206.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_7" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="399.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%207.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_8" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="399.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%208.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_9" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="399.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%209.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="head_e_10" fitHeight="100.0" fitWidth="100.0" layoutX="29.0" layoutY="536.0" onMousePressed="#onHeadSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/head/Group%2010.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="hair_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="HAIR STYLES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="hair_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onHairSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="hair_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2028.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2027.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2026.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2025.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2024.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2023.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_7" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="399.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2022.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_8" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="399.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2021.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_9" fitHeight="100.0" fitWidth="100.0" layoutX="294.0" layoutY="399.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2020.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_10" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="536.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2019.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_11" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="536.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2018.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="hair_e_12" fitHeight="100.0" fitWidth="100.0" layoutX="294.0" layoutY="536.0" onMousePressed="#onHairSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/hair/Group%2017.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eyes_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="EYE SHAPES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="eyes_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onEyesSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="eyes_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2029.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2030.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2031.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2032.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2033.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2034.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_7" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="399.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2035.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_8" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="399.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2036.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_9" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="399.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2037.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_10" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="536.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2038.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_11" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="536.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2039.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyes_e_12" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="536.0" onMousePressed="#onEyesSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyes/Group%2040.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="eyebrows_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="EYEBROWS TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="eyeb_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onEyeBSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="eyeb_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2041.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2042.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2043.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2044.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2045.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2046.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_7" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="399.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2047.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_8" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="399.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2048.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_9" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="399.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2049.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_10" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="536.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2050.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_11" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="536.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2051.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="eyeb_e_12" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="536.0" onMousePressed="#onEyeBSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/eyebrows/Group%2052.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="nose_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="NOSE SHAPES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="nose_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onNoseSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="nose_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2053.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2054.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2055.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2056.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2057.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2058.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_7" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="399.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2059.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_8" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="399.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2060.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_9" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="399.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2061.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_10" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="536.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2062.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_11" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="536.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2063.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="nose_e_12" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="536.0" onMousePressed="#onNoseSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/nose/Group%2064.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="lips_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="LIPS SHAPES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="lips_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onLipsSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="lips_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2065.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2066.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2067.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2068.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2069.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2070.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_7" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="399.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2071.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_8" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="399.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2072.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_9" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="399.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2073.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_10" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="536.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2074.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_11" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="536.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2075.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="lips_e_12" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="536.0" onMousePressed="#onLipsSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/lips/Group%2076.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="mustach_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="MUSTACH TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="must_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onMustSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="must_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onMustSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2077.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="must_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onMustSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2078.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="must_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onMustSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2079.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="must_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onMustSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2080.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="must_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onMustSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2081.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="must_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onMustSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2082.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="beard_elements" prefHeight="680.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="BEARD STYLES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="beard_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onBeardSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="beard_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onBeardSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2083.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="beard_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onBeardSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2084.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="beard_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="129.0" onMousePressed="#onBeardSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2085.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="beard_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onBeardSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2086.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="beard_e_5" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onBeardSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2087.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="beard_e_6" fitHeight="100.0" fitWidth="100.0" layoutX="298.0" layoutY="263.0" onMousePressed="#onBeardSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/mustach/Group%2088.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ear_elements" prefHeight="604.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="EAR SHAPES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="ear_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onEarSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="ear_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onEarSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/more/Group%2011.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="ear_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onEarSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/more/Group%2012.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="ear_e_3" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="263.0" onMousePressed="#onEarSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/more/Group%2013.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="ear_e_4" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="263.0" onMousePressed="#onEarSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/more/Group%2014.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="neck_elements" prefHeight="604.0" prefWidth="474.0" style="-fx-background-color: #173F5F;" visible="false">
+                     <children>
+                        <Label layoutX="29.0" layoutY="35.0" text="NECK SHAPES TO CHOOSE FROM" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="37.0" text="Delete Shape" textFill="WHITE">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Rectangle fx:id="neck_del" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="42.0" layoutX="332.0" layoutY="26.0" onMousePressed="#onNeckSelect" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="107.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Rectangle>
+                        <ImageView fx:id="neck_e_1" fitHeight="100.0" fitWidth="100.0" layoutX="30.0" layoutY="129.0" onMousePressed="#onNeckSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/more/Group%2015.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="neck_e_2" fitHeight="100.0" fitWidth="100.0" layoutX="165.0" layoutY="129.0" onMousePressed="#onNeckSelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@elements/sketch%20elements/more/Group%2016.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                </children>
+             </AnchorPane>
+          </content>
+       </ScrollPane>
+               </children>
+            </VBox>
+
+            <!-- Persistent right settings drawer -->
+            <AnchorPane prefHeight="615.0" prefWidth="260.0"
+                        style="-fx-background-color: #0f2035; -fx-border-color: #1e3a5c; -fx-border-width: 0 0 0 1;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" prefHeight="615.0" prefWidth="258.0"
+                              style="-fx-background-color: transparent; -fx-background: #0f2035; -fx-border-color: transparent;">
+                     <content>
+                        <VBox spacing="15.0" prefWidth="240.0" style="-fx-padding: 10;">
+                           <children>
+                              <!-- Title -->
+                              <Label text="📁 EVIDENCE &amp; CASE FILES" textFill="#64b5f6">
+                                 <font><Font name="System Bold" size="12.0" /></font>
+                              </Label>
+
+                              <!-- Case ID -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Case Reference ID" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <TextField fx:id="caseNoField" promptText="e.g. CR-2026-0814"
+                                               style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-prompt-text-fill: #546e7a; -fx-border-color: #37474F;" />
+                                 </children>
+                              </VBox>
+
+                              <!-- Officer -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Lead Investigating Officer" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <TextField fx:id="officerField" promptText="e.g. Det. Inspector Gala"
+                                               style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-prompt-text-fill: #546e7a; -fx-border-color: #37474F;" />
+                                 </children>
+                              </VBox>
+
+                              <!-- Notes -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Witness Description Notes" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <TextArea fx:id="caseDescArea" prefHeight="90.0" promptText="Enter suspect features, witness comments..." wrapText="true"
+                                              style="-fx-control-inner-background: #1e3a5c; -fx-text-fill: white; -fx-prompt-text-fill: #546e7a;" />
+                                 </children>
+                              </VBox>
+
+                              <!-- Divider -->
+                              <Rectangle fill="#1e3a5c" height="2.0" width="220.0" />
+
+                              <!-- Drawing Section Title -->
+                              <Label text="✏ SKETCHING STUDIO" textFill="#64b5f6">
+                                 <font><Font name="System Bold" size="12.0" /></font>
+                              </Label>
+
+                              <!-- Tool Mode -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Studio Mode" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton fx:id="selectToolBtn" mnemonicParsing="false" onAction="#onSelectTool" maxWidth="Infinity" HBox.hgrow="ALWAYS" selected="true"
+                                                        style="-fx-background-color: #1565C0; -fx-text-fill: white; -fx-font-size: 10px;" text="↖ Select">
+                                             <toggleGroup><ToggleGroup fx:id="toolGroup" /></toggleGroup>
+                                             <tooltip><Tooltip text="Move / Scale / Rotate elements [V]" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton fx:id="penToolBtn" toggleGroup="$toolGroup" mnemonicParsing="false" onAction="#onPenTool" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #37474F; -fx-text-fill: white; -fx-font-size: 10px;" text="🖊 Pen">
+                                             <tooltip><Tooltip text="Draw custom lines [B]" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton fx:id="eraserToolBtn" toggleGroup="$toolGroup" mnemonicParsing="false" onAction="#onEraserTool" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #37474F; -fx-text-fill: white; -fx-font-size: 10px;" text="⬜ Erase">
+                                             <tooltip><Tooltip text="Clean strokes [E]" /></tooltip>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+
+                              <!-- Drawing Assists -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Drawing Assist Features" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton fx:id="symmetryBtn" mnemonicParsing="false" onAction="#onToggleSymmetry" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #37474F; -fx-text-fill: white; -fx-font-size: 10px;" text="🪞 Symmetry: OFF">
+                                             <tooltip><Tooltip text="Replicate brush strokes horizontally" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton fx:id="stabilizerBtn" mnemonicParsing="false" onAction="#onToggleStabilizer" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #37474F; -fx-text-fill: white; -fx-font-size: 10px;" text="〰 Stabilizer: OFF">
+                                             <tooltip><Tooltip text="Toggle brush stroke stabilizer" /></tooltip>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+
+                              <!-- Brush Medium -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Art Medium" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton fx:id="pencilStyleBtn" mnemonicParsing="false" onAction="#onPencilStyle" maxWidth="Infinity" HBox.hgrow="ALWAYS" selected="true"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="✏ Pencil">
+                                             <toggleGroup><ToggleGroup fx:id="styleGroup" /></toggleGroup>
+                                          </ToggleButton>
+                                          <ToggleButton fx:id="charcoalStyleBtn" toggleGroup="$styleGroup" mnemonicParsing="false" onAction="#onCharcoalStyle" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="░ Charcoal">
+                                          </ToggleButton>
+                                          <ToggleButton fx:id="markerStyleBtn" toggleGroup="$styleGroup" mnemonicParsing="false" onAction="#onMarkerStyle" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="▮ Marker">
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+
+                              <!-- Color Picker -->
+                              <ColorPicker fx:id="penColorPicker" prefHeight="25.0" prefWidth="220.0" style="-fx-background-color: #1e3a5c;" />
+
+                              <!-- Brush Size -->
+                              <VBox spacing="2.0">
+                                 <children>
+                                    <HBox spacing="100.0">
+                                       <children>
+                                          <Label text="Size" textFill="#90a4ae"><font><Font size="10.0" /></font></Label>
+                                          <Label fx:id="brushSizeLabel" text="3px" textFill="#64b5f6"><font><Font size="10.0" /></font></Label>
+                                       </children>
+                                    </HBox>
+                                    <Slider fx:id="brushSizeSlider" min="1.0" max="40.0" prefWidth="220.0" value="3.0" />
+                                 </children>
+                              </VBox>
+
+                              <!-- Brush Opacity -->
+                              <VBox spacing="2.0">
+                                 <children>
+                                    <Label text="Brush Opacity" textFill="#90a4ae"><font><Font size="10.0" /></font></Label>
+                                    <Slider fx:id="brushOpacitySlider" min="0.0" max="1.0" prefWidth="220.0" value="1.0" />
+                                 </children>
+                              </VBox>
+
+                              <!-- Workspace Helpers -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <Label text="Workspace Helpers" textFill="#90a4ae">
+                                       <font><Font size="10.0" /></font>
+                                    </Label>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onToggleGrid" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #37474F; -fx-text-fill: white; -fx-font-size: 10px;" text="📐 Alignment Grid">
+                                             <tooltip><Tooltip text="Toggle proportion guidelines [G]" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onFlipHorizontal" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #37474F; -fx-text-fill: white; -fx-font-size: 10px;" text="🪞 Flip Element">
+                                             <tooltip><Tooltip text="Flip selected element horizontally [H]" /></tooltip>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+
+                              <!-- Selected Element Tuning -->
+                              <VBox spacing="6.0" style="-fx-border-color: #1e3a5c; -fx-border-width: 1; -fx-padding: 8; -fx-border-radius: 4;">
+                                 <children>
+                                    <Label text="✨ SELECTED ELEMENT TUNING" textFill="#64b5f6">
+                                       <font><Font name="System Bold" size="11.0" /></font>
+                                    </Label>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onBringToFront" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="▲ Bring to Front">
+                                             <tooltip><Tooltip text="Move selected element on top of other elements" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onSendToBack" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="▼ Send to Back">
+                                             <tooltip><Tooltip text="Move selected element behind other elements" /></tooltip>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onFlipVertical" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="⇅ Flip Vertical">
+                                             <tooltip><Tooltip text="Flip selected element vertically" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onDeleteSelected" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #b71c1c; -fx-text-fill: white; -fx-font-size: 10px;" text="🗑 Delete Part">
+                                             <tooltip><Tooltip text="Delete selected element [Del]" /></tooltip>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                    <VBox spacing="2.0">
+                                       <children>
+                                          <HBox spacing="90.0">
+                                             <children>
+                                                <Label text="Element Opacity" textFill="#90a4ae"><font><Font size="10.0" /></font></Label>
+                                                <Label fx:id="elOpacityLabel" text="1.0" textFill="#64b5f6"><font><Font size="10.0" /></font></Label>
+                                             </children>
+                                          </HBox>
+                                          <Slider fx:id="elOpacitySlider" min="0.0" max="1.0" prefWidth="220.0" value="1.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox spacing="2.0">
+                                       <children>
+                                          <Label text="Precision Nudge" textFill="#90a4ae"><font><Font size="10.0" /></font></Label>
+                                          <HBox spacing="4.0" alignment="CENTER">
+                                             <children>
+                                                <ToggleButton mnemonicParsing="false" onAction="#onNudgeLeft" style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 9px;" text="◀" />
+                                                <VBox spacing="4.0" alignment="CENTER">
+                                                   <children>
+                                                      <ToggleButton mnemonicParsing="false" onAction="#onNudgeUp" style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 9px;" text="▲" />
+                                                      <ToggleButton mnemonicParsing="false" onAction="#onNudgeDown" style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 9px;" text="▼" />
+                                                   </children>
+                                                </VBox>
+                                                <ToggleButton mnemonicParsing="false" onAction="#onNudgeRight" style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 9px;" text="▶" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+
+                              <!-- Zoom Controls -->
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <HBox spacing="100.0">
+                                       <children>
+                                          <Label text="Zoom" textFill="#90a4ae"><font><Font size="10.0" /></font></Label>
+                                          <Label fx:id="zoomLabel" text="100%" textFill="#64b5f6"><font><Font size="10.0" /></font></Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox spacing="6.0" prefWidth="220.0">
+                                       <children>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onZoomIn" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="🔍 +">
+                                             <tooltip><Tooltip text="Zoom In [Ctrl +]" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onZoomOut" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="🔍 -">
+                                             <tooltip><Tooltip text="Zoom Out [Ctrl -]" /></tooltip>
+                                          </ToggleButton>
+                                          <ToggleButton mnemonicParsing="false" onAction="#onZoomReset" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                        style="-fx-background-color: #1e3a5c; -fx-text-fill: white; -fx-font-size: 10px;" text="Reset">
+                                             <tooltip><Tooltip text="Reset Zoom [Ctrl 0]" /></tooltip>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+
+                              <!-- Clear Canvas -->
+                              <Rectangle fill="#c62828" height="28.0" width="220.0" arcWidth="6.0" arcHeight="6.0" onMousePressed="#onClearDrawing">
+                                 <cursor><Cursor fx:constant="HAND" /></cursor>
+                              </Rectangle>
+                              <Label text="   🗑 Clear Freehand Strokes" mouseTransparent="true" textFill="WHITE" style="-fx-font-weight: bold; -fx-font-size: 11px; -fx-translate-y: -22px; -fx-translate-x: 20px;" />
+
+                              <!-- Divider -->
+                              <Rectangle fill="#1e3a5c" height="2.0" width="220.0" style="-fx-translate-y: -10px;" />
+
+                              <!-- Reference image trace -->
+                              <Label text="📁 TRACING PHOTO" textFill="#64b5f6" style="-fx-translate-y: -10px;">
+                                 <font><Font name="System Bold" size="12.0" /></font>
+                              </Label>
+                              <HBox spacing="6.0" prefWidth="220.0" style="-fx-translate-y: -10px;">
+                                 <children>
+                                    <ToggleButton mnemonicParsing="false" onAction="#onUploadReference" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                  style="-fx-background-color: #1565C0; -fx-text-fill: white; -fx-font-size: 10px;" text="📂 Load image" />
+                                    <ToggleButton mnemonicParsing="false" onAction="#onRemoveReference" maxWidth="Infinity" HBox.hgrow="ALWAYS"
+                                                  style="-fx-background-color: #4a148c; -fx-text-fill: white; -fx-font-size: 10px;" text="✕ Remove" />
+                                 </children>
+                              </HBox>
+                              <VBox spacing="2.0" style="-fx-translate-y: -10px;">
+                                 <children>
+                                    <Label text="Reference Opacity" textFill="#90a4ae"><font><Font size="10.0" /></font></Label>
+                                    <Slider fx:id="refOpacitySlider" min="0.0" max="1.0" prefWidth="220.0" value="0.4" />
+                                 </children>
+                              </VBox>
+
+                              <!-- Keyboard Guide -->
+                              <VBox spacing="4.0" style="-fx-background-color: #1e3a5c; -fx-padding: 8; -fx-background-radius: 4; -fx-translate-y: -5px;">
+                                 <children>
+                                    <Label text="↖ V   - Select Mode" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="🖊 B   - Brush Mode" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="⬜ E   - Eraser Mode" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="📐 G   - Toggle Grid" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="🪞 H   - Flip Part" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="⌦ Del - Delete Part" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="⇕ [ / ] - Brush size" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                    <Label text="↩ Ctrl+Z - Undo" textFill="#cfd8dc" style="-fx-font-family: 'Courier New'; -fx-font-size: 9px;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <StackPane fx:id="workspace_pane" layoutX="80.0" layoutY="50.0" prefHeight="615.0" prefWidth="410.0"
+                 style="-fx-background-color: #0b132b;"
+                 AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="1010.0" AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="35.0">
+         <children>
+            <AnchorPane fx:id="sketch" prefHeight="620.0" prefWidth="620.0" maxWidth="620.0" maxHeight="620.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 15, 0, 0, 0);">
+               <children>
+                  <!-- Reference photo background layer (tracing/alignment) -->
+                  <ImageView fx:id="referenceImageView" fitHeight="620.0" fitWidth="620.0"
+                             layoutX="0.0" layoutY="0.0" opacity="0.4"
+                             pickOnBounds="false" preserveRatio="true" visible="false" />
+            <!-- Neck elements (rendered first = behind everything) -->
+            <ImageView fx:id="neck_s_1" fitHeight="199.0" fitWidth="236.0" layoutX="202.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/more/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="neck_s_2" fitHeight="161.0" fitWidth="209.0" layoutX="213.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/more/06.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="alignment" prefHeight="310.0" prefWidth="310.0" style="-fx-background-color: #000000;" visible="false" />
+            <ImageView fx:id="head_s_1" fitHeight="464.0" fitWidth="288.0" layoutX="166.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_2" layoutX="180.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_3" fitHeight="410.0" fitWidth="271.0" layoutX="175.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_4" fitHeight="419.0" fitWidth="270.0" layoutX="177.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_5" fitHeight="430.0" fitWidth="271.0" layoutX="175.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_6" fitHeight="409.0" fitWidth="263.0" layoutX="177.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_7" fitHeight="419.0" fitWidth="273.0" layoutX="174.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_8" fitHeight="433.0" fitWidth="268.0" layoutX="176.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_9" fitHeight="438.0" fitWidth="271.0" layoutX="175.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="head_s_10" fitHeight="433.0" fitWidth="268.0" layoutX="175.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/head/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ear_s_1" fitHeight="114.0" fitWidth="33.0" layoutX="162.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/more/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ear_s_2" fitHeight="117.0" fitWidth="32.0" layoutX="432.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/more/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ear_s_3" fitHeight="121.0" fitWidth="49.0" layoutX="150.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/more/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ear_s_4" fitHeight="120.0" fitWidth="48.0" layoutX="434.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/more/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_1" fitHeight="583.0" fitWidth="524.0" layoutX="57.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_2" disable="true" fitHeight="588.0" fitWidth="457.0" layoutX="82.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_3" fitHeight="565.0" fitWidth="555.0" layoutX="30.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_4" disable="true" fitHeight="468.0" fitWidth="392.0" layoutX="123.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_5" fitHeight="526.0" fitWidth="455.0" layoutX="81.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_6" disable="true" fitHeight="302.0" fitWidth="321.0" layoutX="150.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_7" fitHeight="278.0" fitWidth="301.0" layoutX="162.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_8" disable="true" fitHeight="325.0" fitWidth="400.0" layoutX="118.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_9" fitHeight="361.0" fitWidth="411.0" layoutX="101.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_10" disable="true" fitHeight="280.0" fitWidth="306.0" layoutX="157.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_11" fitHeight="291.0" fitWidth="311.0" layoutX="155.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hair_s_12" disable="true" fitHeight="556.0" fitWidth="476.0" layoutX="81.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/hair/12.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_1" fitHeight="74.0" fitWidth="218.0" layoutX="208.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_2" fitHeight="64.0" fitWidth="212.0" layoutX="215.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_3" fitHeight="64.0" fitWidth="212.0" layoutX="211.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_4" fitHeight="66.0" fitWidth="213.0" layoutX="215.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_5" fitHeight="64.0" fitWidth="211.0" layoutX="211.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_6" fitHeight="65.0" fitWidth="214.0" layoutX="215.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_7" fitHeight="65.0" fitWidth="214.0" layoutX="211.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_8" fitHeight="64.0" fitWidth="213.0" layoutX="215.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_9" fitHeight="66.0" fitWidth="216.0" layoutX="211.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_10" fitHeight="64.0" fitWidth="212.0" layoutX="215.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_11" fitHeight="64.0" fitWidth="211.0" layoutX="211.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyes_s_12" fitHeight="64.0" fitWidth="213.0" layoutX="214.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyes/12.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_1" fitHeight="23.0" fitWidth="219.0" layoutX="207.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_2" fitHeight="116.0" fitWidth="246.0" layoutX="194.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_3" fitHeight="33.0" fitWidth="238.0" layoutX="204.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_4" fitHeight="32.0" fitWidth="226.0" layoutX="210.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_5" fitHeight="33.0" fitWidth="237.0" layoutX="202.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_6" fitHeight="27.0" fitWidth="235.0" layoutX="203.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_7" fitHeight="23.0" fitWidth="241.0" layoutX="201.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_8" fitHeight="31.0" fitWidth="253.0" layoutX="200.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_9" fitHeight="24.0" fitWidth="248.0" layoutX="203.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_10" fitHeight="27.0" fitWidth="237.0" layoutX="203.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_11" fitHeight="25.0" fitWidth="231.0" layoutX="208.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="eyeb_s_12" fitHeight="34.0" fitWidth="227.0" layoutX="213.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/eyebrows/12.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_1" fitHeight="81.0" fitWidth="67.0" layoutX="284.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_2" fitHeight="73.0" fitWidth="64.0" layoutX="287.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_3" fitHeight="83.0" fitWidth="64.0" layoutX="286.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_4" fitHeight="81.0" fitWidth="72.0" layoutX="282.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_5" fitHeight="81.0" fitWidth="62.0" layoutX="287.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_6" fitHeight="81.0" fitWidth="72.0" layoutX="279.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_7" fitHeight="94.0" fitWidth="76.0" layoutX="279.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_8" fitHeight="104.0" fitWidth="86.0" layoutX="274.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_9" fitHeight="86.0" fitWidth="64.0" layoutX="285.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_10" fitHeight="91.0" fitWidth="77.0" layoutX="278.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_11" fitHeight="63.0" fitWidth="77.0" layoutX="277.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="nose_s_12" fitHeight="67.0" fitWidth="74.0" layoutX="280.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/nose/12.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_1" fitHeight="42.0" fitWidth="94.0" layoutX="270.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_2" fitHeight="45.0" fitWidth="99.0" layoutX="269.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_3" fitHeight="39.0" fitWidth="89.0" layoutX="274.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_4" fitHeight="39.0" fitWidth="118.0" layoutX="262.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_5" fitHeight="58.0" fitWidth="114.0" layoutX="263.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_6" fitHeight="49.0" fitWidth="111.0" layoutX="264.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_7" fitHeight="29.0" fitWidth="81.0" layoutX="278.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_8" fitHeight="29.0" fitWidth="87.0" layoutX="277.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false" x="-2.0">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_9" fitHeight="55.0" fitWidth="145.0" layoutX="244.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_10" fitHeight="54.0" fitWidth="144.0" layoutX="245.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_11" fitHeight="39.0" fitWidth="118.0" layoutX="261.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="lips_s_12" fitHeight="44.0" fitWidth="106.0" layoutX="264.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/lips/12.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="must_s_1" fitHeight="62.0" fitWidth="157.0" layoutX="239.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/01.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="must_s_2" fitHeight="47.0" fitWidth="154.0" layoutX="240.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/02.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="must_s_3" fitHeight="56.0" fitWidth="132.0" layoutX="251.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="must_s_4" fitHeight="54.0" fitWidth="116.0" layoutX="261.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="must_s_5" fitHeight="45.0" fitWidth="143.0" layoutX="249.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/05.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="must_s_6" fitHeight="44.0" fitWidth="117.0" layoutX="262.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/06.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="beard_s_1" fitHeight="77.0" fitWidth="135.0" layoutX="247.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/07.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="beard_s_2" fitHeight="138.0" fitWidth="247.0" layoutX="196.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/08.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="beard_s_3" fitHeight="222.0" fitWidth="267.0" layoutX="185.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/09.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="beard_s_4" fitHeight="224.0" fitWidth="279.0" layoutX="180.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="beard_s_5" fitHeight="222.0" fitWidth="263.0" layoutX="187.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/11.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="beard_s_6" fitHeight="231.0" fitWidth="277.0" layoutX="180.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@elements/sketch%20elements/mustach/12.png" />
+               </image>
+            </ImageView>
+            <!-- Forensic guidelines / proportion grid (semi-transparent overlay) -->
+            <Canvas fx:id="guidelinesCanvas" height="620.0" width="620.0"
+                    layoutX="0.0" layoutY="0.0" mouseTransparent="true" visible="false" />
+            <!-- Freehand drawing canvas overlay (top layer in sketch) -->
+            <Canvas fx:id="drawingCanvas" height="620.0" width="620.0"
+                    layoutX="0.0" layoutY="0.0" mouseTransparent="true" />
+         </children>
+      </AnchorPane>
+         </children>
+      </StackPane>
+
+
+      <!-- ═══════════════════════════════════════════════════════
+           STATUS BAR
+           Positioned at the very bottom of the studio screen.
+           ═══════════════════════════════════════════════════════ -->
+      <AnchorPane prefHeight="35.0" prefWidth="1500.0"
+                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                  style="-fx-background-color: #0d1b2a; -fx-border-color: #1e3a5c; -fx-border-width: 1 0 0 0;">
+         <children>
+            <Label fx:id="statusBarLabel" layoutX="15.0" layoutY="8.0"
+                   text="  Ready" textFill="#90a4ae">
+               <font><Font name="Consolas" size="11.0" /></font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

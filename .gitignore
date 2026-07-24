@@ -1,0 +1,11 @@
+# Ignore specific large files to prevent GitHub push errors
+*.psd
+*.jar
+
+# Build directories and compiled files
+target/
+*.class
+.vscode/
+
+# Secrets and credentials
+credentials

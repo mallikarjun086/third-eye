@@ -1,0 +1,61 @@
+/* ═══════════════════════════════════════════════════════
+   ThirdEye v2 — Login Screen CSS
+   Dark Forensic Professional Theme
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Input fields ─────────────────────────────────────── */
+.te-field {
+    -fx-background-color: #131b35;
+    -fx-border-color: #1e2d5a;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #d0deff;
+    -fx-prompt-text-fill: #3a4a6a;
+    -fx-padding: 10 14 10 14;
+}
+
+.te-field:focused {
+    -fx-border-color: #3a6fff;
+    -fx-background-color: #171f3a;
+    -fx-effect: dropshadow(gaussian, #1a3aff44, 10, 0, 0, 0);
+}
+
+/* ── Primary button (Sign In / Verify OTP) ───────────── */
+.te-btn-primary {
+    -fx-background-color: linear-gradient(to right, #1a3aff, #3a6fff);
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.te-btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #2a4aff, #5080ff);
+    -fx-effect: dropshadow(gaussian, #1a3aff66, 12, 0, 0, 0);
+}
+
+.te-btn-primary:pressed {
+    -fx-background-color: #1230cc;
+}
+
+/* ── Secondary button (Create Account) ───────────────── */
+.te-btn-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5a7aaa;
+    -fx-border-color: #1e2d5a;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.te-btn-secondary:hover {
+    -fx-background-color: #131b35;
+    -fx-text-fill: #8aaadd;
+    -fx-border-color: #2a4aaa;
+}
+
+.te-btn-secondary:pressed {
+    -fx-background-color: #0f1528;
+}

@@ -1,0 +1,52 @@
+/* ═══════════════════════════════════════════════════════
+   ThirdEye v2 — Dashboard CSS
+   Dark Forensic Professional Theme
+   ═══════════════════════════════════════════════════════ */
+
+.root {
+    background-color: #0a0d1a;         /* standard */
+    -fx-background-color: #0a0d1a;
+    font-family: "Century Gothic";     /* standard */
+    -fx-font-family: "Century Gothic";
+}
+
+/* ── Scroll pane — remove white background ───────────── */
+.scroll-pane {
+    background: #173f5f;               /* standard */
+    -fx-background: #173f5f;
+    background-color: #173f5f;         /* standard */
+    -fx-background-color: #173f5f;
+}
+
+.scroll-pane > .viewport {
+    background-color: #173f5f;         /* standard */
+    -fx-background-color: #173f5f;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    background-color: #0f2035;         /* standard */
+    -fx-background-color: #0f2035;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    background-color: #3a6fff;         /* standard */
+    -fx-background-color: #3a6fff;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button,
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    background-color: #0f2035;         /* standard */
+    -fx-background-color: #0f2035;
+    padding: 2px;                      /* standard */
+    -fx-padding: 2;
+}
+
+/* ── Labels inside the panels ───────────────────────── */
+.label {
+    -fx-text-fill: #c0d0f0;
+}
