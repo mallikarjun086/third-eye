@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+
+<AnchorPane prefHeight="600" prefWidth="900" style="-fx-background-color: #1a1a2e;"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="thirdeye.v2.GalleryManagerController">
+    <stylesheets>
+        <URL value="@upload_sketch.css"/>
+    </stylesheets>
+    <children>
+        <!-- Title -->
+        <Label layoutX="0" layoutY="15" prefWidth="900"
+               text="📋  Suspect Gallery Manager"
+               style="-fx-text-fill: #e0e0ff; -fx-alignment: CENTER; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <!-- Toolbar -->
+        <HBox layoutX="20" layoutY="50" spacing="10" alignment="CENTER_LEFT">
+            <TextField fx:id="searchField" promptText="Search by name or case ID..." prefWidth="250"
+                       style="-fx-background-color: #16213e; -fx-text-fill: #e0e0ff; -fx-prompt-text-fill: #555577; -fx-font-size: 13px; -fx-border-color: #4444aa; -fx-border-radius: 4; -fx-background-radius: 4; -fx-padding: 6;"/>
+            <Button text="🔍 Search" onAction="#onSearch"
+                    style="-fx-background-color: #3344cc; -fx-text-fill: white; -fx-font-size: 12px; -fx-background-radius: 6; -fx-cursor: hand; -fx-padding: 6 14;"/>
+            <Button text="➕ Add Suspect" onAction="#onAddSuspect"
+                    style="-fx-background-color: #1a5a3a; -fx-text-fill: white; -fx-font-size: 12px; -fx-background-radius: 6; -fx-cursor: hand; -fx-padding: 6 14;"/>
+            <Button text="❌ Delete Selected" onAction="#onDeleteSelected"
+                    style="-fx-background-color: #5a1a1a; -fx-text-fill: white; -fx-font-size: 12px; -fx-background-radius: 6; -fx-cursor: hand; -fx-padding: 6 14;"/>
+        </HBox>
+
+        <!-- Left: Thumbnail grid -->
+        <ScrollPane layoutX="20" layoutY="95" prefWidth="520" prefHeight="460"
+                    style="-fx-background: #16213e; -fx-background-color: #16213e; -fx-border-color: #333355; -fx-border-radius: 6; -fx-background-radius: 6;">
+            <FlowPane fx:id="thumbGrid" prefWidth="500" prefHeight="1000" hgap="12" vgap="12"
+                      style="-fx-background-color: #16213e; -fx-padding: 12;">
+            </FlowPane>
+        </ScrollPane>
+
+        <!-- Right: Selected suspect detail -->
+        <VBox layoutX="560" layoutY="95" prefWidth="320" prefHeight="460" spacing="10"
+              style="-fx-background-color: #16213e; -fx-border-color: #333355; -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 15;">
+            <Label text="Selected Suspect" style="-fx-text-fill: #a0a0cc; -fx-font-size: 14px; -fx-font-weight: bold;"/>
+            <AnchorPane prefWidth="290" prefHeight="290"
+                        style="-fx-background-color: #0f0f1e; -fx-border-color: #4444aa; -fx-border-radius: 4; -fx-background-radius: 4;">
+                <ImageView fx:id="detailImage" fitWidth="290" fitHeight="290" preserveRatio="true"
+                           AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0"/>
+            </AnchorPane>
+            <Label fx:id="detailName" text="No suspect selected" style="-fx-text-fill: #e0e0ff; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <Label fx:id="detailCaseId" text="" style="-fx-text-fill: #8888aa; -fx-font-size: 12px;"/>
+            <Label fx:id="detailDate" text="" style="-fx-text-fill: #666688; -fx-font-size: 11px;"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="▶ Compare with Sketch" onAction="#onCompareSelected"
+                        prefWidth="200" prefHeight="40"
+                        style="-fx-background-color: #3344cc; -fx-text-fill: white; -fx-font-size: 13px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;"/>
+            </HBox>
+        </VBox>
+
+        <!-- Status bar -->
+        <Label fx:id="statusLabel" layoutX="0" layoutY="570" prefWidth="900"
+               text="Ready"
+               style="-fx-text-fill: #555577; -fx-font-size: 11px; -fx-alignment: CENTER; -fx-background-color: #0f0f1e; -fx-padding: 6;"/>
+    </children>
+</AnchorPane>
