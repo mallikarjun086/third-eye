@@ -57,22 +57,19 @@ Unzip the archive into `ml_service/dataset/` so it contains `photo/`,
 etc.
 
 > **Note:** the raw photo/sketch folders in this Kaggle copy are **not paired by
-> filename index**. Build a correctly-paired gallery + query set from the
-> overlapping person IDs before evaluating:
+> filename index** — a naive `zip(photos, sketches)` would give meaningless
+> accuracy. To get the exact same test set every time (reproducible metrics),
+> run the included pairing script:
 
-```python
-import os, shutil
-base = "dataset"
-p = {os.path.splitext(f)[0].replace("-01", ""): f for f in os.listdir(f"{base}/photos")}
-s = {os.path.splitext(f)[0].replace("-01-sz1", ""): f for f in os.listdir(f"{base}/sketches")}
-os.makedirs(f"{base}/gallery", exist_ok=True)
-os.makedirs(f"{base}/queries", exist_ok=True)
-for pid in set(p) & set(s):
-    shutil.copy(f"{base}/photos/{p[pid]}", f"{base}/gallery/{pid}.jpg")
-    shutil.copy(f"{base}/sketches/{s[pid]}", f"{base}/queries/{pid}.jpg")
+```bash
+python prepare_dataset.py
 ```
 
-This produces a 100-pair test set (photo in `gallery/`, sketch in `queries/`).
+It matches photos and sketches by person ID and writes the deterministic
+100-pair test set (photo in `gallery/`, sketch in `queries/`). Because the
+output is identical across machines, everyone measuring accuracy gets the same
+numbers.
+
 Measured sketch-to-photo Rank-1 accuracy on this set: **33%**.
 
 ## Dataset comparison
