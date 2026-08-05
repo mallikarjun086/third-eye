@@ -159,6 +159,7 @@ public class Upload_sketchController implements Initializable {
     @FXML private Button     compareBtn;
     @FXML private Button     saveResultBtn;
     @FXML private Button     manageGalleryBtn;
+    @FXML private Button     deepMatchBtn;
     @FXML private javafx.scene.control.Slider weightSsimSlider;
     @FXML private javafx.scene.control.Slider weightEdgeSlider;
     @FXML private javafx.scene.control.Slider weightHogSlider;
@@ -973,6 +974,72 @@ public class Upload_sketchController implements Initializable {
             compareBtn.setDisable(false);
         });
 
+        Thread t = new Thread(task);
+        t.setDaemon(true);
+        t.start();
+    }
+
+    // ── Deep learning dataset match (Python ML service) ──────────────────────
+    @FXML
+    private void onDeepMatch(ActionEvent event) {
+        if (sketchFile == null) {
+            setStatus("Load a sketch first before running a dataset match.");
+            return;
+        }
+        javafx.stage.DirectoryChooser dc = new javafx.stage.DirectoryChooser();
+        dc.setTitle("Select Dataset Folder of Suspect Photos");
+        dc.setInitialDirectory(new File(System.getProperty("user.home")));
+        File datasetDir = dc.showDialog(compareBtn.getScene() == null ? null : compareBtn.getScene().getWindow());
+        if (datasetDir == null) return;
+
+        final File finalDir = datasetDir;
+        setStatus("Contacting ML service…");
+        compareBtn.setDisable(true);
+        deepMatchBtn.setDisable(true);
+
+        Task<String> task = new Task<>() {
+            @Override
+            protected String call() throws Exception {
+                DeepMatchClient client = new DeepMatchClient();
+                if (!client.isHealthy()) {
+                    throw new IOException("ML service is not running (see ml_service/README.md).");
+                }
+                List<DeepMatchClient.Match> results = client.match(sketchFile, finalDir, 10);
+                if (results.isEmpty()) return "No matches returned.";
+                StringBuilder sb = new StringBuilder();
+                sb.append("═══════════════════════════════════════════════\n");
+                sb.append("    DEEP MATCH RESULTS (FaceNet embeddings)\n");
+                sb.append("═══════════════════════════════════════════════\n\n");
+                for (int i = 0; i < results.size(); i++) {
+                    DeepMatchClient.Match m = results.get(i);
+                    int pct = (int) Math.round(m.similarity * 100);
+                    sb.append(String.format("  #%d  %-24s  %3d%%%n", i + 1, m.name, pct));
+                    sb.append("       " + m.path + "\n\n");
+                }
+                sb.append(results.size() + " candidates compared.");
+                return sb.toString();
+            }
+        };
+        task.setOnSucceeded(e -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Deep Match Results");
+            alert.setHeaderText("ML Dataset Match");
+            alert.getDialogPane().setPrefWidth(560);
+            alert.getDialogPane().setPrefHeight(420);
+            javafx.scene.control.TextArea ta = new javafx.scene.control.TextArea(task.getValue());
+            ta.setEditable(false);
+            ta.setStyle("-fx-font-family: monospace; -fx-font-size: 12px;");
+            alert.getDialogPane().setContent(ta);
+            alert.showAndWait();
+            compareBtn.setDisable(false);
+            deepMatchBtn.setDisable(false);
+            setStatus("Deep match complete.");
+        });
+        task.setOnFailed(e -> {
+            setStatus("Deep match failed: " + task.getException().getMessage());
+            compareBtn.setDisable(false);
+            deepMatchBtn.setDisable(false);
+        });
         Thread t = new Thread(task);
         t.setDaemon(true);
         t.start();

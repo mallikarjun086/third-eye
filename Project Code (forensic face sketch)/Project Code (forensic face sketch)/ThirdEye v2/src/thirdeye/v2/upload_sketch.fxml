@@ -59,6 +59,11 @@
                     prefWidth="130" prefHeight="36"
                     style="-fx-background-color: #223355; -fx-text-fill: #aabbff; -fx-font-size: 13px; -fx-background-radius: 8; -fx-cursor: hand;"/>
             <Separator prefWidth="180" style="-fx-background-color: #333355;"/>
+            <Label text="DEEP MATCH (ML)" style="-fx-text-fill: #a0a0cc; -fx-font-size: 10px; -fx-font-weight: bold;"/>
+            <Button fx:id="deepMatchBtn" text="🧠  Dataset Match" onAction="#onDeepMatch"
+                    prefWidth="130" prefHeight="36"
+                    style="-fx-background-color: #7b2d8b; -fx-text-fill: white; -fx-font-size: 13px; -fx-background-radius: 8; -fx-cursor: hand;"/>
+            <Separator prefWidth="180" style="-fx-background-color: #333355;"/>
             <Label text="SUSPECT GALLERY" style="-fx-text-fill: #a0a0cc; -fx-font-size: 11px; -fx-font-weight: bold;"/>
             <Button fx:id="manageGalleryBtn" text="📋  Manage Gallery" onAction="#onOpenGallery"
                     prefWidth="130" prefHeight="30"
