@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+tensorflow
+keras-facenet
+scipy
+opencv-python
+numpy
+pillow
+python-multipart

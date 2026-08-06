@@ -18,19 +18,27 @@ import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonBar;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Dialog;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javax.imageio.ImageIO;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.Node;
-import javafx.scene.control.Alert;
-import javafx.scene.control.TextInputDialog;
 import javafx.event.ActionEvent;
 
 /**
@@ -159,6 +167,7 @@ public class Upload_sketchController implements Initializable {
     @FXML private Button     compareBtn;
     @FXML private Button     saveResultBtn;
     @FXML private Button     manageGalleryBtn;
+    @FXML private Button     deepMatchBtn;
     @FXML private javafx.scene.control.Slider weightSsimSlider;
     @FXML private javafx.scene.control.Slider weightEdgeSlider;
     @FXML private javafx.scene.control.Slider weightHogSlider;
@@ -182,7 +191,7 @@ public class Upload_sketchController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         compareBtn.setDisable(true);
-        saveResultBtn.setDisable(true);
+        if (saveResultBtn != null) saveResultBtn.setDisable(true);
         SuspectDatabase.init();
         initWeightSliders();
     }
@@ -237,7 +246,7 @@ public class Upload_sketchController implements Initializable {
         if (file != null && file.exists()) {
             sketchView.setImage(new Image(file.toURI().toString()));
             sketchLabel.setText(file.getName());
-            setStatus("Sketch loaded: " + file.getName() + "  —  Now load a suspect photo →");
+            setStatus("Sketch loaded: " + file.getName() + "  —  Click COMPARE ▶ to search the dataset");
             refreshCompareButton();
         }
     }
@@ -263,40 +272,139 @@ public class Upload_sketchController implements Initializable {
     }
 
     // ── Run comparison in background thread ─────────────────────────────────
+
+    /**
+     * Auto-locates the suspect photo gallery folder relative to the project.
+     * Checks the known dataset locations first; returns null only if none exist.
+     */
+    private File findGalleryFolder() {
+        File[] candidates = {
+            new File("ml_service/dataset/gallery"),
+            new File("dataset/gallery"),
+            new File("ml_service/dataset"),
+            new File("dataset"),
+            new File(System.getProperty("user.dir") + "/ml_service/dataset/gallery"),
+            new File(System.getProperty("user.dir") + "/dataset/gallery")
+        };
+        for (File c : candidates) {
+            if (c.isDirectory()) {
+                File[] imgs = c.listFiles((dir, name) ->
+                        name.toLowerCase().endsWith(".jpg") || name.toLowerCase().endsWith(".jpeg") || name.toLowerCase().endsWith(".png"));
+                if (imgs != null && imgs.length > 0) return c;
+            }
+        }
+        return null;
+    }
+
     @FXML
     private void onCompare() {
-        if (sketchFile == null || photoFile == null) {
-            setStatus("⚠ Both sketch and suspect photo must be loaded first.");
+        if (sketchFile == null) {
+            setStatus("⚠ Load a sketch first before running a match.");
             return;
         }
+        File finalDir = findGalleryFolder();
+        if (finalDir == null) {
+            javafx.stage.DirectoryChooser dc = new javafx.stage.DirectoryChooser();
+            dc.setTitle("Select Dataset Folder of Suspect Photos");
+            dc.setInitialDirectory(new File(System.getProperty("user.home")));
+            finalDir = dc.showDialog(compareBtn.getScene() == null ? null : compareBtn.getScene().getWindow());
+        }
+        if (finalDir == null) return;
+        final File datasetDir = finalDir;
+        setStatus("🔍 Contacting ML service…");
         compareBtn.setDisable(true);
-        saveResultBtn.setDisable(true);
-        setStatus("🔍 Analysing images with multi-metric fusion… please wait.");
-        progressBar.setProgress(-1); // indeterminate spinner
+        if (deepMatchBtn != null) deepMatchBtn.setDisable(true);
 
-        Task<Double> task = new Task<>() {
+        Task<List<DeepMatchClient.Match>> task = new Task<>() {
             @Override
-            protected Double call() throws Exception {
-                return computeSimilarity(sketchFile, photoFile);
+            protected List<DeepMatchClient.Match> call() throws Exception {
+                DeepMatchClient client = new DeepMatchClient();
+                if (!client.isHealthy()) {
+                    throw new IOException("ML service is not running (see ml_service/README.md).");
+                }
+                return client.match(sketchFile, datasetDir, 10);
             }
         };
-
         task.setOnSucceeded(e -> {
-            lastSimilarity = task.getValue();
-            updateResultUI(lastSimilarity);
+            List<DeepMatchClient.Match> results = task.getValue();
             compareBtn.setDisable(false);
-            saveResultBtn.setDisable(false);
+            if (deepMatchBtn != null) deepMatchBtn.setDisable(false);
+            setStatus("Compare complete — " + datasetDir.getName() + " scanned.");
+            if (results.isEmpty()) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Compare Results");
+                alert.setHeaderText("Ranked Matches");
+                alert.setContentText("No matches returned.");
+                alert.showAndWait();
+                return;
+            }
+            showMatchGrid(results, datasetDir);
         });
-
         task.setOnFailed(e -> {
-            setStatus("❌ Error: " + task.getException().getMessage());
-            progressBar.setProgress(0);
+            setStatus("Compare failed: " + task.getException().getMessage());
             compareBtn.setDisable(false);
+            if (deepMatchBtn != null) deepMatchBtn.setDisable(false);
         });
-
         Thread t = new Thread(task);
         t.setDaemon(true);
         t.start();
+    }
+
+    /**
+     * Shows the ranked matches as a grid of photo thumbnails, each with its
+     * rank and similarity percentage underneath.
+     */
+    private void showMatchGrid(List<DeepMatchClient.Match> results, File datasetDir) {
+        javafx.scene.layout.FlowPane grid = new javafx.scene.layout.FlowPane();
+        grid.setHgap(16);
+        grid.setVgap(16);
+        grid.setPadding(new Insets(20));
+
+        for (int i = 0; i < results.size(); i++) {
+            DeepMatchClient.Match m = results.get(i);
+            int pct = (int) Math.round(m.similarity * 100);
+            File photo = new File(m.path != null && !m.path.isEmpty() ? m.path : "");
+
+            VBox card = new VBox(6);
+            card.setAlignment(Pos.CENTER);
+            card.setStyle("-fx-background-color: #16213e; -fx-border-color: #4444aa;"
+                    + "-fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;"
+                    + "-fx-padding: 8;");
+
+            ImageView img = new ImageView();
+            if (photo.isFile()) {
+                img.setImage(new Image(photo.toURI().toString()));
+            }
+            img.setFitWidth(160);
+            img.setFitHeight(160);
+            img.setPreserveRatio(true);
+
+            String color = pct >= 90 ? "#22c55e" : pct >= 75 ? "#3b82f6"
+                        : pct >= 60 ? "#eab308" : "#ef4444";
+            Label rank = new Label("Rank #" + (i + 1));
+            rank.setStyle("-fx-text-fill: #aabbff; -fx-font-size: 12px; -fx-font-weight: bold;");
+            Label name = new Label(m.name);
+            name.setStyle("-fx-text-fill: #d0d0e0; -fx-font-size: 11px;");
+            Label sim = new Label(pct + "%");
+            sim.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 18px; -fx-font-weight: bold;");
+
+            card.getChildren().addAll(img, rank, name, sim);
+            grid.getChildren().add(card);
+        }
+
+        javafx.scene.control.ScrollPane scroll = new javafx.scene.control.ScrollPane(grid);
+        scroll.setFitToWidth(true);
+        scroll.setStyle("-fx-background: #1a1a2e; -fx-background-color: #1a1a2e;");
+
+        Dialog<Void> dialog = new Dialog<>();
+        dialog.setTitle("Compare Results — " + datasetDir.getName());
+        dialog.setHeaderText("Top Matches with Similarity %");
+        dialog.getDialogPane().setPrefSize(760, 520);
+        dialog.getDialogPane().setStyle("-fx-background-color: #1a1a2e;");
+        ButtonType close = new ButtonType("Close", ButtonBar.ButtonData.OK_DONE);
+        dialog.getDialogPane().getButtonTypes().add(close);
+        dialog.getDialogPane().setContent(scroll);
+        dialog.showAndWait();
     }
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -817,7 +925,7 @@ public class Upload_sketchController implements Initializable {
     // ═══════════════════════════════════════════════════════════════════════════
 
     private void refreshCompareButton() {
-        compareBtn.setDisable(sketchFile == null || photoFile == null);
+        compareBtn.setDisable(sketchFile == null);
     }
 
     private void setStatus(String msg) {
@@ -973,6 +1081,72 @@ public class Upload_sketchController implements Initializable {
             compareBtn.setDisable(false);
         });
 
+        Thread t = new Thread(task);
+        t.setDaemon(true);
+        t.start();
+    }
+
+    // ── Deep learning dataset match (Python ML service) ──────────────────────
+    @FXML
+    private void onDeepMatch(ActionEvent event) {
+        if (sketchFile == null) {
+            setStatus("Load a sketch first before running a dataset match.");
+            return;
+        }
+        javafx.stage.DirectoryChooser dc = new javafx.stage.DirectoryChooser();
+        dc.setTitle("Select Dataset Folder of Suspect Photos");
+        dc.setInitialDirectory(new File(System.getProperty("user.home")));
+        File datasetDir = dc.showDialog(compareBtn.getScene() == null ? null : compareBtn.getScene().getWindow());
+        if (datasetDir == null) return;
+
+        final File finalDir = datasetDir;
+        setStatus("Contacting ML service…");
+        compareBtn.setDisable(true);
+        deepMatchBtn.setDisable(true);
+
+        Task<String> task = new Task<>() {
+            @Override
+            protected String call() throws Exception {
+                DeepMatchClient client = new DeepMatchClient();
+                if (!client.isHealthy()) {
+                    throw new IOException("ML service is not running (see ml_service/README.md).");
+                }
+                List<DeepMatchClient.Match> results = client.match(sketchFile, finalDir, 10);
+                if (results.isEmpty()) return "No matches returned.";
+                StringBuilder sb = new StringBuilder();
+                sb.append("═══════════════════════════════════════════════\n");
+                sb.append("    DEEP MATCH RESULTS (FaceNet embeddings)\n");
+                sb.append("═══════════════════════════════════════════════\n\n");
+                for (int i = 0; i < results.size(); i++) {
+                    DeepMatchClient.Match m = results.get(i);
+                    int pct = (int) Math.round(m.similarity * 100);
+                    sb.append(String.format("  #%d  %-24s  %3d%%%n", i + 1, m.name, pct));
+                    sb.append("       " + m.path + "\n\n");
+                }
+                sb.append(results.size() + " candidates compared.");
+                return sb.toString();
+            }
+        };
+        task.setOnSucceeded(e -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Deep Match Results");
+            alert.setHeaderText("ML Dataset Match");
+            alert.getDialogPane().setPrefWidth(560);
+            alert.getDialogPane().setPrefHeight(420);
+            javafx.scene.control.TextArea ta = new javafx.scene.control.TextArea(task.getValue());
+            ta.setEditable(false);
+            ta.setStyle("-fx-font-family: monospace; -fx-font-size: 12px;");
+            alert.getDialogPane().setContent(ta);
+            alert.showAndWait();
+            compareBtn.setDisable(false);
+            deepMatchBtn.setDisable(false);
+            setStatus("Deep match complete.");
+        });
+        task.setOnFailed(e -> {
+            setStatus("Deep match failed: " + task.getException().getMessage());
+            compareBtn.setDisable(false);
+            deepMatchBtn.setDisable(false);
+        });
         Thread t = new Thread(task);
         t.setDaemon(true);
         t.start();

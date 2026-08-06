@@ -3,13 +3,10 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 <?import java.net.URL?>
 
 <AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1000.0" style="-fx-background-color: #1a1a2e;"
@@ -28,7 +25,7 @@
         </HBox>
 
         <!-- LEFT: Sketch Panel -->
-        <VBox layoutX="30" layoutY="65" spacing="10" alignment="CENTER">
+        <VBox layoutX="60" layoutY="120" spacing="10" alignment="CENTER">
             <Label text="COMPOSITE SKETCH" style="-fx-text-fill: #a0a0cc; -fx-font-size: 13px; -fx-font-weight: bold;"/>
             <AnchorPane fx:id="sketchBox" prefWidth="380" prefHeight="380"
                         style="-fx-background-color: #16213e; -fx-border-color: #4444aa; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;">
@@ -39,62 +36,22 @@
                    style="-fx-text-fill: #666688; -fx-font-size: 11px;"/>
         </VBox>
 
-        <!-- CENTER: Match Result Panel -->
-        <VBox layoutX="400" layoutY="130" spacing="18" alignment="CENTER" prefWidth="200">
-            <Label text="SIMILARITY" style="-fx-text-fill: #a0a0cc; -fx-font-size: 13px; -fx-font-weight: bold;"/>
-            <Label fx:id="percentLabel" text="—"
-                   style="-fx-text-fill: #ffffff; -fx-font-size: 48px; -fx-font-weight: bold;"/>
-            <ProgressBar fx:id="progressBar" prefWidth="180" progress="0"
-                         style="-fx-accent: #5555ff;"/>
-            <Separator prefWidth="180" style="-fx-background-color: #333355;"/>
-            <Label fx:id="resultLabel" text="Draw a sketch and\nload a suspect photo" wrapText="true" prefHeight="100" prefWidth="190"
-                   style="-fx-text-fill: #888899; -fx-font-size: 12px; -fx-alignment: CENTER; -fx-text-alignment: CENTER;"/>
+        <!-- CENTER: Compare Panel -->
+        <VBox layoutX="560" layoutY="180" spacing="22" alignment="CENTER" prefWidth="330">
+            <Label text="FIND MATCHES" style="-fx-text-fill: #a0a0cc; -fx-font-size: 15px; -fx-font-weight: bold;"/>
+            <Label text="Compare the sketch against a\nfolder of suspect photos." wrapText="true"
+                   style="-fx-text-fill: #888899; -fx-font-size: 13px; -fx-alignment: CENTER; -fx-text-alignment: CENTER;"/>
             <Button fx:id="compareBtn" text="▶  COMPARE" onAction="#onCompare"
-                    prefWidth="130" prefHeight="42"
-                    style="-fx-background-color: #3344cc; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;"/>
-            <Button fx:id="uploadBtn" text="📂  Load Photo" onAction="#onLoadPhoto"
-                    prefWidth="130" prefHeight="36"
-                    style="-fx-background-color: #223355; -fx-text-fill: #aabbff; -fx-font-size: 13px; -fx-background-radius: 8; -fx-cursor: hand;"/>
-            <Button fx:id="saveResultBtn" text="💾  Save Report" onAction="#onSaveReport"
-                    prefWidth="130" prefHeight="36"
-                    style="-fx-background-color: #223355; -fx-text-fill: #aabbff; -fx-font-size: 13px; -fx-background-radius: 8; -fx-cursor: hand;"/>
-            <Separator prefWidth="180" style="-fx-background-color: #333355;"/>
-            <Label text="SUSPECT GALLERY" style="-fx-text-fill: #a0a0cc; -fx-font-size: 11px; -fx-font-weight: bold;"/>
-            <Button fx:id="manageGalleryBtn" text="📋  Manage Gallery" onAction="#onOpenGallery"
-                    prefWidth="130" prefHeight="30"
-                    style="-fx-background-color: #2a3a5a; -fx-text-fill: #aabbff; -fx-font-size: 11px; -fx-background-radius: 8; -fx-cursor: hand;"/>
-            <Separator prefWidth="180" style="-fx-background-color: #333355;"/>
-            <Label text="METRIC WEIGHTS (adjustable)" style="-fx-text-fill: #a0a0cc; -fx-font-size: 10px; -fx-font-weight: bold;"/>
-            <Label fx:id="weightSsimLabel" text="SSIM  25%" style="-fx-text-fill: #8888aa; -fx-font-size: 10px;"/>
-            <javafx.scene.control.Slider fx:id="weightSsimSlider" min="0" max="100" value="25" prefWidth="160" style="-fx-control-inner-background: #223355;"/>
-            <Label fx:id="weightEdgeLabel" text="Edge  35%" style="-fx-text-fill: #8888aa; -fx-font-size: 10px;"/>
-            <javafx.scene.control.Slider fx:id="weightEdgeSlider" min="0" max="100" value="35" prefWidth="160" style="-fx-control-inner-background: #223355;"/>
-            <Label fx:id="weightHogLabel" text="HOG   25%" style="-fx-text-fill: #8888aa; -fx-font-size: 10px;"/>
-            <javafx.scene.control.Slider fx:id="weightHogSlider" min="0" max="100" value="25" prefWidth="160" style="-fx-control-inner-background: #223355;"/>
-            <Label fx:id="weightHistLabel" text="Hist  15%" style="-fx-text-fill: #8888aa; -fx-font-size: 10px;"/>
-            <javafx.scene.control.Slider fx:id="weightHistSlider" min="0" max="100" value="15" prefWidth="160" style="-fx-control-inner-background: #223355;"/>
-            <Label fx:id="weightStatusLabel" text="Weights normalized to sum 100%" style="-fx-text-fill: #666688; -fx-font-size: 9px;"/>
-        </VBox>
-
-        <!-- RIGHT: Suspect Photo Panel -->
-        <VBox layoutX="590" layoutY="65" spacing="10" alignment="CENTER">
-            <Label text="SUSPECT PHOTO" style="-fx-text-fill: #a0a0cc; -fx-font-size: 13px; -fx-font-weight: bold;"/>
-            <AnchorPane fx:id="photoBox" prefWidth="380" prefHeight="380"
-                        style="-fx-background-color: #16213e; -fx-border-color: #4444aa; -fx-border-width: 2; -fx-border-style: dashed; -fx-border-radius: 8; -fx-background-radius: 8;"
-                        onMouseClicked="#onLoadPhoto">
-                <ImageView fx:id="photoView" fitWidth="380" fitHeight="380" preserveRatio="true"
-                           AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0"/>
-                <Label fx:id="photoHint" text="Click here to load\na suspect photo"
-                       style="-fx-text-fill: #555577; -fx-font-size: 16px; -fx-alignment: CENTER; -fx-text-alignment: CENTER;"
-                       AnchorPane.topAnchor="160" AnchorPane.leftAnchor="100" AnchorPane.rightAnchor="100"/>
-            </AnchorPane>
-            <Label fx:id="photoLabel" text="No photo loaded"
-                   style="-fx-text-fill: #666688; -fx-font-size: 11px;"/>
+                    prefWidth="200" prefHeight="52"
+                    style="-fx-background-color: #3344cc; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;"/>
+            <Label fx:id="statusBar" text="Load a sketch, then click COMPARE"
+                   wrapText="true" prefWidth="310"
+                   style="-fx-text-fill: #888899; -fx-font-size: 11px; -fx-alignment: CENTER; -fx-text-alignment: CENTER;"/>
         </VBox>
 
         <!-- Bottom status bar -->
-        <Label fx:id="statusBar" layoutX="0" layoutY="580" prefWidth="1000"
-               text="Ready — Load a suspect photo on the right and click COMPARE"
+        <Label layoutX="0" layoutY="580" prefWidth="1000"
+               text="ThirdEye v2 — Forensic sketch matching against a photo dataset"
                style="-fx-text-fill: #555577; -fx-font-size: 11px; -fx-alignment: CENTER; -fx-background-color: #0f0f1e; -fx-padding: 6;"/>
     </children>
 </AnchorPane>
