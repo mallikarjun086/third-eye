@@ -23,11 +23,18 @@ total = 0
 for q in queries:
     qid = os.path.splitext(os.path.basename(q))[0]  # e.g. "12"
     with open(q, "rb") as fh:
-        emb = app.embed_image(fh.read())
+        data = fh.read()
+    emb = app.embed_image(data)
     if emb is None:
         continue
-    scored = sorted(((float(np.dot(emb, e)), rel) for rel, e in app._embedding_cache.items()),
-                    reverse=True)
+    hog = app.compute_hog(app.hog_grey(data))
+    scored = sorted(
+        (
+            (app.hybrid_score(float(np.dot(emb, f["face"])), float(np.dot(hog, f["hog"]))), rel)
+            for rel, f in app._cache.items()
+        ),
+        reverse=True,
+    )
     rank = 1
     for sim, rel in scored:
         rid = os.path.splitext(os.path.basename(rel))[0]
@@ -41,6 +48,8 @@ for q in queries:
     total += 1
 
 print(f"Queries tested: {total}")
+print(f"Hybrid (FaceNet w={app.FACE_WEIGHT} + HOG):")
 print(f"Rank-1 accuracy: {100 * correct / total:.1f}%")
 for k, v in topk_hits.items():
-    print(f"Rank-{k} accuracy: {100 * v / total:.1f}%")
+    if k > 1:
+        print(f"Rank-{k} accuracy: {100 * v / total:.1f}%")

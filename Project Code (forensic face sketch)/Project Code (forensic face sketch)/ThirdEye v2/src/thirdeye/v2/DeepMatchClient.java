@@ -39,6 +39,7 @@ public class DeepMatchClient {
         this.baseUrl = baseUrl.endsWith("/") ? baseUrl.substring(0, baseUrl.length() - 1) : baseUrl;
         this.http = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(5))
+                .version(HttpClient.Version.HTTP_1_1)
                 .build();
     }
 
@@ -126,28 +127,32 @@ public class DeepMatchClient {
     // ── Multipart body builder ────────────────────────────────────────────────
     private static byte[] buildMultipart(File sketchFile, File datasetDir, int topN, byte[] boundary)
             throws IOException {
+        String b = new String(boundary, StandardCharsets.US_ASCII);
+
+        // Part 1: sketch file — headers + bytes, in the correct order
         StringBuilder head = new StringBuilder();
-        // sketch file part
-        head.append("--").append(new String(boundary, StandardCharsets.US_ASCII)).append("\r\n");
+        head.append("--").append(b).append("\r\n");
         head.append("Content-Disposition: form-data; name=\"file\"; filename=\"")
                 .append(sketchFile.getName()).append("\"\r\n");
-        head.append("Content-Type: image/png\r\n\r\n");
-        // dataset_dir field
-        head.append("\r\n--").append(new String(boundary, StandardCharsets.US_ASCII)).append("\r\n");
-        head.append("Content-Disposition: form-data; name=\"dataset_dir\"\r\n\r\n");
-        head.append(datasetDir.getAbsolutePath());
-        // top_n field
-        head.append("\r\n--").append(new String(boundary, StandardCharsets.US_ASCII)).append("\r\n");
-        head.append("Content-Disposition: form-data; name=\"top_n\"\r\n\r\n");
-        head.append(topN);
-        head.append("\r\n--").append(new String(boundary, StandardCharsets.US_ASCII)).append("--\r\n");
-
+        head.append("Content-Type: application/octet-stream\r\n\r\n");
         byte[] headBytes = head.toString().getBytes(StandardCharsets.UTF_8);
         byte[] fileBytes = Files.readAllBytes(sketchFile.toPath());
 
-        byte[] body = new byte[headBytes.length + fileBytes.length];
+        // Part 2 + 3: dataset_dir and top_n fields
+        StringBuilder tail = new StringBuilder();
+        tail.append("\r\n--").append(b).append("\r\n");
+        tail.append("Content-Disposition: form-data; name=\"dataset_dir\"\r\n\r\n");
+        tail.append(datasetDir.getAbsolutePath());
+        tail.append("\r\n--").append(b).append("\r\n");
+        tail.append("Content-Disposition: form-data; name=\"top_n\"\r\n\r\n");
+        tail.append(topN);
+        tail.append("\r\n--").append(b).append("--\r\n");
+        byte[] tailBytes = tail.toString().getBytes(StandardCharsets.UTF_8);
+
+        byte[] body = new byte[headBytes.length + fileBytes.length + tailBytes.length];
         System.arraycopy(headBytes, 0, body, 0, headBytes.length);
         System.arraycopy(fileBytes, 0, body, headBytes.length, fileBytes.length);
+        System.arraycopy(tailBytes, 0, body, headBytes.length + fileBytes.length, tailBytes.length);
         return body;
     }
 }
