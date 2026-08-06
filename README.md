@@ -56,11 +56,8 @@ cd "Project Code (forensic face sketch)/Project Code (forensic face sketch)/Thir
 mvn clean javafx:run
 ```
 
-> If Maven uses the wrong JDK, point it at Java 21 first:
-> ```bash
-> $env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot"
-> $env:Path = "$env:JAVA_HOME\bin;$env:Path"
-> ```
+> If `mvn` complains about "invalid target release", make sure your default
+> `JAVA_HOME` points to a JDK 21+ (check with `java -version`).
 
 ## Using the app
 
