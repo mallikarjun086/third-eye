@@ -1,0 +1,48 @@
+{
+  "audit_type": "METRIC_LINEAGE_RECONCILIATION",
+  "audit_timestamp": "2026-08-24 00:42:00",
+  "lineage": [
+    {
+      "version_label": "HISTORICAL_PRE_REBUILD",
+      "commit": "8f2a1b0",
+      "model_checksum": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821",
+      "projection_head_checksum": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821",
+      "fusion_alpha": 0.35,
+      "dataset_manifest_checksum": "25f4a621efbb105e1974edae3ca3aee2ce7ad5a2bcbf827e8529f79bdffc1ed0",
+      "gallery_size": 189,
+      "query_checksum": "c623910c5c363d6f030a52f9bc952fdf3d15ef0500bf0c8e3edffeb0775d7990",
+      "query_name": "a-sharukh-1.jpg",
+      "rank": 10,
+      "score": 0.4112,
+      "explanation": "Original demo setting with heavy 65% HOG weighting. Spatial HOG gradient noise on clean vector line drawings penalized true target score."
+    },
+    {
+      "version_label": "FROZEN_EXPERIMENT_BASELINE",
+      "commit": "ff5c0db",
+      "model_checksum": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821",
+      "projection_head_checksum": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821",
+      "fusion_alpha": 0.85,
+      "dataset_manifest_checksum": "25f4a621efbb105e1974edae3ca3aee2ce7ad5a2bcbf827e8529f79bdffc1ed0",
+      "gallery_size": 189,
+      "query_checksum": "c623910c5c363d6f030a52f9bc952fdf3d15ef0500bf0c8e3edffeb0775d7990",
+      "query_name": "a-sharukh-1.jpg",
+      "rank": 1,
+      "score": 0.6470,
+      "explanation": "Frozen baseline using alpha = 0.85 (85% Deep Projection Embedding + 15% HOG). True target elevated to Rank #1."
+    },
+    {
+      "version_label": "FINAL_SELECTED_PRODUCTION",
+      "commit": "7ab70f3",
+      "model_checksum": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821",
+      "projection_head_checksum": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821",
+      "fusion_alpha": 0.85,
+      "dataset_manifest_checksum": "25f4a621efbb105e1974edae3ca3aee2ce7ad5a2bcbf827e8529f79bdffc1ed0",
+      "gallery_size": 189,
+      "query_checksum": "c623910c5c363d6f030a52f9bc952fdf3d15ef0500bf0c8e3edffeb0775d7990",
+      "query_name": "a-sharukh-1.jpg",
+      "rank": 1,
+      "score": 0.6470,
+      "explanation": "Master production release incorporating pre-search query quality assessment, gallery CRUD manager, and clean-room evidence verification."
+    }
+  ]
+}

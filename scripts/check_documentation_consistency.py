@@ -12,10 +12,23 @@ def check_consistency():
     repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     v2_dir = os.path.join(repo_root, "Project Code (forensic face sketch)", "Project Code (forensic face sketch)", "ThirdEye v2")
     ml_service_dir = os.path.join(v2_dir, "ml_service")
+    doc_dir = os.path.join(repo_root, "PROJECT_DOCUMENTATION")
     
     errors = []
     successes = []
     
+    # 0. Check CANONICAL_SYSTEM_TRUTH.json
+    truth_json = os.path.join(doc_dir, "CANONICAL_SYSTEM_TRUTH.json")
+    if os.path.exists(truth_json):
+        with open(truth_json, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if data.get("production_fusion_alpha") == 0.85:
+                successes.append("CANONICAL_SYSTEM_TRUTH.json verified (production_fusion_alpha = 0.85)")
+            else:
+                errors.append("CANONICAL_SYSTEM_TRUTH.json alpha mismatch!")
+    else:
+        errors.append("CANONICAL_SYSTEM_TRUTH.json missing!")
+
     # 1. Verify existence of critical files
     critical_files = [
         os.path.join(v2_dir, "pom.xml"),

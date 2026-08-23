@@ -1,0 +1,116 @@
+{
+  "system_name": "ThirdEye v2 — AI-Based Forensic Face Sketch and Recognition System",
+  "audit_date": "2026-08-24",
+  "latest_commit": "7ab70f3",
+  "production_architecture": "Dual-Stream Fused Metric Pipeline (FaceNet Inception-ResNet-v1 + 2-Layer MLP Projection Head + Spatial Sobel HOG)",
+  "production_fusion_alpha": 0.85,
+  "model_checksums": {
+    "facenet_base": "C:/Users/Mallikarjun Gala/.keras-facenet/20180402-114759/20180402-114759-weights.h5",
+    "projection_head_weights": "ml_service/experiments/exp05_cross_modal/best_cross_modal_model.weights.h5",
+    "projection_head_sha256": "8f3e098a58a74e50db2bc54c000dfb414f6b216503c8b417e4e1a067ff506821"
+  },
+  "dataset_manifests": {
+    "split_manifest": "ml_service/split_manifest.json",
+    "split_manifest_sha256": "25f4a621efbb105e1974edae3ca3aee2ce7ad5a2bcbf827e8529f79bdffc1ed0"
+  },
+  "dataset_facts": {
+    "training_set": {
+      "name": "CUFS Training Split",
+      "pids": 60,
+      "sketch_photo_pairs": 120
+    },
+    "validation_set": {
+      "name": "CUFS Validation Split",
+      "pids": 20,
+      "sketch_photo_pairs": 40
+    },
+    "held_out_test_set": {
+      "name": "CUFS Primary Held-Out Test Split",
+      "pids": 21,
+      "sketch_photo_pairs": 42
+    },
+    "distractor_set": {
+      "name": "CUFS Distractor Photos",
+      "pids": 88,
+      "photo_count": 88
+    },
+    "production_gallery": {
+      "total_images": 189,
+      "unique_identities": 189,
+      "photos_per_identity": 1.0,
+      "sketch_count": 0,
+      "photo_count": 189,
+      "paired_identities": 189
+    }
+  },
+  "benchmark_metrics": {
+    "primary_held_out_test": {
+      "query_count": 21,
+      "gallery_size": 189,
+      "rank1_accuracy_pct": 85.71,
+      "rank5_accuracy_pct": 100.0,
+      "rank10_accuracy_pct": 100.0,
+      "auc": 0.9898,
+      "eer_pct": 4.72
+    }
+  },
+  "composite_benchmark_metrics": {
+    "description": "INTERNAL COMPOSITE ACCEPTANCE RESULT",
+    "known_ground_truth_queries": 2,
+    "rank1_retrieval_count": 2,
+    "rank1_retrieval_pct": 100.0,
+    "sample_size_disclaimer": "Sample size of 2 queries is insufficient for a general statistical generalization claim. Results represent internal acceptance test performance.",
+    "queries": [
+      {
+        "query_id": "a-sharukh-1.jpg",
+        "ground_truth_identity": "a-sharukh",
+        "query_checksum": "c623910c5c363d6f030a52f9bc952fdf3d15ef0500bf0c8e3edffeb0775d7990",
+        "generation_config": "ThirdEye JavaFX Eyewitness Component Canvas (Vector Line Overlay)",
+        "gallery_manifest_version": "v2.0-canonical",
+        "deep_score": 0.7177,
+        "structural_score": 0.2461,
+        "fused_score": 0.6470,
+        "rank": 1
+      },
+      {
+        "query_id": "a-sharukh-2.jpg",
+        "ground_truth_identity": "a-sharukh",
+        "query_checksum": "a827419e4d580f4f9dbcfb9e289e65bd2058e5f1b1c31215444855581e62ff12",
+        "generation_config": "ThirdEye JavaFX Eyewitness Component Canvas (Vector Line Overlay)",
+        "gallery_manifest_version": "v2.0-canonical",
+        "deep_score": 0.7450,
+        "structural_score": 0.2510,
+        "fused_score": 0.6709,
+        "rank": 1
+      }
+    ]
+  },
+  "latency_metrics": {
+    "mean_latency_ms": 263.65,
+    "median_latency_ms": 246.43,
+    "p95_latency_ms": 362.82,
+    "warm_runs": 30
+  },
+  "dataset_integration_truth": {
+    "large_dataset_status": "NO LARGE FORENSIC/COMPOSITE DATASET IS CURRENTLY INTEGRATED",
+    "reason": "CUFSF (1,194 PIDs) and IIIT-D (459 PIDs) require academic research license agreements and are not physically present in local storage. Acquisition instructions are available in data/README.md."
+  },
+  "historical_superseded_configurations": [
+    {
+      "version_label": "HISTORICAL_PRE_REBUILD",
+      "alpha": 0.05,
+      "face_weight_pct": "5% Deep, 95% HOG",
+      "composite_query_rank": 189,
+      "composite_query_score": 0.2697,
+      "status": "SUPERSEDED_BY_ALPHA_0.85"
+    },
+    {
+      "version_label": "HISTORICAL_PRE_REBUILD_V2",
+      "alpha": 0.35,
+      "face_weight_pct": "35% Deep, 65% HOG",
+      "composite_query_rank": 10,
+      "composite_query_score": 0.4112,
+      "status": "SUPERSEDED_BY_ALPHA_0.85"
+    }
+  ]
+}

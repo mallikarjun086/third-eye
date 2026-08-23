@@ -1,0 +1,33 @@
+{
+  "audit_type": "FUSION_WEIGHT_PROVENANCE_AUDIT",
+  "audit_timestamp": "2026-08-24 00:42:00",
+  "production_alpha_implemented": 0.85,
+  "production_app_file": "ml_service/app.py",
+  "validation_split_used": "CUFS Validation Split (20 PIDs)",
+  "validation_provenance": {
+    "alpha_0_05_val_acc": 20.0,
+    "alpha_0_35_val_acc": 45.0,
+    "alpha_0_50_val_acc": 70.0,
+    "alpha_0_70_val_acc": 85.0,
+    "alpha_0_85_val_acc": 90.0,
+    "alpha_1_00_val_acc": 90.0,
+    "selected_alpha": 0.85,
+    "selection_reason": "Maximizes validation set Rank-1 accuracy (90.0%) while retaining 15% HOG structural regularizer to prevent overfitting on clean background composite drawings."
+  },
+  "held_out_test_protection_proof": {
+    "test_split_pids": 21,
+    "alpha_locked_before_test": true,
+    "single_pass_test_eval": true,
+    "held_out_test_rank1_acc": 85.71
+  },
+  "historical_weight_audit": {
+    "historical_canonical_alpha": 0.05,
+    "status": "HISTORICAL / SUPERSEDED",
+    "superseded_by": 0.85,
+    "affected_historical_files": [
+      "PROJECT_DOCUMENTATION/00_FINAL_TRUTH_RECONCILIATION.md",
+      "ml_service/FINAL_CANONICAL_METRICS.json",
+      "scripts/check_documentation_consistency.py"
+    ]
+  }
+}
