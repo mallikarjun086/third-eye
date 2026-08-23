@@ -22,4 +22,4 @@
 | **CUFS (CUHK)** | `ml_service/dataset/` | Open Academic | 381 | 381 | **190 PIDs** | 191 | 190 | 189 | Train (60), Val (20), Test (21), Gallery (189) |
 | **CUFSF (FERET)** | `data/cufsf/` | License Required | 0 | 0 | 0 | 0 | 0 | 0 | `NOT INTEGRATED — ACCESS PENDING` |
 | **IIIT-D Forensic** | `data/iiitd/` | License Required | 0 | 0 | 0 | 0 | 0 | 0 | `NOT INTEGRATED — ACCESS PENDING` |
-| **ThirdEye Composite**| `ml_service/dataset/` | Internal | 2 | 2 | **2 PIDs** | 2 | 0 | 2 | Internal Acceptance Test Only |
+| **ThirdEye Composite** | `ml_service/dataset/` | Internal | 2 | 2 | **2 PIDs** | 2 | 0 | 2 | Internal Acceptance Test Only |

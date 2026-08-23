@@ -11,7 +11,7 @@
 > [!IMPORTANT]
 > **Official Approved Claim**:
 > **`INTERNAL COMPOSITE ACCEPTANCE RESULT: 2/2 known-ground-truth queries retrieved at Rank-1`**
-
+>
 > [!WARNING]
 > **Statistical Limitation & Disclaimer**:
 > A sample size of 2 composite queries is **statistically insufficient** to declare a general 100% forensic recognition accuracy. Results represent an internal software acceptance test verifying that the composite sketch pipeline correctly retrieves ground-truth targets without impostor misranking.
