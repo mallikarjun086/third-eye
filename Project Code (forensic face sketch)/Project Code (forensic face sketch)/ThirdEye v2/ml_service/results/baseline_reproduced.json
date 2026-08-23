@@ -1,0 +1,163 @@
+{
+  "baseline_timestamp": "2026-08-24 00:36:50",
+  "weights_file": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+  "weights_sha256": "727ad1d6b05f65fefde6149a5e47e35d3d4a063876d0dfeb7178c8b9127b7e4f",
+  "gallery_count": 189,
+  "test_query_count": 21,
+  "face_weight_alpha": 0.85,
+  "rank1_count": 4,
+  "rank1_acc": 19.05,
+  "rank5_count": 11,
+  "rank5_acc": 52.38,
+  "rank10_count": 14,
+  "rank10_acc": 66.67,
+  "query_details": [
+    {
+      "query": "f-039-01-sz1.jpg",
+      "target": "gallery\\f-039-01.jpg",
+      "top_match": "gallery\\f-021-01.jpg",
+      "top_score": 0.6092,
+      "rank1_hit": false
+    },
+    {
+      "query": "f-040-01-sz1.jpg",
+      "target": "gallery\\f-040-01.jpg",
+      "top_match": "gallery\\f-040-01.jpg",
+      "top_score": 0.5363,
+      "rank1_hit": true
+    },
+    {
+      "query": "f1-009-01-sz1.jpg",
+      "target": "gallery\\f1-009-01.jpg",
+      "top_match": "gallery\\f1-009-01.jpg",
+      "top_score": 0.5199,
+      "rank1_hit": true
+    },
+    {
+      "query": "f1-015-01-sz1.jpg",
+      "target": "gallery\\f1-015-01.jpg",
+      "top_match": "gallery\\f1-003-01.jpg",
+      "top_score": 0.5657,
+      "rank1_hit": false
+    },
+    {
+      "query": "m-063-01-sz1.jpg",
+      "target": "gallery\\m-063-01.jpg",
+      "top_match": "gallery\\m-040-01.jpg",
+      "top_score": 0.6063,
+      "rank1_hit": false
+    },
+    {
+      "query": "m-065-01-sz1.jpg",
+      "target": "gallery\\m-065-01.jpg",
+      "top_match": "gallery\\m-065-01.jpg",
+      "top_score": 0.6556,
+      "rank1_hit": true
+    },
+    {
+      "query": "m-071-01-sz1.jpg",
+      "target": "gallery\\m-071-01.jpg",
+      "top_match": "gallery\\m-060-01.jpg",
+      "top_score": 0.5564,
+      "rank1_hit": false
+    },
+    {
+      "query": "m-079-01-sz1.jpg",
+      "target": "gallery\\m-079-01.jpg",
+      "top_match": "gallery\\m-052-01.jpg",
+      "top_score": 0.622,
+      "rank1_hit": false
+    },
+    {
+      "query": "m-093-01-sz1.jpg",
+      "target": "gallery\\m-093-01.jpg",
+      "top_match": "gallery\\f-035-01.jpg",
+      "top_score": 0.6588,
+      "rank1_hit": false
+    },
+    {
+      "query": "m-094-01-sz1.jpg",
+      "target": "gallery\\m-094-01.jpg",
+      "top_match": "gallery\\m-087-01.jpg",
+      "top_score": 0.6126,
+      "rank1_hit": false
+    },
+    {
+      "query": "m-101-01-sz1.jpg",
+      "target": "gallery\\m-101-01.jpg",
+      "top_match": "gallery\\m-039-01.jpg",
+      "top_score": 0.6353,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-001-01-sz1.jpg",
+      "target": "gallery\\m1-001-01.jpg",
+      "top_match": "gallery\\f-018-01.jpg",
+      "top_score": 0.4335,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-004-01-sz1.jpg",
+      "target": "gallery\\m1-004-01.jpg",
+      "top_match": "gallery\\m1-008-01.jpg",
+      "top_score": 0.5245,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-011-01-sz1.jpg",
+      "target": "gallery\\m1-011-01.jpg",
+      "top_match": "gallery\\m-064-01.jpg",
+      "top_score": 0.5594,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-018-01-sz1.jpg",
+      "target": "gallery\\m1-018-01.jpg",
+      "top_match": "gallery\\m1-008-01.jpg",
+      "top_score": 0.7277,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-022-01-sz1.jpg",
+      "target": "gallery\\m1-022-01.jpg",
+      "top_match": "gallery\\m-077-01.jpg",
+      "top_score": 0.4753,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-025-01-sz1.jpg",
+      "target": "gallery\\m1-025-01.jpg",
+      "top_match": "gallery\\m-077-01.jpg",
+      "top_score": 0.6164,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-033-01-sz1.jpg",
+      "target": "gallery\\m1-033-01.jpg",
+      "top_match": "gallery\\m-049-01.jpg",
+      "top_score": 0.511,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-036-01-sz1.jpg",
+      "target": "gallery\\m1-036-01.jpg",
+      "top_match": "gallery\\m-040-01.jpg",
+      "top_score": 0.6074,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-037-01-sz1.jpg",
+      "target": "gallery\\m1-037-01.jpg",
+      "top_match": "gallery\\f-019-01.jpg",
+      "top_score": 0.5311,
+      "rank1_hit": false
+    },
+    {
+      "query": "m1-038-01-sz1.jpg",
+      "target": "gallery\\m1-038-01.jpg",
+      "top_match": "gallery\\m1-038-01.jpg",
+      "top_score": 0.6708,
+      "rank1_hit": true
+    }
+  ]
+}
