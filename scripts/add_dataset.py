@@ -23,7 +23,9 @@ ml_service_dir = os.path.join(
 if ml_service_dir not in sys.path:
     sys.path.insert(0, ml_service_dir)
 
-import app  # noqa: E402
+import importlib
+
+app = importlib.import_module("app")
 
 
 def add_image_to_dataset(image_path: str, target_type: str = "gallery") -> bool:
