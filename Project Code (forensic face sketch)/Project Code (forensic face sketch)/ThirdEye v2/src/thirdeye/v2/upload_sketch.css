@@ -1,15 +1,16 @@
 /*
- /* ThirdEye — Comparison Screen Styles */
-/* @author Mallikarjun Gala */
+  ThirdEye — Comparison Screen Styles
+  @author Mallikarjun Gala
+*/
 
 .button:hover {
-    opacity: 0.85;
     -fx-opacity: 0.85;
+    opacity: 0.85;
 }
 
 .progress-bar > .track {
-    background-color: #1e1e3e;
     -fx-background-color: #1e1e3e;
+    background-color: #1e1e3e;
     -fx-background-radius: 4;
 }
 

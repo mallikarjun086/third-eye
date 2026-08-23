@@ -1,0 +1,14 @@
+{
+  "condition": "EXP-01C",
+  "num_queries": 190,
+  "num_gallery": 189,
+  "rank1_accuracy": 43.68,
+  "rank2_accuracy": 47.89,
+  "rank3_accuracy": 49.47,
+  "rank4_accuracy": 50.53,
+  "rank5_accuracy": 50.53,
+  "gallery_landmark_success_rate": 0.0,
+  "query_landmark_success_rate": 0.0,
+  "query_fallback_rate": 100.0,
+  "avg_query_latency_ms": 304.69
+}

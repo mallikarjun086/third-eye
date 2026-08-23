@@ -1,0 +1,5 @@
+condition,rank1_accuracy,rank2_accuracy,rank3_accuracy,rank4_accuracy,rank5_accuracy,gallery_landmark_success_rate,query_landmark_success_rate,query_fallback_rate,avg_query_latency_ms
+Baseline,43.68,47.89,49.47,50.53,50.53,0.0,0.0,0.0,492.04
+EXP-01A,43.68,47.89,49.47,50.53,50.53,0.0,0.0,0.0,448.96
+EXP-01B,43.68,47.89,49.47,50.53,50.53,0.0,0.0,100.0,448.09
+EXP-01C,43.68,47.89,49.47,50.53,50.53,0.0,0.0,100.0,304.69

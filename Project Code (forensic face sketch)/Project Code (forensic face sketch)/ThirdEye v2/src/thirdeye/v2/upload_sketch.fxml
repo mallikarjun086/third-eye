@@ -25,15 +25,17 @@
         </HBox>
 
         <!-- LEFT: Sketch Panel -->
-        <VBox layoutX="60" layoutY="120" spacing="10" alignment="CENTER">
+        <VBox layoutX="60" layoutY="90" spacing="10" alignment="CENTER">
             <Label text="COMPOSITE SKETCH" style="-fx-text-fill: #a0a0cc; -fx-font-size: 13px; -fx-font-weight: bold;"/>
-            <AnchorPane fx:id="sketchBox" prefWidth="380" prefHeight="380"
-                        style="-fx-background-color: #16213e; -fx-border-color: #4444aa; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;">
+            <AnchorPane fx:id="sketchBox" prefWidth="380" prefHeight="380" onMouseClicked="#onLoadSketch"
+                        style="-fx-background-color: #16213e; -fx-border-color: #4444aa; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8; -fx-cursor: hand;">
                 <ImageView fx:id="sketchView" fitWidth="380" fitHeight="380" preserveRatio="true"
                            AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0"/>
             </AnchorPane>
-            <Label fx:id="sketchLabel" text="Sketch loaded automatically"
-                   style="-fx-text-fill: #666688; -fx-font-size: 11px;"/>
+            <Button text="📁  UPLOAD SKETCH IMAGE" onAction="#onLoadSketch" prefWidth="240" prefHeight="36"
+                    style="-fx-background-color: #2a2a4e; -fx-text-fill: #aabbff; -fx-font-size: 12px; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand;"/>
+            <Label fx:id="sketchLabel" text="Click above or click image box to browse a sketch image"
+                   style="-fx-text-fill: #8888aa; -fx-font-size: 11px;"/>
         </VBox>
 
         <!-- CENTER: Compare Panel -->

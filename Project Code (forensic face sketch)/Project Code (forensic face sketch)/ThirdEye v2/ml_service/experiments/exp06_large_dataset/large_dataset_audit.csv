@@ -1,0 +1,6 @@
+dataset_name,namespace,local_photos_count,local_sketches_count,local_identities_count,sketch_type,resolution,identity_naming,source,license_restrictions,verification_status
+CUFS (Third-Eye Working Subset),CUFS,189,190,101,Viewed Pencil Sketch,160x160 (Cropped Face),CUFS:<id>,CUFS MMLab / Local Workspace,Academic & Non-Commercial Use,VERIFIED & LOCALLY AVAILABLE
+CUFSF (CUHK FERET Database),CUFSF,0,0,0,Viewed Shape-Distorted Sketch,N/A,CUFSF:<id>,CUHK MMLab Official,Official Research EULA Required,DATASET UNAVAILABLE / NOT EXECUTED
+IIIT-D Viewed Sketch Database,IIITD_VIEWED,0,0,0,Viewed Artist Sketch,N/A,IIITD_VIEWED:<id>,IIIT-Delhi Biometrics Lab,Official Research EULA Required,DATASET UNAVAILABLE / NOT EXECUTED
+IIIT-D Semi-Forensic Sketch Database,IIITD_SEMIFORENSIC,0,0,0,Semi-Forensic Sketch,N/A,IIITD_SEMIFORENSIC:<id>,IIIT-Delhi Biometrics Lab,Official Research EULA Required,DATASET UNAVAILABLE / NOT EXECUTED
+IIIT-D Forensic Sketch Database,IIITD_FORENSIC,0,0,0,Real Forensic Sketch,N/A,IIITD_FORENSIC:<id>,IIIT-Delhi Biometrics Lab,Official Research EULA Required,DATASET UNAVAILABLE / NOT EXECUTED

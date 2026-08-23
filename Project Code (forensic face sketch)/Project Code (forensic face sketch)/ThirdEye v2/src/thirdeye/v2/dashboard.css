@@ -4,35 +4,35 @@
    ═══════════════════════════════════════════════════════ */
 
 .root {
-    background-color: #0a0d1a;         /* standard */
     -fx-background-color: #0a0d1a;
-    font-family: "Century Gothic";     /* standard */
+    background-color: #0a0d1a;         /* standard */
     -fx-font-family: "Century Gothic";
+    font-family: "Century Gothic";     /* standard */
 }
 
 /* ── Scroll pane — remove white background ───────────── */
 .scroll-pane {
-    background: #173f5f;               /* standard */
     -fx-background: #173f5f;
-    background-color: #173f5f;         /* standard */
+    background: #173f5f;               /* standard */
     -fx-background-color: #173f5f;
+    background-color: #173f5f;         /* standard */
 }
 
 .scroll-pane > .viewport {
-    background-color: #173f5f;         /* standard */
     -fx-background-color: #173f5f;
+    background-color: #173f5f;         /* standard */
 }
 
 .scroll-bar:vertical .track,
 .scroll-bar:horizontal .track {
-    background-color: #0f2035;         /* standard */
     -fx-background-color: #0f2035;
+    background-color: #0f2035;         /* standard */
 }
 
 .scroll-bar:vertical .thumb,
 .scroll-bar:horizontal .thumb {
-    background-color: #3a6fff;         /* standard */
     -fx-background-color: #3a6fff;
+    background-color: #3a6fff;         /* standard */
     -fx-background-radius: 4;
 }
 
@@ -40,10 +40,10 @@
 .scroll-bar:vertical .decrement-button,
 .scroll-bar:horizontal .increment-button,
 .scroll-bar:horizontal .decrement-button {
-    background-color: #0f2035;         /* standard */
     -fx-background-color: #0f2035;
-    padding: 2px;                      /* standard */
+    background-color: #0f2035;         /* standard */
     -fx-padding: 2;
+    padding: 2px;                      /* standard */
 }
 
 /* ── Labels inside the panels ───────────────────────── */

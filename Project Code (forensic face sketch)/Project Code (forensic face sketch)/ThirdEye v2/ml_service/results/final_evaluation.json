@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "facenet_rank1": 23.809523809523807,
+    "hog_rank1": 80.95238095238095,
+    "hybrid_rank1": 80.95238095238095,
+    "hybrid_rank5": 100.0,
+    "hybrid_auc": 0.9797178130511464,
+    "hybrid_eer": 4.78395061728395
+  },
+  "optimized": {
+    "projected_deep_rank1": 23.809523809523807,
+    "denoised_hog_rank1": 80.95238095238095,
+    "fused_rank1": 90.47619047619048,
+    "fused_rank5": 100.0,
+    "fused_auc": 0.9891030486268582,
+    "fused_eer": 4.739858906525573
+  }
+}

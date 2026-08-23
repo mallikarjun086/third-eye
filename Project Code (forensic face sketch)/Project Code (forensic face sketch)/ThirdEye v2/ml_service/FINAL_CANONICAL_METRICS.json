@@ -1,0 +1,135 @@
+{
+  "system_title": "Third-Eye Forensic Face Sketch Construction & Recognition System",
+  "single_source_of_truth": true,
+  "timestamp": "2026-08-18T15:02:00Z",
+  "dataset": {
+    "name": "CUHK Face Sketch Database (CUFS Working Subset)",
+    "gallery_count": 189,
+    "query_count": 190,
+    "train_identities": 60,
+    "validation_identities": 20,
+    "test_identities": 21
+  },
+  "primary_protocol_held_out_full_gallery": {
+    "description": "21 unseen test queries evaluated against the full 189-candidate gallery",
+    "query_count": 21,
+    "gallery_count": 189,
+    "baseline": {
+      "value": 71.4286,
+      "numerator": 15,
+      "denominator": 21,
+      "rank1": 71.4286,
+      "rank2": 85.7143,
+      "rank3": 95.2381,
+      "rank4": 95.2381,
+      "rank5": 100.0,
+      "rank10": 100.0,
+      "auc": 0.9808,
+      "eer": 4.84,
+      "n_genuine": 21,
+      "n_impostor": 3948,
+      "rank1_str": "15/21 (71.43%)",
+      "script": "ml_service/experiments/validation_audit/audit_pipeline.py",
+      "verification_status": "VERIFIED"
+    },
+    "optimized": {
+      "value": 85.7143,
+      "numerator": 18,
+      "denominator": 21,
+      "rank1": 85.7143,
+      "rank2": 95.2381,
+      "rank3": 95.2381,
+      "rank4": 95.2381,
+      "rank5": 95.2381,
+      "rank10": 100.0,
+      "auc": 0.9898,
+      "eer": 4.7239,
+      "n_genuine": 21,
+      "n_impostor": 3948,
+      "rank1_str": "18/21 (85.71%)",
+      "script": "ml_service/app.py",
+      "verification_status": "VERIFIED"
+    },
+    "improvement": {
+      "rank1_gain_pp": 14.2857,
+      "rank1_baseline_str": "15/21 (71.43%)",
+      "rank1_optimized_str": "18/21 (85.71%)"
+    }
+  },
+  "secondary_protocol_test_pool": {
+    "description": "Secondary 109-candidate test-pool protocol (21 test queries vs 109 gallery candidates)",
+    "query_count": 21,
+    "gallery_count": 109,
+    "optimized": {
+      "value": 90.4762,
+      "numerator": 19,
+      "denominator": 21,
+      "rank1": 90.4762,
+      "rank2": 95.2381,
+      "rank3": 95.2381,
+      "rank4": 95.2381,
+      "rank5": 95.2381,
+      "rank10": 100.0,
+      "auc": 0.9914,
+      "eer": 4.7399,
+      "n_genuine": 21,
+      "n_impostor": 2268,
+      "rank1_str": "19/21 (90.48%)",
+      "script": "ml_service/evaluation_engine.py",
+      "verification_status": "VERIFIED (Secondary Pool Protocol)"
+    }
+  },
+  "canonical_full_dataset_protocol": {
+    "description": "Full dataset evaluation across all 190 queries vs 189 gallery candidates",
+    "query_count": 190,
+    "gallery_count": 189,
+    "baseline": {
+      "value": 44.2105,
+      "numerator": 84,
+      "denominator": 190,
+      "rank1": 44.2105,
+      "rank2": 48.4211,
+      "rank3": 48.9474,
+      "rank4": 50.5263,
+      "rank5": 51.0526,
+      "rank10": 52.6316,
+      "auc": 0.9703,
+      "eer": 5.9196,
+      "n_genuine": 102,
+      "n_impostor": 35808,
+      "rank1_str": "84/190 (44.21%)",
+      "script": "ml_service/evaluation_engine.py",
+      "verification_status": "VERIFIED"
+    },
+    "optimized": {
+      "value": 46.8421,
+      "numerator": 89,
+      "denominator": 190,
+      "rank1": 46.8421,
+      "rank2": 50.0,
+      "rank3": 51.0526,
+      "rank4": 51.0526,
+      "rank5": 51.5789,
+      "rank10": 52.6316,
+      "auc": 0.9737,
+      "eer": 3.9938,
+      "n_genuine": 102,
+      "n_impostor": 35808,
+      "rank1_str": "89/190 (46.84%)",
+      "script": "ml_service/evaluation_engine.py",
+      "verification_status": "VERIFIED"
+    }
+  },
+  "latency_benchmark": {
+    "runs": 30,
+    "timing_boundaries": "Includes face cropping, 128-d projection, HOG extraction, cosine similarity, score fusion, and top-N ranking. Excludes cold model loading.",
+    "cold_start_loading_ms": 14072.99,
+    "warm_inference": {
+      "mean_ms": 328.64,
+      "median_ms": 307.90,
+      "p95_ms": 532.71,
+      "min_ms": 165.39,
+      "max_ms": 782.83
+    }
+  }
+}

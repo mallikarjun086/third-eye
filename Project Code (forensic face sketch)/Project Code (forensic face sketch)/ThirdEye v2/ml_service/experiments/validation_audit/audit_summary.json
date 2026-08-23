@@ -1,0 +1,30 @@
+{
+  "canonical_baseline_full_dataset": {
+    "rank1": 45.26315789473684,
+    "rank5": 52.10526315789473,
+    "auc": 0.9733833714450927,
+    "eer": 3.924032749829154
+  },
+  "evaluation_a_test_queries_vs_full_gallery": {
+    "baseline_rank1": 71.42857142857143,
+    "baseline_rank5": 100.0,
+    "optimized_rank1": 85.71428571428571,
+    "optimized_rank5": 95.23809523809523,
+    "optimized_auc": 0.9898079799295605,
+    "optimized_eer": 4.723910840932118,
+    "absolute_rank1_gain": 14.285714285714278
+  },
+  "evaluation_b_all_queries_vs_full_gallery": {
+    "baseline_rank1": 45.26315789473684,
+    "baseline_rank5": 52.10526315789473,
+    "optimized_rank1": 46.8421052631579,
+    "optimized_rank5": 51.578947368421055,
+    "optimized_auc": 0.9737067190593842,
+    "optimized_eer": 3.993849550544078,
+    "absolute_rank1_gain": 1.5789473684210549
+  },
+  "latency_benchmark": {
+    "baseline_mean_ms": 231.2763666617684,
+    "optimized_mean_ms": 248.6311300075613
+  }
+}

@@ -84,7 +84,7 @@ def hog_descriptor(grey):
 def load_grey(path, size=COMPARE):
     from PIL import Image
     img = Image.open(path).convert("RGB")
-    img = img.resize((size, size), Image.LANCZOS)
+    img = img.resize((size, size), Image.Resampling.LANCZOS)
     arr = np.asarray(img).astype(np.float64)
     return arr.mean(axis=2)
 
@@ -94,13 +94,13 @@ def prep_image_bytes(data):
     from PIL import Image
     import io
     img = Image.open(io.BytesIO(data)).convert("RGB")
-    img = img.resize((COMPARE, COMPARE), Image.LANCZOS)
+    img = img.resize((COMPARE, COMPARE), Image.Resampling.LANCZOS)
     arr = np.asarray(img).astype(np.float64)
     return arr.mean(axis=2)
 
 
 # ---- build gallery HOG once ----
-gal_rels = sorted(app._embedding_cache.keys())
+gal_rels = sorted(app._cache.keys())
 print(f"Indexing {len(gal_rels)} gallery faces (HOG)...")
 gal_hog = {}
 for rel in gal_rels:
@@ -108,23 +108,34 @@ for rel in gal_rels:
     gal_hog[rel] = hog_descriptor(load_grey(p))
 print("HOG gallery built.")
 
-queries = sorted(p for p in app._list_images(QUERIES) if not p.endswith(".npy"))
+def _list_all_images(d):
+    img_list = []
+    for root, _, files in os.walk(d):
+        for f in sorted(files):
+            if os.path.splitext(f)[1].lower() in app.IMAGE_EXTS:
+                img_list.append(os.path.join(root, f))
+    return img_list
+
+queries = sorted(p for p in _list_all_images(QUERIES) if not p.endswith(".npy") and not p.endswith(".lnk"))
 print(f"Queries: {len(queries)}")
 
-emb_cache = app._embedding_cache
-weights = np.arange(0.0, 0.31, 0.05)
+emb_cache = app._cache
+def to_pid(name):
+    return name.replace("-01-sz1", "").replace("-01", "")
+
+weights = np.arange(0.0, 1.05, 0.1)
 print(f"\n{'w':>5} | " + " ".join(f"R{k:<5}" for k in range(1, TOP + 1)))
 for w in weights:
     correct = {k: 0 for k in range(1, TOP + 1)}
     total = 0
     for q in queries:
-        qid = os.path.splitext(os.path.basename(q))[0]
+        qid = to_pid(os.path.splitext(os.path.basename(q))[0])
         with open(q, "rb") as fh:
             data = fh.read()
         femb = app.embed_image(data)
         if femb is None:
             continue
-        fsim = {rel: float(np.dot(femb, e)) for rel, e in emb_cache.items()}
+        fsim = {rel: float(np.dot(femb, e["face"])) for rel, e in emb_cache.items()}
         grey = prep_image_bytes(data)
         qhog = hog_descriptor(grey)
         hsim = {rel: float(np.dot(qhog, gh)) for rel, gh in gal_hog.items()}
@@ -132,7 +143,7 @@ for w in weights:
         scored = sorted(combined.items(), key=lambda x: x[1], reverse=True)
         rank = 1
         for rel, _ in scored:
-            rid = os.path.splitext(os.path.basename(rel))[0]
+            rid = to_pid(os.path.splitext(os.path.basename(rel))[0])
             if rid == qid:
                 for k in range(rank, TOP + 1):
                     correct[k] += 1

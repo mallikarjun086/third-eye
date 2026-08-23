@@ -1,0 +1,12 @@
+{
+  "facenet_cross_modal_rank1": 12.105263157894736,
+  "facenet_cross_modal_rank5": 25.789473684210527,
+  "facenet_cross_modal_auc": 0.8709225619425607,
+  "facenet_cross_modal_eer": 20.613040792724597,
+  "cross_modal_genuine_mean": 0.5110857486724854,
+  "cross_modal_impostor_mean": 0.3043340742588043,
+  "sketch_sketch_genuine_mean": 0.9948673248291016,
+  "sketch_sketch_impostor_mean": 0.5642195343971252,
+  "photo_photo_genuine_mean": 1.0,
+  "photo_photo_impostor_mean": 0.45869866013526917
+}

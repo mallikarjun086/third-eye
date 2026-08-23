@@ -247,7 +247,22 @@ public class Upload_sketchController implements Initializable {
             sketchView.setImage(new Image(file.toURI().toString()));
             sketchLabel.setText(file.getName());
             setStatus("Sketch loaded: " + file.getName() + "  —  Click COMPARE ▶ to search the dataset");
-            refreshCompareButton();
+            if (compareBtn != null) compareBtn.setDisable(false);
+        }
+    }
+
+    // ── Load composite sketch image ─────────────────────────────────────────
+    @FXML
+    private void onLoadSketch() {
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Select Composite Sketch Image");
+        fc.setInitialDirectory(new File(System.getProperty("user.home")));
+        fc.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Images", "*.png", "*.jpg", "*.jpeg", "*.bmp"));
+        Stage stage = (Stage) compareBtn.getScene().getWindow();
+        File chosen = fc.showOpenDialog(stage);
+        if (chosen != null) {
+            setSketchFile(chosen);
         }
     }
 
@@ -279,18 +294,16 @@ public class Upload_sketchController implements Initializable {
      */
     private File findGalleryFolder() {
         File[] candidates = {
-            new File("ml_service/dataset/gallery"),
-            new File("dataset/gallery"),
             new File("ml_service/dataset"),
             new File("dataset"),
-            new File(System.getProperty("user.dir") + "/ml_service/dataset/gallery"),
-            new File(System.getProperty("user.dir") + "/dataset/gallery")
+            new File(System.getProperty("user.dir") + "/ml_service/dataset"),
+            new File(System.getProperty("user.dir") + "/dataset"),
+            new File("ml_service/dataset/gallery"),
+            new File("dataset/gallery")
         };
         for (File c : candidates) {
             if (c.isDirectory()) {
-                File[] imgs = c.listFiles((dir, name) ->
-                        name.toLowerCase().endsWith(".jpg") || name.toLowerCase().endsWith(".jpeg") || name.toLowerCase().endsWith(".png"));
-                if (imgs != null && imgs.length > 0) return c;
+                return c;
             }
         }
         return null;
@@ -302,6 +315,36 @@ public class Upload_sketchController implements Initializable {
             setStatus("⚠ Load a sketch first before running a match.");
             return;
         }
+
+        // If a single photo was uploaded, run 1-to-1 multi-metric comparison
+        if (photoFile != null) {
+            setStatus("🔍 Running 1-to-1 comparison...");
+            compareBtn.setDisable(true);
+            if (deepMatchBtn != null) deepMatchBtn.setDisable(true);
+
+            Task<Double> task = new Task<>() {
+                @Override
+                protected Double call() throws Exception {
+                    return computeSimilarity(sketchFile, photoFile);
+                }
+            };
+            task.setOnSucceeded(e -> {
+                compareBtn.setDisable(false);
+                if (deepMatchBtn != null) deepMatchBtn.setDisable(false);
+                updateResultUI(task.getValue());
+                setStatus("1-to-1 comparison complete.");
+            });
+            task.setOnFailed(e -> {
+                compareBtn.setDisable(false);
+                if (deepMatchBtn != null) deepMatchBtn.setDisable(false);
+                setStatus("Comparison failed: " + task.getException().getMessage());
+            });
+            Thread t = new Thread(task);
+            t.setDaemon(true);
+            t.start();
+            return;
+        }
+
         File finalDir = findGalleryFolder();
         if (finalDir == null) {
             javafx.stage.DirectoryChooser dc = new javafx.stage.DirectoryChooser();
@@ -355,7 +398,7 @@ public class Upload_sketchController implements Initializable {
      * rank and similarity percentage underneath.
      */
     private void showMatchGrid(List<DeepMatchClient.Match> results, File datasetDir) {
-        javafx.scene.layout.FlowPane grid = new javafx.scene.layout.FlowPane();
+        FlowPane grid = new FlowPane();
         grid.setHgap(16);
         grid.setVgap(16);
         grid.setPadding(new Insets(20));
@@ -379,20 +422,29 @@ public class Upload_sketchController implements Initializable {
             img.setFitHeight(160);
             img.setPreserveRatio(true);
 
-            String color = pct >= 90 ? "#22c55e" : pct >= 75 ? "#3b82f6"
-                        : pct >= 60 ? "#eab308" : "#ef4444";
-            Label rank = new Label("Rank #" + (i + 1));
-            rank.setStyle("-fx-text-fill: #aabbff; -fx-font-size: 12px; -fx-font-weight: bold;");
+            String color = pct >= 70 ? "#22c55e" : pct >= 60 ? "#3b82f6"
+                        : pct >= 50 ? "#eab308" : "#ef4444";
+            
+            Label rank = new Label("Rank #" + (i + 1) + " • " + (m.matchTier != null ? m.matchTier : "MATCH"));
+            rank.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 11px; -fx-font-weight: bold;");
+            
             Label name = new Label(m.name);
-            name.setStyle("-fx-text-fill: #d0d0e0; -fx-font-size: 11px;");
-            Label sim = new Label(pct + "%");
-            sim.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 18px; -fx-font-weight: bold;");
+            name.setStyle("-fx-text-fill: #ffffff; -fx-font-size: 13px; -fx-font-weight: bold;");
+            
+            Label sim = new Label(pct + "% Match Score");
+            sim.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 16px; -fx-font-weight: bold;");
 
-            card.getChildren().addAll(img, rank, name, sim);
+            Label breakdown = new Label(String.format("Deep: %d%% | HOG: %d%% | LBP: %d%%",
+                    (int) Math.round(m.deepScore * 100),
+                    (int) Math.round(m.hogScore * 100),
+                    (int) Math.round(m.lbpScore * 100)));
+            breakdown.setStyle("-fx-text-fill: #8899ac; -fx-font-size: 10px;");
+
+            card.getChildren().addAll(img, rank, name, sim, breakdown);
             grid.getChildren().add(card);
         }
 
-        javafx.scene.control.ScrollPane scroll = new javafx.scene.control.ScrollPane(grid);
+        ScrollPane scroll = new ScrollPane(grid);
         scroll.setFitToWidth(true);
         scroll.setStyle("-fx-background: #1a1a2e; -fx-background-color: #1a1a2e;");
 
@@ -1048,7 +1100,8 @@ public class Upload_sketchController implements Initializable {
                     GalleryResult r = results.get(i);
                     int pct = (int) Math.round(r.similarity * 100);
                     String badge = pct >= 90 ? "STRONG" : pct >= 75 ? "LIKELY" : pct >= 60 ? "POSSIBLE" : pct >= 40 ? "UNLIKELY" : "NO MATCH";
-                    sb.append(String.format("  #%d  %-20s  %3d%%  (%s)\n", i + 1, r.name, pct, badge));
+                    String caseStr = (r.caseId != null && !r.caseId.isEmpty()) ? " [" + r.caseId + "]" : "";
+                    sb.append(String.format("  #%d  %-20s%s  %3d%%  (%s)\n", i + 1, r.name, caseStr, pct, badge));
                     sb.append(String.format("       SSIM:%3d%% Edge:%3d%% HOG:%3d%% Hist:%3d%%\n",
                             Math.round(r.ssim * 100), Math.round(r.edge * 100),
                             Math.round(r.hog * 100), Math.round(r.hist * 100)));

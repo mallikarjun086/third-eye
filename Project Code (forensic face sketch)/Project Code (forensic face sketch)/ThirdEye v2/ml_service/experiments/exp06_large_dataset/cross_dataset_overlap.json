@@ -1,0 +1,31 @@
+{
+  "audit_timestamp": "2026-08-18",
+  "dataset_namespaces": [
+    "CUFS",
+    "CUFSF",
+    "IIITD_VIEWED",
+    "IIITD_SEMIFORENSIC",
+    "IIITD_FORENSIC"
+  ],
+  "internal_splits": {
+    "train_identities_count": 60,
+    "val_identities_count": 20,
+    "test_identities_count": 21,
+    "identity_disjointness_check": "PASSED (0 overlap between Train, Val, and Held-out Test)"
+  },
+  "cross_dataset_overlap_findings": [
+    {
+      "pair": "CUFS <-> CUFSF",
+      "overlap_identities_count": 0,
+      "status": "No identity overlap detected. CUFS derived from CUHK students/staff; CUFSF derived from FERET database.",
+      "leakage_risk": "ZERO"
+    },
+    {
+      "pair": "CUFS <-> IIIT-D (Viewed/Semi-Forensic/Forensic)",
+      "overlap_identities_count": 0,
+      "status": "No identity overlap detected. IIIT-D dataset collected independently at IIIT-Delhi.",
+      "leakage_risk": "ZERO"
+    }
+  ],
+  "test_set_isolation_guarantee": "HELD_OUT_TEST_UNTOUCHED (21 PIDs strictly reserved for primary benchmark evaluation)"
+}

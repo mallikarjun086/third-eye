@@ -14,4 +14,6 @@ credentials
 __pycache__/
 *.pyc
 *.npy
+.venv/
+.idea/
 **/ml_service/dataset/

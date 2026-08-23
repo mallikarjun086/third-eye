@@ -30,7 +30,7 @@ def main():
         sys.exit(1)
 
     app.build_cache(dataset_dir, force=True)
-    print(f"Precomputed embeddings for {len(app._embedding_cache)} faces in:")
+    print(f"Precomputed embeddings for {len(app._cache)} faces in:")
     print(dataset_dir)
 
 

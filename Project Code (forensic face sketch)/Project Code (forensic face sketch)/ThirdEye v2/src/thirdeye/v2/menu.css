@@ -5,33 +5,33 @@
 
 /* Root */
 .root {
-    background-color: #080c18;
     -fx-background-color: #080c18;
-    font-family: "Century Gothic";
+    background-color: #080c18;
     -fx-font-family: "Century Gothic";
+    font-family: "Century Gothic";
 }
 
 /* Card Styling */
 .menu-card {
-    background-color: #0f1535;
     -fx-background-color: #0f1535;
-    border-color: #1e2d5a;
+    background-color: #0f1535;
     -fx-border-color: #1e2d5a;
-    border-width: 1.5;
+    border-color: #1e2d5a;
     -fx-border-width: 1.5;
-    border-radius: 16;
+    border-width: 1.5;
     -fx-border-radius: 16;
+    border-radius: 16;
     -fx-background-radius: 16;
-    cursor: pointer;
     -fx-cursor: hand;
-    padding: 25px 15px;
+    cursor: pointer;
     -fx-padding: 25 15 25 15;
+    padding: 25px 15px;
 }
 
 .menu-card:hover {
-    border-color: #3a6fff;
     -fx-border-color: #3a6fff;
-    background-color: #121a48;
+    border-color: #3a6fff;
     -fx-background-color: #121a48;
+    background-color: #121a48;
     -fx-effect: dropshadow(three-pass-box, rgba(58, 111, 255, 0.35), 15, 0.1, 0, 0);
 }

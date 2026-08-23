@@ -20,8 +20,11 @@ correct = 0
 topk_hits = {k: 0 for k in range(1, TOP + 1)}
 total = 0
 
+def to_pid(name):
+    return name.replace("-01-sz1", "").replace("-01", "")
+
 for q in queries:
-    qid = os.path.splitext(os.path.basename(q))[0]  # e.g. "12"
+    qid = to_pid(os.path.splitext(os.path.basename(q))[0])  # e.g. "f-039"
     with open(q, "rb") as fh:
         data = fh.read()
     emb = app.embed_image(data)
@@ -37,7 +40,7 @@ for q in queries:
     )
     rank = 1
     for sim, rel in scored:
-        rid = os.path.splitext(os.path.basename(rel))[0]
+        rid = to_pid(os.path.splitext(os.path.basename(rel))[0])
         if rid == qid:
             if rank == 1:
                 correct += 1

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-08-18",
+  "audit_type": "Scientific Integrity & Evidence Truth Audit",
+  "untouched_primary_benchmark": {
+    "protocol": "21 held-out test queries vs full 189-candidate gallery",
+    "baseline_rank1": "15 / 21 (71.43%)",
+    "optimized_rank1": "18 / 21 (85.71%)",
+    "verification_status": "VERIFIED & EMPIRICALLY REPRODUCIBLE"
+  },
+  "ablation_experiments_status": [
+    {
+      "model_id": "Model_1_CUFS_Base",
+      "dataset_config": "CUFS Working Subset (60 Train PIDs)",
+      "checkpoint_path": "ml_service/experiments/exp05_cross_modal/best_cross_modal_model.weights.h5",
+      "checkpoint_exists": true,
+      "checkpoint_size_bytes": 685752,
+      "rank1_heldout_21q": 85.7143,
+      "rank1_full_190q": 46.8421,
+      "verification_status": "VERIFIED"
+    },
+    {
+      "model_id": "Model_2_Plus_CUFSF",
+      "dataset_config": "CUFS + CUFSF",
+      "checkpoint_path": "ml_service/experiments/exp06_large_dataset/model2.weights.h5",
+      "checkpoint_exists": false,
+      "verification_status": "HYPOTHETICAL / NOT EXECUTED (CUFSF dataset unavailable locally)"
+    },
+    {
+      "model_id": "Model_3_Plus_IIITD_Viewed",
+      "dataset_config": "CUFS + CUFSF + IIIT-D Viewed",
+      "checkpoint_path": "ml_service/experiments/exp06_large_dataset/model3.weights.h5",
+      "checkpoint_exists": false,
+      "verification_status": "HYPOTHETICAL / NOT EXECUTED (IIIT-D dataset unavailable locally)"
+    },
+    {
+      "model_id": "Model_4_Plus_IIITD_SemiForensic",
+      "dataset_config": "CUFS + CUFSF + IIIT-D Semi-Forensic",
+      "checkpoint_path": "ml_service/experiments/exp06_large_dataset/model4.weights.h5",
+      "checkpoint_exists": false,
+      "verification_status": "HYPOTHETICAL / NOT EXECUTED (IIIT-D dataset unavailable locally)"
+    },
+    {
+      "model_id": "Model_5_Plus_IIITD_Forensic",
+      "dataset_config": "CUFS + CUFSF + IIIT-D Forensic",
+      "checkpoint_path": "ml_service/experiments/exp06_large_dataset/model5.weights.h5",
+      "checkpoint_exists": false,
+      "verification_status": "HYPOTHETICAL / NOT EXECUTED (IIIT-D dataset unavailable locally)"
+    }
+  ],
+  "disclaimer": "Models 2-5 and cross-dataset IIIT-D performance figures were proposed theoretical domain-adaptation benchmarks and were NOT empirically executed because the datasets were unavailable under applicable EULA requirements."
+}

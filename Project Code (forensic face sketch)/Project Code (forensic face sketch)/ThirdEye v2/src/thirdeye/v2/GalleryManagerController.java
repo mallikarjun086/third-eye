@@ -3,20 +3,14 @@ package thirdeye.v2;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.function.Consumer;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
@@ -33,7 +27,6 @@ public class GalleryManagerController implements Initializable {
     @FXML private Label detailDate;
     @FXML private Label statusLabel;
 
-    private List<SuspectDatabase.SuspectRecord> currentSuspects;
     private SuspectDatabase.SuspectRecord selectedSuspect;
     private Consumer<File> photoCallback;
 
@@ -47,7 +40,6 @@ public class GalleryManagerController implements Initializable {
     }
 
     private void loadSuspects(List<SuspectDatabase.SuspectRecord> suspects) {
-        currentSuspects = suspects;
         thumbGrid.getChildren().clear();
         for (SuspectDatabase.SuspectRecord s : suspects) {
             thumbGrid.getChildren().add(createThumbnailCard(s));
