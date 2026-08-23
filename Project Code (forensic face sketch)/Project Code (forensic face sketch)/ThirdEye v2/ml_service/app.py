@@ -49,7 +49,8 @@ CACHE_FILE = "dataset_embeddings.npy"
 TOP_RESULTS = 10
 
 # Fused score = FACE_WEIGHT * projected_face_cosine + (1 - FACE_WEIGHT) * denoised_hog_cosine
-FACE_WEIGHT = 0.35
+# Optimized alpha = 0.85 gives 85% weight to Deep Metric Embeddings & 15% to HOG
+FACE_WEIGHT = 0.85
 
 # HOG parameters (mirror the Java engine: cell 8, 9 unsigned bins, face-weight map)
 HOG_CELL = 8

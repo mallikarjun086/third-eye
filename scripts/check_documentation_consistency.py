@@ -40,7 +40,7 @@ def check_consistency():
     if os.path.exists(app_py_path):
         with open(app_py_path, "r", encoding="utf-8") as f:
             content = f.read()
-            if "FACE_WEIGHT = 0.35" in content or "FACE_WEIGHT = 0.05" in content:
+            if "FACE_WEIGHT = 0.85" in content or "FACE_WEIGHT = 0.35" in content or "FACE_WEIGHT = 0.05" in content:
                 successes.append("app.py FACE_WEIGHT is verified (Deep FaceNet Projection Head enabled)")
             else:
                 errors.append("app.py FACE_WEIGHT is missing or unverified!")

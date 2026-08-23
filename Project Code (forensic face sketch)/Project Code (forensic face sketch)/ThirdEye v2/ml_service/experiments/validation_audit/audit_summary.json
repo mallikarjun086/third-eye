@@ -24,7 +24,7 @@
     "absolute_rank1_gain": 1.5789473684210549
   },
   "latency_benchmark": {
-    "baseline_mean_ms": 231.2763666617684,
-    "optimized_mean_ms": 248.6311300075613
+    "baseline_mean_ms": 241.4788766647689,
+    "optimized_mean_ms": 263.65119999197003
   }
 }
