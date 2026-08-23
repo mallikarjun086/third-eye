@@ -62,10 +62,6 @@ class MatchResult(BaseModel):
     name: str
     path: str
     similarity: float
-    match_tier: Optional[str] = "PROBABLE MATCH"
-    deep_score: Optional[float] = 0.0
-    hog_score: Optional[float] = 0.0
-    lbp_score: Optional[float] = 0.0
 
 
 class MatchResponse(BaseModel):
@@ -422,10 +418,8 @@ def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int
     for rel, feats in _cache.items():
         face_sim = float(np.dot(sketch_emb, feats["face"]))
         hog_sim = float(np.dot(sketch_hog, feats["hog"]))
-        lbp_sim = float(np.dot(sketch_lbp, feats.get("lbp", sketch_lbp))) if "lbp" in feats else hog_sim
-        sim = pro_hybrid_score(face_sim, hog_sim, lbp_sim)
-        tier = "VERIFIED MATCH" if sim >= 0.70 else "PROBABLE MATCH" if sim >= 0.60 else "POTENTIAL CANDIDATE"
-        scored.append((sim, rel, face_sim, hog_sim, lbp_sim, tier))
+        sim = hybrid_score(face_sim, hog_sim)
+        scored.append((sim, rel))
 
     scored.sort(reverse=True, key=lambda x: x[0])
     top = scored[:max(1, min(top_n, len(scored)))]
@@ -435,12 +429,8 @@ def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int
             name=os.path.splitext(os.path.basename(rel))[0],
             path=os.path.join(dataset_dir, rel),
             similarity=round(sim, 4),
-            match_tier=tier,
-            deep_score=round(face_sim, 4),
-            hog_score=round(hog_sim, 4),
-            lbp_score=round(lbp_sim, 4),
         )
-        for sim, rel, face_sim, hog_sim, lbp_sim, tier in top
+        for sim, rel in top
     ]
     return MatchResponse(
         status="ok",

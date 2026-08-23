@@ -46,10 +46,6 @@ public class DeepMatchClient {
         public String name;
         public String path;
         public double similarity;
-        public String matchTier = "PROBABLE MATCH";
-        public double deepScore = 0.0;
-        public double hogScore = 0.0;
-        public double lbpScore = 0.0;
     }
 
     /**
@@ -120,10 +116,6 @@ public class DeepMatchClient {
                 m.name = o.has("name") ? o.get("name").getAsString() : "Unknown";
                 m.path = o.has("path") ? o.get("path").getAsString() : "";
                 m.similarity = o.has("similarity") ? o.get("similarity").getAsDouble() : 0.0;
-                m.matchTier = o.has("match_tier") ? o.get("match_tier").getAsString() : "PROBABLE MATCH";
-                m.deepScore = o.has("deep_score") ? o.get("deep_score").getAsDouble() : 0.0;
-                m.hogScore = o.has("hog_score") ? o.get("hog_score").getAsDouble() : 0.0;
-                m.lbpScore = o.has("lbp_score") ? o.get("lbp_score").getAsDouble() : 0.0;
                 results.add(m);
             }
         }

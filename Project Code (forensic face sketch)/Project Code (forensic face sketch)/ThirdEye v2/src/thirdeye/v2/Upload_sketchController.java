@@ -424,23 +424,17 @@ public class Upload_sketchController implements Initializable {
 
             String color = pct >= 70 ? "#22c55e" : pct >= 60 ? "#3b82f6"
                         : pct >= 50 ? "#eab308" : "#ef4444";
-            
-            Label rank = new Label("Rank #" + (i + 1) + " • " + (m.matchTier != null ? m.matchTier : "MATCH"));
-            rank.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 11px; -fx-font-weight: bold;");
-            
+
+            Label rank = new Label("Rank #" + (i + 1));
+            rank.setStyle("-fx-text-fill: #aabbff; -fx-font-size: 12px; -fx-font-weight: bold;");
+
             Label name = new Label(m.name);
-            name.setStyle("-fx-text-fill: #ffffff; -fx-font-size: 13px; -fx-font-weight: bold;");
-            
-            Label sim = new Label(pct + "% Match Score");
-            sim.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 16px; -fx-font-weight: bold;");
+            name.setStyle("-fx-text-fill: #d0d0e0; -fx-font-size: 11px;");
 
-            Label breakdown = new Label(String.format("Deep: %d%% | HOG: %d%% | LBP: %d%%",
-                    (int) Math.round(m.deepScore * 100),
-                    (int) Math.round(m.hogScore * 100),
-                    (int) Math.round(m.lbpScore * 100)));
-            breakdown.setStyle("-fx-text-fill: #8899ac; -fx-font-size: 10px;");
+            Label sim = new Label(pct + "%");
+            sim.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 18px; -fx-font-weight: bold;");
 
-            card.getChildren().addAll(img, rank, name, sim, breakdown);
+            card.getChildren().addAll(img, rank, name, sim);
             grid.getChildren().add(card);
         }
 

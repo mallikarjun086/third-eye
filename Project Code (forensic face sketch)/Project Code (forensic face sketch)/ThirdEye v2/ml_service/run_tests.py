@@ -87,7 +87,7 @@ class TestThirdEyeMLService(unittest.TestCase):
         score = app.hybrid_score(face_sim=1.0, hog_sim=1.0)
         self.assertAlmostEqual(score, 1.0, places=4)
         score_mix = app.hybrid_score(face_sim=0.8, hog_sim=0.4)
-        expected = 0.05 * 0.8 + 0.95 * 0.4
+        expected = app.FACE_WEIGHT * 0.8 + (1.0 - app.FACE_WEIGHT) * 0.4
         self.assertAlmostEqual(score_mix, expected, places=4)
 
     def test_07_regression_baseline_lock(self):
