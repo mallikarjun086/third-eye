@@ -3,7 +3,8 @@
 **License / Access Requirement**: IIIT-Delhi Academic Research License  
 **Status**: `NOT INTEGRATED — ACCESS PENDING`
 
-## Acquisition Steps:
+## Acquisition Steps
+
 1. Apply for access at IIIT-Delhi Image Processing and Computer Vision Lab (IPAG).
 2. Complete signed academic agreement.
 3. Download `IIITD_Forensic_Sketch_Database.zip`.

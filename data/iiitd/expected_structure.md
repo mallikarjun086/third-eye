@@ -1,6 +1,6 @@
 # IIIT-D Expected Directory Structure
 
-```
+```text
 data/iiitd/
 ├── viewed/
 │   ├── photos/

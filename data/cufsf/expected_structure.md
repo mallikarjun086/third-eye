@@ -1,6 +1,6 @@
 # CUFSF Expected Directory Structure
 
-```
+```text
 data/cufsf/
 ├── photos/
 │   ├── CUFSF_00001.jpg

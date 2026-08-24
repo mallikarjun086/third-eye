@@ -1,6 +1,7 @@
 {
-  "audit_timestamp": "2026-08-24T10:05:41Z",
+  "audit_timestamp": "2026-08-24T10:33:12Z",
   "system_verdict": "VERIFIED_REAL_ACCURACY_IMPROVEMENT",
+  "production_fusion_alpha": 0.85,
   "frozen_baseline_rank_1": 19.05,
   "photo_pipeline_rank_1": 100.0,
   "composite_sketch_rank_1": 100.0,

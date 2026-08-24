@@ -291,6 +291,7 @@ def main():
     truth_data = {
         "audit_timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "system_verdict": "VERIFIED_REAL_ACCURACY_IMPROVEMENT",
+        "production_fusion_alpha": 0.85,
         "frozen_baseline_rank_1": frozen_baseline["rank_1"],
         "photo_pipeline_rank_1": p_ret["rank_acc"]["rank_1"],
         "composite_sketch_rank_1": 100.0,
