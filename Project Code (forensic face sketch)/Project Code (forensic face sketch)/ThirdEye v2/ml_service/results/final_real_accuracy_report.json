@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T09:35:32Z",
+  "timestamp": "2026-08-24T11:01:05Z",
   "suites": [
     {
       "pipeline": "PHOTO_TO_PHOTO",
@@ -14,7 +14,7 @@
       "rank_10": 100.0,
       "auc": 1.0,
       "eer": 0.0,
-      "median_latency_ms": 226.5
+      "median_latency_ms": 155.3
     },
     {
       "pipeline": "CROSS_MODAL_SKETCH",
@@ -29,7 +29,7 @@
       "rank_10": 66.67,
       "auc": 0.8996,
       "eer": 17.96,
-      "median_latency_ms": 199.3
+      "median_latency_ms": 186.4
     },
     {
       "pipeline": "CROSS_MODAL_COMPOSITE",
@@ -44,12 +44,12 @@
       "rank_10": 100.0,
       "auc": 0.9999,
       "eer": 0.0,
-      "median_latency_ms": 197.6
+      "median_latency_ms": 179.5
     }
   ],
   "open_set_test": {
     "test_type": "OPEN_SET_REJECTION",
-    "top_similarity_pct": 51.68,
+    "top_similarity_pct": 51.94,
     "calibrated_threshold_pct": 55.0,
     "decision": "NO RELIABLE MATCH FOUND IN CURRENT GALLERY",
     "rejection_status": "PASSED"
