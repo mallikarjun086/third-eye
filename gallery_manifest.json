@@ -1,758 +1,1325 @@
 [
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\a-sharukh.jpg",
-    "pid": "a-sharukh"
+    "identity_id": "a-sharukh",
+    "image_filename": "a-sharukh.jpg",
+    "sha256": "46901cc8d29e4b15c0d281f5a1522037b84902a1532a28560e4f0322e02c1fdc",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-005-01.jpg",
-    "pid": "f-005"
+    "identity_id": "f-005",
+    "image_filename": "f-005-01.jpg",
+    "sha256": "b78f0e141c270e33f3646c2cf548ada259011a9ee1a9434781b8f9b50c86c403",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-006-01.jpg",
-    "pid": "f-006"
+    "identity_id": "f-006",
+    "image_filename": "f-006-01.jpg",
+    "sha256": "53cb0147eb7848250303b7d516c9ebc395a4d90cafba91313bd165e44c46e7f1",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-007-01.jpg",
-    "pid": "f-007"
+    "identity_id": "f-007",
+    "image_filename": "f-007-01.jpg",
+    "sha256": "ae2299357c99d0ba9957c679799015b81f26e6999c406a0c520499d744a37cb2",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-008-01.jpg",
-    "pid": "f-008"
+    "identity_id": "f-008",
+    "image_filename": "f-008-01.jpg",
+    "sha256": "5bf68cbe5e55c4c8f1f92c01d7f46351f27c6ca32b959839b691006dc46139ff",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-009-01.jpg",
-    "pid": "f-009"
+    "identity_id": "f-009",
+    "image_filename": "f-009-01.jpg",
+    "sha256": "64d03d05fff213fd490f0022439fcb87ef851b46e1374676c2f0d2644721010a",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-010-01.jpg",
-    "pid": "f0"
+    "identity_id": "f0",
+    "image_filename": "f-010-01.jpg",
+    "sha256": "c91e4ee1462090a61bffb28db50c65b530826a93a8775f5f722c0017f1773f8f",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-011-01.jpg",
-    "pid": "f1"
+    "identity_id": "f1",
+    "image_filename": "f-011-01.jpg",
+    "sha256": "0b6c03ce3e58521d27a2567a5077eddc35a9184f7d40fae20a06739bd368f722",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-012-01.jpg",
-    "pid": "f2"
+    "identity_id": "f2",
+    "image_filename": "f-012-01.jpg",
+    "sha256": "812ffdb2d8e49dd13d04f3efe709104f7a68315a04f2c3d3859771e0cc1102b6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-013-01.jpg",
-    "pid": "f3"
+    "identity_id": "f3",
+    "image_filename": "f-013-01.jpg",
+    "sha256": "ad3c602718dad5148d1c61251228f20243babbdbc0042d50a5b718c434eb8817",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-014-01.jpg",
-    "pid": "f4"
+    "identity_id": "f4",
+    "image_filename": "f-014-01.jpg",
+    "sha256": "ea9bcf03042720041a82ebeea13910e7e622babb604c349bbf2ba0a033994f6f",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-015-01.jpg",
-    "pid": "f5"
+    "identity_id": "f5",
+    "image_filename": "f-015-01.jpg",
+    "sha256": "034044f8b97ad1c10b5395780fbe581ca6eed6123aacbf126f55298d6cea0862",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-016-01.jpg",
-    "pid": "f6"
+    "identity_id": "f6",
+    "image_filename": "f-016-01.jpg",
+    "sha256": "f36cf2f030e67b70f13a8b3f804c6fb086959bc47e6ed669a6e4a58b0487639b",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-017-01.jpg",
-    "pid": "f7"
+    "identity_id": "f7",
+    "image_filename": "f-017-01.jpg",
+    "sha256": "3e65a30bff510307172790758f3f29a3ee7f9b792f1289c9ec1eff84ac833ca9",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-018-01.jpg",
-    "pid": "f8"
+    "identity_id": "f8",
+    "image_filename": "f-018-01.jpg",
+    "sha256": "e77ba31ff77bfe093b1fedd3a30287517d592546fd877242d2efa0b00fc65fa0",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-019-01.jpg",
-    "pid": "f9"
+    "identity_id": "f9",
+    "image_filename": "f-019-01.jpg",
+    "sha256": "45588212b6472cd9d785dfc9454a8d94886024ff870d4105a440a673c6e6ce4f",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-020-01.jpg",
-    "pid": "f-020"
+    "identity_id": "f-020",
+    "image_filename": "f-020-01.jpg",
+    "sha256": "800041a1dcc31ab116ef89ae218677814b5fdfd2ba967e7e259bf904826f7828",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-021-01.jpg",
-    "pid": "f-021"
+    "identity_id": "f-021",
+    "image_filename": "f-021-01.jpg",
+    "sha256": "9f6645361fa4d79dbf1d7c1510a97d0d8e4da629b97a28b06496d881707a2b7e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-022-01.jpg",
-    "pid": "f-022"
+    "identity_id": "f-022",
+    "image_filename": "f-022-01.jpg",
+    "sha256": "ff5c53ddf0d93149adb8532e7a20efa29815902fbf3d8146a24ecfd4f5e63553",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-023-01.jpg",
-    "pid": "f-023"
+    "identity_id": "f-023",
+    "image_filename": "f-023-01.jpg",
+    "sha256": "3c23f587df3ce878af47820f87e7f52d67c6eadb4755d3ee005e278f1ca287a3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-024-01.jpg",
-    "pid": "f-024"
+    "identity_id": "f-024",
+    "image_filename": "f-024-01.jpg",
+    "sha256": "20a1adee4ae5b99aa9d7dd9a61589cb343c8b3139dd5c4d1ed6ecf49c3b92743",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-025-01.jpg",
-    "pid": "f-025"
+    "identity_id": "f-025",
+    "image_filename": "f-025-01.jpg",
+    "sha256": "07b6cfe2a901469fd9eb9f5f8509f82c532932916d8730b2679bb26bf405d394",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-026-01.jpg",
-    "pid": "f-026"
+    "identity_id": "f-026",
+    "image_filename": "f-026-01.jpg",
+    "sha256": "a2433f1aa97fe0559a010e165239a2736c6b7bdd726fc397ce11cf5d0c8e9d95",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-027-01.jpg",
-    "pid": "f-027"
+    "identity_id": "f-027",
+    "image_filename": "f-027-01.jpg",
+    "sha256": "23433969fbbe42d1aa8ebf9cde267665e129417dfc72b8f87c7da39a5ca844c3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-028-01.jpg",
-    "pid": "f-028"
+    "identity_id": "f-028",
+    "image_filename": "f-028-01.jpg",
+    "sha256": "4fbe92f22994782cae87909c9bce91a8e9d372a9878c5976bafbce520761dbcb",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-029-01.jpg",
-    "pid": "f-029"
+    "identity_id": "f-029",
+    "image_filename": "f-029-01.jpg",
+    "sha256": "8c0811808fcac30e0143d02c0df0dc55852bf247d586bcfb87164c0f4b3aa615",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-030-01.jpg",
-    "pid": "f-030"
+    "identity_id": "f-030",
+    "image_filename": "f-030-01.jpg",
+    "sha256": "b70fe133ab8b4ef9e4c7ed39b4f2e4f30027f7643c6202a3aea3adbe4318d213",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-031-01.jpg",
-    "pid": "f-031"
+    "identity_id": "f-031",
+    "image_filename": "f-031-01.jpg",
+    "sha256": "c521f0ded49bd3518749222402d0cd67568e4ec3e4d3dc7f09cd974b5dd33c6e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-032-01.jpg",
-    "pid": "f-032"
+    "identity_id": "f-032",
+    "image_filename": "f-032-01.jpg",
+    "sha256": "a04d4afbf3c1ae1cfa4ad67284608057bfab4517b3ac1e7f958011a0645d4519",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-033-01.jpg",
-    "pid": "f-033"
+    "identity_id": "f-033",
+    "image_filename": "f-033-01.jpg",
+    "sha256": "975a2b29ba6f8a9f6da3c2bd90b821e9240528c81bc5d4036462b8e6874736af",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-034-01.jpg",
-    "pid": "f-034"
+    "identity_id": "f-034",
+    "image_filename": "f-034-01.jpg",
+    "sha256": "642443e34f3a442617936c0bc9ef6783a30c1a4615b4b7267f25babdb80e1be2",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-035-01.jpg",
-    "pid": "f-035"
+    "identity_id": "f-035",
+    "image_filename": "f-035-01.jpg",
+    "sha256": "8fb75a2468bc67143cc0e1361515fe25a8265e6c40ef8b45304920d941d85f26",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-036-01.jpg",
-    "pid": "f-036"
+    "identity_id": "f-036",
+    "image_filename": "f-036-01.jpg",
+    "sha256": "209b36e54ee835f90cf3ddaa8d4dc12954077d4c5db4a780eb915c16fb7e22d9",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-037-01.jpg",
-    "pid": "f-037"
+    "identity_id": "f-037",
+    "image_filename": "f-037-01.jpg",
+    "sha256": "532ebaa8d306046addff5f52cd99cfcff137de02521c2ea6fa09e9a7c7bd6890",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-038-01.jpg",
-    "pid": "f-038"
+    "identity_id": "f-038",
+    "image_filename": "f-038-01.jpg",
+    "sha256": "f16589070946480cc40a2078998ef355864041cf66462e9941d9fd76cea33eae",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-039-01.jpg",
-    "pid": "f-039"
+    "identity_id": "f-039",
+    "image_filename": "f-039-01.jpg",
+    "sha256": "9cdc99f48a36e0431751a9e06738d83a3e4929d302c49f7609a5c06d0bbaad80",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-040-01.jpg",
-    "pid": "f-040"
+    "identity_id": "f-040",
+    "image_filename": "f-040-01.jpg",
+    "sha256": "7dcd87c603244e47fd2b44d521b840e78f53a4b6dcad3471d3fb773f0102f0cc",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-041-01.jpg",
-    "pid": "f-041"
+    "identity_id": "f-041",
+    "image_filename": "f-041-01.jpg",
+    "sha256": "555c09a2a3238c5ac46aae9897d68c1201db89b5263c0964ae129447a20c32ac",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-042-01.jpg",
-    "pid": "f-042"
+    "identity_id": "f-042",
+    "image_filename": "f-042-01.jpg",
+    "sha256": "bacfcb4eac6c96aa43d0e81509e648b0d0f6390793ec72743c02640b70641b3f",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f-043-01.jpg",
-    "pid": "f-043"
+    "identity_id": "f-043",
+    "image_filename": "f-043-01.jpg",
+    "sha256": "78ef957961a82e69f50cc540af24a112288eb887b458a5288bda6877195d0309",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-001-01.jpg",
-    "pid": "f1-001"
+    "identity_id": "f1-001",
+    "image_filename": "f1-001-01.jpg",
+    "sha256": "a4ad4af88f7fe7d5b44a57701f96fbdfe78345bfc14b78064e0780b2b2eb6c10",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-002-01.jpg",
-    "pid": "f1-002"
+    "identity_id": "f1-002",
+    "image_filename": "f1-002-01.jpg",
+    "sha256": "43a3b036a91a08f3199d1fb9c3bcf4b37d67b08bc7752db634383fb63d0d532e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-003-01.jpg",
-    "pid": "f1-003"
+    "identity_id": "f1-003",
+    "image_filename": "f1-003-01.jpg",
+    "sha256": "c93ee03096708efb43b1044a8de4104c9739b8092bcc60e53b36676b93fbe551",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-004-01.jpg",
-    "pid": "f1-004"
+    "identity_id": "f1-004",
+    "image_filename": "f1-004-01.jpg",
+    "sha256": "17ab03689bcf9782a7b34fe010d473d5eb3fcd66b0fc68d7ccb2334e245e96f3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-005-01.jpg",
-    "pid": "f1-005"
+    "identity_id": "f1-005",
+    "image_filename": "f1-005-01.jpg",
+    "sha256": "76ce502d3a24620fdbb86be464fb6c515a73d9ebd818505e9d47d60cd42ae4b5",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-006-01.jpg",
-    "pid": "f1-006"
+    "identity_id": "f1-006",
+    "image_filename": "f1-006-01.jpg",
+    "sha256": "e8915193f2eef809f4c98116fa798ad5e12f344cdfd25ad2b0ba15d1170e65b3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-007-01.jpg",
-    "pid": "f1-007"
+    "identity_id": "f1-007",
+    "image_filename": "f1-007-01.jpg",
+    "sha256": "d0ed713767827284ffc0eaea968b2d7ca551e2e078213f29702b69ef18af3e79",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-008-01.jpg",
-    "pid": "f1-008"
+    "identity_id": "f1-008",
+    "image_filename": "f1-008-01.jpg",
+    "sha256": "0c060bbf0b0cbc804d3bb7da9313385c160954c1c9d1be45e235b6cd2ce30350",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-009-01.jpg",
-    "pid": "f1-009"
+    "identity_id": "f1-009",
+    "image_filename": "f1-009-01.jpg",
+    "sha256": "fe059f80c685c183847aee8bffcc7d1d523a3fa8ba4efc8aaac0f98d1e2ee261",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-010-01.jpg",
-    "pid": "f10"
+    "identity_id": "f10",
+    "image_filename": "f1-010-01.jpg",
+    "sha256": "4eb854e84b438e9cda14a8ea5668c1a6de3b41162c9f116411c4c098e9650507",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-011-01.jpg",
-    "pid": "f11"
+    "identity_id": "f11",
+    "image_filename": "f1-011-01.jpg",
+    "sha256": "43510d27fbf8ea79cde4704a312a00cd1642a151bbd6f01a91097c0173320d66",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-012-01.jpg",
-    "pid": "f12"
+    "identity_id": "f12",
+    "image_filename": "f1-012-01.jpg",
+    "sha256": "178fc40b96c4dbfaef86d0467ccbe4d3afb5e55514275cb01a1ff9fec888ac2d",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-013-01.jpg",
-    "pid": "f13"
+    "identity_id": "f13",
+    "image_filename": "f1-013-01.jpg",
+    "sha256": "43dbba3fec1794ea94946fc6f56e133dfdf501d55207872db05b67099d6a91b6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-014-01.jpg",
-    "pid": "f14"
+    "identity_id": "f14",
+    "image_filename": "f1-014-01.jpg",
+    "sha256": "c28f992b3548d1919b3b7aa6140da38990ddb39a3706c33c859aa0cf96183df8",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\f1-015-01.jpg",
-    "pid": "f15"
+    "identity_id": "f15",
+    "image_filename": "f1-015-01.jpg",
+    "sha256": "b8433e2f6c05b48ff78409f63ca0809782e97dfb53162397efb2cf55b9dc01f2",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-008-01.jpg",
-    "pid": "m-008"
+    "identity_id": "m-008",
+    "image_filename": "m-008-01.jpg",
+    "sha256": "2e68cde8fe6b1d6b068b786271d2bcf781d59a006fb0fd9fb340a51c7f1756d3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-009-01.jpg",
-    "pid": "m-009"
+    "identity_id": "m-009",
+    "image_filename": "m-009-01.jpg",
+    "sha256": "21bffa4ce0fb4155620343b1f0e0fbd02027697eb3bf33642f9b22f279dddf7e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-010-01.jpg",
-    "pid": "m0"
+    "identity_id": "m0",
+    "image_filename": "m-010-01.jpg",
+    "sha256": "2c5c2276469d2d2abf4c3679afebbee8239f270a18ab9844f3459dfb94527206",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-011-01.jpg",
-    "pid": "m1"
+    "identity_id": "m1",
+    "image_filename": "m-011-01.jpg",
+    "sha256": "7e5be360e9327b23596e023b4ff8c806036165cb48f90b70f1e0c131bb691f06",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-012-01.jpg",
-    "pid": "m2"
+    "identity_id": "m2",
+    "image_filename": "m-012-01.jpg",
+    "sha256": "08fefc894eda2ae03faf34fc79979f2b1e41f2ee0e40aa9f1234cae1bb1bd1dc",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-013-01.jpg",
-    "pid": "m3"
+    "identity_id": "m3",
+    "image_filename": "m-013-01.jpg",
+    "sha256": "968980169bcc48c6d1441446e22f21114f4eff0c3f9f96abfdfbf37b92489bc1",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-014-01.jpg",
-    "pid": "m4"
+    "identity_id": "m4",
+    "image_filename": "m-014-01.jpg",
+    "sha256": "d53e7d2d8e2e0b22ecc0ecbd24b52304dda5333029b10e9bf8cf1b13d9b89926",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-015-01.jpg",
-    "pid": "m5"
+    "identity_id": "m5",
+    "image_filename": "m-015-01.jpg",
+    "sha256": "545cfde920e75bb985ae19de6ff41de5adbf0a34b6d07e7c6ad12ec0624d9b11",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-016-01.jpg",
-    "pid": "m6"
+    "identity_id": "m6",
+    "image_filename": "m-016-01.jpg",
+    "sha256": "16355407a3383b1a2937ed329d5d332dd087a6408b851bbe4ab3ec2f8f805af2",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-017-01.jpg",
-    "pid": "m7"
+    "identity_id": "m7",
+    "image_filename": "m-017-01.jpg",
+    "sha256": "6cbbe2344fd15493b36ec6fa6ced86bb0ede38371e537e290c025d064a0a72c8",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-018-01.jpg",
-    "pid": "m8"
+    "identity_id": "m8",
+    "image_filename": "m-018-01.jpg",
+    "sha256": "ed0bfefd9b9b27a4e16eb09543601ae0d00d9a04157e33573cd0297726294147",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-019-01.jpg",
-    "pid": "m9"
+    "identity_id": "m9",
+    "image_filename": "m-019-01.jpg",
+    "sha256": "220069db6136acdcbc41e0807285ca622acb593d3836fd8c35dd0a3a48527d54",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-021-01.jpg",
-    "pid": "m-021"
+    "identity_id": "m-021",
+    "image_filename": "m-021-01.jpg",
+    "sha256": "609a1580c01829476b0ab5eaf57a7f556c8693d9e5824cd894adef91fc0e3888",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-022-01.jpg",
-    "pid": "m-022"
+    "identity_id": "m-022",
+    "image_filename": "m-022-01.jpg",
+    "sha256": "a822f8ffd4162b509953b4fb26a2406e72d3b373de74783f1dfc76cfe8b99bb2",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-023-01.jpg",
-    "pid": "m-023"
+    "identity_id": "m-023",
+    "image_filename": "m-023-01.jpg",
+    "sha256": "460355be892ca5c14f202807afba04f8c7b34e9e3cec00d1d2c66e6df44fb14d",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-024-01.jpg",
-    "pid": "m-024"
+    "identity_id": "m-024",
+    "image_filename": "m-024-01.jpg",
+    "sha256": "14e7e15b9932ed16bade1b0190a9886f5cdf9a5776c3c6697d383af5db0f62c6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-025-01.jpg",
-    "pid": "m-025"
+    "identity_id": "m-025",
+    "image_filename": "m-025-01.jpg",
+    "sha256": "a1359eb6df84297ecc67f821c171536d2a6f569bc955b47cbb20e565b3ab174e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-026-01.jpg",
-    "pid": "m-026"
+    "identity_id": "m-026",
+    "image_filename": "m-026-01.jpg",
+    "sha256": "a155e0b40cfb6a6afe5babe5c1ecb6efd17a47d74e3d20dd2b3ebe56b6f0090e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-027-01.jpg",
-    "pid": "m-027"
+    "identity_id": "m-027",
+    "image_filename": "m-027-01.jpg",
+    "sha256": "788d3c77ba8b596c08faabea555d8da78ae54ea4298dc9d5a21e99f873cf45a9",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-028-01.jpg",
-    "pid": "m-028"
+    "identity_id": "m-028",
+    "image_filename": "m-028-01.jpg",
+    "sha256": "c5e23095d8e081a3809648337bcb642d83cf1701b4790dbd0476a25587dfbefe",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-029-01.jpg",
-    "pid": "m-029"
+    "identity_id": "m-029",
+    "image_filename": "m-029-01.jpg",
+    "sha256": "68eb11ca9fe8b1052b241e73f3481831484b33a2def59a13b8fe418e001756f6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-030-01.jpg",
-    "pid": "m-030"
+    "identity_id": "m-030",
+    "image_filename": "m-030-01.jpg",
+    "sha256": "9cbfa7d0ce08a180067655149c94c51601127089f6cb10412ffdb6716a60b767",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-031-01.jpg",
-    "pid": "m-031"
+    "identity_id": "m-031",
+    "image_filename": "m-031-01.jpg",
+    "sha256": "abc9c85785cde1b5fcb60cd171214dca7a583aefc6747c5428d77df2c076c0b6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-032-01.jpg",
-    "pid": "m-032"
+    "identity_id": "m-032",
+    "image_filename": "m-032-01.jpg",
+    "sha256": "3c97815202c1520b5d6c01599c866e878e8448bd3d070b544745fa14edc3ccc0",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-033-01.jpg",
-    "pid": "m-033"
+    "identity_id": "m-033",
+    "image_filename": "m-033-01.jpg",
+    "sha256": "3547e8b388a1959ec5bde0f05518526b5e577fa447aefe48c85b2c35e497dc0a",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-034-01.jpg",
-    "pid": "m-034"
+    "identity_id": "m-034",
+    "image_filename": "m-034-01.jpg",
+    "sha256": "0ad3c21792bcd6a81e2152c20f6fc249e3b4e2d18dfbcc22fc7610e7769f130b",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-035-01.jpg",
-    "pid": "m-035"
+    "identity_id": "m-035",
+    "image_filename": "m-035-01.jpg",
+    "sha256": "d7e7118cba18f83429870cd6407a4196108bda92166b7143ded4dac510c559b9",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-036-01.jpg",
-    "pid": "m-036"
+    "identity_id": "m-036",
+    "image_filename": "m-036-01.jpg",
+    "sha256": "34c656feb82a3507c3dede76dabc8233811de368e3d7e309b3b4a15381804f53",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-037-01.jpg",
-    "pid": "m-037"
+    "identity_id": "m-037",
+    "image_filename": "m-037-01.jpg",
+    "sha256": "8ea7f1d8ca01230974fc6524c4dfcc9e0f32968226e9b7d58626a9c96dfe7f92",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-038-01.jpg",
-    "pid": "m-038"
+    "identity_id": "m-038",
+    "image_filename": "m-038-01.jpg",
+    "sha256": "3e16b4fd617f7066ad2b6e61c68b141f4265b01746af8ddc12a7869c2701f812",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-039-01.jpg",
-    "pid": "m-039"
+    "identity_id": "m-039",
+    "image_filename": "m-039-01.jpg",
+    "sha256": "fc25166b4270e057577329e7027e29cfc3cff0a00f6981c856806660d7c7ef7f",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-040-01.jpg",
-    "pid": "m-040"
+    "identity_id": "m-040",
+    "image_filename": "m-040-01.jpg",
+    "sha256": "83f83348efd18d1991a1156d85a9413590399966f4d7f581119d0965cdef6169",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-041-01.jpg",
-    "pid": "m-041"
+    "identity_id": "m-041",
+    "image_filename": "m-041-01.jpg",
+    "sha256": "14fe9f3bfc32f067e3b86249e02829b4e9665b0a323a92c3a074a8ca3a987042",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-042-01.jpg",
-    "pid": "m-042"
+    "identity_id": "m-042",
+    "image_filename": "m-042-01.jpg",
+    "sha256": "d3a6d260ef2ca6b5bda3ada153d9f1b694f08892981c2546e0c33255d84c9920",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-043-01.jpg",
-    "pid": "m-043"
+    "identity_id": "m-043",
+    "image_filename": "m-043-01.jpg",
+    "sha256": "45c3b7051a1915142ff079a4412cb2c7bcc53f3d934137c1749cd3764d4ba55a",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-044-01.jpg",
-    "pid": "m-044"
+    "identity_id": "m-044",
+    "image_filename": "m-044-01.jpg",
+    "sha256": "12a3ea93e2e1f6bf9c089bc165c7b5c94f34145fd24757a7785b30f42c79d245",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-045-01.jpg",
-    "pid": "m-045"
+    "identity_id": "m-045",
+    "image_filename": "m-045-01.jpg",
+    "sha256": "84b8084a45d0695b345e7192df1bd401211572f5eaeaacaefda7d8da9d8ebfee",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-046-01.jpg",
-    "pid": "m-046"
+    "identity_id": "m-046",
+    "image_filename": "m-046-01.jpg",
+    "sha256": "e5f5b455e0eba0f24f3a9c89e8a5ec5206df192ba095d8532ca674f8faef0963",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-047-01.jpg",
-    "pid": "m-047"
+    "identity_id": "m-047",
+    "image_filename": "m-047-01.jpg",
+    "sha256": "ba4c19b3ae5fc649e8c419e0434735a664c3e4060cabd386fc166f5f530b1909",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-048-01.jpg",
-    "pid": "m-048"
+    "identity_id": "m-048",
+    "image_filename": "m-048-01.jpg",
+    "sha256": "7e29df6634cdf4146379922e0e340da1ce0590d046abeadfb869ed7d34cbd4d7",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-049-01.jpg",
-    "pid": "m-049"
+    "identity_id": "m-049",
+    "image_filename": "m-049-01.jpg",
+    "sha256": "77d15192960cec2271db6ba6cf346c23b32ff74b35f006e02f55211413053e9d",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-050-01.jpg",
-    "pid": "m-050"
+    "identity_id": "m-050",
+    "image_filename": "m-050-01.jpg",
+    "sha256": "6020b751f0348698b213a6d8a3a75bbe31a12a39d7fe585676be663f7a6839d5",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-051-01.jpg",
-    "pid": "m-051"
+    "identity_id": "m-051",
+    "image_filename": "m-051-01.jpg",
+    "sha256": "7c958435fcf99f0b0238639092b868cbb3adb5a971696ea20af6891b914107f0",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-052-01.jpg",
-    "pid": "m-052"
+    "identity_id": "m-052",
+    "image_filename": "m-052-01.jpg",
+    "sha256": "ed1f4897025b7b9f3140fa0d31f94e6d0f5e1bab395b7378da9f741c07e81473",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-053-01.jpg",
-    "pid": "m-053"
+    "identity_id": "m-053",
+    "image_filename": "m-053-01.jpg",
+    "sha256": "fa898366a7590b75cf6df72592c776febf3a6fe45045a0ab778164a0447987e7",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-054-01.jpg",
-    "pid": "m-054"
+    "identity_id": "m-054",
+    "image_filename": "m-054-01.jpg",
+    "sha256": "e9cfb2c7ba34da19427afad8660c5e5df038dcff3b1745acf70875d482217c34",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-055-01.jpg",
-    "pid": "m-055"
+    "identity_id": "m-055",
+    "image_filename": "m-055-01.jpg",
+    "sha256": "dc01385442a82588fd82c6ff0064b4270acec8cb94d89a8760e4b6b4381ab244",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-056-01.jpg",
-    "pid": "m-056"
+    "identity_id": "m-056",
+    "image_filename": "m-056-01.jpg",
+    "sha256": "3597a25f1c49abe98487ff87c3376ebe7d6565fa161332cee1ad3e7b0961c40d",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-057-01.jpg",
-    "pid": "m-057"
+    "identity_id": "m-057",
+    "image_filename": "m-057-01.jpg",
+    "sha256": "f0d540ec7b82d46b3ee0fd15a9b8af1e98b692b3724c60147474e1d300bae3e6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-058-01.jpg",
-    "pid": "m-058"
+    "identity_id": "m-058",
+    "image_filename": "m-058-01.jpg",
+    "sha256": "33a1379b344f4eb3627721f72a62d8a5a7296c892b86fb15cebc809b89ff4ead",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-059-01.jpg",
-    "pid": "m-059"
+    "identity_id": "m-059",
+    "image_filename": "m-059-01.jpg",
+    "sha256": "dbfd3e967b86801e72a3ca9f4381383f20902da47aa3f2b2c77b7d904b716793",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-060-01.jpg",
-    "pid": "m-060"
+    "identity_id": "m-060",
+    "image_filename": "m-060-01.jpg",
+    "sha256": "57f2ff0767dd7945a2ba72d63493ffc0277ff3cf85be24dc82e1ba38238db01b",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-061-01.jpg",
-    "pid": "m-061"
+    "identity_id": "m-061",
+    "image_filename": "m-061-01.jpg",
+    "sha256": "66ff1a2d8bc807cfa05f8bf7c11735d6e91d34e4f6750eb36c31efb02576b478",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-062-01.jpg",
-    "pid": "m-062"
+    "identity_id": "m-062",
+    "image_filename": "m-062-01.jpg",
+    "sha256": "fc0b7e247fd7d0b4c9a41efe8eb31d993e4202987de81e210d3e35180d7e2b03",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-063-01.jpg",
-    "pid": "m-063"
+    "identity_id": "m-063",
+    "image_filename": "m-063-01.jpg",
+    "sha256": "9f8b3eb5a2a2bbf332cd9dc0118f26af4e72a141736fdadc2bcc3f651b702922",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-064-01.jpg",
-    "pid": "m-064"
+    "identity_id": "m-064",
+    "image_filename": "m-064-01.jpg",
+    "sha256": "fa09f23cb410f7accaee27b072bce25f08c4091f8e858ed904ca8fea01971075",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-065-01.jpg",
-    "pid": "m-065"
+    "identity_id": "m-065",
+    "image_filename": "m-065-01.jpg",
+    "sha256": "d478f2982423cd13a81da7d197570209ad564f7b2c0457743668fab903df3a8b",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-066-01.jpg",
-    "pid": "m-066"
+    "identity_id": "m-066",
+    "image_filename": "m-066-01.jpg",
+    "sha256": "a2d91422bf560faa153d2ac348ff92f05ea4f3eb4ccd9a7cb22feb7c5ffb6a9c",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-067-01.jpg",
-    "pid": "m-067"
+    "identity_id": "m-067",
+    "image_filename": "m-067-01.jpg",
+    "sha256": "8bcd8ca8ed32e26ee048301ac9f0415e3b718d027c06c923ac15c19cf35433eb",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-068-01.jpg",
-    "pid": "m-068"
+    "identity_id": "m-068",
+    "image_filename": "m-068-01.jpg",
+    "sha256": "a1af55ab13251665f576ca37fd213cc7fcf70c0d49fd76537b50ef511b03d786",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-069-01.jpg",
-    "pid": "m-069"
+    "identity_id": "m-069",
+    "image_filename": "m-069-01.jpg",
+    "sha256": "812b2ec9899def9a72779180f7518eda48ce06a86dc7d287aa217f4bab2ef805",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-070-01.jpg",
-    "pid": "m-070"
+    "identity_id": "m-070",
+    "image_filename": "m-070-01.jpg",
+    "sha256": "9adfb90cbbf70a1cb0e58334d29ecf7613847e5007f0fd821281ac3b3f09dc5c",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-071-01.jpg",
-    "pid": "m-071"
+    "identity_id": "m-071",
+    "image_filename": "m-071-01.jpg",
+    "sha256": "cf82f9ab5950a311387c354f7976db162249c6050654beba75ec8770f4a4f6c7",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-072-01.jpg",
-    "pid": "m-072"
+    "identity_id": "m-072",
+    "image_filename": "m-072-01.jpg",
+    "sha256": "986049fcf816fa4f97fb99043b1c5850df907d4a0b94c70891a0974fae0a9cb6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-073-01.jpg",
-    "pid": "m-073"
+    "identity_id": "m-073",
+    "image_filename": "m-073-01.jpg",
+    "sha256": "9c819a99a7a8cad1d1af00702d38533cc332149f13244d29bd4d0bd0245b98a3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-074-01.jpg",
-    "pid": "m-074"
+    "identity_id": "m-074",
+    "image_filename": "m-074-01.jpg",
+    "sha256": "66e3e0f1caff4c81c1dad0ad682c8b7188144f25316ee5088310028ab835d860",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-075-01.jpg",
-    "pid": "m-075"
+    "identity_id": "m-075",
+    "image_filename": "m-075-01.jpg",
+    "sha256": "5c5e8a223a6ee27f503c1aa40454065ad56e8728d21dd81de68965a3eef6bde5",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-076-01.jpg",
-    "pid": "m-076"
+    "identity_id": "m-076",
+    "image_filename": "m-076-01.jpg",
+    "sha256": "9eb3ac723798fc2efec7c7ee6f7b24bbb53a54115dbc23edef1dbc98fbba9fa3",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-077-01.jpg",
-    "pid": "m-077"
+    "identity_id": "m-077",
+    "image_filename": "m-077-01.jpg",
+    "sha256": "baaad3db9aa27d624873f0459449ddb4e39f5819f82599003f5d75b6108c61ee",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-078-01.jpg",
-    "pid": "m-078"
+    "identity_id": "m-078",
+    "image_filename": "m-078-01.jpg",
+    "sha256": "0d54b04db80f4f9b3373d2df20f7f65649121ab343ba683e229a552f51acff6a",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-079-01.jpg",
-    "pid": "m-079"
+    "identity_id": "m-079",
+    "image_filename": "m-079-01.jpg",
+    "sha256": "3ffd06c4fbcf4efe68074e8c6682ddf25f3e02eaa8e49234232d2e39a7dc7952",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-080-01.jpg",
-    "pid": "m-080"
+    "identity_id": "m-080",
+    "image_filename": "m-080-01.jpg",
+    "sha256": "508d5f6056ccd438d79a6153deb23525cf56c6ad6c77dbe4ecba5ee854297104",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-081-01.jpg",
-    "pid": "m-081"
+    "identity_id": "m-081",
+    "image_filename": "m-081-01.jpg",
+    "sha256": "75b8adc20d9811d1bac9536d2ff7ea870868866480610d50e83b5e7f6e918adc",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-082-01.jpg",
-    "pid": "m-082"
+    "identity_id": "m-082",
+    "image_filename": "m-082-01.jpg",
+    "sha256": "8d8a8c3f698ec346b69f174be5d6a25f5a27811adc73689a435eab0f459d6357",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-083-01.jpg",
-    "pid": "m-083"
+    "identity_id": "m-083",
+    "image_filename": "m-083-01.jpg",
+    "sha256": "7620b35e05c55a3d77197150997b4b22e1554dba6aa3ce56cf8531a713703372",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-084-01.jpg",
-    "pid": "m-084"
+    "identity_id": "m-084",
+    "image_filename": "m-084-01.jpg",
+    "sha256": "b804c27be9527ba9bca01cdf644d224cd0eac9551500ec977d0f1128d1656472",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-085-01.jpg",
-    "pid": "m-085"
+    "identity_id": "m-085",
+    "image_filename": "m-085-01.jpg",
+    "sha256": "a2d4e6b6bf19dc101eb1cf77c2f48e02e87be31cfec9ac34951bc127660ae748",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-086-01.jpg",
-    "pid": "m-086"
+    "identity_id": "m-086",
+    "image_filename": "m-086-01.jpg",
+    "sha256": "dbe704ce169180c37a64e124effe0925ba4ed6899d4ac7a5b6a3795409840869",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-087-01.jpg",
-    "pid": "m-087"
+    "identity_id": "m-087",
+    "image_filename": "m-087-01.jpg",
+    "sha256": "e6c435f98289420cb39b3bcb5c16c7a56225d96d29805aa3fa973d7ec0504ec5",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-088-01.jpg",
-    "pid": "m-088"
+    "identity_id": "m-088",
+    "image_filename": "m-088-01.jpg",
+    "sha256": "1f39a26a4d1717986c65c9dcc1fe223ffcb9b7a067ecad2b645e776f574fc15e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-089-01.jpg",
-    "pid": "m-089"
+    "identity_id": "m-089",
+    "image_filename": "m-089-01.jpg",
+    "sha256": "c41632d83dc69ea7510fc191c46f777faf5d526227b36693c491dde3754bc937",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-090-01.jpg",
-    "pid": "m-090"
+    "identity_id": "m-090",
+    "image_filename": "m-090-01.jpg",
+    "sha256": "37bbfeea3742da5d30d532c5b06eef27d96079d473bf44f8d1a3dddf12e6bfca",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-091-01.jpg",
-    "pid": "m-091"
+    "identity_id": "m-091",
+    "image_filename": "m-091-01.jpg",
+    "sha256": "fcfa600f77e130660cb692f24ec71e96f1e0d6dd56a05d565f3d937ec8e75747",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-092-01.jpg",
-    "pid": "m-092"
+    "identity_id": "m-092",
+    "image_filename": "m-092-01.jpg",
+    "sha256": "2976bdd9b3be3788a90c05921f9143bbabd271af9ad9992c23fbac445fcb0d78",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-093-01.jpg",
-    "pid": "m-093"
+    "identity_id": "m-093",
+    "image_filename": "m-093-01.jpg",
+    "sha256": "56d6ab4f6f56e98366550de54b6ab9bd399a7e67bff4580b460bb72a2e9bb1bb",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-094-01.jpg",
-    "pid": "m-094"
+    "identity_id": "m-094",
+    "image_filename": "m-094-01.jpg",
+    "sha256": "0c9abaeb267a69a1c0a539e973cb51c3dc9a5953ffb7e1e0d79a0cc40bbd1202",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-095-01.jpg",
-    "pid": "m-095"
+    "identity_id": "m-095",
+    "image_filename": "m-095-01.jpg",
+    "sha256": "facf3c50093b623f1931493124fd6536f1622bf41c87112b4e5364426301d510",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-096-01.jpg",
-    "pid": "m-096"
+    "identity_id": "m-096",
+    "image_filename": "m-096-01.jpg",
+    "sha256": "4aad93bfce31fc60e248d7080ecd250e96c94a39b8d936383d49c7c99b7f325c",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-097-01.jpg",
-    "pid": "m-097"
+    "identity_id": "m-097",
+    "image_filename": "m-097-01.jpg",
+    "sha256": "e0c02b3506ec99c27982564e7d19f7ca76feee38a3785309c2f039ecf873f8d5",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-098-01.jpg",
-    "pid": "m-098"
+    "identity_id": "m-098",
+    "image_filename": "m-098-01.jpg",
+    "sha256": "0e02db11b77bf6de018300e131183ec19b9c68153417535f651ff171ababcdc6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-099-01.jpg",
-    "pid": "m-099"
+    "identity_id": "m-099",
+    "image_filename": "m-099-01.jpg",
+    "sha256": "70e4fabb62e1c1ab0163ad31ea8b56940986f6e3ce71b9959b3300e947e3caa1",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-100-01.jpg",
-    "pid": "m-100"
+    "identity_id": "m-100",
+    "image_filename": "m-100-01.jpg",
+    "sha256": "bd3646a3aefbe2b3b0830003a8d020da93c36ec3984d78fa8032cb2f348f9b17",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m-101-01.jpg",
-    "pid": "m-101"
+    "identity_id": "m-101",
+    "image_filename": "m-101-01.jpg",
+    "sha256": "17f32f99c597f1302d41e655eaa1c9c90c0ee853cefdef7a5850e2f14a8db6fd",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-001-01.jpg",
-    "pid": "m1-001"
+    "identity_id": "m1-001",
+    "image_filename": "m1-001-01.jpg",
+    "sha256": "2932e5f3ca5280acf5636bfbe671b4d179fff5fd4a9648d6d361fcf661396984",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-002-01.jpg",
-    "pid": "m1-002"
+    "identity_id": "m1-002",
+    "image_filename": "m1-002-01.jpg",
+    "sha256": "6952335f0dcb32cfb9c349ba8265ce3761c74f3b3f9c2e672e389a6cb1c5f864",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-003-01.jpg",
-    "pid": "m1-003"
+    "identity_id": "m1-003",
+    "image_filename": "m1-003-01.jpg",
+    "sha256": "331dd5ca73d06611c9bf8545c8c46853134c0299716a2092ca7b36739e47c5c7",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-004-01.jpg",
-    "pid": "m1-004"
+    "identity_id": "m1-004",
+    "image_filename": "m1-004-01.jpg",
+    "sha256": "0ea3faeb8a55058f35cd881b7a00db2db6ad09659c9742d9c1d15174b418a1b6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-005-01.jpg",
-    "pid": "m1-005"
+    "identity_id": "m1-005",
+    "image_filename": "m1-005-01.jpg",
+    "sha256": "f5bade893d2d9bc49eaecfc0179538ab8487290b4fabcd6c1c3d29a9d024285f",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-006-01.jpg",
-    "pid": "m1-006"
+    "identity_id": "m1-006",
+    "image_filename": "m1-006-01.jpg",
+    "sha256": "68f526e5b30852ee19abea93ebfc230f7662feb8e730cc6f5c3c941f589cce23",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-007-01.jpg",
-    "pid": "m1-007"
+    "identity_id": "m1-007",
+    "image_filename": "m1-007-01.jpg",
+    "sha256": "e7dc5270acd5d1f4ceb6cd3896e02a38e90701c093f6f1110fa3bd0dda8e3f85",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-008-01.jpg",
-    "pid": "m1-008"
+    "identity_id": "m1-008",
+    "image_filename": "m1-008-01.jpg",
+    "sha256": "88d41c7ba172a73c1a90574b549dd6979d9ef920def94e0bdca4c8860f7b5dc9",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-009-01.jpg",
-    "pid": "m1-009"
+    "identity_id": "m1-009",
+    "image_filename": "m1-009-01.jpg",
+    "sha256": "257e44612b236c43e263f29437d9c3b585166a43eb12a0c3cf1111ba64058be1",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-010-01.jpg",
-    "pid": "m10"
+    "identity_id": "m10",
+    "image_filename": "m1-010-01.jpg",
+    "sha256": "17f8bc778b91e44107cc89455b4ddc17ac0ce0f97878f58f8d0076189d85beec",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-011-01.jpg",
-    "pid": "m11"
+    "identity_id": "m11",
+    "image_filename": "m1-011-01.jpg",
+    "sha256": "28c20b5904dc02ecf2d3979a64f3e853cf45eb98965e7fba76739c7134bc94d8",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-012-01.jpg",
-    "pid": "m12"
+    "identity_id": "m12",
+    "image_filename": "m1-012-01.jpg",
+    "sha256": "c4666827969e699e6741256a0f30e67f8553258da99566db0a05e2ee9df0730c",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-013-01.jpg",
-    "pid": "m13"
+    "identity_id": "m13",
+    "image_filename": "m1-013-01.jpg",
+    "sha256": "3e870099c5ea76aae9bb71723c5781f931a7186c7c3d9c7ed6f458db077d575e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-014-01.jpg",
-    "pid": "m14"
+    "identity_id": "m14",
+    "image_filename": "m1-014-01.jpg",
+    "sha256": "c19c741f38b27cd14b6b9c77ce305ce6a26dc5d92af680301c311a9847a5e350",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-015-01.jpg",
-    "pid": "m15"
+    "identity_id": "m15",
+    "image_filename": "m1-015-01.jpg",
+    "sha256": "4f5098ebb471cfcad1c1e51fda129797666d598c432f1df9cb5f4faa0c6e00ea",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-016-01.jpg",
-    "pid": "m16"
+    "identity_id": "m16",
+    "image_filename": "m1-016-01.jpg",
+    "sha256": "78a933ed3f784ced1298a126dc756512b2caf59b2a398e892c1ed47de5959e24",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-017-01.jpg",
-    "pid": "m17"
+    "identity_id": "m17",
+    "image_filename": "m1-017-01.jpg",
+    "sha256": "0419b54443b62b79c06746b295a66a0c87269b1341a97f6c03e9e843154f96cc",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-018-01.jpg",
-    "pid": "m18"
+    "identity_id": "m18",
+    "image_filename": "m1-018-01.jpg",
+    "sha256": "3bc661aa15db44ec77d0444287b2d5edb78998020ca071d3e06ee83d0dcce166",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-019-01.jpg",
-    "pid": "m19"
+    "identity_id": "m19",
+    "image_filename": "m1-019-01.jpg",
+    "sha256": "fed7223b038c06275d911859832fc244c833d214e42979d73f6978988f58fff4",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-020-01.jpg",
-    "pid": "m1-020"
+    "identity_id": "m1-020",
+    "image_filename": "m1-020-01.jpg",
+    "sha256": "e9abe2c47ec919d4576caba6a97d06931216d01658142e81e7ae12b8dd78c342",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-021-01.jpg",
-    "pid": "m1-021"
+    "identity_id": "m1-021",
+    "image_filename": "m1-021-01.jpg",
+    "sha256": "d17ccfdc06d25b4aaa5ff64c32b1eabebb746bbc65e440869e85531b1e988cb0",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-022-01.jpg",
-    "pid": "m1-022"
+    "identity_id": "m1-022",
+    "image_filename": "m1-022-01.jpg",
+    "sha256": "9bef6d953ffe621e4c2c758f22ae395704da5cf27d4a5a3b514a0e6d7001ff28",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-023-01.jpg",
-    "pid": "m1-023"
+    "identity_id": "m1-023",
+    "image_filename": "m1-023-01.jpg",
+    "sha256": "6774ec77ac673fa68d35792a6b9e4042e906542d47d81c1ec7f570998347f4ff",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-024-01.jpg",
-    "pid": "m1-024"
+    "identity_id": "m1-024",
+    "image_filename": "m1-024-01.jpg",
+    "sha256": "6f08fbab4d0412a7f821c057ade8978f37c7a22e3322275e8349aeb8213a1c96",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-025-01.jpg",
-    "pid": "m1-025"
+    "identity_id": "m1-025",
+    "image_filename": "m1-025-01.jpg",
+    "sha256": "406fd9126c9f5ecb394b80ffad5acf6a88229603a501dd722eb703f5c2cadc55",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-026-01.jpg",
-    "pid": "m1-026"
+    "identity_id": "m1-026",
+    "image_filename": "m1-026-01.jpg",
+    "sha256": "ff4222f37520fea4e8db9fbf7dff0d588b2a9432633c71c1c0e1179e8d2a7edf",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-027-01.jpg",
-    "pid": "m1-027"
+    "identity_id": "m1-027",
+    "image_filename": "m1-027-01.jpg",
+    "sha256": "1846ce0c6fd1d89f45e73fd75db1d6dac09e62757ebed00d23d8a759525afcb6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-028-01.jpg",
-    "pid": "m1-028"
+    "identity_id": "m1-028",
+    "image_filename": "m1-028-01.jpg",
+    "sha256": "b0e2d560f2af942764c7183e78f9c5367538c1e00d5799b4157d8acf6bb3cc74",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-029-01.jpg",
-    "pid": "m1-029"
+    "identity_id": "m1-029",
+    "image_filename": "m1-029-01.jpg",
+    "sha256": "f70489012ed74969fa0c9080f57f402f4a9635a728d2bdd777a9cc25f2736054",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-030-01.jpg",
-    "pid": "m1-030"
+    "identity_id": "m1-030",
+    "image_filename": "m1-030-01.jpg",
+    "sha256": "a0e10a39255ca5addf7ce0552b703c304cfc4ba7790c8cdef5a7921e65ff0f4b",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-031-01.jpg",
-    "pid": "m1-031"
+    "identity_id": "m1-031",
+    "image_filename": "m1-031-01.jpg",
+    "sha256": "fe037853eda484fc6e44ba90073725f73a6556d808ff18ba2e376e906072b74e",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-032-01.jpg",
-    "pid": "m1-032"
+    "identity_id": "m1-032",
+    "image_filename": "m1-032-01.jpg",
+    "sha256": "0358ea1962ec21391117112cb8838487c90b6c76bffa5d7266df9b136f0eeafa",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-033-01.jpg",
-    "pid": "m1-033"
+    "identity_id": "m1-033",
+    "image_filename": "m1-033-01.jpg",
+    "sha256": "d801c454492037295a7ef8b9ddac06f9a457ce30e47583c8e11a8cbcde3ec308",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-034-01.jpg",
-    "pid": "m1-034"
+    "identity_id": "m1-034",
+    "image_filename": "m1-034-01.jpg",
+    "sha256": "2761c0fc174773b5f798054479cd9191613682f0b7fa34963868ee7c11b81709",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-035-01.jpg",
-    "pid": "m1-035"
+    "identity_id": "m1-035",
+    "image_filename": "m1-035-01.jpg",
+    "sha256": "42fbd247f23db1aa97c8801f8c8856a191ae3faaec2813fffbf9242490c13bc7",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-036-01.jpg",
-    "pid": "m1-036"
+    "identity_id": "m1-036",
+    "image_filename": "m1-036-01.jpg",
+    "sha256": "a1d5538772bf261b1f8c433655c29ad90a87da4cd3068728dcf320dee56902b0",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-037-01.jpg",
-    "pid": "m1-037"
+    "identity_id": "m1-037",
+    "image_filename": "m1-037-01.jpg",
+    "sha256": "8d0b928e23c2387d22fdf6d6768ada41ad9462e53f3921b557f5723144230a54",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-038-01.jpg",
-    "pid": "m1-038"
+    "identity_id": "m1-038",
+    "image_filename": "m1-038-01.jpg",
+    "sha256": "2712a4d527f42ee56c6a1fcd1b03ada40e053bc1f36cecf6ffebb1a73c327faa",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-039-01.jpg",
-    "pid": "m1-039"
+    "identity_id": "m1-039",
+    "image_filename": "m1-039-01.jpg",
+    "sha256": "f42c386d8c5762f20dc7004c16e2cbc447d49ec0a931535f5dd0fec9742c33ae",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-040-01.jpg",
-    "pid": "m1-040"
+    "identity_id": "m1-040",
+    "image_filename": "m1-040-01.jpg",
+    "sha256": "5ec7871e1d3e068832410cb3e58b462e589fb3ee775bdb24a6241401327b2cf6",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   },
   {
-    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery\\m1-041-01.jpg",
-    "pid": "m1-041"
+    "identity_id": "m1-041",
+    "image_filename": "m1-041-01.jpg",
+    "sha256": "5834c16b4ac2d84c26af417e58f3e8bd072dcac61b877a857425461f009eb5a8",
+    "modality": "PHOTO",
+    "source_dataset": "CUFS"
   }
 ]

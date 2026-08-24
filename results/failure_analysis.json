@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-24T10:52:21Z",
+  "test_queries": 21,
+  "failures": 3,
+  "instances": [
+    {
+      "query": "f-039-01-sz1.jpg",
+      "true_pid": "f-039",
+      "top_retrieved": "f-040",
+      "similarity": 0.531,
+      "category": "DOMAIN_GAP"
+    },
+    {
+      "query": "m-063-01-sz1.jpg",
+      "true_pid": "m-063",
+      "top_retrieved": "m-064",
+      "similarity": 0.528,
+      "category": "LINE_STROKE_VARIATION"
+    },
+    {
+      "query": "m-071-01-sz1.jpg",
+      "true_pid": "m-071",
+      "top_retrieved": "m-072",
+      "similarity": 0.519,
+      "category": "COMPOSITE_ELEMENT_MISMATCH"
+    }
+  ]
+}

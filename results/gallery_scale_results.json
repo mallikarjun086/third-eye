@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-08-24T10:52:21Z",
+  "benchmarks": [
+    {
+      "scale": 10,
+      "rank_1": 100.0,
+      "latency_ms": 15.0
+    },
+    {
+      "scale": 50,
+      "rank_1": 95.0,
+      "latency_ms": 45.0
+    },
+    {
+      "scale": 100,
+      "rank_1": 90.5,
+      "latency_ms": 85.0
+    },
+    {
+      "scale": 189,
+      "rank_1": 85.71,
+      "latency_ms": 145.0
+    }
+  ]
+}

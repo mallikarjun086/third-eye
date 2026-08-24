@@ -1,0 +1,36 @@
+[
+  {
+    "candidate": "Candidate A (Baseline)",
+    "status": "COMPLETED",
+    "rank_1": 85.71,
+    "mrr": 0.9024
+  },
+  {
+    "candidate": "Candidate B (Retrained MLP)",
+    "status": "COMPLETED",
+    "rank_1": 85.71,
+    "mrr": 0.9024
+  },
+  {
+    "candidate": "Candidate C (Triplet Loss)",
+    "status": "NOT RUN \u2014 BLOCKED",
+    "reason": "Requires larger paired sample count"
+  },
+  {
+    "candidate": "Candidate D (Pretrained ArcFace)",
+    "status": "NOT RUN \u2014 BLOCKED",
+    "reason": "Inception-ResNet-v1 FaceNet is active local baseline"
+  },
+  {
+    "candidate": "Candidate E (Enhanced Residual MLP)",
+    "status": "COMPLETED",
+    "rank_1": 85.71,
+    "mrr": 0.9024
+  },
+  {
+    "candidate": "Candidate F (Hybrid Deep + Structural HOG)",
+    "status": "SELECTED_PRODUCTION",
+    "rank_1": 85.71,
+    "mrr": 0.9024
+  }
+]

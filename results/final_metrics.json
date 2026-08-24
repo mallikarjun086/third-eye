@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-24T10:52:21Z",
+  "held_out_artist_sketch": {
+    "rank_1": 85.71,
+    "rank_5": 100.0,
+    "rank_10": 100.0,
+    "mrr": 0.9024,
+    "auc": 0.9898
+  },
+  "real_photo_to_photo": {
+    "rank_1": 100.0,
+    "rank_5": 100.0,
+    "rank_10": 100.0,
+    "mrr": 1.0,
+    "auc": 1.0
+  },
+  "thirdeye_composite_sketch": {
+    "rank_1": 100.0,
+    "rank_5": 100.0,
+    "rank_10": 100.0,
+    "mrr": 1.0,
+    "auc": 0.9999
+  }
+}

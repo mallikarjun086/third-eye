@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-08-24T10:52:21Z",
+  "total_images": 210,
+  "unique_identities": 189,
+  "sketch_count": 21,
+  "photo_count": 189,
+  "paired_sketch_photo_identities": 189,
+  "duplicate_files": 0,
+  "corrupt_files": 0,
+  "missing_identity_mappings": 0,
+  "datasets": {
+    "CUFS": {
+      "status": "INTEGRATED",
+      "physical_files": 210
+    },
+    "CUFSF": {
+      "status": "ACCESS_PENDING",
+      "reason": "Academic EULA approval required"
+    },
+    "IIITD": {
+      "status": "ACCESS_PENDING",
+      "reason": "Academic EULA approval required"
+    }
+  }
+}
