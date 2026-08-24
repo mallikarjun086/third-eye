@@ -1,29 +1,34 @@
+# THIRD EYE
+
 ![Test Image 1](https://github.com/imakashsahu/Third-Eye-Final-Year-Project/blob/main/Logo.jpg)
 
-
-# THIRD EYE
 Forensic Face Sketch Construction and Recognition (My B.E. Final Year Project)
 
 ## SOURCE CODE
-[Download Source Code](https://drive.google.com/file/d/1GG1F90qRMzmUv6REG8gf6yEtxGcuuXpa/view?usp=sharing)
+
+[Download Source Code](https://drive.google.com/file/d/1GG1F90qRMzmUv6REG8gf6yEtxGcuuXpa/view?usp=sharing)  
 (*Please mention the purpose for which you need the source code in the message box*)
 
 ## HOW TO RUN THE PROJECT (GUIDE)
-A detailed guide to run the Project can be found [here](https://dev.to/imakashsahu/forensic-face-sketch-construction-and-recognition-18kh)
+
+A detailed guide to run the Project can be found in the [Third Eye Project Guide](https://dev.to/imakashsahu/forensic-face-sketch-construction-and-recognition-18kh).
 
 ## WALKTHROUGH VIDEO
-Watch the walkthrough of the project to get idea about the project
 
-Watch *[PART 1](https://www.youtube.com/watch?v=wGEEOh1bA2s&ab_channel=AkashSahu)* & *[PART 2](https://www.youtube.com/watch?v=FzLebHWGhnE&ab_channel=AkashSahu)*
+Watch the walkthrough of the project to get idea about the project.
 
-*Note : You need AWS for the part 2 module, so you will have to setup AWS S3 bucket and AWS Rekognition*
+Watch [PART 1](https://www.youtube.com/watch?v=wGEEOh1bA2s&ab_channel=AkashSahu) & [PART 2](https://www.youtube.com/watch?v=FzLebHWGhnE&ab_channel=AkashSahu).
+
+> **Note**: You need AWS for the part 2 module, so you will have to setup AWS S3 bucket and AWS Rekognition.
 
 ## DESCRIPTION/ABSTRACT
+
 In forensic science, it is seen that hand-drawn face sketches are still very limited and time-consuming when it comes to using them with the latest technologies used for recognition and identification of criminals. In this paper, we present a standalone application which would allow users to create composites face sketch of the suspect without the help of forensic artists using drag and drop feature in the application and can automatically match the drawn composite face sketch with the police database much faster and efficiently using deep learning and cloud infrastructure.
 
 ## PUBLISHED TECHNICAL PAPER
-Read the Technical Paper : http://www.ijitjournal.org/volume-6/issue-4/IJIT-V6I4P2.pdf
 
-Other link : https://www.academia.edu/85447403/Forensic_Face_Sketch_Construction_and_Recognition?f_ri=5110
+Read the Technical Paper: [IJIT Technical Paper](http://www.ijitjournal.org/volume-6/issue-4/IJIT-V6I4P2.pdf)
+
+Other link: [Academia Publication](https://www.academia.edu/85447403/Forensic_Face_Sketch_Construction_and_Recognition?f_ri=5110)
 
 ![Certificate](https://github.com/imakashsahu/Third-Eye-Final-Year-Project/blob/main/Technical%20Paper%20Certificates/Akash%20Sahu.jpg)

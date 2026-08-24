@@ -46,6 +46,19 @@ public class DeepMatchClient {
         public String name;
         public String path;
         public double similarity;
+        public double calibratedScore;
+        public int rank;
+    }
+
+    /** Detailed response holder containing modality, pipeline selection, and open-set match decision. */
+    public static class MatchResponseHolder {
+        public String status = "ok";
+        public String queryModality = "UNKNOWN";
+        public String selectedPipeline = "UNKNOWN";
+        public String matchDecision = "POSSIBLE MATCH";
+        public double threshold = 0.55;
+        public List<String> warnings = new ArrayList<>();
+        public List<Match> results = new ArrayList<>();
     }
 
     /**
@@ -82,6 +95,14 @@ public class DeepMatchClient {
      * @throws IOException network/IO failure
      */
     public List<Match> match(File sketchFile, File datasetDir, int topN) throws IOException {
+        return matchDetailed(sketchFile, datasetDir, topN).results;
+    }
+
+    /**
+     * Detailed match invocation returning full modality classification, pipeline selection,
+     * open-set match decision, and calibrated candidate scores.
+     */
+    public MatchResponseHolder matchDetailed(File sketchFile, File datasetDir, int topN) throws IOException {
         byte[] boundary = ("----ThirdEye" + System.nanoTime()).getBytes(StandardCharsets.US_ASCII);
         byte[] body = buildMultipart(sketchFile, datasetDir, topN, boundary);
 
@@ -107,7 +128,20 @@ public class DeepMatchClient {
         }
 
         JsonObject json = JsonParser.parseString(resp.body()).getAsJsonObject();
-        List<Match> results = new ArrayList<>();
+        MatchResponseHolder holder = new MatchResponseHolder();
+        holder.status = json.has("status") ? json.get("status").getAsString() : "ok";
+        holder.queryModality = json.has("query_modality") ? json.get("query_modality").getAsString() : "UNKNOWN";
+        holder.selectedPipeline = json.has("selected_pipeline") ? json.get("selected_pipeline").getAsString() : "UNKNOWN";
+        holder.matchDecision = json.has("match_decision") ? json.get("match_decision").getAsString() : "POSSIBLE MATCH";
+        holder.threshold = json.has("threshold") ? json.get("threshold").getAsDouble() : 0.55;
+
+        if (json.has("warnings") && json.get("warnings").isJsonArray()) {
+            JsonArray wArr = json.getAsJsonArray("warnings");
+            for (int i = 0; i < wArr.size(); i++) {
+                holder.warnings.add(wArr.get(i).getAsString());
+            }
+        }
+
         JsonArray arr = json.getAsJsonArray("results");
         if (arr != null) {
             for (int i = 0; i < arr.size(); i++) {
@@ -116,10 +150,12 @@ public class DeepMatchClient {
                 m.name = o.has("name") ? o.get("name").getAsString() : "Unknown";
                 m.path = o.has("path") ? o.get("path").getAsString() : "";
                 m.similarity = o.has("similarity") ? o.get("similarity").getAsDouble() : 0.0;
-                results.add(m);
+                m.calibratedScore = o.has("calibrated_score") ? o.get("calibrated_score").getAsDouble() : (m.similarity * 100.0);
+                m.rank = o.has("rank") ? o.get("rank").getAsInt() : (i + 1);
+                holder.results.add(m);
             }
         }
-        return results;
+        return holder;
     }
 
     // ── Multipart body builder ────────────────────────────────────────────────

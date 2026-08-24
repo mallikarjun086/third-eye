@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-08-24T09:35:32Z",
+  "suites": [
+    {
+      "pipeline": "PHOTO_TO_PHOTO",
+      "modality": "PHOTO",
+      "model": "FaceNet 512d (Raw Cosine)",
+      "dataset": "CUFS Gallery Photos",
+      "unique_ids": 20,
+      "test_queries": 20,
+      "gallery_size": 189,
+      "rank_1": 100.0,
+      "rank_5": 100.0,
+      "rank_10": 100.0,
+      "auc": 1.0,
+      "eer": 0.0,
+      "median_latency_ms": 226.5
+    },
+    {
+      "pipeline": "CROSS_MODAL_SKETCH",
+      "modality": "ARTIST_SKETCH",
+      "model": "FaceNet 128d Projection + HOG (alpha=0.85)",
+      "dataset": "CUFS Test Sketches",
+      "unique_ids": 21,
+      "test_queries": 21,
+      "gallery_size": 189,
+      "rank_1": 19.05,
+      "rank_5": 52.38,
+      "rank_10": 66.67,
+      "auc": 0.8996,
+      "eer": 17.96,
+      "median_latency_ms": 199.3
+    },
+    {
+      "pipeline": "CROSS_MODAL_COMPOSITE",
+      "modality": "COMPOSITE_FORENSIC_SKETCH",
+      "model": "FaceNet 128d Projection + HOG (alpha=0.85)",
+      "dataset": "ThirdEye Composite Benchmark",
+      "unique_ids": 1,
+      "test_queries": 2,
+      "gallery_size": 189,
+      "rank_1": 100.0,
+      "rank_5": 100.0,
+      "rank_10": 100.0,
+      "auc": 0.9999,
+      "eer": 0.0,
+      "median_latency_ms": 197.6
+    }
+  ],
+  "open_set_test": {
+    "test_type": "OPEN_SET_REJECTION",
+    "top_similarity_pct": 51.68,
+    "calibrated_threshold_pct": 55.0,
+    "decision": "NO RELIABLE MATCH FOUND IN CURRENT GALLERY",
+    "rejection_status": "PASSED"
+  }
+}

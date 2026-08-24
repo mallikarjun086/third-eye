@@ -1,0 +1,242 @@
+[
+  {
+    "pid": "a-sharukh",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f-041",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f-042",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f-043",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-001",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-002",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-003",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-004",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-005",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-006",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-007",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f1-008",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f10",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f11",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f12",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f13",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "f14",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-064",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-066",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-067",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-068",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-069",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-070",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-072",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-073",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-075",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-076",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-077",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-080",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-081",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-082",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-084",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-085",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-086",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-087",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-089",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-091",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-095",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m-097",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-003",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-005",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-006",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-007",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-008",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-021",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-023",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-024",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-027",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-028",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-029",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-030",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-032",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-034",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-035",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m1-040",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m10",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m12",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m13",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m15",
+    "split": "TRAIN"
+  },
+  {
+    "pid": "m16",
+    "split": "TRAIN"
+  }
+]

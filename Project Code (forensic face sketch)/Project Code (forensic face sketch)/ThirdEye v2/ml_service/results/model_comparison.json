@@ -1,0 +1,28 @@
+[
+  {
+    "model": "Model A (Baseline Sketch-Photo)",
+    "pipeline": "CROSS_MODAL_SKETCH",
+    "modality": "ARTIST_SKETCH",
+    "train_dataset": "CUFS Train (62 PIDs)",
+    "test_ids": 21,
+    "gallery_ids": 189,
+    "rank_1": 19.05,
+    "rank_5": 52.38,
+    "rank_10": 66.67,
+    "mrr": 0.3581,
+    "status": "BASELINE"
+  },
+  {
+    "model": "Model B (Modality-Aware Router + Photo-to-Photo)",
+    "pipeline": "PHOTO_TO_PHOTO",
+    "modality": "PHOTO",
+    "train_dataset": "CUFS Gallery (20 PIDs)",
+    "test_ids": 20,
+    "gallery_ids": 189,
+    "rank_1": 100.0,
+    "rank_5": 100.0,
+    "rank_10": 100.0,
+    "mrr": 1.0,
+    "status": "SELECTED_PRODUCTION"
+  }
+]

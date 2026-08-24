@@ -1,0 +1,17 @@
+{
+  "CUFS": {
+    "status": "PHYSICALLY_VERIFIED",
+    "access": "PUBLIC_ACADEMIC",
+    "physical_location": "ml_service/dataset",
+    "total_files": 210,
+    "paired_identities": 189
+  },
+  "CUFSF": {
+    "status": "ACCESS_PENDING",
+    "reason": "Requires official EULA agreement from CUHK/FERET"
+  },
+  "IIITD": {
+    "status": "ACCESS_PENDING",
+    "reason": "Requires official EULA agreement from IIIT-Delhi"
+  }
+}

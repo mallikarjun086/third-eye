@@ -1,0 +1,54 @@
+{
+  "CUFS (CUHK)": {
+    "dataset_name": "CUFS (CUHK)",
+    "physical_path": "Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset",
+    "status": "PHYSICALLY_PRESENT",
+    "file_count": 382,
+    "valid_image_count": 379,
+    "corrupt_image_count": 0,
+    "unique_identity_count": 278,
+    "photo_count": 291,
+    "sketch_count": 379,
+    "paired_identity_count": 190,
+    "duplicate_checksum_count": 0
+  },
+  "CUFSF (FERET)": {
+    "dataset_name": "CUFSF (FERET)",
+    "physical_path": "data\\cufsf",
+    "status": "EMPTY_OR_CORRUPT",
+    "file_count": 4,
+    "valid_image_count": 0,
+    "corrupt_image_count": 0,
+    "unique_identity_count": 0,
+    "photo_count": 0,
+    "sketch_count": 0,
+    "paired_identity_count": 0,
+    "duplicate_checksum_count": 0
+  },
+  "IIIT-D Forensic": {
+    "dataset_name": "IIIT-D Forensic",
+    "physical_path": "data\\iiitd",
+    "status": "EMPTY_OR_CORRUPT",
+    "file_count": 5,
+    "valid_image_count": 0,
+    "corrupt_image_count": 0,
+    "unique_identity_count": 0,
+    "photo_count": 0,
+    "sketch_count": 0,
+    "paired_identity_count": 0,
+    "duplicate_checksum_count": 0
+  },
+  "ThirdEye Composite": {
+    "dataset_name": "ThirdEye Composite",
+    "physical_path": "Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries",
+    "status": "PHYSICALLY_PRESENT",
+    "file_count": 191,
+    "valid_image_count": 190,
+    "corrupt_image_count": 0,
+    "unique_identity_count": 189,
+    "photo_count": 102,
+    "sketch_count": 190,
+    "paired_identity_count": 101,
+    "duplicate_checksum_count": 0
+  }
+}

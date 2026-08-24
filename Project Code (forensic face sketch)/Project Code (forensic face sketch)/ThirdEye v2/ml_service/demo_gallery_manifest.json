@@ -1,0 +1,12 @@
+{
+  "gallery_name": "ThirdEye Production Suspect Gallery",
+  "gallery_path": "dataset/gallery",
+  "total_identities": 189,
+  "distractor_identities": 89,
+  "known_identities": [
+    "a-sharukh",
+    "f-001",
+    "m-001",
+    "f1-001"
+  ]
+}

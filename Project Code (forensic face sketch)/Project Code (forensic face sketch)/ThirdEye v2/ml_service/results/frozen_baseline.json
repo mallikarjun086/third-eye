@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-24T10:05:37Z",
+  "model_weights": "best_cross_modal_model.weights.h5",
+  "model_sha256": "727ad1d6b05f65fefde6149a5e47e35d3d4a063876d0dfeb7178c8b9127b7e4f",
+  "gallery_identities": 189,
+  "test_queries": 21,
+  "rank_1": 19.05,
+  "rank_5": 52.38,
+  "rank_10": 66.67,
+  "mrr": 0.3581,
+  "auc": 0.8996,
+  "eer": 17.96,
+  "median_latency_ms": 196.5
+}

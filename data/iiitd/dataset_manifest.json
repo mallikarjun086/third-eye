@@ -1,0 +1,11 @@
+{
+  "dataset_name": "IIIT-D Forensic",
+  "source": "IIIT-Delhi IPAG",
+  "license_access_status": "NOT INTEGRATED \u2014 ACCESS PENDING",
+  "identity_count": 0,
+  "sketch_count": 0,
+  "photo_count": 0,
+  "paired_identity_count": 0,
+  "modality": "Forensic / Semi-Forensic Sketch",
+  "status": "ACCESS_PENDING_NO_PHYSICAL_DATA"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "demo_id": "DEMO_1_KNOWN_PHOTO",
+    "query_file": "dataset/gallery/a-sharukh.jpg",
+    "query_modality": "PHOTO",
+    "ground_truth_identity": "a-sharukh",
+    "gallery_identity_present": true,
+    "expected_decision": "POSSIBLE MATCH",
+    "expected_rank": 1
+  },
+  {
+    "demo_id": "DEMO_2_KNOWN_COMPOSITE",
+    "query_file": "dataset/queries/a-sharukh-1.jpg",
+    "query_modality": "COMPOSITE_FORENSIC_SKETCH",
+    "ground_truth_identity": "a-sharukh",
+    "gallery_identity_present": true,
+    "expected_decision": "POSSIBLE MATCH",
+    "expected_rank": 1
+  },
+  {
+    "demo_id": "DEMO_3_UNKNOWN_OPEN_SET",
+    "query_file": "dataset/queries/unknown_test_person.jpg",
+    "query_modality": "ARTIST_SKETCH",
+    "ground_truth_identity": "unknown_test_person",
+    "gallery_identity_present": false,
+    "expected_decision": "NO RELIABLE MATCH FOUND IN CURRENT GALLERY",
+    "expected_rank": null
+  }
+]

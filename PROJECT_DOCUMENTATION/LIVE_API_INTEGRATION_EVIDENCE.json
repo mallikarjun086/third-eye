@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-24T09:16:11Z",
+  "health_check": "PASS",
+  "embed_check": "PASS",
+  "match_check": "PASS",
+  "rebuild_cache_check": "PASS",
+  "top_match_name": "f-024-01",
+  "top_match_similarity": 0.512
+}

@@ -39,9 +39,9 @@ def train_cross_modal_projection(epochs: int = 150, margin: float = 0.3, lr: flo
     queries_dir = os.path.join(base_dir, "dataset", "queries")
     
     gallery_files = sorted([f for f in app._list_images(gallery_dir) if not f.endswith(".npy")])
-    query_files = sorted([f for f in app._list_images(queries_dir) if not f.endswith(".npy") and not f.endswith(".lnk")])
+    query_files = sorted([os.path.join(queries_dir, f) for f in os.listdir(queries_dir) if os.path.splitext(f)[1].lower() in app.IMAGE_EXTS])
     
-    app.build_cache(gallery_dir)
+    app.build_cache(gallery_dir, force=True)
     
     with open(os.path.join(base_dir, "split_manifest.json")) as f:
         splits = json.load(f)
@@ -53,34 +53,31 @@ def train_cross_modal_projection(epochs: int = 150, margin: float = 0.3, lr: flo
     train_queries = [q for q in query_files if ee.to_pid(q) in train_pids]
     train_gallery = [g for g in gallery_files if ee.to_pid(g) in train_pids]
     
-    train_q_embs = []
-    train_q_pids = []
-    for q in train_queries:
-        with open(q, "rb") as fh:
-            emb = app.embed_image(fh.read())
-        train_q_embs.append(emb)
-        train_q_pids.append(ee.to_pid(q))
-    train_q_embs = np.array(train_q_embs)
+    def get_512d_emb(path):
+        import cv2
+        import io
+        from PIL import Image
+        with open(path, "rb") as fh:
+            img = Image.open(io.BytesIO(fh.read())).convert("RGB")
+        arr = app.crop_face(np.asarray(img), target_size=160)
+        emb = app._model.embeddings(np.expand_dims(arr, axis=0))[0]
+        norm = np.linalg.norm(emb)
+        return emb / norm if norm > 0 else emb
+
+    train_q_embs = np.array([get_512d_emb(q) for q in train_queries])
+    train_q_pids = [ee.to_pid(q) for q in train_queries]
     
-    train_g_map = {}
-    for g in train_gallery:
-        pid = ee.to_pid(g)
-        train_g_map[pid] = app._cache[os.path.basename(g)]["face"]
+    train_g_map = {ee.to_pid(g): get_512d_emb(g) for g in train_gallery}
         
-    # Prepare Validation Data
+    # 2. Prepare Validation Data
     val_queries = [q for q in query_files if ee.to_pid(q) in val_pids]
     val_gallery = [g for g in gallery_files if ee.to_pid(g) in val_pids]
     
-    val_q_embs = []
+    val_q_embs = np.array([get_512d_emb(q) for q in val_queries])
     val_q_pids = [ee.to_pid(q) for q in val_queries]
-    for q in val_queries:
-        with open(q, "rb") as fh:
-            emb = app.embed_image(fh.read())
-        val_q_embs.append(emb)
-    val_q_embs = np.array(val_q_embs)
     
+    val_g_embs = np.array([get_512d_emb(g) for g in val_gallery])
     val_g_pids = [ee.to_pid(g) for g in val_gallery]
-    val_g_embs = np.array([app._cache[os.path.basename(g)]["face"] for g in val_gallery])
     
     proj_model = build_projection_model(in_dim=512, hidden_dim=256, out_dim=128)
     optimizer = optimizers.Adam(learning_rate=lr)
@@ -89,7 +86,7 @@ def train_cross_modal_projection(epochs: int = 150, margin: float = 0.3, lr: flo
     best_val_metrics = {}
     out_dir = os.path.join(base_dir, "experiments", "exp05_cross_modal")
     os.makedirs(out_dir, exist_ok=True)
-    best_model_path = os.path.join(out_dir, "best_cross_modal_model.weights.h5")
+    best_model_path = os.path.join(out_dir, "upgraded_cross_modal_model.weights.h5")
     
     for epoch in range(1, epochs + 1):
         # Mine hard triplets

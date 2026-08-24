@@ -1,0 +1,63 @@
+{
+  "CUFS": {
+    "dataset_name": "CUFS (CUHK)",
+    "physical_path": "ml_service/dataset/",
+    "legal_access_status": "Open Academic Research",
+    "integration_status": "INTEGRATED",
+    "file_count": 381,
+    "valid_images": 381,
+    "unique_identities": 190,
+    "sketch_count": 191,
+    "photo_count": 190,
+    "paired_identities": 189,
+    "track": "TRACK A \u2014 CURRENT VERIFIED DATA ONLY",
+    "split_distribution": {
+      "train_pids": 60,
+      "val_pids": 20,
+      "test_pids": 21,
+      "distractor_gallery_pids": 89
+    }
+  },
+  "CUFSF": {
+    "dataset_name": "CUFSF (FERET)",
+    "physical_path": "data/cufsf/",
+    "legal_access_status": "CUHK MMLab Research License Required",
+    "integration_status": "NOT INTEGRATED \u2014 ACCESS PENDING",
+    "file_count": 0,
+    "valid_images": 0,
+    "unique_identities": 0,
+    "sketch_count": 0,
+    "photo_count": 0,
+    "paired_identities": 0,
+    "track": "TRACK B \u2014 EXPANDED VERIFIED DATA",
+    "split_distribution": {}
+  },
+  "IIITD": {
+    "dataset_name": "IIIT-D Forensic",
+    "physical_path": "data/iiitd/",
+    "legal_access_status": "IIIT-Delhi IPAG Research License Required",
+    "integration_status": "NOT INTEGRATED \u2014 ACCESS PENDING",
+    "file_count": 0,
+    "valid_images": 0,
+    "unique_identities": 0,
+    "sketch_count": 0,
+    "photo_count": 0,
+    "paired_identities": 0,
+    "track": "TRACK B \u2014 EXPANDED VERIFIED DATA",
+    "split_distribution": {}
+  },
+  "ThirdEye_Composite": {
+    "dataset_name": "ThirdEye Composite",
+    "physical_path": "ml_service/dataset/queries/",
+    "legal_access_status": "Internal Project Benchmark",
+    "integration_status": "INTEGRATED",
+    "file_count": 2,
+    "valid_images": 2,
+    "unique_identities": 2,
+    "sketch_count": 2,
+    "photo_count": 0,
+    "paired_identities": 2,
+    "track": "TRACK A \u2014 CURRENT VERIFIED DATA ONLY",
+    "usage": "Internal Acceptance Test Benchmark"
+  }
+}

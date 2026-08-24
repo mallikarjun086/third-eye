@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "CUFS",
+    "action": "VERIFIED_EXISTING",
+    "status": "SUCCESS",
+    "timestamp": "2026-08-24"
+  },
+  {
+    "dataset": "CUFSF",
+    "action": "CHECK_ACCESS",
+    "status": "ACCESS_PENDING",
+    "timestamp": "2026-08-24"
+  },
+  {
+    "dataset": "IIITD",
+    "action": "CHECK_ACCESS",
+    "status": "ACCESS_PENDING",
+    "timestamp": "2026-08-24"
+  }
+]

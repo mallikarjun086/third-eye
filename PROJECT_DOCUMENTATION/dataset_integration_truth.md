@@ -1,25 +1,24 @@
-# DATASET INTEGRATION TRUTH & LEGAL AUDIT REPORT
+# DATASET INTEGRATION TRUTH & TRACK SEPARATION REPORT
 
-**Audit Date**: August 24, 2026  
-**Audited Datasets**: CUFS, CUFSF, IIIT-D, ThirdEye Composite  
-
----
-
-## 1. MANDATORY INTEGRATION DECLARATION
-
-> [!IMPORTANT]
-> **Canonical Integration Statement**:
-> **`NO LARGE FORENSIC/COMPOSITE DATASET IS CURRENTLY INTEGRATED`**
->
-> Large academic datasets (CUFSF with 1,194 PIDs and IIIT-D with 459 PIDs) require signed academic research agreements and are not physically present in local storage. Acquisition instructions are available in [`data/README.md`](file:///c:/Users/Mallikarjun%20Gala/OneDrive/Desktop/Third-Eye/data/README.md).
+**Audit Timestamp**: August 24, 2026  
+**Auditor**: Lead Technical Auditor & MLOps Engineer  
 
 ---
 
-## 2. PHYSICAL DATASET AUDIT MATRIX
+## 1. SCIENTIFIC TRACK SEPARATION DIRECTIVE
 
-| Dataset Name | Physical Path | Legal Access Status | Total Files | Valid Images | Unique PIDs | Sketches | Photos | Paired PIDs | Usage |
-| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **CUFS (CUHK)** | `ml_service/dataset/` | Open Academic | 381 | 381 | **190 PIDs** | 191 | 190 | 189 | Train (60), Val (20), Test (21), Gallery (189) |
-| **CUFSF (FERET)** | `data/cufsf/` | License Required | 0 | 0 | 0 | 0 | 0 | 0 | `NOT INTEGRATED â€” ACCESS PENDING` |
-| **IIIT-D Forensic** | `data/iiitd/` | License Required | 0 | 0 | 0 | 0 | 0 | 0 | `NOT INTEGRATED â€” ACCESS PENDING` |
-| **ThirdEye Composite** | `ml_service/dataset/` | Internal | 2 | 2 | **2 PIDs** | 2 | 0 | 2 | Internal Acceptance Test Only |
+To prevent misleading generalization claims from small datasets, evaluation is split into two explicit tracks:
+
+* **TRACK A — CURRENT VERIFIED DATA ONLY**: Utilizes physically present CUFS benchmark (190 PIDs, 189 paired) + 2 internal composite queries.
+* **TRACK B — EXPANDED VERIFIED DATA**: Reserved for when CUFSF (1,194 PIDs) and IIIT-D (459 PIDs) datasets are physically downloaded and validated.
+
+---
+
+## 2. DATASET INTEGRATION TRUTH MATRIX
+
+| Dataset Name | Physical Path | Legal Access Status | Integration Status | Track | Unique PIDs | Sketches | Photos | Paired PIDs |
+| :--- | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+| **CUFS (CUHK)** | `ml_service/dataset/` | Open Academic Research | `INTEGRATED` | `TRACK A — CURRENT VERIFIED DATA ONLY` | **190** | 191 | 190 | **189** |
+| **CUFSF (FERET)** | `data/cufsf/` | CUHK MMLab Research License Required | `NOT INTEGRATED — ACCESS PENDING` | `TRACK B — EXPANDED VERIFIED DATA` | **0** | 0 | 0 | **0** |
+| **IIIT-D Forensic** | `data/iiitd/` | IIIT-Delhi IPAG Research License Required | `NOT INTEGRATED — ACCESS PENDING` | `TRACK B — EXPANDED VERIFIED DATA` | **0** | 0 | 0 | **0** |
+| **ThirdEye Composite** | `ml_service/dataset/queries/` | Internal Project Benchmark | `INTEGRATED` | `TRACK A — CURRENT VERIFIED DATA ONLY` | **2** | 2 | 0 | **2** |

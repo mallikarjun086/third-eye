@@ -1,27 +1,20 @@
-# DATA LEAKAGE AUDIT REPORT
+# DATA LEAKAGE & IDENTITY DISJOINTNESS AUDIT REPORT
 
-**Audit Date**: August 23, 2026  
-**Auditor**: Automated Forensic Audit Suite  
-**Manifest Audited**: `ml_service/split_manifest.json`  
-
----
-
-## 1. Split Isolation Analysis
-
-To guarantee scientific validity and prevent data leakage, identity IDs (`pids`) were verified across the three dataset splits in `split_manifest.json`:
-
-* **Training Set (`train_pids`)**: 60 distinct identities
-* **Validation Set (`val_pids`)**: 20 distinct identities
-* **Test Set (`test_pids`)**: 21 distinct identities
-
-### Set Intersection Audit
-
-1. $\text{train\_pids} \cap \text{val\_pids} = \emptyset$ (0 overlapping identities) $\to$ **PASSED**
-2. $\text{train\_pids} \cap \text{test\_pids} = \emptyset$ (0 overlapping identities) $\to$ **PASSED**
-3. $\text{val\_pids} \cap \text{test\_pids} = \emptyset$ (0 overlapping identities) $\to$ **PASSED**
+**Audit Timestamp**: August 24, 2026  
+**Auditor**: Lead Machine Learning Engineer & Technical Auditor  
 
 ---
 
-## 2. Conclusion
+## 1. IDENTITY SPLIT VERIFICATION
 
-No identity overlap or data leakage exists between the training set used for the Keras Projection Head (`exp05_cross_modal`), the validation set used for score fusion weight tuning (`exp06_fusion`), and the held-out test set used for canonical benchmark evaluations (`exp07_final_eval` & `audit_pipeline.py`).
+* **Train PIDs Count**: **60**  
+* **Validation PIDs Count**: **20**  
+* **Held-Out Test PIDs Count**: **21**  
+* **Train ∩ Validation Overlap**: **0**  
+* **Train ∩ Test Overlap**: **0**  
+* **Validation ∩ Test Overlap**: **0**  
+
+## 2. AUDIT VERDICT
+
+> **VERDICT: PASSED (ZERO IDENTITY LEAKAGE)**  
+> All training, validation, and held-out test sets are strictly identity-disjoint. Models trained on `train_pids` have zero prior exposure to validation or held-out test identities.

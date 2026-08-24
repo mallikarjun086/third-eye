@@ -59,15 +59,24 @@ HOG_SIZE = 160
 _face_weight_cache = None
 
 
+from query_router import QueryRouter
+
 class MatchResult(BaseModel):
     name: str
     path: str
     similarity: float
+    calibrated_score: float
+    rank: int
 
 
 class MatchResponse(BaseModel):
     status: str
     sketch_embedded: bool
+    query_modality: str
+    selected_pipeline: str
+    match_decision: str
+    threshold: float
+    warnings: List[str]
     count: int
     results: List[MatchResult]
 
@@ -166,7 +175,35 @@ def embed_image(image_bytes: bytes) -> Optional[np.ndarray]:
     return emb
 
 
-# ─────────────────────────────── HOG helpers ────────────────────────────────
+def embed_image_raw(image_bytes: bytes) -> Optional[np.ndarray]:
+    """Return raw 512-d L2-normalized FaceNet embedding (without projection head)."""
+    if not image_bytes or len(image_bytes) < 10:
+        raise HTTPException(status_code=422, detail="Empty or invalid image payload.")
+
+    load_model()
+    if _model is None:
+        raise HTTPException(status_code=503, detail=f"Model not loaded: {_model_error}")
+
+    from PIL import Image
+    try:
+        img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+    except Exception as e:  # noqa: BLE001
+        raise HTTPException(status_code=422, detail=f"Face not detected or unreadable image file. (Details: {e})")
+
+    arr = np.asarray(img)
+    arr = crop_face(arr, target_size=160)
+
+    try:
+        emb = _model.embeddings(np.expand_dims(arr, axis=0))[0]
+    except Exception as e:  # noqa: BLE001
+        log.warning("Raw embedding failed: %s", e)
+        return None
+
+    norm = np.linalg.norm(emb)
+    if norm > 0:
+        emb = emb / norm
+
+    return emb
 
 def _face_weight_map(cells_x: int, cells_y: int) -> np.ndarray:
     """Per-cell weight favouring the central face region (mirrors the Java
@@ -295,7 +332,20 @@ def build_cache(dataset_dir: str, force: bool = False):
     global _cache, _cache_mtime, _cache_dir
     dataset_dir = os.path.abspath(dataset_dir)
     if not os.path.exists(dataset_dir) or not os.path.isdir(dataset_dir):
-        raise HTTPException(status_code=400, detail=f"dataset_dir not found or invalid: {dataset_dir}")
+        base_ml_dir = os.path.dirname(os.path.abspath(__file__))
+        alt_path_1 = os.path.join(base_ml_dir, dataset_dir)
+        folder_name = os.path.basename(os.path.normpath(dataset_dir))
+        alt_path_2 = os.path.join(base_ml_dir, "dataset", folder_name)
+        alt_path_3 = os.path.join(base_ml_dir, "dataset", "gallery")
+
+        if os.path.exists(alt_path_1) and os.path.isdir(alt_path_1):
+            dataset_dir = alt_path_1
+        elif os.path.exists(alt_path_2) and os.path.isdir(alt_path_2):
+            dataset_dir = alt_path_2
+        elif os.path.exists(alt_path_3) and os.path.isdir(alt_path_3):
+            dataset_dir = alt_path_3
+        else:
+            raise HTTPException(status_code=400, detail=f"dataset_dir not found or invalid: {dataset_dir}")
 
     load_model()
     if _model is None:
@@ -343,10 +393,11 @@ def build_cache(dataset_dir: str, force: bool = False):
                 raw = fh.read()
             grey = hog_grey(raw)
             emb = embed_image(raw)
+            emb_raw = embed_image_raw(raw)
             hog = compute_hog(grey)
             lbp = compute_lbp(grey)
             if emb is not None:
-                features[rel] = {"face": emb, "hog": hog, "lbp": lbp}
+                features[rel] = {"face": emb, "face_raw": emb_raw, "hog": hog, "lbp": lbp}
         except Exception as e:  # noqa: BLE001
             log.warning("Skip %s: %s", rel, e)
 
@@ -403,26 +454,65 @@ def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int
     data = file.file.read()
     if not data or len(data) < 10:
         raise HTTPException(status_code=422, detail="Empty or invalid image file uploaded.")
-    sketch_grey = hog_grey(data)
-    sketch_emb = embed_image(data)
-    if sketch_emb is None:
-        raise HTTPException(status_code=422, detail="Could not embed sketch (no face found).")
-    sketch_hog = compute_hog(sketch_grey)
-    sketch_lbp = compute_lbp(sketch_grey)
-
+        
+    # 1. Analyze Query Modality & Pipeline Selection
+    modality_info = QueryRouter.analyze_image_bytes(data)
+    query_modality = modality_info["modality"]
+    selected_pipeline = modality_info["selected_pipeline"]
+    warnings = modality_info.get("warnings", [])
+    
     dataset_dir = os.path.abspath(dataset_dir)
     build_cache(dataset_dir)
     if not _cache:
         raise HTTPException(status_code=422, detail="No faces could be embedded in the dataset.")
-
+        
+    # 2. Modality-Specific Feature Extraction & Open-Set Threshold Setting
     scored = []
-    for rel, feats in _cache.items():
-        face_sim = float(np.dot(sketch_emb, feats["face"]))
-        hog_sim = float(np.dot(sketch_hog, feats["hog"]))
-        sim = hybrid_score(face_sim, hog_sim)
-        scored.append((sim, rel))
+    
+    if query_modality == "PHOTO":
+        threshold = 0.65
+        query_emb_raw = embed_image_raw(data)
+        if query_emb_raw is None:
+            raise HTTPException(status_code=422, detail="Could not extract face embedding from photo.")
+            
+        sample_feat = next(iter(_cache.values())) if _cache else {}
+        if "face_raw" not in sample_feat:
+            build_cache(dataset_dir, force=True)
+
+        for rel, feats in _cache.items():
+            g_emb = feats.get("face_raw")
+            if g_emb is not None and g_emb.shape == query_emb_raw.shape:
+                sim = float(np.dot(query_emb_raw, g_emb))
+            else:
+                q_emb = embed_image(data)
+                g_face = feats["face"]
+                sim = float(np.dot(q_emb, g_face)) if q_emb is not None else 0.0
+            scored.append((sim, rel))
+            
+    else:  # ARTIST_SKETCH, COMPOSITE_FORENSIC_SKETCH, FALLBACK
+        threshold = 0.50 if query_modality == "COMPOSITE_FORENSIC_SKETCH" else 0.55
+        sketch_grey = hog_grey(data)
+        sketch_emb = embed_image(data)
+        if sketch_emb is None:
+            raise HTTPException(status_code=422, detail="Could not embed sketch (no face found).")
+        sketch_hog = compute_hog(sketch_grey)
+        
+        for rel, feats in _cache.items():
+            face_sim = float(np.dot(sketch_emb, feats["face"]))
+            hog_sim = float(np.dot(sketch_hog, feats["hog"]))
+            sim = hybrid_score(face_sim, hog_sim)
+            scored.append((sim, rel))
 
     scored.sort(reverse=True, key=lambda x: x[0])
+    top_score = scored[0][0] if scored else 0.0
+    
+    # 3. Open-Set Match Rejection Logic
+    if top_score >= threshold:
+        match_decision = "POSSIBLE MATCH"
+    else:
+        match_decision = "NO RELIABLE MATCH FOUND IN CURRENT GALLERY"
+        warnings.append(f"Top candidate similarity ({top_score*100.0:.1f}%) is below calibrated threshold ({threshold*100.0:.1f}%). Outputting nearest candidates only.")
+        
     top = scored[:max(1, min(top_n, len(scored)))]
 
     results = [
@@ -430,12 +520,20 @@ def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int
             name=os.path.splitext(os.path.basename(rel))[0],
             path=os.path.join(dataset_dir, rel),
             similarity=round(sim, 4),
+            calibrated_score=round(sim * 100.0, 2),
+            rank=idx
         )
-        for sim, rel in top
+        for idx, (sim, rel) in enumerate(top, start=1)
     ]
+    
     return MatchResponse(
         status="ok",
         sketch_embedded=True,
+        query_modality=query_modality,
+        selected_pipeline=selected_pipeline,
+        match_decision=match_decision,
+        threshold=threshold,
+        warnings=warnings,
         count=len(results),
         results=results,
     )
