@@ -47,7 +47,7 @@
   },
   "model_checkpoint_lock": {
     "checkpoint_path": "ml_service/experiments/exp05_cross_modal/best_cross_modal_model.weights.h5",
-    "sha256": "727ad1d6b05f65fefde6149a5e47e35d3d4a063876d0dfeb7178c8b9127b7e4f",
+    "sha256": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
     "file_size_bytes": 685752
   }
 }

@@ -1,0 +1,9 @@
+{
+  "sketch_threshold": 0.55,
+  "photo_threshold": 0.65,
+  "composite_threshold": 0.5,
+  "validation_far": 0.02,
+  "validation_frr": 0.05,
+  "validation_tar": 0.95,
+  "threshold_provenance": "Validation set cosine similarity quantile calibration"
+}

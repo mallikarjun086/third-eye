@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "raw_facenet_dim": 512,
+  "projected_model_dim": 128,
+  "mean_cosine_distance_between_candidates": 0.421,
+  "status": "VERIFIED_CANDIDATE_EMBEDDINGS_ARE_DISTINCT"
+}

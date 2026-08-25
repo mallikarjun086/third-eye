@@ -11,6 +11,7 @@
 
 1. **Currently Implemented Alpha**: `FACE_WEIGHT = 0.85` in [`ml_service/app.py`](file:///c:/Users/Mallikarjun%20Gala/OneDrive/Desktop/Third-Eye/Project%20Code%20%28forensic%20face%20sketch%29/Project%20Code%20%28forensic%20face%20sketch%29/ThirdEye%20v2/ml_service/app.py#L53).
 2. **Metric Provenance**:
+
    - $\alpha = 0.85$: Produces **85.71% Rank-1 / 100.00% Rank-5** test set accuracy and **64.70%** composite match score (`a-sharukh-1.jpg` at Rank #1).
    - $\alpha = 0.05$: Historical baseline producing **19.05% Rank-1 / 52.38% Rank-5** test set accuracy and **26.97%** composite match score (`a-sharukh-1.jpg` at Rank #189).
 3. **Validation Selection Split**: $\alpha = 0.85$ was selected on the **CUFS Validation Split (20 PIDs)**.

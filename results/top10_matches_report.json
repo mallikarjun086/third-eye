@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "accuracy_percentage": 68.64,
+    "image_name": "18218.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\18218.jpg"
+  },
+  {
+    "rank": 2,
+    "accuracy_percentage": 67.44,
+    "image_name": "17128.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\17128.jpg"
+  },
+  {
+    "rank": 3,
+    "accuracy_percentage": 66.1,
+    "image_name": "14523.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\14523.jpg"
+  },
+  {
+    "rank": 4,
+    "accuracy_percentage": 65.83,
+    "image_name": "11907.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\11907.jpg"
+  },
+  {
+    "rank": 5,
+    "accuracy_percentage": 65.28,
+    "image_name": "11835.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\11835.jpg"
+  },
+  {
+    "rank": 6,
+    "accuracy_percentage": 65.03,
+    "image_name": "12455.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\12455.jpg"
+  },
+  {
+    "rank": 7,
+    "accuracy_percentage": 64.97,
+    "image_name": "23333.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\23333.jpg"
+  },
+  {
+    "rank": 8,
+    "accuracy_percentage": 64.79,
+    "image_name": "11242.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\11242.jpg"
+  },
+  {
+    "rank": 9,
+    "accuracy_percentage": 64.52,
+    "image_name": "22477.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\22477.jpg"
+  },
+  {
+    "rank": 10,
+    "accuracy_percentage": 63.78,
+    "image_name": "27744.jpg",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos\\27744.jpg"
+  }
+]

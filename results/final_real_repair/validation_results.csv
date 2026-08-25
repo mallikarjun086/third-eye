@@ -1,0 +1,8 @@
+candidate_id,candidate_name,queries_count,rank1_pct,rank5_pct,mrr
+A,Candidate_A_Baseline,20,0.0,0.0,0.0
+B,Candidate_B_Dual_Encoder_InfoNCE,20,0.0,0.0,0.0
+C,Candidate_C_Dual_Encoder_Triplet,20,0.0,0.0,0.0
+D,Candidate_D_Combined_Objective,20,0.0,0.0,0.0
+E,Candidate_E_Structural_Branch,20,0.0,0.0,0.0
+F,Candidate_F_Validated_Fusion,20,0.0,0.0,0.0
+G,Candidate_G_Soft_Demographics,20,0.0,0.0,0.0

@@ -1,0 +1,33 @@
+{
+  "selected_architecture": "InceptionResNetV1 (FaceNet 512-d) + 2-Layer MLP (128-d) + Sobel HOG (3600-d)",
+  "selected_alpha": 0.85,
+  "validation_trials": [
+    {
+      "alpha": 0.7,
+      "val_rank1": 0.0,
+      "val_mrr": 0.0
+    },
+    {
+      "alpha": 0.8,
+      "val_rank1": 0.0,
+      "val_mrr": 0.0
+    },
+    {
+      "alpha": 0.85,
+      "val_rank1": 0.0,
+      "val_mrr": 0.0
+    },
+    {
+      "alpha": 0.9,
+      "val_rank1": 0.0,
+      "val_mrr": 0.0
+    },
+    {
+      "alpha": 0.95,
+      "val_rank1": 0.0,
+      "val_mrr": 0.0
+    }
+  ],
+  "selection_metric": "Validation MRR",
+  "winning_val_mrr": 0.0
+}

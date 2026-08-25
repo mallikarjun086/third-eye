@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-24T14:41:37Z",
+  "iiitd_integration_status": "BLOCKED \u00e2\u20ac\u201d IIIT-D FILES NOT PRESENT IN LOCAL FILESYSTEM",
+  "new_real_identities_added": 0,
+  "new_real_sketch_photo_pairs_added": 0,
+  "held_out_cufs_artist_sketch_rank1": 19.05,
+  "held_out_cufs_artist_sketch_rank5": 52.38,
+  "held_out_cufs_mrr": 0.3581,
+  "photo_to_photo_rank1": 100.0,
+  "thirdeye_composite_sketch_rank1": 100.0,
+  "selected_production_model": "Candidate F (Hybrid Deep FaceNet + Structural Sobel HOG)",
+  "production_changed": false,
+  "verdict": "NO VERIFIED SKETCH-TO-PHOTO ACCURACY IMPROVEMENT FROM IIIT-D (ARCHIVE UNEXTRACTED / 0 FILES PRESENT)"
+}

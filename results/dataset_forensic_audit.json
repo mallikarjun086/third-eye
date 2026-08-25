@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-08-24T22:45:53Z",
+  "physical_paths": {
+    "desktop_archive_1": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+    "desktop_archive_2": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive (1)"
+  },
+  "statistics": {
+    "total_physical_image_files": 50640,
+    "total_candidate_identities": 22334,
+    "verified_same_identity_sketch_photo_pairs": 22334,
+    "identities_photos_only": 0,
+    "identities_sketches_only": 0,
+    "distractor_actor_photos": 5972,
+    "corrupt_or_unreadable_files": 0,
+    "duplicate_files_detected": 1319
+  },
+  "claim_verification": {
+    "claimed_identities": 22334,
+    "physical_verified_identities": 22334,
+    "is_claim_true": true,
+    "verdict": "PHYSICALLY_VERIFIED_EXACT_MATCH"
+  }
+}

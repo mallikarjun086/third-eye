@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "methods_tested": [
+    "grayscale_normalization",
+    "clahe_contrast_enhancement",
+    "gaussian_smoothing_3x3",
+    "custom_sobel_hog_3600d",
+    "soft_demographic_reranking"
+  ],
+  "winning_combination": "CLAHE + Gaussian Blur + 128d Projected FaceNet + Custom Sobel HOG + Soft Demographic Re-ranking",
+  "rank1_gain": "+4.74% Rank-1 Accuracy on full dataset"
+}

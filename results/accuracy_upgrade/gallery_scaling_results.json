@@ -1,0 +1,27 @@
+[
+  {
+    "gallery_size": 100,
+    "rank_1": 95.24,
+    "mrr": 0.9683
+  },
+  {
+    "gallery_size": 500,
+    "rank_1": 85.71,
+    "mrr": 0.9024
+  },
+  {
+    "gallery_size": 689,
+    "rank_1": 85.71,
+    "mrr": 0.9024
+  },
+  {
+    "gallery_size": 1000,
+    "rank_1": 80.95,
+    "mrr": 0.869
+  },
+  {
+    "gallery_size": 5972,
+    "rank_1": 71.43,
+    "mrr": 0.7812
+  }
+]

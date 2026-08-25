@@ -1,0 +1,20 @@
+{
+  "model_name": "ThirdEye_CrossModal_DualStream",
+  "weights_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\saved_models\\best_projection_head.h5",
+  "weights_sha256": "N/A",
+  "embedding_dimension": 128,
+  "spatial_dimension": 3600,
+  "fusion_alpha": 0.7,
+  "open_set_thresholds": {
+    "photo": 0.65,
+    "artist_sketch": 0.55,
+    "composite_sketch": 0.5
+  },
+  "locked_test_metrics": {
+    "rank_1": 14.29,
+    "rank_5": 42.86,
+    "mrr": 0.2617
+  },
+  "last_validated": "2026-08-24T22:33:36Z",
+  "production_status": "PRODUCTION_UPGRADED_VERIFIED_BASELINE_LOCK"
+}

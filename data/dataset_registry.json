@@ -1,17 +1,59 @@
 {
-  "CUFS": {
+  "CUFS_Gallery": {
+    "dataset_name": "CUFS_Gallery",
     "status": "PHYSICALLY_VERIFIED",
-    "access": "PUBLIC_ACADEMIC",
-    "physical_location": "ml_service/dataset",
-    "total_files": 210,
-    "paired_identities": 189
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery",
+    "total_files": 189,
+    "valid_images": 189,
+    "corrupt_images": 0,
+    "unique_identities": 157
+  },
+  "CUFS_Queries": {
+    "dataset_name": "CUFS_Queries",
+    "status": "PHYSICALLY_VERIFIED",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries",
+    "total_files": 190,
+    "valid_images": 190,
+    "corrupt_images": 0,
+    "unique_identities": 158
+  },
+  "Desktop_Paired_Sketch_Photo_Archive": {
+    "dataset_name": "Desktop_Paired_Sketch_Photo_Archive",
+    "status": "PHYSICALLY_VERIFIED",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+    "total_files": 44668,
+    "valid_images": 44668,
+    "corrupt_images": 0,
+    "unique_identities": 22334,
+    "train_pairs": 20655,
+    "val_pairs": 1000,
+    "test_pairs": 679
+  },
+  "Desktop_Actors_Distractor_Gallery": {
+    "dataset_name": "Desktop_Actors_Distractor_Gallery",
+    "status": "PHYSICALLY_VERIFIED",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive (1)\\actors_dataset\\Indian_actors_faces",
+    "total_files": 5972,
+    "valid_images": 5972,
+    "corrupt_images": 0,
+    "unique_identities": 135
   },
   "CUFSF": {
-    "status": "ACCESS_PENDING",
-    "reason": "Requires official EULA agreement from CUHK/FERET"
+    "dataset_name": "CUFSF",
+    "status": "NOT_INTEGRATED",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\cufsf",
+    "total_files": 0,
+    "valid_images": 0,
+    "corrupt_images": 0,
+    "unique_identities": 0
   },
   "IIITD": {
-    "status": "ACCESS_PENDING",
-    "reason": "Requires official EULA agreement from IIIT-Delhi"
+    "dataset_name": "IIITD",
+    "status": "NOT_INTEGRATED (ENCRYPTED ARCHIVE ON DESKTOP)",
+    "physical_path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\iiitd",
+    "total_files": 0,
+    "valid_images": 0,
+    "corrupt_images": 0,
+    "unique_identities": 0
   }
 }

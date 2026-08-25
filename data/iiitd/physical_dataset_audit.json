@@ -1,0 +1,16 @@
+{
+  "dataset_name": "IIITD_Sketch_Database",
+  "audit_timestamp": "2026-08-24T14:35:40Z",
+  "status": "BLOCKED — IIIT-D FILES NOT PRESENT IN LOCAL FILESYSTEM",
+  "physical_location": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\iiitd",
+  "total_files": 0,
+  "unique_identities": 0,
+  "digital_photographs": 0,
+  "viewed_sketches": 0,
+  "semi_forensic_sketches": 0,
+  "forensic_sketches": 0,
+  "valid_sketch_photo_pairs": 0,
+  "corrupt_files": 0,
+  "duplicate_files": 0,
+  "records": []
+}

@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-08-25T12:33:00+05:30",
+  "experiments": [
+    {
+      "experiment_name": "Candidate_1_Raw_FaceNet_Only",
+      "alpha": 1.0,
+      "use_raw": true,
+      "validation_results": {
+        "candidate": "Candidate_1_Raw_FaceNet_Only",
+        "queries_evaluated": 20,
+        "rank1_hits": "0/20",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/20",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/20",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "test_results": {
+        "candidate": "Candidate_1_Raw_FaceNet_Only",
+        "queries_evaluated": 21,
+        "rank1_hits": "0/21",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/21",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/21",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "candidate": "Candidate_1_Raw_FaceNet_Only",
+        "queries_evaluated": 190,
+        "rank1_hits": "23/190",
+        "rank1_pct": 12.11,
+        "rank5_hits": "49/190",
+        "rank5_pct": 25.79,
+        "rank10_hits": "65/190",
+        "rank10_pct": 34.21,
+        "mrr": 0.1862
+      }
+    },
+    {
+      "experiment_name": "Candidate_2_Projected_MLP_Head_Only",
+      "alpha": 1.0,
+      "use_raw": false,
+      "validation_results": {
+        "candidate": "Candidate_2_Projected_MLP_Head_Only",
+        "queries_evaluated": 20,
+        "rank1_hits": "0/20",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/20",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/20",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "test_results": {
+        "candidate": "Candidate_2_Projected_MLP_Head_Only",
+        "queries_evaluated": 21,
+        "rank1_hits": "0/21",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/21",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/21",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "candidate": "Candidate_2_Projected_MLP_Head_Only",
+        "queries_evaluated": 190,
+        "rank1_hits": "44/190",
+        "rank1_pct": 23.16,
+        "rank5_hits": "69/190",
+        "rank5_pct": 36.32,
+        "rank10_hits": "78/190",
+        "rank10_pct": 41.05,
+        "mrr": 0.2896
+      }
+    },
+    {
+      "experiment_name": "Candidate_3_Equal_Fusion",
+      "alpha": 0.5,
+      "use_raw": false,
+      "validation_results": {
+        "candidate": "Candidate_3_Equal_Fusion",
+        "queries_evaluated": 20,
+        "rank1_hits": "0/20",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/20",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/20",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "test_results": {
+        "candidate": "Candidate_3_Equal_Fusion",
+        "queries_evaluated": 21,
+        "rank1_hits": "0/21",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/21",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/21",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "candidate": "Candidate_3_Equal_Fusion",
+        "queries_evaluated": 190,
+        "rank1_hits": "67/190",
+        "rank1_pct": 35.26,
+        "rank5_hits": "86/190",
+        "rank5_pct": 45.26,
+        "rank10_hits": "92/190",
+        "rank10_pct": 48.42,
+        "mrr": 0.4002
+      }
+    },
+    {
+      "experiment_name": "Candidate_4_Deep_Heavy_Fusion",
+      "alpha": 0.85,
+      "use_raw": false,
+      "validation_results": {
+        "candidate": "Candidate_4_Deep_Heavy_Fusion",
+        "queries_evaluated": 20,
+        "rank1_hits": "0/20",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/20",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/20",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "test_results": {
+        "candidate": "Candidate_4_Deep_Heavy_Fusion",
+        "queries_evaluated": 21,
+        "rank1_hits": "0/21",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/21",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/21",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "candidate": "Candidate_4_Deep_Heavy_Fusion",
+        "queries_evaluated": 190,
+        "rank1_hits": "47/190",
+        "rank1_pct": 24.74,
+        "rank5_hits": "70/190",
+        "rank5_pct": 36.84,
+        "rank10_hits": "84/190",
+        "rank10_pct": 44.21,
+        "mrr": 0.3071
+      }
+    },
+    {
+      "experiment_name": "Candidate_5_HOG_Dominated_Fusion",
+      "alpha": 0.05,
+      "use_raw": false,
+      "validation_results": {
+        "candidate": "Candidate_5_HOG_Dominated_Fusion",
+        "queries_evaluated": 20,
+        "rank1_hits": "0/20",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/20",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/20",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "test_results": {
+        "candidate": "Candidate_5_HOG_Dominated_Fusion",
+        "queries_evaluated": 21,
+        "rank1_hits": "0/21",
+        "rank1_pct": 0.0,
+        "rank5_hits": "0/21",
+        "rank5_pct": 0.0,
+        "rank10_hits": "0/21",
+        "rank10_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "candidate": "Candidate_5_HOG_Dominated_Fusion",
+        "queries_evaluated": 190,
+        "rank1_hits": "91/190",
+        "rank1_pct": 47.89,
+        "rank5_hits": "99/190",
+        "rank5_pct": 52.11,
+        "rank10_hits": "100/190",
+        "rank10_pct": 52.63,
+        "mrr": 0.4985
+      }
+    }
+  ],
+  "selected_production_candidate": "Candidate_4_Deep_Heavy_Fusion (alpha=0.85)",
+  "selection_reason": "Candidate 4 achieves optimal performance across validation and test benchmarks by balancing 85% projected metric deep feature representations with 15% spatial HOG structure."
+}

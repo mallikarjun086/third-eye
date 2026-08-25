@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-25T12:32:00+05:30",
+  "evaluator_name": "Authoritative_Single_Evaluator",
+  "total_queries_evaluated": 190,
+  "gallery_candidates_count": 189,
+  "rank1_hits": "47/190",
+  "rank1_accuracy_pct": 24.74,
+  "rank5_hits": "70/190",
+  "rank5_accuracy_pct": 36.84,
+  "rank10_hits": "84/190",
+  "rank10_accuracy_pct": 44.21,
+  "mrr": 0.3071
+}

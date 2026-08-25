@@ -33,6 +33,7 @@
 ## 2. Step-by-Step Execution Trace
 
 ```text
+
 1. User launches JavaFX App (ThirdEyeV2.java)
    ├── SQLite database connection initialized (connectdb.java -> suspects.db)
    └── UI displays Login / Dashboard Screen

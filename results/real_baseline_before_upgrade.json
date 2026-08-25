@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-24T14:23:58Z",
+  "total_images": 210,
+  "unique_identities": 189,
+  "sketches": 21,
+  "photos": 189,
+  "rank_1": 19.05,
+  "rank_5": 52.38,
+  "rank_10": 66.67,
+  "mrr": 0.3581,
+  "median_latency_ms": 178.1
+}

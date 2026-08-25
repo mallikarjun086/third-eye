@@ -1,0 +1,12 @@
+{
+  "total_physical_images": 50640,
+  "total_readable_images": 50640,
+  "total_corrupt_images": 0,
+  "total_exact_duplicates": 1319,
+  "total_near_duplicates": 0,
+  "total_unique_identities": 21814,
+  "verified_paired_identities": 21679,
+  "unpaired_actor_photos": 5972,
+  "unpaired_actor_identities": 135,
+  "iiitd_status": "PHYSICALLY_PRESENT_BUT_CONTAINS_0_FILES (UNVERIFIED_BLOCKED)"
+}

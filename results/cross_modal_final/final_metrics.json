@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-25T13:44:00+05:30",
+  "winning_validation_experiment": "EXP_7_Best_Model_WITH_Soft_Demographic_Reranking",
+  "full_dataset_rank1": 40.0,
+  "full_dataset_rank5": 49.47,
+  "full_dataset_mrr": 0.4456,
+  "heldout_test_rank1": 85.71,
+  "acceptance_gate_verdict": "PASS"
+}

@@ -358,22 +358,22 @@ public class Upload_sketchController implements Initializable {
         compareBtn.setDisable(true);
         if (deepMatchBtn != null) deepMatchBtn.setDisable(true);
 
-        Task<List<DeepMatchClient.Match>> task = new Task<>() {
+        Task<DeepMatchClient.MatchResponseHolder> task = new Task<>() {
             @Override
-            protected List<DeepMatchClient.Match> call() throws Exception {
+            protected DeepMatchClient.MatchResponseHolder call() throws Exception {
                 DeepMatchClient client = new DeepMatchClient();
                 if (!client.isHealthy()) {
                     throw new IOException("ML service is not running (see ml_service/README.md).");
                 }
-                return client.match(sketchFile, datasetDir, 10);
+                return client.matchDetailed(sketchFile, datasetDir, 10);
             }
         };
         task.setOnSucceeded(e -> {
-            List<DeepMatchClient.Match> results = task.getValue();
+            DeepMatchClient.MatchResponseHolder response = task.getValue();
             compareBtn.setDisable(false);
             if (deepMatchBtn != null) deepMatchBtn.setDisable(false);
             setStatus("Compare complete — " + datasetDir.getName() + " scanned.");
-            if (results.isEmpty()) {
+            if (response.results.isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Compare Results");
                 alert.setHeaderText("Ranked Matches");
@@ -381,7 +381,7 @@ public class Upload_sketchController implements Initializable {
                 alert.showAndWait();
                 return;
             }
-            showMatchGrid(results, datasetDir);
+            showMatchGrid(response, datasetDir);
         });
         task.setOnFailed(e -> {
             setStatus("Compare failed: " + task.getException().getMessage());
@@ -394,36 +394,116 @@ public class Upload_sketchController implements Initializable {
     }
 
     /**
-     * Shows the ranked matches as a grid of photo thumbnails, each with its
-     * rank and similarity percentage underneath.
+     * Shows the ranked matches with explicit open-set decision status banner,
+     * calibrated threshold decision, and scientific UI score labels.
      */
-    private void showMatchGrid(List<DeepMatchClient.Match> results, File datasetDir) {
+    private void showMatchGrid(DeepMatchClient.MatchResponseHolder response, File datasetDir) {
+        List<DeepMatchClient.Match> results = response.results;
+        double threshold = response.threshold;
+        String decision = response.matchDecision != null ? response.matchDecision : "POSSIBLE MATCH";
+        double topScore = results.isEmpty() ? 0.0 : results.get(0).similarity;
+
+        boolean isRejected = decision.contains("NO RELIABLE MATCH") || topScore < threshold;
+
+        VBox rootBox = new VBox(14);
+        rootBox.setPadding(new Insets(16));
+        rootBox.setStyle("-fx-background-color: #1a1a2e;");
+
+        // Open-Set Status Banner
+        VBox banner = new VBox(6);
+        banner.setPadding(new Insets(12, 16, 12, 16));
+        banner.setMaxWidth(Double.MAX_VALUE);
+
+        if (isRejected) {
+            banner.setStyle("-fx-background-color: #3a0e14; -fx-border-color: #e63946; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;");
+            
+            Label title = new Label("🚫 NO RELIABLE MATCH FOUND IN CURRENT GALLERY");
+            title.setStyle("-fx-text-fill: #ff4d6d; -fx-font-size: 15px; -fx-font-weight: bold;");
+            
+            Label status = new Label("Status: LOW CONFIDENCE — NO RELIABLE FORENSIC MATCH");
+            status.setStyle("-fx-text-fill: #ffb3c1; -fx-font-size: 12px; -fx-font-weight: bold;");
+
+            Label desc = new Label(String.format("Top candidate similarity score (%.1f%%) is below calibrated rejection threshold (%.1f%%).", topScore * 100.0, threshold * 100.0));
+            desc.setStyle("-fx-text-fill: #e0e0e0; -fx-font-size: 11px;");
+
+            Label note = new Label("The candidates below are unverified nearest neighbors for forensic reference only — NOT a positive identification.");
+            note.setStyle("-fx-text-fill: #a0a0b0; -fx-font-size: 11px; -fx-font-style: italic;");
+
+            banner.getChildren().addAll(title, status, desc, note);
+        } else {
+            banner.setStyle("-fx-background-color: #0d2b22; -fx-border-color: #2a9d8f; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;");
+            
+            Label title = new Label("✅ FORENSIC MATCH CANDIDATE FOUND");
+            title.setStyle("-fx-text-fill: #2ec4b6; -fx-font-size: 15px; -fx-font-weight: bold;");
+
+            Label status = new Label("Status: HIGH CONFIDENCE MATCH");
+            status.setStyle("-fx-text-fill: #cbf3f0; -fx-font-size: 12px; -fx-font-weight: bold;");
+
+            Label desc = new Label(String.format("Top similarity score (%.1f%%) meets or exceeds threshold (%.1f%%).", topScore * 100.0, threshold * 100.0));
+            desc.setStyle("-fx-text-fill: #e0e0e0; -fx-font-size: 11px;");
+
+            banner.getChildren().addAll(title, status, desc);
+        }
+
+        Label sectionHeader = new Label(isRejected ? "Unverified Nearest Neighbors (Ranked Reference Only)" : "Ranked Suspect Candidates (Match Similarity Score)");
+        sectionHeader.setStyle("-fx-text-fill: #ffffff; -fx-font-size: 13px; -fx-font-weight: bold;");
+
         FlowPane grid = new FlowPane();
         grid.setHgap(16);
         grid.setVgap(16);
-        grid.setPadding(new Insets(20));
 
         for (int i = 0; i < results.size(); i++) {
             DeepMatchClient.Match m = results.get(i);
-            int pct = (int) Math.round(m.similarity * 100);
             File photo = new File(m.path != null && !m.path.isEmpty() ? m.path : "");
+
+            if (!photo.isFile()) {
+                String fname = new File(m.path != null ? m.path : "").getName();
+                String altFname = fname;
+                if (fname.startsWith("f1-")) altFname = "f-" + fname.substring(3);
+                else if (fname.startsWith("m1-")) altFname = "m-" + fname.substring(3);
+                else if (fname.startsWith("p1-")) altFname = "p-" + fname.substring(3);
+
+                File[] searchDirs = new File[] {
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery"),
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries"),
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset"),
+                    // Resolved search directories for gallery mugshots
+                    datasetDir != null ? new File(datasetDir, "gallery") : null,
+                    datasetDir,
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\test\\photos"),
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\val\\photos"),
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive\\train\\photos"),
+                    new File("C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive (1)\\actors_dataset\\Indian_actors_faces")
+                };
+
+                for (File dir : searchDirs) {
+                    if (!dir.exists() || !dir.isDirectory()) continue;
+                    File try1 = new File(dir, fname);
+                    File try2 = new File(dir, altFname);
+                    if (try1.isFile()) { photo = try1; break; }
+                    if (try2.isFile()) { photo = try2; break; }
+                }
+            }
 
             VBox card = new VBox(6);
             card.setAlignment(Pos.CENTER);
-            card.setStyle("-fx-background-color: #16213e; -fx-border-color: #4444aa;"
-                    + "-fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8;"
-                    + "-fx-padding: 8;");
+            card.setStyle("-fx-background-color: #16213e; -fx-border-color: " + (isRejected ? "#553344" : "#4444aa")
+                    + "; -fx-border-width: 2; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 8;");
 
             ImageView img = new ImageView();
             if (photo.isFile()) {
-                img.setImage(new Image(photo.toURI().toString()));
+                try {
+                    Image image = new Image(photo.toURI().toString(), 160, 160, true, true);
+                    img.setImage(image);
+                } catch (Exception ex) {
+                    System.err.println("Failed to load image URL for " + photo.getAbsolutePath() + ": " + ex.getMessage());
+                }
+            } else {
+                System.err.println("Match photo not found on disk: " + m.path);
             }
             img.setFitWidth(160);
             img.setFitHeight(160);
             img.setPreserveRatio(true);
-
-            String color = pct >= 70 ? "#22c55e" : pct >= 60 ? "#3b82f6"
-                        : pct >= 50 ? "#eab308" : "#ef4444";
 
             Label rank = new Label("Rank #" + (i + 1));
             rank.setStyle("-fx-text-fill: #aabbff; -fx-font-size: 12px; -fx-font-weight: bold;");
@@ -431,21 +511,26 @@ public class Upload_sketchController implements Initializable {
             Label name = new Label(m.name);
             name.setStyle("-fx-text-fill: #d0d0e0; -fx-font-size: 11px;");
 
-            Label sim = new Label(pct + "%");
-            sim.setStyle("-fx-text-fill: " + color + "; -fx-font-size: 18px; -fx-font-weight: bold;");
+            Label sim = new Label(String.format("Similarity Score: %.2f%%", m.calibratedScore));
+            sim.setStyle("-fx-text-fill: " + (isRejected ? "#ff4d6d" : "#2ec4b6") + "; -fx-font-size: 12px; -fx-font-weight: bold;");
 
-            card.getChildren().addAll(img, rank, name, sim);
+            Label tag = new Label(isRejected ? "UNVERIFIED CANDIDATE" : "MATCH CANDIDATE");
+            tag.setStyle("-fx-text-fill: " + (isRejected ? "#888899" : "#2ec4b6") + "; -fx-font-size: 10px; -fx-font-weight: bold;");
+
+            card.getChildren().addAll(img, rank, name, sim, tag);
             grid.getChildren().add(card);
         }
 
-        ScrollPane scroll = new ScrollPane(grid);
+        rootBox.getChildren().addAll(banner, sectionHeader, grid);
+
+        ScrollPane scroll = new ScrollPane(rootBox);
         scroll.setFitToWidth(true);
         scroll.setStyle("-fx-background: #1a1a2e; -fx-background-color: #1a1a2e;");
 
         Dialog<Void> dialog = new Dialog<>();
-        dialog.setTitle("Compare Results — " + datasetDir.getName());
-        dialog.setHeaderText("Top Matches with Similarity %");
-        dialog.getDialogPane().setPrefSize(760, 520);
+        dialog.setTitle("Forensic Match Results — " + datasetDir.getName());
+        dialog.setHeaderText(isRejected ? "Open-Set Rejection — No Reliable Match Found" : "Ranked Candidate Matches");
+        dialog.getDialogPane().setPrefSize(780, 560);
         dialog.getDialogPane().setStyle("-fx-background-color: #1a1a2e;");
         ButtonType close = new ButtonType("Close", ButtonBar.ButtonData.OK_DONE);
         dialog.getDialogPane().getButtonTypes().add(close);

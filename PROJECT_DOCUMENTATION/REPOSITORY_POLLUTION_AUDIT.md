@@ -19,5 +19,6 @@
 ---
 
 ## 2. Total Space Reclaimed
+
 * **Total Binary Pollution Identified**: **~259.43 MB**
 * **Impact**: Removing these unneeded binary files resolves the 100 MB GitHub file size limit issue and reduces repo size by **over 90%**.

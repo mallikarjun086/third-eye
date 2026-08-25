@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-24T16:48:35Z",
+  "desktop_archive_location": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+  "total_paired_training_samples": 20655,
+  "total_paired_validation_samples": 1000,
+  "total_paired_test_samples": 679,
+  "baseline_rank_1": 19.05,
+  "candidate_rank_1": 19.05,
+  "production_weights_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+  "production_replaced": false,
+  "acceptance_gate_verdict": "BASELINE_OPTIMAL_AND_PRESERVED"
+}

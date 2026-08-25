@@ -1,0 +1,6113 @@
+[
+  {
+    "query_file": "10132.jpg",
+    "ground_truth_pid": "10132",
+    "predicted_pid": "18218",
+    "ground_truth_rank": 537,
+    "top_similarity": 0.6864,
+    "latency_ms": 4243.39,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1020.jpg",
+    "ground_truth_pid": "1020",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 347,
+    "top_similarity": 0.668,
+    "latency_ms": 549.13,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10223.jpg",
+    "ground_truth_pid": "10223",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 243,
+    "top_similarity": 0.6808,
+    "latency_ms": 440.79,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10323.jpg",
+    "ground_truth_pid": "10323",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 66,
+    "top_similarity": 0.7169,
+    "latency_ms": 483.98,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10361.jpg",
+    "ground_truth_pid": "10361",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 331,
+    "top_similarity": 0.64,
+    "latency_ms": 321.85,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1037.jpg",
+    "ground_truth_pid": "1037",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 113,
+    "top_similarity": 0.7154,
+    "latency_ms": 291.86,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10517.jpg",
+    "ground_truth_pid": "10517",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 78,
+    "top_similarity": 0.7359,
+    "latency_ms": 463.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10627.jpg",
+    "ground_truth_pid": "10627",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 238,
+    "top_similarity": 0.6829,
+    "latency_ms": 477.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10632.jpg",
+    "ground_truth_pid": "10632",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 262,
+    "top_similarity": 0.6859,
+    "latency_ms": 499.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10642.jpg",
+    "ground_truth_pid": "10642",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 44,
+    "top_similarity": 0.6865,
+    "latency_ms": 326.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10662.jpg",
+    "ground_truth_pid": "10662",
+    "predicted_pid": "2835",
+    "ground_truth_rank": 24,
+    "top_similarity": 0.644,
+    "latency_ms": 487.48,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10667.jpg",
+    "ground_truth_pid": "10667",
+    "predicted_pid": "14682",
+    "ground_truth_rank": 211,
+    "top_similarity": 0.6611,
+    "latency_ms": 452.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10733.jpg",
+    "ground_truth_pid": "10733",
+    "predicted_pid": "2188",
+    "ground_truth_rank": 196,
+    "top_similarity": 0.5974,
+    "latency_ms": 468.35,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10786.jpg",
+    "ground_truth_pid": "10786",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 373,
+    "top_similarity": 0.7201,
+    "latency_ms": 291.02,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10848.jpg",
+    "ground_truth_pid": "10848",
+    "predicted_pid": "14116",
+    "ground_truth_rank": 180,
+    "top_similarity": 0.6581,
+    "latency_ms": 364.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10883.jpg",
+    "ground_truth_pid": "10883",
+    "predicted_pid": "20246",
+    "ground_truth_rank": 122,
+    "top_similarity": 0.6297,
+    "latency_ms": 494.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "109.jpg",
+    "ground_truth_pid": "109",
+    "predicted_pid": "22105",
+    "ground_truth_rank": 208,
+    "top_similarity": 0.7177,
+    "latency_ms": 307.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "10918.jpg",
+    "ground_truth_pid": "10918",
+    "predicted_pid": "10918",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7527,
+    "latency_ms": 357.11,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "11008.jpg",
+    "ground_truth_pid": "11008",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 26,
+    "top_similarity": 0.6638,
+    "latency_ms": 390.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11106.jpg",
+    "ground_truth_pid": "11106",
+    "predicted_pid": "2332",
+    "ground_truth_rank": 39,
+    "top_similarity": 0.6516,
+    "latency_ms": 520.02,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11117.jpg",
+    "ground_truth_pid": "11117",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 30,
+    "top_similarity": 0.671,
+    "latency_ms": 390.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11218.jpg",
+    "ground_truth_pid": "11218",
+    "predicted_pid": "24019",
+    "ground_truth_rank": 23,
+    "top_similarity": 0.6241,
+    "latency_ms": 384.39,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11242.jpg",
+    "ground_truth_pid": "11242",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 55,
+    "top_similarity": 0.7352,
+    "latency_ms": 376.93,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11250.jpg",
+    "ground_truth_pid": "11250",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 91,
+    "top_similarity": 0.5762,
+    "latency_ms": 518.38,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11462.jpg",
+    "ground_truth_pid": "11462",
+    "predicted_pid": "21060",
+    "ground_truth_rank": 139,
+    "top_similarity": 0.7036,
+    "latency_ms": 380.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11468.jpg",
+    "ground_truth_pid": "11468",
+    "predicted_pid": "23639",
+    "ground_truth_rank": 9,
+    "top_similarity": 0.7749,
+    "latency_ms": 501.41,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11589.jpg",
+    "ground_truth_pid": "11589",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 443,
+    "top_similarity": 0.5352,
+    "latency_ms": 329.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "116.jpg",
+    "ground_truth_pid": "116",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 397,
+    "top_similarity": 0.7638,
+    "latency_ms": 314.93,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11649.jpg",
+    "ground_truth_pid": "11649",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 73,
+    "top_similarity": 0.6127,
+    "latency_ms": 474.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "117.jpg",
+    "ground_truth_pid": "117",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 110,
+    "top_similarity": 0.6869,
+    "latency_ms": 396.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11711.jpg",
+    "ground_truth_pid": "11711",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 185,
+    "top_similarity": 0.6069,
+    "latency_ms": 380.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1173.jpg",
+    "ground_truth_pid": "1173",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 31,
+    "top_similarity": 0.6264,
+    "latency_ms": 487.26,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11748.jpg",
+    "ground_truth_pid": "11748",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 462,
+    "top_similarity": 0.634,
+    "latency_ms": 339.89,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11766.jpg",
+    "ground_truth_pid": "11766",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 280,
+    "top_similarity": 0.605,
+    "latency_ms": 332.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11784.jpg",
+    "ground_truth_pid": "11784",
+    "predicted_pid": "22477",
+    "ground_truth_rank": 59,
+    "top_similarity": 0.622,
+    "latency_ms": 324.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11831.jpg",
+    "ground_truth_pid": "11831",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 137,
+    "top_similarity": 0.6268,
+    "latency_ms": 472.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11835.jpg",
+    "ground_truth_pid": "11835",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 11,
+    "top_similarity": 0.6888,
+    "latency_ms": 315.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11843.jpg",
+    "ground_truth_pid": "11843",
+    "predicted_pid": "22386",
+    "ground_truth_rank": 76,
+    "top_similarity": 0.7609,
+    "latency_ms": 495.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11870.jpg",
+    "ground_truth_pid": "11870",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 59,
+    "top_similarity": 0.6594,
+    "latency_ms": 314.06,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11907.jpg",
+    "ground_truth_pid": "11907",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7118,
+    "latency_ms": 179.87,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "1191.jpg",
+    "ground_truth_pid": "1191",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 293,
+    "top_similarity": 0.6351,
+    "latency_ms": 157.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "11987.jpg",
+    "ground_truth_pid": "11987",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 33,
+    "top_similarity": 0.7535,
+    "latency_ms": 163.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12038.jpg",
+    "ground_truth_pid": "12038",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 276,
+    "top_similarity": 0.562,
+    "latency_ms": 180.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12085.jpg",
+    "ground_truth_pid": "12085",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 4,
+    "top_similarity": 0.6887,
+    "latency_ms": 206.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12104.jpg",
+    "ground_truth_pid": "12104",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 312,
+    "top_similarity": 0.6653,
+    "latency_ms": 234.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12202.jpg",
+    "ground_truth_pid": "12202",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 276,
+    "top_similarity": 0.7409,
+    "latency_ms": 231.79,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12220.jpg",
+    "ground_truth_pid": "12220",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 357,
+    "top_similarity": 0.6707,
+    "latency_ms": 215.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12229.jpg",
+    "ground_truth_pid": "12229",
+    "predicted_pid": "12971",
+    "ground_truth_rank": 47,
+    "top_similarity": 0.6998,
+    "latency_ms": 325.31,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12266.jpg",
+    "ground_truth_pid": "12266",
+    "predicted_pid": "13448",
+    "ground_truth_rank": 340,
+    "top_similarity": 0.6206,
+    "latency_ms": 365.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12285.jpg",
+    "ground_truth_pid": "12285",
+    "predicted_pid": "15681",
+    "ground_truth_rank": 56,
+    "top_similarity": 0.6538,
+    "latency_ms": 298.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12369.jpg",
+    "ground_truth_pid": "12369",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 363,
+    "top_similarity": 0.5634,
+    "latency_ms": 248.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12455.jpg",
+    "ground_truth_pid": "12455",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 30,
+    "top_similarity": 0.6973,
+    "latency_ms": 242.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12474.jpg",
+    "ground_truth_pid": "12474",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 294,
+    "top_similarity": 0.653,
+    "latency_ms": 235.59,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12479.jpg",
+    "ground_truth_pid": "12479",
+    "predicted_pid": "19988",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.6861,
+    "latency_ms": 229.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12507.jpg",
+    "ground_truth_pid": "12507",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 430,
+    "top_similarity": 0.6201,
+    "latency_ms": 230.34,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12527.jpg",
+    "ground_truth_pid": "12527",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 206,
+    "top_similarity": 0.6195,
+    "latency_ms": 220.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12592.jpg",
+    "ground_truth_pid": "12592",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 251,
+    "top_similarity": 0.6029,
+    "latency_ms": 222.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12619.jpg",
+    "ground_truth_pid": "12619",
+    "predicted_pid": "14014",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.5652,
+    "latency_ms": 222.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12660.jpg",
+    "ground_truth_pid": "12660",
+    "predicted_pid": "23293",
+    "ground_truth_rank": 292,
+    "top_similarity": 0.6921,
+    "latency_ms": 215.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12692.jpg",
+    "ground_truth_pid": "12692",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 263,
+    "top_similarity": 0.6959,
+    "latency_ms": 204.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12696.jpg",
+    "ground_truth_pid": "12696",
+    "predicted_pid": "18382",
+    "ground_truth_rank": 132,
+    "top_similarity": 0.6999,
+    "latency_ms": 219.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12742.jpg",
+    "ground_truth_pid": "12742",
+    "predicted_pid": "22386",
+    "ground_truth_rank": 233,
+    "top_similarity": 0.6255,
+    "latency_ms": 258.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12743.jpg",
+    "ground_truth_pid": "12743",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 259,
+    "top_similarity": 0.6373,
+    "latency_ms": 252.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12746.jpg",
+    "ground_truth_pid": "12746",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 605,
+    "top_similarity": 0.6506,
+    "latency_ms": 245.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12758.jpg",
+    "ground_truth_pid": "12758",
+    "predicted_pid": "1701",
+    "ground_truth_rank": 342,
+    "top_similarity": 0.6755,
+    "latency_ms": 256.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12806.jpg",
+    "ground_truth_pid": "12806",
+    "predicted_pid": "21594",
+    "ground_truth_rank": 424,
+    "top_similarity": 0.6044,
+    "latency_ms": 240.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12824.jpg",
+    "ground_truth_pid": "12824",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 176,
+    "top_similarity": 0.6794,
+    "latency_ms": 246.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12857.jpg",
+    "ground_truth_pid": "12857",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 451,
+    "top_similarity": 0.6466,
+    "latency_ms": 236.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12910.jpg",
+    "ground_truth_pid": "12910",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 122,
+    "top_similarity": 0.6739,
+    "latency_ms": 256.04,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12971.jpg",
+    "ground_truth_pid": "12971",
+    "predicted_pid": "16508",
+    "ground_truth_rank": 2,
+    "top_similarity": 0.6964,
+    "latency_ms": 238.08,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1298.jpg",
+    "ground_truth_pid": "1298",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 26,
+    "top_similarity": 0.708,
+    "latency_ms": 240.45,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "12985.jpg",
+    "ground_truth_pid": "12985",
+    "predicted_pid": "23259",
+    "ground_truth_rank": 504,
+    "top_similarity": 0.6467,
+    "latency_ms": 236.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13011.jpg",
+    "ground_truth_pid": "13011",
+    "predicted_pid": "22907",
+    "ground_truth_rank": 25,
+    "top_similarity": 0.5452,
+    "latency_ms": 232.21,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13039.jpg",
+    "ground_truth_pid": "13039",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 36,
+    "top_similarity": 0.6086,
+    "latency_ms": 230.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13051.jpg",
+    "ground_truth_pid": "13051",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 27,
+    "top_similarity": 0.673,
+    "latency_ms": 245.6,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13105.jpg",
+    "ground_truth_pid": "13105",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 157,
+    "top_similarity": 0.5624,
+    "latency_ms": 234.75,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13107.jpg",
+    "ground_truth_pid": "13107",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 281,
+    "top_similarity": 0.643,
+    "latency_ms": 235.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1313.jpg",
+    "ground_truth_pid": "1313",
+    "predicted_pid": "14116",
+    "ground_truth_rank": 8,
+    "top_similarity": 0.6877,
+    "latency_ms": 267.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13147.jpg",
+    "ground_truth_pid": "13147",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 320,
+    "top_similarity": 0.6059,
+    "latency_ms": 304.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13165.jpg",
+    "ground_truth_pid": "13165",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 85,
+    "top_similarity": 0.7638,
+    "latency_ms": 252.86,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13264.jpg",
+    "ground_truth_pid": "13264",
+    "predicted_pid": "15633",
+    "ground_truth_rank": 96,
+    "top_similarity": 0.6243,
+    "latency_ms": 245.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1329.jpg",
+    "ground_truth_pid": "1329",
+    "predicted_pid": "22386",
+    "ground_truth_rank": 287,
+    "top_similarity": 0.6877,
+    "latency_ms": 232.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13416.jpg",
+    "ground_truth_pid": "13416",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 347,
+    "top_similarity": 0.6893,
+    "latency_ms": 234.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13448.jpg",
+    "ground_truth_pid": "13448",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.7169,
+    "latency_ms": 233.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13452.jpg",
+    "ground_truth_pid": "13452",
+    "predicted_pid": "17490",
+    "ground_truth_rank": 72,
+    "top_similarity": 0.6384,
+    "latency_ms": 242.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13470.jpg",
+    "ground_truth_pid": "13470",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 398,
+    "top_similarity": 0.7351,
+    "latency_ms": 217.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13536.jpg",
+    "ground_truth_pid": "13536",
+    "predicted_pid": "22907",
+    "ground_truth_rank": 508,
+    "top_similarity": 0.5801,
+    "latency_ms": 233.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13564.jpg",
+    "ground_truth_pid": "13564",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 119,
+    "top_similarity": 0.5612,
+    "latency_ms": 223.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13582.jpg",
+    "ground_truth_pid": "13582",
+    "predicted_pid": "28022",
+    "ground_truth_rank": 624,
+    "top_similarity": 0.5663,
+    "latency_ms": 216.26,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13614.jpg",
+    "ground_truth_pid": "13614",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 375,
+    "top_similarity": 0.6774,
+    "latency_ms": 252.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13675.jpg",
+    "ground_truth_pid": "13675",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 404,
+    "top_similarity": 0.5153,
+    "latency_ms": 243.23,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13689.jpg",
+    "ground_truth_pid": "13689",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 341,
+    "top_similarity": 0.6706,
+    "latency_ms": 234.83,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13690.jpg",
+    "ground_truth_pid": "13690",
+    "predicted_pid": "14014",
+    "ground_truth_rank": 77,
+    "top_similarity": 0.5544,
+    "latency_ms": 218.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13702.jpg",
+    "ground_truth_pid": "13702",
+    "predicted_pid": "11117",
+    "ground_truth_rank": 141,
+    "top_similarity": 0.706,
+    "latency_ms": 256.16,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13730.jpg",
+    "ground_truth_pid": "13730",
+    "predicted_pid": "20474",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.647,
+    "latency_ms": 243.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13782.jpg",
+    "ground_truth_pid": "13782",
+    "predicted_pid": "27565",
+    "ground_truth_rank": 90,
+    "top_similarity": 0.6374,
+    "latency_ms": 233.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1380.jpg",
+    "ground_truth_pid": "1380",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 85,
+    "top_similarity": 0.5643,
+    "latency_ms": 237.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13920.jpg",
+    "ground_truth_pid": "13920",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.6177,
+    "latency_ms": 219.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13979.jpg",
+    "ground_truth_pid": "13979",
+    "predicted_pid": "22386",
+    "ground_truth_rank": 117,
+    "top_similarity": 0.7223,
+    "latency_ms": 221.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "13988.jpg",
+    "ground_truth_pid": "13988",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 113,
+    "top_similarity": 0.5761,
+    "latency_ms": 218.75,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14014.jpg",
+    "ground_truth_pid": "14014",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 10,
+    "top_similarity": 0.6376,
+    "latency_ms": 217.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14050.jpg",
+    "ground_truth_pid": "14050",
+    "predicted_pid": "15681",
+    "ground_truth_rank": 244,
+    "top_similarity": 0.681,
+    "latency_ms": 214.42,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14080.jpg",
+    "ground_truth_pid": "14080",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 162,
+    "top_similarity": 0.6868,
+    "latency_ms": 234.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14083.jpg",
+    "ground_truth_pid": "14083",
+    "predicted_pid": "14083",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7076,
+    "latency_ms": 533.33,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "14116.jpg",
+    "ground_truth_pid": "14116",
+    "predicted_pid": "m-047",
+    "ground_truth_rank": 228,
+    "top_similarity": 0.5294,
+    "latency_ms": 496.8,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14168.jpg",
+    "ground_truth_pid": "14168",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 418,
+    "top_similarity": 0.5844,
+    "latency_ms": 472.23,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14189.jpg",
+    "ground_truth_pid": "14189",
+    "predicted_pid": "16369",
+    "ground_truth_rank": 62,
+    "top_similarity": 0.6359,
+    "latency_ms": 312.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14213.jpg",
+    "ground_truth_pid": "14213",
+    "predicted_pid": "25114",
+    "ground_truth_rank": 211,
+    "top_similarity": 0.7308,
+    "latency_ms": 489.5,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14364.jpg",
+    "ground_truth_pid": "14364",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 492,
+    "top_similarity": 0.574,
+    "latency_ms": 477.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14401.jpg",
+    "ground_truth_pid": "14401",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 194,
+    "top_similarity": 0.729,
+    "latency_ms": 228.62,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14416.jpg",
+    "ground_truth_pid": "14416",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 111,
+    "top_similarity": 0.5973,
+    "latency_ms": 129.98,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14499.jpg",
+    "ground_truth_pid": "14499",
+    "predicted_pid": "22386",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.6589,
+    "latency_ms": 132.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14501.jpg",
+    "ground_truth_pid": "14501",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 251,
+    "top_similarity": 0.7303,
+    "latency_ms": 150.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14523.jpg",
+    "ground_truth_pid": "14523",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 23,
+    "top_similarity": 0.6889,
+    "latency_ms": 166.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14540.jpg",
+    "ground_truth_pid": "14540",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 416,
+    "top_similarity": 0.5881,
+    "latency_ms": 185.12,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14575.jpg",
+    "ground_truth_pid": "14575",
+    "predicted_pid": "27728",
+    "ground_truth_rank": 137,
+    "top_similarity": 0.7181,
+    "latency_ms": 253.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1458.jpg",
+    "ground_truth_pid": "1458",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 206,
+    "top_similarity": 0.6431,
+    "latency_ms": 245.82,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14682.jpg",
+    "ground_truth_pid": "14682",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 231,
+    "top_similarity": 0.5673,
+    "latency_ms": 229.36,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14726.jpg",
+    "ground_truth_pid": "14726",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 526,
+    "top_similarity": 0.5748,
+    "latency_ms": 239.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14733.jpg",
+    "ground_truth_pid": "14733",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 4,
+    "top_similarity": 0.6719,
+    "latency_ms": 538.93,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1475.jpg",
+    "ground_truth_pid": "1475",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 18,
+    "top_similarity": 0.7444,
+    "latency_ms": 491.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14825.jpg",
+    "ground_truth_pid": "14825",
+    "predicted_pid": "24471",
+    "ground_truth_rank": 67,
+    "top_similarity": 0.5948,
+    "latency_ms": 388.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14826.jpg",
+    "ground_truth_pid": "14826",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 29,
+    "top_similarity": 0.6501,
+    "latency_ms": 489.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14832.jpg",
+    "ground_truth_pid": "14832",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 2,
+    "top_similarity": 0.637,
+    "latency_ms": 496.41,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14836.jpg",
+    "ground_truth_pid": "14836",
+    "predicted_pid": "20246",
+    "ground_truth_rank": 689,
+    "top_similarity": 0.5633,
+    "latency_ms": 366.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14907.jpg",
+    "ground_truth_pid": "14907",
+    "predicted_pid": "16955",
+    "ground_truth_rank": 217,
+    "top_similarity": 0.6226,
+    "latency_ms": 351.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "14914.jpg",
+    "ground_truth_pid": "14914",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 7,
+    "top_similarity": 0.7216,
+    "latency_ms": 345.48,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15033.jpg",
+    "ground_truth_pid": "15033",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 189,
+    "top_similarity": 0.6684,
+    "latency_ms": 482.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15051.jpg",
+    "ground_truth_pid": "15051",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 70,
+    "top_similarity": 0.6171,
+    "latency_ms": 464.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15153.jpg",
+    "ground_truth_pid": "15153",
+    "predicted_pid": "2188",
+    "ground_truth_rank": 97,
+    "top_similarity": 0.684,
+    "latency_ms": 319.5,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15165.jpg",
+    "ground_truth_pid": "15165",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 124,
+    "top_similarity": 0.6676,
+    "latency_ms": 310.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15211.jpg",
+    "ground_truth_pid": "15211",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 382,
+    "top_similarity": 0.5501,
+    "latency_ms": 552.67,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15242.jpg",
+    "ground_truth_pid": "15242",
+    "predicted_pid": "20868",
+    "ground_truth_rank": 11,
+    "top_similarity": 0.6901,
+    "latency_ms": 722.31,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15251.jpg",
+    "ground_truth_pid": "15251",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 18,
+    "top_similarity": 0.7052,
+    "latency_ms": 514.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15270.jpg",
+    "ground_truth_pid": "15270",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 60,
+    "top_similarity": 0.6826,
+    "latency_ms": 391.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15298.jpg",
+    "ground_truth_pid": "15298",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 387,
+    "top_similarity": 0.7231,
+    "latency_ms": 527.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15358.jpg",
+    "ground_truth_pid": "15358",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 137,
+    "top_similarity": 0.6357,
+    "latency_ms": 333.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15364.jpg",
+    "ground_truth_pid": "15364",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 207,
+    "top_similarity": 0.5872,
+    "latency_ms": 309.82,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15479.jpg",
+    "ground_truth_pid": "15479",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 12,
+    "top_similarity": 0.654,
+    "latency_ms": 337.12,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15534.jpg",
+    "ground_truth_pid": "15534",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 8,
+    "top_similarity": 0.6577,
+    "latency_ms": 509.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15633.jpg",
+    "ground_truth_pid": "15633",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 27,
+    "top_similarity": 0.6265,
+    "latency_ms": 546.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15681.jpg",
+    "ground_truth_pid": "15681",
+    "predicted_pid": "11468",
+    "ground_truth_rank": 23,
+    "top_similarity": 0.64,
+    "latency_ms": 355.12,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15727.jpg",
+    "ground_truth_pid": "15727",
+    "predicted_pid": "16113",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.723,
+    "latency_ms": 312.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15804.jpg",
+    "ground_truth_pid": "15804",
+    "predicted_pid": "2322",
+    "ground_truth_rank": 435,
+    "top_similarity": 0.5109,
+    "latency_ms": 312.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15853.jpg",
+    "ground_truth_pid": "15853",
+    "predicted_pid": "14825",
+    "ground_truth_rank": 65,
+    "top_similarity": 0.7547,
+    "latency_ms": 301.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15864.jpg",
+    "ground_truth_pid": "15864",
+    "predicted_pid": "28168",
+    "ground_truth_rank": 102,
+    "top_similarity": 0.5349,
+    "latency_ms": 325.73,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1588.jpg",
+    "ground_truth_pid": "1588",
+    "predicted_pid": "25114",
+    "ground_truth_rank": 191,
+    "top_similarity": 0.7234,
+    "latency_ms": 334.22,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1589.jpg",
+    "ground_truth_pid": "1589",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 365,
+    "top_similarity": 0.627,
+    "latency_ms": 310.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15893.jpg",
+    "ground_truth_pid": "15893",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 104,
+    "top_similarity": 0.6857,
+    "latency_ms": 303.37,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1590.jpg",
+    "ground_truth_pid": "1590",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 489,
+    "top_similarity": 0.6344,
+    "latency_ms": 318.99,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15938.jpg",
+    "ground_truth_pid": "15938",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 258,
+    "top_similarity": 0.6512,
+    "latency_ms": 294.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15985.jpg",
+    "ground_truth_pid": "15985",
+    "predicted_pid": "2835",
+    "ground_truth_rank": 263,
+    "top_similarity": 0.5986,
+    "latency_ms": 335.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "15996.jpg",
+    "ground_truth_pid": "15996",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 97,
+    "top_similarity": 0.7081,
+    "latency_ms": 335.22,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16113.jpg",
+    "ground_truth_pid": "16113",
+    "predicted_pid": "16113",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.6324,
+    "latency_ms": 318.54,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "1622.jpg",
+    "ground_truth_pid": "1622",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 48,
+    "top_similarity": 0.6493,
+    "latency_ms": 321.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1627.jpg",
+    "ground_truth_pid": "1627",
+    "predicted_pid": "2188",
+    "ground_truth_rank": 94,
+    "top_similarity": 0.6809,
+    "latency_ms": 300.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16272.jpg",
+    "ground_truth_pid": "16272",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 305,
+    "top_similarity": 0.6143,
+    "latency_ms": 278.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16311.jpg",
+    "ground_truth_pid": "16311",
+    "predicted_pid": "14014",
+    "ground_truth_rank": 393,
+    "top_similarity": 0.574,
+    "latency_ms": 285.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16369.jpg",
+    "ground_truth_pid": "16369",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 170,
+    "top_similarity": 0.6924,
+    "latency_ms": 271.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1639.jpg",
+    "ground_truth_pid": "1639",
+    "predicted_pid": "m-098",
+    "ground_truth_rank": 481,
+    "top_similarity": 0.6448,
+    "latency_ms": 453.08,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16392.jpg",
+    "ground_truth_pid": "16392",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 136,
+    "top_similarity": 0.6909,
+    "latency_ms": 311.67,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16441.jpg",
+    "ground_truth_pid": "16441",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 33,
+    "top_similarity": 0.7549,
+    "latency_ms": 324.75,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16502.jpg",
+    "ground_truth_pid": "16502",
+    "predicted_pid": "20246",
+    "ground_truth_rank": 164,
+    "top_similarity": 0.5721,
+    "latency_ms": 318.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16508.jpg",
+    "ground_truth_pid": "16508",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.7466,
+    "latency_ms": 284.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1652.jpg",
+    "ground_truth_pid": "1652",
+    "predicted_pid": "12971",
+    "ground_truth_rank": 118,
+    "top_similarity": 0.6461,
+    "latency_ms": 346.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16566.jpg",
+    "ground_truth_pid": "16566",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 50,
+    "top_similarity": 0.5585,
+    "latency_ms": 385.03,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16599.jpg",
+    "ground_truth_pid": "16599",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 28,
+    "top_similarity": 0.6393,
+    "latency_ms": 320.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1662.jpg",
+    "ground_truth_pid": "1662",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 276,
+    "top_similarity": 0.7344,
+    "latency_ms": 492.28,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16641.jpg",
+    "ground_truth_pid": "16641",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 6,
+    "top_similarity": 0.6672,
+    "latency_ms": 296.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16698.jpg",
+    "ground_truth_pid": "16698",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 58,
+    "top_similarity": 0.6021,
+    "latency_ms": 460.7,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16741.jpg",
+    "ground_truth_pid": "16741",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 22,
+    "top_similarity": 0.5658,
+    "latency_ms": 280.57,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16808.jpg",
+    "ground_truth_pid": "16808",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 486,
+    "top_similarity": 0.563,
+    "latency_ms": 443.98,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16833.jpg",
+    "ground_truth_pid": "16833",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 207,
+    "top_similarity": 0.7287,
+    "latency_ms": 269.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16888.jpg",
+    "ground_truth_pid": "16888",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 191,
+    "top_similarity": 0.6757,
+    "latency_ms": 427.73,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16896.jpg",
+    "ground_truth_pid": "16896",
+    "predicted_pid": "14014",
+    "ground_truth_rank": 630,
+    "top_similarity": 0.5812,
+    "latency_ms": 466.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "16955.jpg",
+    "ground_truth_pid": "16955",
+    "predicted_pid": "22386",
+    "ground_truth_rank": 66,
+    "top_similarity": 0.6388,
+    "latency_ms": 465.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1701.jpg",
+    "ground_truth_pid": "1701",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 4,
+    "top_similarity": 0.665,
+    "latency_ms": 304.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17039.jpg",
+    "ground_truth_pid": "17039",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 180,
+    "top_similarity": 0.6898,
+    "latency_ms": 385.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17046.jpg",
+    "ground_truth_pid": "17046",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 159,
+    "top_similarity": 0.6959,
+    "latency_ms": 359.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17079.jpg",
+    "ground_truth_pid": "17079",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 529,
+    "top_similarity": 0.5724,
+    "latency_ms": 487.85,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17104.jpg",
+    "ground_truth_pid": "17104",
+    "predicted_pid": "10517",
+    "ground_truth_rank": 13,
+    "top_similarity": 0.7003,
+    "latency_ms": 355.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17128.jpg",
+    "ground_truth_pid": "17128",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 7,
+    "top_similarity": 0.72,
+    "latency_ms": 492.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17203.jpg",
+    "ground_truth_pid": "17203",
+    "predicted_pid": "22287",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.7168,
+    "latency_ms": 397.64,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17204.jpg",
+    "ground_truth_pid": "17204",
+    "predicted_pid": "22287",
+    "ground_truth_rank": 4,
+    "top_similarity": 0.6871,
+    "latency_ms": 515.23,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17205.jpg",
+    "ground_truth_pid": "17205",
+    "predicted_pid": "1886",
+    "ground_truth_rank": 12,
+    "top_similarity": 0.6865,
+    "latency_ms": 370.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17235.jpg",
+    "ground_truth_pid": "17235",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 530,
+    "top_similarity": 0.7119,
+    "latency_ms": 357.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17269.jpg",
+    "ground_truth_pid": "17269",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 263,
+    "top_similarity": 0.5758,
+    "latency_ms": 374.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17279.jpg",
+    "ground_truth_pid": "17279",
+    "predicted_pid": "14014",
+    "ground_truth_rank": 4,
+    "top_similarity": 0.5691,
+    "latency_ms": 500.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17282.jpg",
+    "ground_truth_pid": "17282",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 142,
+    "top_similarity": 0.7249,
+    "latency_ms": 360.89,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17301.jpg",
+    "ground_truth_pid": "17301",
+    "predicted_pid": "12910",
+    "ground_truth_rank": 324,
+    "top_similarity": 0.6247,
+    "latency_ms": 400.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17345.jpg",
+    "ground_truth_pid": "17345",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 502,
+    "top_similarity": 0.6531,
+    "latency_ms": 395.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17355.jpg",
+    "ground_truth_pid": "17355",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 81,
+    "top_similarity": 0.6476,
+    "latency_ms": 541.08,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17416.jpg",
+    "ground_truth_pid": "17416",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 184,
+    "top_similarity": 0.6793,
+    "latency_ms": 446.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17478.jpg",
+    "ground_truth_pid": "17478",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 392,
+    "top_similarity": 0.6996,
+    "latency_ms": 507.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17490.jpg",
+    "ground_truth_pid": "17490",
+    "predicted_pid": "26328",
+    "ground_truth_rank": 39,
+    "top_similarity": 0.7636,
+    "latency_ms": 358.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17513.jpg",
+    "ground_truth_pid": "17513",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 2,
+    "top_similarity": 0.7121,
+    "latency_ms": 469.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17577.jpg",
+    "ground_truth_pid": "17577",
+    "predicted_pid": "16599",
+    "ground_truth_rank": 254,
+    "top_similarity": 0.6215,
+    "latency_ms": 318.42,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17621.jpg",
+    "ground_truth_pid": "17621",
+    "predicted_pid": "14116",
+    "ground_truth_rank": 153,
+    "top_similarity": 0.6995,
+    "latency_ms": 340.16,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17637.jpg",
+    "ground_truth_pid": "17637",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 180,
+    "top_similarity": 0.6263,
+    "latency_ms": 512.85,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17647.jpg",
+    "ground_truth_pid": "17647",
+    "predicted_pid": "14189",
+    "ground_truth_rank": 95,
+    "top_similarity": 0.6219,
+    "latency_ms": 477.75,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17654.jpg",
+    "ground_truth_pid": "17654",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 482,
+    "top_similarity": 0.6735,
+    "latency_ms": 483.25,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17672.jpg",
+    "ground_truth_pid": "17672",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 21,
+    "top_similarity": 0.6952,
+    "latency_ms": 374.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17698.jpg",
+    "ground_truth_pid": "17698",
+    "predicted_pid": "1996",
+    "ground_truth_rank": 33,
+    "top_similarity": 0.7251,
+    "latency_ms": 353.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17805.jpg",
+    "ground_truth_pid": "17805",
+    "predicted_pid": "27728",
+    "ground_truth_rank": 369,
+    "top_similarity": 0.6822,
+    "latency_ms": 380.37,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17839.jpg",
+    "ground_truth_pid": "17839",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 174,
+    "top_similarity": 0.5966,
+    "latency_ms": 370.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "17861.jpg",
+    "ground_truth_pid": "17861",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 335,
+    "top_similarity": 0.7024,
+    "latency_ms": 337.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1795.jpg",
+    "ground_truth_pid": "1795",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.7398,
+    "latency_ms": 337.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18040.jpg",
+    "ground_truth_pid": "18040",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 2,
+    "top_similarity": 0.5799,
+    "latency_ms": 464.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18064.jpg",
+    "ground_truth_pid": "18064",
+    "predicted_pid": "18218",
+    "ground_truth_rank": 166,
+    "top_similarity": 0.7216,
+    "latency_ms": 486.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18126.jpg",
+    "ground_truth_pid": "18126",
+    "predicted_pid": "14733",
+    "ground_truth_rank": 139,
+    "top_similarity": 0.7643,
+    "latency_ms": 326.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18135.jpg",
+    "ground_truth_pid": "18135",
+    "predicted_pid": "19466",
+    "ground_truth_rank": 220,
+    "top_similarity": 0.562,
+    "latency_ms": 495.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18171.jpg",
+    "ground_truth_pid": "18171",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 119,
+    "top_similarity": 0.6232,
+    "latency_ms": 558.57,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18218.jpg",
+    "ground_truth_pid": "18218",
+    "predicted_pid": "21060",
+    "ground_truth_rank": 7,
+    "top_similarity": 0.6939,
+    "latency_ms": 383.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18224.jpg",
+    "ground_truth_pid": "18224",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 434,
+    "top_similarity": 0.6171,
+    "latency_ms": 438.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18231.jpg",
+    "ground_truth_pid": "18231",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 682,
+    "top_similarity": 0.5946,
+    "latency_ms": 385.58,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18232.jpg",
+    "ground_truth_pid": "18232",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 594,
+    "top_similarity": 0.7324,
+    "latency_ms": 342.42,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1824.jpg",
+    "ground_truth_pid": "1824",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 14,
+    "top_similarity": 0.7264,
+    "latency_ms": 339.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18303.jpg",
+    "ground_truth_pid": "18303",
+    "predicted_pid": "15893",
+    "ground_truth_rank": 108,
+    "top_similarity": 0.5871,
+    "latency_ms": 358.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18318.jpg",
+    "ground_truth_pid": "18318",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 164,
+    "top_similarity": 0.6261,
+    "latency_ms": 477.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1833.jpg",
+    "ground_truth_pid": "1833",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 410,
+    "top_similarity": 0.5252,
+    "latency_ms": 340.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18382.jpg",
+    "ground_truth_pid": "18382",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 9,
+    "top_similarity": 0.6622,
+    "latency_ms": 470.07,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18389.jpg",
+    "ground_truth_pid": "18389",
+    "predicted_pid": "21060",
+    "ground_truth_rank": 30,
+    "top_similarity": 0.7732,
+    "latency_ms": 316.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18438.jpg",
+    "ground_truth_pid": "18438",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 541,
+    "top_similarity": 0.6231,
+    "latency_ms": 325.23,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18457.jpg",
+    "ground_truth_pid": "18457",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 117,
+    "top_similarity": 0.758,
+    "latency_ms": 489.36,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18485.jpg",
+    "ground_truth_pid": "18485",
+    "predicted_pid": "14825",
+    "ground_truth_rank": 2,
+    "top_similarity": 0.7803,
+    "latency_ms": 347.12,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18574.jpg",
+    "ground_truth_pid": "18574",
+    "predicted_pid": "2188",
+    "ground_truth_rank": 328,
+    "top_similarity": 0.6725,
+    "latency_ms": 309.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18595.jpg",
+    "ground_truth_pid": "18595",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 79,
+    "top_similarity": 0.7537,
+    "latency_ms": 524.99,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18697.jpg",
+    "ground_truth_pid": "18697",
+    "predicted_pid": "24019",
+    "ground_truth_rank": 11,
+    "top_similarity": 0.5618,
+    "latency_ms": 408.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18702.jpg",
+    "ground_truth_pid": "18702",
+    "predicted_pid": "11008",
+    "ground_truth_rank": 62,
+    "top_similarity": 0.715,
+    "latency_ms": 353.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18715.jpg",
+    "ground_truth_pid": "18715",
+    "predicted_pid": "15681",
+    "ground_truth_rank": 23,
+    "top_similarity": 0.7421,
+    "latency_ms": 494.27,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18763.jpg",
+    "ground_truth_pid": "18763",
+    "predicted_pid": "17698",
+    "ground_truth_rank": 36,
+    "top_similarity": 0.5517,
+    "latency_ms": 328.58,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18848.jpg",
+    "ground_truth_pid": "18848",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 250,
+    "top_similarity": 0.5625,
+    "latency_ms": 371.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1886.jpg",
+    "ground_truth_pid": "1886",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 112,
+    "top_similarity": 0.6152,
+    "latency_ms": 335.23,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18936.jpg",
+    "ground_truth_pid": "18936",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 246,
+    "top_similarity": 0.6722,
+    "latency_ms": 553.55,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18950.jpg",
+    "ground_truth_pid": "18950",
+    "predicted_pid": "m-098",
+    "ground_truth_rank": 123,
+    "top_similarity": 0.6173,
+    "latency_ms": 349.57,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18982.jpg",
+    "ground_truth_pid": "18982",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 18,
+    "top_similarity": 0.612,
+    "latency_ms": 484.89,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "18999.jpg",
+    "ground_truth_pid": "18999",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 162,
+    "top_similarity": 0.5621,
+    "latency_ms": 325.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19041.jpg",
+    "ground_truth_pid": "19041",
+    "predicted_pid": "2188",
+    "ground_truth_rank": 64,
+    "top_similarity": 0.7444,
+    "latency_ms": 306.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19054.jpg",
+    "ground_truth_pid": "19054",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 146,
+    "top_similarity": 0.6443,
+    "latency_ms": 302.21,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19090.jpg",
+    "ground_truth_pid": "19090",
+    "predicted_pid": "17039",
+    "ground_truth_rank": 11,
+    "top_similarity": 0.6513,
+    "latency_ms": 504.74,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19141.jpg",
+    "ground_truth_pid": "19141",
+    "predicted_pid": "17104",
+    "ground_truth_rank": 296,
+    "top_similarity": 0.5897,
+    "latency_ms": 325.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19182.jpg",
+    "ground_truth_pid": "19182",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 240,
+    "top_similarity": 0.7059,
+    "latency_ms": 337.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19281.jpg",
+    "ground_truth_pid": "19281",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 598,
+    "top_similarity": 0.6245,
+    "latency_ms": 460.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19396.jpg",
+    "ground_truth_pid": "19396",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 268,
+    "top_similarity": 0.7587,
+    "latency_ms": 297.73,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19407.jpg",
+    "ground_truth_pid": "19407",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 254,
+    "top_similarity": 0.6218,
+    "latency_ms": 460.48,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1942.jpg",
+    "ground_truth_pid": "1942",
+    "predicted_pid": "14401",
+    "ground_truth_rank": 102,
+    "top_similarity": 0.5142,
+    "latency_ms": 281.67,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19437.jpg",
+    "ground_truth_pid": "19437",
+    "predicted_pid": "27390",
+    "ground_truth_rank": 360,
+    "top_similarity": 0.7272,
+    "latency_ms": 311.03,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19466.jpg",
+    "ground_truth_pid": "19466",
+    "predicted_pid": "19466",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.5984,
+    "latency_ms": 485.07,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "19482.jpg",
+    "ground_truth_pid": "19482",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 101,
+    "top_similarity": 0.5965,
+    "latency_ms": 342.06,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19533.jpg",
+    "ground_truth_pid": "19533",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 153,
+    "top_similarity": 0.6432,
+    "latency_ms": 312.48,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19584.jpg",
+    "ground_truth_pid": "19584",
+    "predicted_pid": "m-047",
+    "ground_truth_rank": 364,
+    "top_similarity": 0.5863,
+    "latency_ms": 463.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19626.jpg",
+    "ground_truth_pid": "19626",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 193,
+    "top_similarity": 0.7937,
+    "latency_ms": 327.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19628.jpg",
+    "ground_truth_pid": "19628",
+    "predicted_pid": "18303",
+    "ground_truth_rank": 9,
+    "top_similarity": 0.7448,
+    "latency_ms": 377.79,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19639.jpg",
+    "ground_truth_pid": "19639",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 394,
+    "top_similarity": 0.5735,
+    "latency_ms": 353.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19688.jpg",
+    "ground_truth_pid": "19688",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 351,
+    "top_similarity": 0.6295,
+    "latency_ms": 493.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19705.jpg",
+    "ground_truth_pid": "19705",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 258,
+    "top_similarity": 0.7269,
+    "latency_ms": 499.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19744.jpg",
+    "ground_truth_pid": "19744",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 173,
+    "top_similarity": 0.7392,
+    "latency_ms": 560.13,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19829.jpg",
+    "ground_truth_pid": "19829",
+    "predicted_pid": "m-047",
+    "ground_truth_rank": 15,
+    "top_similarity": 0.543,
+    "latency_ms": 458.74,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19871.jpg",
+    "ground_truth_pid": "19871",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 586,
+    "top_similarity": 0.5364,
+    "latency_ms": 976.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19913.jpg",
+    "ground_truth_pid": "19913",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 17,
+    "top_similarity": 0.702,
+    "latency_ms": 649.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19918.jpg",
+    "ground_truth_pid": "19918",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 577,
+    "top_similarity": 0.5596,
+    "latency_ms": 416.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "1996.jpg",
+    "ground_truth_pid": "1996",
+    "predicted_pid": "15364",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.7386,
+    "latency_ms": 526.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "19988.jpg",
+    "ground_truth_pid": "19988",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 21,
+    "top_similarity": 0.7008,
+    "latency_ms": 386.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20054.jpg",
+    "ground_truth_pid": "20054",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 37,
+    "top_similarity": 0.6538,
+    "latency_ms": 556.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20108.jpg",
+    "ground_truth_pid": "20108",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 220,
+    "top_similarity": 0.651,
+    "latency_ms": 467.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20135.jpg",
+    "ground_truth_pid": "20135",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 348,
+    "top_similarity": 0.7038,
+    "latency_ms": 372.5,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20171.jpg",
+    "ground_truth_pid": "20171",
+    "predicted_pid": "18702",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.7757,
+    "latency_ms": 400.98,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2018.jpg",
+    "ground_truth_pid": "2018",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 164,
+    "top_similarity": 0.7089,
+    "latency_ms": 505.36,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20207.jpg",
+    "ground_truth_pid": "20207",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 437,
+    "top_similarity": 0.5837,
+    "latency_ms": 330.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20227.jpg",
+    "ground_truth_pid": "20227",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 444,
+    "top_similarity": 0.6777,
+    "latency_ms": 366.37,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20233.jpg",
+    "ground_truth_pid": "20233",
+    "predicted_pid": "20233",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7736,
+    "latency_ms": 491.18,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "20246.jpg",
+    "ground_truth_pid": "20246",
+    "predicted_pid": "20246",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.6036,
+    "latency_ms": 479.53,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "20312.jpg",
+    "ground_truth_pid": "20312",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 42,
+    "top_similarity": 0.7077,
+    "latency_ms": 319.58,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20315.jpg",
+    "ground_truth_pid": "20315",
+    "predicted_pid": "20233",
+    "ground_truth_rank": 622,
+    "top_similarity": 0.6912,
+    "latency_ms": 519.02,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2035.jpg",
+    "ground_truth_pid": "2035",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 19,
+    "top_similarity": 0.7183,
+    "latency_ms": 605.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2039.jpg",
+    "ground_truth_pid": "2039",
+    "predicted_pid": "11987",
+    "ground_truth_rank": 202,
+    "top_similarity": 0.7097,
+    "latency_ms": 530.57,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20457.jpg",
+    "ground_truth_pid": "20457",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 383,
+    "top_similarity": 0.5264,
+    "latency_ms": 415.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20474.jpg",
+    "ground_truth_pid": "20474",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 500,
+    "top_similarity": 0.6078,
+    "latency_ms": 446.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20492.jpg",
+    "ground_truth_pid": "20492",
+    "predicted_pid": "26842",
+    "ground_truth_rank": 281,
+    "top_similarity": 0.6972,
+    "latency_ms": 431.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20611.jpg",
+    "ground_truth_pid": "20611",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 269,
+    "top_similarity": 0.6275,
+    "latency_ms": 520.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20616.jpg",
+    "ground_truth_pid": "20616",
+    "predicted_pid": "28168",
+    "ground_truth_rank": 382,
+    "top_similarity": 0.6037,
+    "latency_ms": 507.03,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20618.jpg",
+    "ground_truth_pid": "20618",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 137,
+    "top_similarity": 0.4952,
+    "latency_ms": 524.64,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20640.jpg",
+    "ground_truth_pid": "20640",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 404,
+    "top_similarity": 0.5214,
+    "latency_ms": 537.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20645.jpg",
+    "ground_truth_pid": "20645",
+    "predicted_pid": "16113",
+    "ground_truth_rank": 570,
+    "top_similarity": 0.7124,
+    "latency_ms": 556.08,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20680.jpg",
+    "ground_truth_pid": "20680",
+    "predicted_pid": "25718",
+    "ground_truth_rank": 135,
+    "top_similarity": 0.7594,
+    "latency_ms": 376.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20728.jpg",
+    "ground_truth_pid": "20728",
+    "predicted_pid": "27728",
+    "ground_truth_rank": 427,
+    "top_similarity": 0.6317,
+    "latency_ms": 447.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20794.jpg",
+    "ground_truth_pid": "20794",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 288,
+    "top_similarity": 0.6978,
+    "latency_ms": 423.99,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20823.jpg",
+    "ground_truth_pid": "20823",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 58,
+    "top_similarity": 0.6376,
+    "latency_ms": 564.31,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20868.jpg",
+    "ground_truth_pid": "20868",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 25,
+    "top_similarity": 0.6791,
+    "latency_ms": 347.79,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20903.jpg",
+    "ground_truth_pid": "20903",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 478,
+    "top_similarity": 0.7532,
+    "latency_ms": 326.13,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2092.jpg",
+    "ground_truth_pid": "2092",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 620,
+    "top_similarity": 0.604,
+    "latency_ms": 476.41,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20931.jpg",
+    "ground_truth_pid": "20931",
+    "predicted_pid": "28308",
+    "ground_truth_rank": 71,
+    "top_similarity": 0.722,
+    "latency_ms": 479.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2097.jpg",
+    "ground_truth_pid": "2097",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 171,
+    "top_similarity": 0.6794,
+    "latency_ms": 318.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "20998.jpg",
+    "ground_truth_pid": "20998",
+    "predicted_pid": "19744",
+    "ground_truth_rank": 64,
+    "top_similarity": 0.624,
+    "latency_ms": 346.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21004.jpg",
+    "ground_truth_pid": "21004",
+    "predicted_pid": "28443",
+    "ground_truth_rank": 590,
+    "top_similarity": 0.6429,
+    "latency_ms": 316.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21041.jpg",
+    "ground_truth_pid": "21041",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 366,
+    "top_similarity": 0.5944,
+    "latency_ms": 511.5,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21060.jpg",
+    "ground_truth_pid": "21060",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.7156,
+    "latency_ms": 338.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21076.jpg",
+    "ground_truth_pid": "21076",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 256,
+    "top_similarity": 0.7012,
+    "latency_ms": 452.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21114.jpg",
+    "ground_truth_pid": "21114",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 338,
+    "top_similarity": 0.5605,
+    "latency_ms": 319.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21295.jpg",
+    "ground_truth_pid": "21295",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 100,
+    "top_similarity": 0.6183,
+    "latency_ms": 472.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "213.jpg",
+    "ground_truth_pid": "213",
+    "predicted_pid": "15681",
+    "ground_truth_rank": 264,
+    "top_similarity": 0.6945,
+    "latency_ms": 324.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21313.jpg",
+    "ground_truth_pid": "21313",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 23,
+    "top_similarity": 0.5933,
+    "latency_ms": 347.55,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21360.jpg",
+    "ground_truth_pid": "21360",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 473,
+    "top_similarity": 0.5787,
+    "latency_ms": 339.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21377.jpg",
+    "ground_truth_pid": "21377",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 324,
+    "top_similarity": 0.6045,
+    "latency_ms": 472.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21383.jpg",
+    "ground_truth_pid": "21383",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 35,
+    "top_similarity": 0.7223,
+    "latency_ms": 459.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "214.jpg",
+    "ground_truth_pid": "214",
+    "predicted_pid": "11835",
+    "ground_truth_rank": 30,
+    "top_similarity": 0.697,
+    "latency_ms": 310.41,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21451.jpg",
+    "ground_truth_pid": "21451",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 508,
+    "top_similarity": 0.5074,
+    "latency_ms": 450.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21452.jpg",
+    "ground_truth_pid": "21452",
+    "predicted_pid": "20246",
+    "ground_truth_rank": 162,
+    "top_similarity": 0.5484,
+    "latency_ms": 451.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21594.jpg",
+    "ground_truth_pid": "21594",
+    "predicted_pid": "21594",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.5652,
+    "latency_ms": 319.18,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "21613.jpg",
+    "ground_truth_pid": "21613",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 40,
+    "top_similarity": 0.7109,
+    "latency_ms": 319.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21689.jpg",
+    "ground_truth_pid": "21689",
+    "predicted_pid": "14189",
+    "ground_truth_rank": 24,
+    "top_similarity": 0.6969,
+    "latency_ms": 452.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21767.jpg",
+    "ground_truth_pid": "21767",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 285,
+    "top_similarity": 0.5974,
+    "latency_ms": 475.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21790.jpg",
+    "ground_truth_pid": "21790",
+    "predicted_pid": "20680",
+    "ground_truth_rank": 341,
+    "top_similarity": 0.5464,
+    "latency_ms": 332.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21850.jpg",
+    "ground_truth_pid": "21850",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 560,
+    "top_similarity": 0.6099,
+    "latency_ms": 813.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21865.jpg",
+    "ground_truth_pid": "21865",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 158,
+    "top_similarity": 0.6091,
+    "latency_ms": 348.6,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2188.jpg",
+    "ground_truth_pid": "2188",
+    "predicted_pid": "22287",
+    "ground_truth_rank": 27,
+    "top_similarity": 0.6568,
+    "latency_ms": 363.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21941.jpg",
+    "ground_truth_pid": "21941",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 371,
+    "top_similarity": 0.6697,
+    "latency_ms": 350.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21956.jpg",
+    "ground_truth_pid": "21956",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 78,
+    "top_similarity": 0.7562,
+    "latency_ms": 346.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21974.jpg",
+    "ground_truth_pid": "21974",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 18,
+    "top_similarity": 0.6864,
+    "latency_ms": 368.21,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "21991.jpg",
+    "ground_truth_pid": "21991",
+    "predicted_pid": "15251",
+    "ground_truth_rank": 11,
+    "top_similarity": 0.6429,
+    "latency_ms": 482.71,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22062.jpg",
+    "ground_truth_pid": "22062",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 493,
+    "top_similarity": 0.5454,
+    "latency_ms": 332.05,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22086.jpg",
+    "ground_truth_pid": "22086",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 30,
+    "top_similarity": 0.6936,
+    "latency_ms": 322.58,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22105.jpg",
+    "ground_truth_pid": "22105",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 17,
+    "top_similarity": 0.6449,
+    "latency_ms": 345.04,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2213.jpg",
+    "ground_truth_pid": "2213",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 15,
+    "top_similarity": 0.718,
+    "latency_ms": 530.58,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22207.jpg",
+    "ground_truth_pid": "22207",
+    "predicted_pid": "m-054",
+    "ground_truth_rank": 113,
+    "top_similarity": 0.4927,
+    "latency_ms": 329.85,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22273.jpg",
+    "ground_truth_pid": "22273",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 337,
+    "top_similarity": 0.6586,
+    "latency_ms": 333.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22275.jpg",
+    "ground_truth_pid": "22275",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 60,
+    "top_similarity": 0.7563,
+    "latency_ms": 342.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22278.jpg",
+    "ground_truth_pid": "22278",
+    "predicted_pid": "12592",
+    "ground_truth_rank": 456,
+    "top_similarity": 0.6606,
+    "latency_ms": 476.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22287.jpg",
+    "ground_truth_pid": "22287",
+    "predicted_pid": "19041",
+    "ground_truth_rank": 6,
+    "top_similarity": 0.6759,
+    "latency_ms": 462.6,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22386.jpg",
+    "ground_truth_pid": "22386",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 83,
+    "top_similarity": 0.6255,
+    "latency_ms": 319.88,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22418.jpg",
+    "ground_truth_pid": "22418",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 198,
+    "top_similarity": 0.6331,
+    "latency_ms": 286.91,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22445.jpg",
+    "ground_truth_pid": "22445",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 115,
+    "top_similarity": 0.6345,
+    "latency_ms": 307.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22475.jpg",
+    "ground_truth_pid": "22475",
+    "predicted_pid": "19466",
+    "ground_truth_rank": 231,
+    "top_similarity": 0.5378,
+    "latency_ms": 289.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22477.jpg",
+    "ground_truth_pid": "22477",
+    "predicted_pid": "16955",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.6182,
+    "latency_ms": 352.37,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22493.jpg",
+    "ground_truth_pid": "22493",
+    "predicted_pid": "16955",
+    "ground_truth_rank": 9,
+    "top_similarity": 0.6474,
+    "latency_ms": 353.03,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22541.jpg",
+    "ground_truth_pid": "22541",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 416,
+    "top_similarity": 0.5962,
+    "latency_ms": 476.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22592.jpg",
+    "ground_truth_pid": "22592",
+    "predicted_pid": "21060",
+    "ground_truth_rank": 355,
+    "top_similarity": 0.628,
+    "latency_ms": 661.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22648.jpg",
+    "ground_truth_pid": "22648",
+    "predicted_pid": "2835",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.6292,
+    "latency_ms": 571.27,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22681.jpg",
+    "ground_truth_pid": "22681",
+    "predicted_pid": "12910",
+    "ground_truth_rank": 12,
+    "top_similarity": 0.6611,
+    "latency_ms": 336.28,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22810.jpg",
+    "ground_truth_pid": "22810",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 277,
+    "top_similarity": 0.5679,
+    "latency_ms": 327.38,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "22907.jpg",
+    "ground_truth_pid": "22907",
+    "predicted_pid": "22907",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.6432,
+    "latency_ms": 467.01,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "23059.jpg",
+    "ground_truth_pid": "23059",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 244,
+    "top_similarity": 0.5835,
+    "latency_ms": 312.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23111.jpg",
+    "ground_truth_pid": "23111",
+    "predicted_pid": "1701",
+    "ground_truth_rank": 31,
+    "top_similarity": 0.7106,
+    "latency_ms": 305.06,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23156.jpg",
+    "ground_truth_pid": "23156",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 49,
+    "top_similarity": 0.6912,
+    "latency_ms": 316.83,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23202.jpg",
+    "ground_truth_pid": "23202",
+    "predicted_pid": "24471",
+    "ground_truth_rank": 328,
+    "top_similarity": 0.6044,
+    "latency_ms": 319.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2322.jpg",
+    "ground_truth_pid": "2322",
+    "predicted_pid": "27728",
+    "ground_truth_rank": 218,
+    "top_similarity": 0.6435,
+    "latency_ms": 290.26,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23259.jpg",
+    "ground_truth_pid": "23259",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 47,
+    "top_similarity": 0.5246,
+    "latency_ms": 387.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23293.jpg",
+    "ground_truth_pid": "23293",
+    "predicted_pid": "22287",
+    "ground_truth_rank": 101,
+    "top_similarity": 0.7152,
+    "latency_ms": 484.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23295.jpg",
+    "ground_truth_pid": "23295",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 241,
+    "top_similarity": 0.7075,
+    "latency_ms": 325.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23318.jpg",
+    "ground_truth_pid": "23318",
+    "predicted_pid": "19054",
+    "ground_truth_rank": 62,
+    "top_similarity": 0.6548,
+    "latency_ms": 360.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2332.jpg",
+    "ground_truth_pid": "2332",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 249,
+    "top_similarity": 0.6654,
+    "latency_ms": 312.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23329.jpg",
+    "ground_truth_pid": "23329",
+    "predicted_pid": "15633",
+    "ground_truth_rank": 175,
+    "top_similarity": 0.5925,
+    "latency_ms": 462.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23333.jpg",
+    "ground_truth_pid": "23333",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7538,
+    "latency_ms": 297.35,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "2335.jpg",
+    "ground_truth_pid": "2335",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 390,
+    "top_similarity": 0.6221,
+    "latency_ms": 285.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2342.jpg",
+    "ground_truth_pid": "2342",
+    "predicted_pid": "m-099",
+    "ground_truth_rank": 372,
+    "top_similarity": 0.6335,
+    "latency_ms": 319.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23577.jpg",
+    "ground_truth_pid": "23577",
+    "predicted_pid": "24471",
+    "ground_truth_rank": 21,
+    "top_similarity": 0.5702,
+    "latency_ms": 493.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23620.jpg",
+    "ground_truth_pid": "23620",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 143,
+    "top_similarity": 0.6361,
+    "latency_ms": 386.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23639.jpg",
+    "ground_truth_pid": "23639",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 22,
+    "top_similarity": 0.6716,
+    "latency_ms": 443.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23702.jpg",
+    "ground_truth_pid": "23702",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 9,
+    "top_similarity": 0.704,
+    "latency_ms": 368.55,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23717.jpg",
+    "ground_truth_pid": "23717",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 64,
+    "top_similarity": 0.6297,
+    "latency_ms": 461.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23718.jpg",
+    "ground_truth_pid": "23718",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 161,
+    "top_similarity": 0.6504,
+    "latency_ms": 470.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2372.jpg",
+    "ground_truth_pid": "2372",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 18,
+    "top_similarity": 0.7394,
+    "latency_ms": 536.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23737.jpg",
+    "ground_truth_pid": "23737",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 620,
+    "top_similarity": 0.5506,
+    "latency_ms": 402.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23750.jpg",
+    "ground_truth_pid": "23750",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 340,
+    "top_similarity": 0.6286,
+    "latency_ms": 425.5,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23753.jpg",
+    "ground_truth_pid": "23753",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 334,
+    "top_similarity": 0.6348,
+    "latency_ms": 437.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23842.jpg",
+    "ground_truth_pid": "23842",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.5866,
+    "latency_ms": 435.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23866.jpg",
+    "ground_truth_pid": "23866",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 10,
+    "top_similarity": 0.6449,
+    "latency_ms": 435.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23884.jpg",
+    "ground_truth_pid": "23884",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 54,
+    "top_similarity": 0.5751,
+    "latency_ms": 418.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23899.jpg",
+    "ground_truth_pid": "23899",
+    "predicted_pid": "11468",
+    "ground_truth_rank": 156,
+    "top_similarity": 0.6852,
+    "latency_ms": 407.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23910.jpg",
+    "ground_truth_pid": "23910",
+    "predicted_pid": "23910",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.656,
+    "latency_ms": 411.64,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "23942.jpg",
+    "ground_truth_pid": "23942",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 247,
+    "top_similarity": 0.6549,
+    "latency_ms": 418.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "23989.jpg",
+    "ground_truth_pid": "23989",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 138,
+    "top_similarity": 0.6047,
+    "latency_ms": 580.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24019.jpg",
+    "ground_truth_pid": "24019",
+    "predicted_pid": "28168",
+    "ground_truth_rank": 494,
+    "top_similarity": 0.5998,
+    "latency_ms": 475.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2418.jpg",
+    "ground_truth_pid": "2418",
+    "predicted_pid": "24734",
+    "ground_truth_rank": 198,
+    "top_similarity": 0.6372,
+    "latency_ms": 666.85,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24182.jpg",
+    "ground_truth_pid": "24182",
+    "predicted_pid": "1886",
+    "ground_truth_rank": 14,
+    "top_similarity": 0.7117,
+    "latency_ms": 429.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24231.jpg",
+    "ground_truth_pid": "24231",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 547,
+    "top_similarity": 0.5703,
+    "latency_ms": 489.71,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24282.jpg",
+    "ground_truth_pid": "24282",
+    "predicted_pid": "21613",
+    "ground_truth_rank": 303,
+    "top_similarity": 0.6986,
+    "latency_ms": 317.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24286.jpg",
+    "ground_truth_pid": "24286",
+    "predicted_pid": "12285",
+    "ground_truth_rank": 90,
+    "top_similarity": 0.6966,
+    "latency_ms": 335.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24305.jpg",
+    "ground_truth_pid": "24305",
+    "predicted_pid": "13702",
+    "ground_truth_rank": 51,
+    "top_similarity": 0.5377,
+    "latency_ms": 304.31,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24385.jpg",
+    "ground_truth_pid": "24385",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 217,
+    "top_similarity": 0.6943,
+    "latency_ms": 474.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24417.jpg",
+    "ground_truth_pid": "24417",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 105,
+    "top_similarity": 0.6762,
+    "latency_ms": 299.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24424.jpg",
+    "ground_truth_pid": "24424",
+    "predicted_pid": "22648",
+    "ground_truth_rank": 260,
+    "top_similarity": 0.6568,
+    "latency_ms": 283.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24428.jpg",
+    "ground_truth_pid": "24428",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 189,
+    "top_similarity": 0.6195,
+    "latency_ms": 467.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24431.jpg",
+    "ground_truth_pid": "24431",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 369,
+    "top_similarity": 0.5323,
+    "latency_ms": 462.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24466.jpg",
+    "ground_truth_pid": "24466",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 347,
+    "top_similarity": 0.6204,
+    "latency_ms": 298.46,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24471.jpg",
+    "ground_truth_pid": "24471",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 317,
+    "top_similarity": 0.6157,
+    "latency_ms": 321.82,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24521.jpg",
+    "ground_truth_pid": "24521",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 385,
+    "top_similarity": 0.6345,
+    "latency_ms": 312.74,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24543.jpg",
+    "ground_truth_pid": "24543",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 82,
+    "top_similarity": 0.5833,
+    "latency_ms": 356.02,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24585.jpg",
+    "ground_truth_pid": "24585",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 37,
+    "top_similarity": 0.6993,
+    "latency_ms": 335.21,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24734.jpg",
+    "ground_truth_pid": "24734",
+    "predicted_pid": "1701",
+    "ground_truth_rank": 44,
+    "top_similarity": 0.7697,
+    "latency_ms": 365.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24819.jpg",
+    "ground_truth_pid": "24819",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 255,
+    "top_similarity": 0.6355,
+    "latency_ms": 349.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2488.jpg",
+    "ground_truth_pid": "2488",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 501,
+    "top_similarity": 0.653,
+    "latency_ms": 466.64,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "24997.jpg",
+    "ground_truth_pid": "24997",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 189,
+    "top_similarity": 0.6367,
+    "latency_ms": 304.96,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2501.jpg",
+    "ground_truth_pid": "2501",
+    "predicted_pid": "17513",
+    "ground_truth_rank": 173,
+    "top_similarity": 0.6527,
+    "latency_ms": 314.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2504.jpg",
+    "ground_truth_pid": "2504",
+    "predicted_pid": "25718",
+    "ground_truth_rank": 196,
+    "top_similarity": 0.7575,
+    "latency_ms": 461.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25094.jpg",
+    "ground_truth_pid": "25094",
+    "predicted_pid": "m-094",
+    "ground_truth_rank": 110,
+    "top_similarity": 0.4704,
+    "latency_ms": 281.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25114.jpg",
+    "ground_truth_pid": "25114",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 42,
+    "top_similarity": 0.6387,
+    "latency_ms": 347.96,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25183.jpg",
+    "ground_truth_pid": "25183",
+    "predicted_pid": "10517",
+    "ground_truth_rank": 165,
+    "top_similarity": 0.6018,
+    "latency_ms": 480.05,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25210.jpg",
+    "ground_truth_pid": "25210",
+    "predicted_pid": "25718",
+    "ground_truth_rank": 54,
+    "top_similarity": 0.6678,
+    "latency_ms": 308.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25235.jpg",
+    "ground_truth_pid": "25235",
+    "predicted_pid": "23259",
+    "ground_truth_rank": 32,
+    "top_similarity": 0.6802,
+    "latency_ms": 458.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25276.jpg",
+    "ground_truth_pid": "25276",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 112,
+    "top_similarity": 0.7143,
+    "latency_ms": 478.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25306.jpg",
+    "ground_truth_pid": "25306",
+    "predicted_pid": "m-098",
+    "ground_truth_rank": 137,
+    "top_similarity": 0.6278,
+    "latency_ms": 336.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2536.jpg",
+    "ground_truth_pid": "2536",
+    "predicted_pid": "m-098",
+    "ground_truth_rank": 97,
+    "top_similarity": 0.5515,
+    "latency_ms": 353.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25361.jpg",
+    "ground_truth_pid": "25361",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 623,
+    "top_similarity": 0.6047,
+    "latency_ms": 560.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25392.jpg",
+    "ground_truth_pid": "25392",
+    "predicted_pid": "22105",
+    "ground_truth_rank": 73,
+    "top_similarity": 0.6577,
+    "latency_ms": 618.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25453.jpg",
+    "ground_truth_pid": "25453",
+    "predicted_pid": "22105",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.6712,
+    "latency_ms": 321.91,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25524.jpg",
+    "ground_truth_pid": "25524",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 548,
+    "top_similarity": 0.577,
+    "latency_ms": 335.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25549.jpg",
+    "ground_truth_pid": "25549",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 363,
+    "top_similarity": 0.5741,
+    "latency_ms": 300.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25626.jpg",
+    "ground_truth_pid": "25626",
+    "predicted_pid": "23639",
+    "ground_truth_rank": 126,
+    "top_similarity": 0.6906,
+    "latency_ms": 349.22,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25631.jpg",
+    "ground_truth_pid": "25631",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 202,
+    "top_similarity": 0.6207,
+    "latency_ms": 339.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25689.jpg",
+    "ground_truth_pid": "25689",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 97,
+    "top_similarity": 0.6797,
+    "latency_ms": 354.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25718.jpg",
+    "ground_truth_pid": "25718",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.6762,
+    "latency_ms": 545.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25775.jpg",
+    "ground_truth_pid": "25775",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 140,
+    "top_similarity": 0.6113,
+    "latency_ms": 370.02,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25787.jpg",
+    "ground_truth_pid": "25787",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 114,
+    "top_similarity": 0.6117,
+    "latency_ms": 361.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25815.jpg",
+    "ground_truth_pid": "25815",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 285,
+    "top_similarity": 0.5604,
+    "latency_ms": 477.59,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25905.jpg",
+    "ground_truth_pid": "25905",
+    "predicted_pid": "20312",
+    "ground_truth_rank": 84,
+    "top_similarity": 0.6406,
+    "latency_ms": 478.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25949.jpg",
+    "ground_truth_pid": "25949",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 132,
+    "top_similarity": 0.6541,
+    "latency_ms": 294.46,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "25981.jpg",
+    "ground_truth_pid": "25981",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 90,
+    "top_similarity": 0.6694,
+    "latency_ms": 304.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26069.jpg",
+    "ground_truth_pid": "26069",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 69,
+    "top_similarity": 0.5405,
+    "latency_ms": 299.92,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26148.jpg",
+    "ground_truth_pid": "26148",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 412,
+    "top_similarity": 0.5236,
+    "latency_ms": 463.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26166.jpg",
+    "ground_truth_pid": "26166",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 609,
+    "top_similarity": 0.5352,
+    "latency_ms": 289.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26185.jpg",
+    "ground_truth_pid": "26185",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 396,
+    "top_similarity": 0.6702,
+    "latency_ms": 315.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26265.jpg",
+    "ground_truth_pid": "26265",
+    "predicted_pid": "23639",
+    "ground_truth_rank": 67,
+    "top_similarity": 0.7183,
+    "latency_ms": 353.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26328.jpg",
+    "ground_truth_pid": "26328",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 112,
+    "top_similarity": 0.5924,
+    "latency_ms": 472.7,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26379.jpg",
+    "ground_truth_pid": "26379",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 510,
+    "top_similarity": 0.7343,
+    "latency_ms": 314.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26444.jpg",
+    "ground_truth_pid": "26444",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 209,
+    "top_similarity": 0.674,
+    "latency_ms": 481.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26555.jpg",
+    "ground_truth_pid": "26555",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 554,
+    "top_similarity": 0.6314,
+    "latency_ms": 464.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26567.jpg",
+    "ground_truth_pid": "26567",
+    "predicted_pid": "28168",
+    "ground_truth_rank": 261,
+    "top_similarity": 0.5417,
+    "latency_ms": 498.81,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26568.jpg",
+    "ground_truth_pid": "26568",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 102,
+    "top_similarity": 0.6254,
+    "latency_ms": 335.22,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26579.jpg",
+    "ground_truth_pid": "26579",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 458,
+    "top_similarity": 0.5374,
+    "latency_ms": 323.05,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26712.jpg",
+    "ground_truth_pid": "26712",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 307,
+    "top_similarity": 0.5482,
+    "latency_ms": 348.82,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26758.jpg",
+    "ground_truth_pid": "26758",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 239,
+    "top_similarity": 0.694,
+    "latency_ms": 291.59,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2678.jpg",
+    "ground_truth_pid": "2678",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 317,
+    "top_similarity": 0.6848,
+    "latency_ms": 314.82,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26811.jpg",
+    "ground_truth_pid": "26811",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 212,
+    "top_similarity": 0.6121,
+    "latency_ms": 309.71,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2683.jpg",
+    "ground_truth_pid": "2683",
+    "predicted_pid": "16955",
+    "ground_truth_rank": 5,
+    "top_similarity": 0.6324,
+    "latency_ms": 296.36,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26842.jpg",
+    "ground_truth_pid": "26842",
+    "predicted_pid": "15364",
+    "ground_truth_rank": 10,
+    "top_similarity": 0.7111,
+    "latency_ms": 491.83,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26855.jpg",
+    "ground_truth_pid": "26855",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 673,
+    "top_similarity": 0.5465,
+    "latency_ms": 337.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "269.jpg",
+    "ground_truth_pid": "269",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 40,
+    "top_similarity": 0.7097,
+    "latency_ms": 486.55,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26905.jpg",
+    "ground_truth_pid": "26905",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 167,
+    "top_similarity": 0.5945,
+    "latency_ms": 351.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26906.jpg",
+    "ground_truth_pid": "26906",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 6,
+    "top_similarity": 0.6142,
+    "latency_ms": 536.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26909.jpg",
+    "ground_truth_pid": "26909",
+    "predicted_pid": "23639",
+    "ground_truth_rank": 298,
+    "top_similarity": 0.6612,
+    "latency_ms": 541.67,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26950.jpg",
+    "ground_truth_pid": "26950",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 296,
+    "top_similarity": 0.5781,
+    "latency_ms": 507.75,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "26975.jpg",
+    "ground_truth_pid": "26975",
+    "predicted_pid": "23639",
+    "ground_truth_rank": 318,
+    "top_similarity": 0.6638,
+    "latency_ms": 395.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27019.jpg",
+    "ground_truth_pid": "27019",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 54,
+    "top_similarity": 0.7251,
+    "latency_ms": 515.73,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27089.jpg",
+    "ground_truth_pid": "27089",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 509,
+    "top_similarity": 0.5357,
+    "latency_ms": 366.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27105.jpg",
+    "ground_truth_pid": "27105",
+    "predicted_pid": "28443",
+    "ground_truth_rank": 575,
+    "top_similarity": 0.6808,
+    "latency_ms": 353.04,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27211.jpg",
+    "ground_truth_pid": "27211",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 26,
+    "top_similarity": 0.5977,
+    "latency_ms": 370.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27247.jpg",
+    "ground_truth_pid": "27247",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 61,
+    "top_similarity": 0.7375,
+    "latency_ms": 512.8,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2725.jpg",
+    "ground_truth_pid": "2725",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 245,
+    "top_similarity": 0.6408,
+    "latency_ms": 466.06,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2726.jpg",
+    "ground_truth_pid": "2726",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 254,
+    "top_similarity": 0.7097,
+    "latency_ms": 434.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27308.jpg",
+    "ground_truth_pid": "27308",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 560,
+    "top_similarity": 0.5228,
+    "latency_ms": 356.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27390.jpg",
+    "ground_truth_pid": "27390",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 255,
+    "top_similarity": 0.5516,
+    "latency_ms": 479.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27437.jpg",
+    "ground_truth_pid": "27437",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 406,
+    "top_similarity": 0.676,
+    "latency_ms": 327.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2748.jpg",
+    "ground_truth_pid": "2748",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 51,
+    "top_similarity": 0.6913,
+    "latency_ms": 323.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "275.jpg",
+    "ground_truth_pid": "275",
+    "predicted_pid": "20135",
+    "ground_truth_rank": 144,
+    "top_similarity": 0.5685,
+    "latency_ms": 314.8,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27547.jpg",
+    "ground_truth_pid": "27547",
+    "predicted_pid": "m7",
+    "ground_truth_rank": 351,
+    "top_similarity": 0.5316,
+    "latency_ms": 300.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27565.jpg",
+    "ground_truth_pid": "27565",
+    "predicted_pid": "27565",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7432,
+    "latency_ms": 321.07,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "27728.jpg",
+    "ground_truth_pid": "27728",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 28,
+    "top_similarity": 0.5552,
+    "latency_ms": 353.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27744.jpg",
+    "ground_truth_pid": "27744",
+    "predicted_pid": "12910",
+    "ground_truth_rank": 7,
+    "top_similarity": 0.7204,
+    "latency_ms": 320.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27834.jpg",
+    "ground_truth_pid": "27834",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 105,
+    "top_similarity": 0.6239,
+    "latency_ms": 536.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27923.jpg",
+    "ground_truth_pid": "27923",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 39,
+    "top_similarity": 0.6617,
+    "latency_ms": 401.25,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27958.jpg",
+    "ground_truth_pid": "27958",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 72,
+    "top_similarity": 0.52,
+    "latency_ms": 494.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2797.jpg",
+    "ground_truth_pid": "2797",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 417,
+    "top_similarity": 0.658,
+    "latency_ms": 529.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "27974.jpg",
+    "ground_truth_pid": "27974",
+    "predicted_pid": "25718",
+    "ground_truth_rank": 92,
+    "top_similarity": 0.5859,
+    "latency_ms": 563.62,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28002.jpg",
+    "ground_truth_pid": "28002",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 111,
+    "top_similarity": 0.5696,
+    "latency_ms": 542.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28022.jpg",
+    "ground_truth_pid": "28022",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 16,
+    "top_similarity": 0.5675,
+    "latency_ms": 549.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28168.jpg",
+    "ground_truth_pid": "28168",
+    "predicted_pid": "28168",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.5245,
+    "latency_ms": 529.98,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "28172.jpg",
+    "ground_truth_pid": "28172",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 521,
+    "top_similarity": 0.7235,
+    "latency_ms": 539.31,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28193.jpg",
+    "ground_truth_pid": "28193",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 463,
+    "top_similarity": 0.7038,
+    "latency_ms": 377.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28279.jpg",
+    "ground_truth_pid": "28279",
+    "predicted_pid": "12971",
+    "ground_truth_rank": 604,
+    "top_similarity": 0.7263,
+    "latency_ms": 346.86,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28308.jpg",
+    "ground_truth_pid": "28308",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 378,
+    "top_similarity": 0.5718,
+    "latency_ms": 531.62,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2835.jpg",
+    "ground_truth_pid": "2835",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 133,
+    "top_similarity": 0.7071,
+    "latency_ms": 494.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28358.jpg",
+    "ground_truth_pid": "28358",
+    "predicted_pid": "1701",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.6698,
+    "latency_ms": 826.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28381.jpg",
+    "ground_truth_pid": "28381",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 2,
+    "top_similarity": 0.6205,
+    "latency_ms": 665.99,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28409.jpg",
+    "ground_truth_pid": "28409",
+    "predicted_pid": "28409",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.7268,
+    "latency_ms": 394.21,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "28443.jpg",
+    "ground_truth_pid": "28443",
+    "predicted_pid": "19466",
+    "ground_truth_rank": 10,
+    "top_similarity": 0.561,
+    "latency_ms": 495.32,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28479.jpg",
+    "ground_truth_pid": "28479",
+    "predicted_pid": "14401",
+    "ground_truth_rank": 35,
+    "top_similarity": 0.7076,
+    "latency_ms": 154.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28500.jpg",
+    "ground_truth_pid": "28500",
+    "predicted_pid": "m1-028",
+    "ground_truth_rank": 314,
+    "top_similarity": 0.5868,
+    "latency_ms": 165.04,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28508.jpg",
+    "ground_truth_pid": "28508",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 508,
+    "top_similarity": 0.5295,
+    "latency_ms": 175.82,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28630.jpg",
+    "ground_truth_pid": "28630",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.6957,
+    "latency_ms": 189.74,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28666.jpg",
+    "ground_truth_pid": "28666",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 20,
+    "top_similarity": 0.6665,
+    "latency_ms": 202.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2873.jpg",
+    "ground_truth_pid": "2873",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 324,
+    "top_similarity": 0.593,
+    "latency_ms": 192.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28888.jpg",
+    "ground_truth_pid": "28888",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 569,
+    "top_similarity": 0.5723,
+    "latency_ms": 207.62,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "28930.jpg",
+    "ground_truth_pid": "28930",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 18,
+    "top_similarity": 0.6231,
+    "latency_ms": 249.33,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29039.jpg",
+    "ground_truth_pid": "29039",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 135,
+    "top_similarity": 0.6731,
+    "latency_ms": 221.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29050.jpg",
+    "ground_truth_pid": "29050",
+    "predicted_pid": "25114",
+    "ground_truth_rank": 503,
+    "top_similarity": 0.6886,
+    "latency_ms": 231.6,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2910.jpg",
+    "ground_truth_pid": "2910",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 257,
+    "top_similarity": 0.61,
+    "latency_ms": 215.64,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29148.jpg",
+    "ground_truth_pid": "29148",
+    "predicted_pid": "19054",
+    "ground_truth_rank": 69,
+    "top_similarity": 0.6768,
+    "latency_ms": 226.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29264.jpg",
+    "ground_truth_pid": "29264",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 3,
+    "top_similarity": 0.7815,
+    "latency_ms": 224.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29265.jpg",
+    "ground_truth_pid": "29265",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 345,
+    "top_similarity": 0.6098,
+    "latency_ms": 217.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29316.jpg",
+    "ground_truth_pid": "29316",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 127,
+    "top_similarity": 0.6117,
+    "latency_ms": 280.22,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "2934.jpg",
+    "ground_truth_pid": "2934",
+    "predicted_pid": "2934",
+    "ground_truth_rank": 1,
+    "top_similarity": 0.6548,
+    "latency_ms": 206.86,
+    "correct_rank1": true
+  },
+  {
+    "query_file": "29401.jpg",
+    "ground_truth_pid": "29401",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 624,
+    "top_similarity": 0.6477,
+    "latency_ms": 216.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29425.jpg",
+    "ground_truth_pid": "29425",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 454,
+    "top_similarity": 0.638,
+    "latency_ms": 230.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29466.jpg",
+    "ground_truth_pid": "29466",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 96,
+    "top_similarity": 0.6051,
+    "latency_ms": 541.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29523.jpg",
+    "ground_truth_pid": "29523",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 120,
+    "top_similarity": 0.5095,
+    "latency_ms": 601.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29574.jpg",
+    "ground_truth_pid": "29574",
+    "predicted_pid": "11468",
+    "ground_truth_rank": 330,
+    "top_similarity": 0.6345,
+    "latency_ms": 461.35,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29605.jpg",
+    "ground_truth_pid": "29605",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 538,
+    "top_similarity": 0.5789,
+    "latency_ms": 563.85,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29609.jpg",
+    "ground_truth_pid": "29609",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 240,
+    "top_similarity": 0.5164,
+    "latency_ms": 848.49,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29634.jpg",
+    "ground_truth_pid": "29634",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 554,
+    "top_similarity": 0.6708,
+    "latency_ms": 607.67,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29663.jpg",
+    "ground_truth_pid": "29663",
+    "predicted_pid": "22477",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.674,
+    "latency_ms": 477.76,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29709.jpg",
+    "ground_truth_pid": "29709",
+    "predicted_pid": "16113",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.77,
+    "latency_ms": 521.87,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29775.jpg",
+    "ground_truth_pid": "29775",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6423,
+    "latency_ms": 323.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29789.jpg",
+    "ground_truth_pid": "29789",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6119,
+    "latency_ms": 340.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29818.jpg",
+    "ground_truth_pid": "29818",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7097,
+    "latency_ms": 475.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "29960.jpg",
+    "ground_truth_pid": "29960",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5233,
+    "latency_ms": 292.99,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3036.jpg",
+    "ground_truth_pid": "3036",
+    "predicted_pid": "15211",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7198,
+    "latency_ms": 289.21,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3041.jpg",
+    "ground_truth_pid": "3041",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5683,
+    "latency_ms": 289.83,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3057.jpg",
+    "ground_truth_pid": "3057",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5928,
+    "latency_ms": 290.8,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "312.jpg",
+    "ground_truth_pid": "312",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6692,
+    "latency_ms": 291.05,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3123.jpg",
+    "ground_truth_pid": "3123",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7022,
+    "latency_ms": 399.06,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3133.jpg",
+    "ground_truth_pid": "3133",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6547,
+    "latency_ms": 700.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3179.jpg",
+    "ground_truth_pid": "3179",
+    "predicted_pid": "29264",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7214,
+    "latency_ms": 330.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3188.jpg",
+    "ground_truth_pid": "3188",
+    "predicted_pid": "1701",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7034,
+    "latency_ms": 310.68,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3191.jpg",
+    "ground_truth_pid": "3191",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6105,
+    "latency_ms": 302.59,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3208.jpg",
+    "ground_truth_pid": "3208",
+    "predicted_pid": "m-098",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6085,
+    "latency_ms": 292.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3296.jpg",
+    "ground_truth_pid": "3296",
+    "predicted_pid": "14914",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6082,
+    "latency_ms": 305.27,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3302.jpg",
+    "ground_truth_pid": "3302",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5114,
+    "latency_ms": 307.79,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "334.jpg",
+    "ground_truth_pid": "334",
+    "predicted_pid": "m15",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5118,
+    "latency_ms": 286.96,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3359.jpg",
+    "ground_truth_pid": "3359",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7424,
+    "latency_ms": 295.83,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3429.jpg",
+    "ground_truth_pid": "3429",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7126,
+    "latency_ms": 278.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3448.jpg",
+    "ground_truth_pid": "3448",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6303,
+    "latency_ms": 275.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3454.jpg",
+    "ground_truth_pid": "3454",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6436,
+    "latency_ms": 285.08,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3591.jpg",
+    "ground_truth_pid": "3591",
+    "predicted_pid": "m-099",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5992,
+    "latency_ms": 279.24,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3600.jpg",
+    "ground_truth_pid": "3600",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6419,
+    "latency_ms": 464.1,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3716.jpg",
+    "ground_truth_pid": "3716",
+    "predicted_pid": "10662",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.624,
+    "latency_ms": 336.88,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3740.jpg",
+    "ground_truth_pid": "3740",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6009,
+    "latency_ms": 538.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3910.jpg",
+    "ground_truth_pid": "3910",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5352,
+    "latency_ms": 549.39,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3954.jpg",
+    "ground_truth_pid": "3954",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6063,
+    "latency_ms": 380.05,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3959.jpg",
+    "ground_truth_pid": "3959",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6426,
+    "latency_ms": 332.58,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "3978.jpg",
+    "ground_truth_pid": "3978",
+    "predicted_pid": "18218",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7604,
+    "latency_ms": 308.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4.jpg",
+    "ground_truth_pid": "4",
+    "predicted_pid": "22275",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6208,
+    "latency_ms": 466.36,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "406.jpg",
+    "ground_truth_pid": "406",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6642,
+    "latency_ms": 282.01,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4074.jpg",
+    "ground_truth_pid": "4074",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.676,
+    "latency_ms": 334.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "408.jpg",
+    "ground_truth_pid": "408",
+    "predicted_pid": "18848",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6448,
+    "latency_ms": 283.96,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4118.jpg",
+    "ground_truth_pid": "4118",
+    "predicted_pid": "22477",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6604,
+    "latency_ms": 298.67,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4153.jpg",
+    "ground_truth_pid": "4153",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6831,
+    "latency_ms": 288.98,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "423.jpg",
+    "ground_truth_pid": "423",
+    "predicted_pid": "15364",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6631,
+    "latency_ms": 306.12,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4235.jpg",
+    "ground_truth_pid": "4235",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6921,
+    "latency_ms": 294.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4315.jpg",
+    "ground_truth_pid": "4315",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6473,
+    "latency_ms": 289.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4378.jpg",
+    "ground_truth_pid": "4378",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7208,
+    "latency_ms": 336.74,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4415.jpg",
+    "ground_truth_pid": "4415",
+    "predicted_pid": "2188",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7218,
+    "latency_ms": 315.86,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4479.jpg",
+    "ground_truth_pid": "4479",
+    "predicted_pid": "1942",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6795,
+    "latency_ms": 313.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4513.jpg",
+    "ground_truth_pid": "4513",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5476,
+    "latency_ms": 297.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4515.jpg",
+    "ground_truth_pid": "4515",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6777,
+    "latency_ms": 301.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4533.jpg",
+    "ground_truth_pid": "4533",
+    "predicted_pid": "27728",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6173,
+    "latency_ms": 489.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4583.jpg",
+    "ground_truth_pid": "4583",
+    "predicted_pid": "15893",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6656,
+    "latency_ms": 320.78,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4763.jpg",
+    "ground_truth_pid": "4763",
+    "predicted_pid": "28168",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5976,
+    "latency_ms": 460.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4782.jpg",
+    "ground_truth_pid": "4782",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7069,
+    "latency_ms": 294.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4783.jpg",
+    "ground_truth_pid": "4783",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7181,
+    "latency_ms": 310.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4823.jpg",
+    "ground_truth_pid": "4823",
+    "predicted_pid": "14014",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.4947,
+    "latency_ms": 280.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4825.jpg",
+    "ground_truth_pid": "4825",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.693,
+    "latency_ms": 302.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4856.jpg",
+    "ground_truth_pid": "4856",
+    "predicted_pid": "22105",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6651,
+    "latency_ms": 466.59,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4888.jpg",
+    "ground_truth_pid": "4888",
+    "predicted_pid": "26567",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6729,
+    "latency_ms": 359.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4947.jpg",
+    "ground_truth_pid": "4947",
+    "predicted_pid": "13920",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5785,
+    "latency_ms": 330.77,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "4971.jpg",
+    "ground_truth_pid": "4971",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7639,
+    "latency_ms": 329.04,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "505.jpg",
+    "ground_truth_pid": "505",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7172,
+    "latency_ms": 339.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "506.jpg",
+    "ground_truth_pid": "506",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7633,
+    "latency_ms": 327.96,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5141.jpg",
+    "ground_truth_pid": "5141",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6441,
+    "latency_ms": 317.09,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5189.jpg",
+    "ground_truth_pid": "5189",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7463,
+    "latency_ms": 484.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "522.jpg",
+    "ground_truth_pid": "522",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.626,
+    "latency_ms": 427.42,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5269.jpg",
+    "ground_truth_pid": "5269",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7216,
+    "latency_ms": 342.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5298.jpg",
+    "ground_truth_pid": "5298",
+    "predicted_pid": "21594",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.662,
+    "latency_ms": 365.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "531.jpg",
+    "ground_truth_pid": "531",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7709,
+    "latency_ms": 337.22,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5462.jpg",
+    "ground_truth_pid": "5462",
+    "predicted_pid": "20312",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6171,
+    "latency_ms": 342.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5498.jpg",
+    "ground_truth_pid": "5498",
+    "predicted_pid": "17104",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5891,
+    "latency_ms": 317.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5517.jpg",
+    "ground_truth_pid": "5517",
+    "predicted_pid": "27390",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7455,
+    "latency_ms": 321.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5539.jpg",
+    "ground_truth_pid": "5539",
+    "predicted_pid": "25114",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6869,
+    "latency_ms": 478.16,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5541.jpg",
+    "ground_truth_pid": "5541",
+    "predicted_pid": "15633",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5428,
+    "latency_ms": 480.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5542.jpg",
+    "ground_truth_pid": "5542",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6171,
+    "latency_ms": 305.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5661.jpg",
+    "ground_truth_pid": "5661",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.686,
+    "latency_ms": 296.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "568.jpg",
+    "ground_truth_pid": "568",
+    "predicted_pid": "28002",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7179,
+    "latency_ms": 827.51,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5690.jpg",
+    "ground_truth_pid": "5690",
+    "predicted_pid": "18040",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6835,
+    "latency_ms": 438.93,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "57.jpg",
+    "ground_truth_pid": "57",
+    "predicted_pid": "25718",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7181,
+    "latency_ms": 497.41,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5763.jpg",
+    "ground_truth_pid": "5763",
+    "predicted_pid": "14914",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7329,
+    "latency_ms": 311.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5837.jpg",
+    "ground_truth_pid": "5837",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7625,
+    "latency_ms": 304.25,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5910.jpg",
+    "ground_truth_pid": "5910",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6402,
+    "latency_ms": 298.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5914.jpg",
+    "ground_truth_pid": "5914",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7036,
+    "latency_ms": 353.36,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "5960.jpg",
+    "ground_truth_pid": "5960",
+    "predicted_pid": "m2",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6048,
+    "latency_ms": 371.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6122.jpg",
+    "ground_truth_pid": "6122",
+    "predicted_pid": "18171",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7209,
+    "latency_ms": 515.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6129.jpg",
+    "ground_truth_pid": "6129",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6858,
+    "latency_ms": 539.72,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6138.jpg",
+    "ground_truth_pid": "6138",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6081,
+    "latency_ms": 391.39,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "616.jpg",
+    "ground_truth_pid": "616",
+    "predicted_pid": "22477",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5634,
+    "latency_ms": 387.65,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "624.jpg",
+    "ground_truth_pid": "624",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7814,
+    "latency_ms": 569.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6324.jpg",
+    "ground_truth_pid": "6324",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7479,
+    "latency_ms": 452.27,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6363.jpg",
+    "ground_truth_pid": "6363",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.734,
+    "latency_ms": 373.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6415.jpg",
+    "ground_truth_pid": "6415",
+    "predicted_pid": "22105",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6661,
+    "latency_ms": 362.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6457.jpg",
+    "ground_truth_pid": "6457",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5944,
+    "latency_ms": 493.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6476.jpg",
+    "ground_truth_pid": "6476",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5669,
+    "latency_ms": 313.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6503.jpg",
+    "ground_truth_pid": "6503",
+    "predicted_pid": "24385",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6738,
+    "latency_ms": 319.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "66.jpg",
+    "ground_truth_pid": "66",
+    "predicted_pid": "15534",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6444,
+    "latency_ms": 346.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6601.jpg",
+    "ground_truth_pid": "6601",
+    "predicted_pid": "14733",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7575,
+    "latency_ms": 375.41,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6609.jpg",
+    "ground_truth_pid": "6609",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6975,
+    "latency_ms": 398.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6642.jpg",
+    "ground_truth_pid": "6642",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6603,
+    "latency_ms": 385.88,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6647.jpg",
+    "ground_truth_pid": "6647",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6439,
+    "latency_ms": 325.89,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6689.jpg",
+    "ground_truth_pid": "6689",
+    "predicted_pid": "21360",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7511,
+    "latency_ms": 342.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "6827.jpg",
+    "ground_truth_pid": "6827",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5674,
+    "latency_ms": 358.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "692.jpg",
+    "ground_truth_pid": "692",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7018,
+    "latency_ms": 397.55,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7037.jpg",
+    "ground_truth_pid": "7037",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6341,
+    "latency_ms": 349.52,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7119.jpg",
+    "ground_truth_pid": "7119",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7095,
+    "latency_ms": 320.63,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7127.jpg",
+    "ground_truth_pid": "7127",
+    "predicted_pid": "23259",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6377,
+    "latency_ms": 337.8,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7136.jpg",
+    "ground_truth_pid": "7136",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5845,
+    "latency_ms": 494.12,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7143.jpg",
+    "ground_truth_pid": "7143",
+    "predicted_pid": "14116",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7306,
+    "latency_ms": 310.94,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7146.jpg",
+    "ground_truth_pid": "7146",
+    "predicted_pid": "14914",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6175,
+    "latency_ms": 322.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "723.jpg",
+    "ground_truth_pid": "723",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6775,
+    "latency_ms": 457.07,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7251.jpg",
+    "ground_truth_pid": "7251",
+    "predicted_pid": "27744",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6827,
+    "latency_ms": 334.99,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7349.jpg",
+    "ground_truth_pid": "7349",
+    "predicted_pid": "11218",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5199,
+    "latency_ms": 345.64,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7435.jpg",
+    "ground_truth_pid": "7435",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7114,
+    "latency_ms": 333.4,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7440.jpg",
+    "ground_truth_pid": "7440",
+    "predicted_pid": "29574",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.603,
+    "latency_ms": 412.62,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7464.jpg",
+    "ground_truth_pid": "7464",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7553,
+    "latency_ms": 434.47,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7484.jpg",
+    "ground_truth_pid": "7484",
+    "predicted_pid": "14189",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6592,
+    "latency_ms": 343.54,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "755.jpg",
+    "ground_truth_pid": "755",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6589,
+    "latency_ms": 497.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7567.jpg",
+    "ground_truth_pid": "7567",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.635,
+    "latency_ms": 317.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7589.jpg",
+    "ground_truth_pid": "7589",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6793,
+    "latency_ms": 312.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7683.jpg",
+    "ground_truth_pid": "7683",
+    "predicted_pid": "28308",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7136,
+    "latency_ms": 372.9,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7701.jpg",
+    "ground_truth_pid": "7701",
+    "predicted_pid": "28381",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7031,
+    "latency_ms": 477.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7735.jpg",
+    "ground_truth_pid": "7735",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6966,
+    "latency_ms": 312.53,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "774.jpg",
+    "ground_truth_pid": "774",
+    "predicted_pid": "14213",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6614,
+    "latency_ms": 303.28,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7822.jpg",
+    "ground_truth_pid": "7822",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6162,
+    "latency_ms": 353.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7840.jpg",
+    "ground_truth_pid": "7840",
+    "predicted_pid": "28002",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7231,
+    "latency_ms": 327.45,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7845.jpg",
+    "ground_truth_pid": "7845",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5576,
+    "latency_ms": 487.31,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "788.jpg",
+    "ground_truth_pid": "788",
+    "predicted_pid": "19437",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6466,
+    "latency_ms": 397.18,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "7936.jpg",
+    "ground_truth_pid": "7936",
+    "predicted_pid": "16955",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.69,
+    "latency_ms": 307.75,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "800.jpg",
+    "ground_truth_pid": "800",
+    "predicted_pid": "12455",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7078,
+    "latency_ms": 373.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8007.jpg",
+    "ground_truth_pid": "8007",
+    "predicted_pid": "17104",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6636,
+    "latency_ms": 388.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8019.jpg",
+    "ground_truth_pid": "8019",
+    "predicted_pid": "19466",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5902,
+    "latency_ms": 517.37,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8035.jpg",
+    "ground_truth_pid": "8035",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.704,
+    "latency_ms": 302.25,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8084.jpg",
+    "ground_truth_pid": "8084",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7156,
+    "latency_ms": 307.44,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8108.jpg",
+    "ground_truth_pid": "8108",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5981,
+    "latency_ms": 293.38,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8129.jpg",
+    "ground_truth_pid": "8129",
+    "predicted_pid": "11008",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6597,
+    "latency_ms": 293.38,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "82.jpg",
+    "ground_truth_pid": "82",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6952,
+    "latency_ms": 304.05,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8235.jpg",
+    "ground_truth_pid": "8235",
+    "predicted_pid": "22207",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.737,
+    "latency_ms": 292.45,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "828.jpg",
+    "ground_truth_pid": "828",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.591,
+    "latency_ms": 294.08,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8342.jpg",
+    "ground_truth_pid": "8342",
+    "predicted_pid": "14083",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6431,
+    "latency_ms": 344.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8344.jpg",
+    "ground_truth_pid": "8344",
+    "predicted_pid": "14213",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6494,
+    "latency_ms": 524.3,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8348.jpg",
+    "ground_truth_pid": "8348",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6732,
+    "latency_ms": 624.69,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "835.jpg",
+    "ground_truth_pid": "835",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6015,
+    "latency_ms": 515.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "837.jpg",
+    "ground_truth_pid": "837",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6712,
+    "latency_ms": 408.7,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8395.jpg",
+    "ground_truth_pid": "8395",
+    "predicted_pid": "2835",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.632,
+    "latency_ms": 528.83,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "84.jpg",
+    "ground_truth_pid": "84",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.63,
+    "latency_ms": 360.15,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8438.jpg",
+    "ground_truth_pid": "8438",
+    "predicted_pid": "28409",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7025,
+    "latency_ms": 720.95,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8458.jpg",
+    "ground_truth_pid": "8458",
+    "predicted_pid": "23842",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6556,
+    "latency_ms": 328.79,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8491.jpg",
+    "ground_truth_pid": "8491",
+    "predicted_pid": "23333",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6494,
+    "latency_ms": 473.37,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8605.jpg",
+    "ground_truth_pid": "8605",
+    "predicted_pid": "13448",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6056,
+    "latency_ms": 293.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8686.jpg",
+    "ground_truth_pid": "8686",
+    "predicted_pid": "23884",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6699,
+    "latency_ms": 502.11,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8694.jpg",
+    "ground_truth_pid": "8694",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5343,
+    "latency_ms": 384.45,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8799.jpg",
+    "ground_truth_pid": "8799",
+    "predicted_pid": "23259",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6123,
+    "latency_ms": 372.29,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8806.jpg",
+    "ground_truth_pid": "8806",
+    "predicted_pid": "27923",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.569,
+    "latency_ms": 498.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8828.jpg",
+    "ground_truth_pid": "8828",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7342,
+    "latency_ms": 318.25,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "887.jpg",
+    "ground_truth_pid": "887",
+    "predicted_pid": "20474",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5651,
+    "latency_ms": 479.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "8929.jpg",
+    "ground_truth_pid": "8929",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6463,
+    "latency_ms": 327.6,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9020.jpg",
+    "ground_truth_pid": "9020",
+    "predicted_pid": "m-082",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5986,
+    "latency_ms": 351.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9037.jpg",
+    "ground_truth_pid": "9037",
+    "predicted_pid": "29316",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6639,
+    "latency_ms": 336.91,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9059.jpg",
+    "ground_truth_pid": "9059",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7737,
+    "latency_ms": 333.61,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9082.jpg",
+    "ground_truth_pid": "9082",
+    "predicted_pid": "22477",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6789,
+    "latency_ms": 328.04,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9106.jpg",
+    "ground_truth_pid": "9106",
+    "predicted_pid": "15242",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7038,
+    "latency_ms": 322.84,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9148.jpg",
+    "ground_truth_pid": "9148",
+    "predicted_pid": "14189",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7264,
+    "latency_ms": 306.03,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9262.jpg",
+    "ground_truth_pid": "9262",
+    "predicted_pid": "18382",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7068,
+    "latency_ms": 322.07,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9286.jpg",
+    "ground_truth_pid": "9286",
+    "predicted_pid": "m-029",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5621,
+    "latency_ms": 326.98,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9304.jpg",
+    "ground_truth_pid": "9304",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5624,
+    "latency_ms": 316.96,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9308.jpg",
+    "ground_truth_pid": "9308",
+    "predicted_pid": "28358",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6541,
+    "latency_ms": 476.19,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9329.jpg",
+    "ground_truth_pid": "9329",
+    "predicted_pid": "14499",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7166,
+    "latency_ms": 346.0,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "935.jpg",
+    "ground_truth_pid": "935",
+    "predicted_pid": "23293",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6074,
+    "latency_ms": 341.73,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9402.jpg",
+    "ground_truth_pid": "9402",
+    "predicted_pid": "29523",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6922,
+    "latency_ms": 324.17,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "941.jpg",
+    "ground_truth_pid": "941",
+    "predicted_pid": "23910",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.5987,
+    "latency_ms": 324.97,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9421.jpg",
+    "ground_truth_pid": "9421",
+    "predicted_pid": "16441",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6404,
+    "latency_ms": 306.21,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9454.jpg",
+    "ground_truth_pid": "9454",
+    "predicted_pid": "1701",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6431,
+    "latency_ms": 299.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9457.jpg",
+    "ground_truth_pid": "9457",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6837,
+    "latency_ms": 287.43,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9505.jpg",
+    "ground_truth_pid": "9505",
+    "predicted_pid": "29574",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6573,
+    "latency_ms": 314.14,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9509.jpg",
+    "ground_truth_pid": "9509",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6339,
+    "latency_ms": 307.56,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9515.jpg",
+    "ground_truth_pid": "9515",
+    "predicted_pid": "17279",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6249,
+    "latency_ms": 470.86,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9569.jpg",
+    "ground_truth_pid": "9569",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7869,
+    "latency_ms": 314.42,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9612.jpg",
+    "ground_truth_pid": "9612",
+    "predicted_pid": "11907",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6836,
+    "latency_ms": 297.03,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9619.jpg",
+    "ground_truth_pid": "9619",
+    "predicted_pid": "23111",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.683,
+    "latency_ms": 317.86,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9677.jpg",
+    "ground_truth_pid": "9677",
+    "predicted_pid": "23702",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7727,
+    "latency_ms": 488.07,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9681.jpg",
+    "ground_truth_pid": "9681",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7175,
+    "latency_ms": 325.66,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9826.jpg",
+    "ground_truth_pid": "9826",
+    "predicted_pid": "19054",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.6604,
+    "latency_ms": 372.2,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "987.jpg",
+    "ground_truth_pid": "987",
+    "predicted_pid": "26906",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.7279,
+    "latency_ms": 351.23,
+    "correct_rank1": false
+  },
+  {
+    "query_file": "9970.jpg",
+    "ground_truth_pid": "9970",
+    "predicted_pid": "20474",
+    "ground_truth_rank": 690,
+    "top_similarity": 0.583,
+    "latency_ms": 566.27,
+    "correct_rank1": false
+  }
+]

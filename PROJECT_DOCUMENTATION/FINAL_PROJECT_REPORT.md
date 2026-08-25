@@ -297,12 +297,15 @@ The **ThirdEye v2** system delivers a complete, robust software solution for for
 ### Appendix A: Installation & Quick Start Guide
 
 ```bash
+
 # 1. Start Python ML Microservice
+
 cd "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/ml_service"
 pip install -r requirements.txt
 python app.py
 
 # 2. Launch JavaFX Application
+
 cd "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2"
 mvn clean javafx:run
 ```

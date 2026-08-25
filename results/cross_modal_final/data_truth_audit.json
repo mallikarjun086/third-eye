@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-25T13:43:00+05:30",
+  "cuhk_dataset": {
+    "gallery_dir": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery",
+    "gallery_count": 189,
+    "gallery_unique_pids": 189,
+    "queries_dir": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries",
+    "queries_count": 190,
+    "verified_pairs_count": 102
+  },
+  "desktop_archive": {
+    "path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+    "total_images": 44668,
+    "train_pairs": 20655,
+    "val_pairs": 1000,
+    "test_pairs": 679
+  }
+}

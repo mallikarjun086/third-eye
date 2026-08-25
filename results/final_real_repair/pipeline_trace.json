@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "input_pipeline": "Image -> Face Crop (160x160) -> Inception-ResNet-v1 (512-d) -> MLP Projection Head (128-d) -> L2 Norm -> Dual Stream Cosine Fusion",
+  "active_backend_service": "Python FastAPI (ml_service/app.py) <-> JavaFX Client (Upload_sketchController.java)"
+}

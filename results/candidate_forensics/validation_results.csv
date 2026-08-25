@@ -1,0 +1,7 @@
+candidate_id,candidate_name,val_rank1_pct,val_rank5_pct,val_mrr,full_rank1_pct
+CANDIDATE_A,Candidate_A_Production_Baseline,0.0,0.0,0.0,40.0
+CANDIDATE_B,Candidate_B_Dual_Encoder_InfoNCE,0.0,0.0,0.0,37.37
+CANDIDATE_C,Candidate_C_Dual_Encoder_Triplet,0.0,0.0,0.0,35.26
+CANDIDATE_D,Candidate_D_Dual_Encoder_Combined,0.0,0.0,0.0,31.05
+CANDIDATE_E,Candidate_E_Best_Structural_Branch,0.0,0.0,0.0,39.47
+CANDIDATE_F,Candidate_F_Winner_Soft_Demographics,0.0,0.0,0.0,40.0

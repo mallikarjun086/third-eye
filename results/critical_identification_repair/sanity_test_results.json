@@ -1,0 +1,32 @@
+{
+  "TEST_A_exact_same_image": {
+    "total": 189,
+    "passed": 189,
+    "accuracy_pct": 100.0
+  },
+  "TEST_B_reloaded_from_disk": {
+    "total": 50,
+    "passed": 50,
+    "accuracy_pct": 100.0
+  },
+  "TEST_C_http_api_same_image": {
+    "total": 20,
+    "passed": 20,
+    "accuracy_pct": 100.0
+  },
+  "TEST_E_controlled_transformations": {
+    "total": 20,
+    "passed": 20,
+    "accuracy_pct": 100.0
+  },
+  "TEST_F_sketch_to_photo_matching": {
+    "total_queries": 190,
+    "rank1_hits": 91,
+    "rank1_accuracy_pct": 47.89,
+    "rank5_hits": 99,
+    "rank5_accuracy_pct": 52.11,
+    "rank10_hits": 100,
+    "rank10_accuracy_pct": 52.63,
+    "mrr": 0.4985
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "total_manifest_records": 28306,
+  "verified_sketch_photo_pairs": 22334,
+  "photo_only_identities": 135,
+  "distractor_photos_count": 5972,
+  "split_counts": {
+    "train_pairs": 20655,
+    "val_pairs": 1000,
+    "test_pairs": 679,
+    "distractor": 5972
+  }
+}

@@ -1,0 +1,1602 @@
+{
+  "timestamp": "2026-08-25T13:44:00+05:30",
+  "total_failures": 114,
+  "failures": [
+    {
+      "query": "F2-005-01-sz1.jpg",
+      "ground_truth_pid": "F2-005",
+      "actual_rank": null,
+      "top1_wrong_match": "f-020-01.jpg",
+      "wrong_score": 0.6918,
+      "top5_candidates": [
+        "f-020-01.jpg",
+        "f-005-01.jpg",
+        "f1-004-01.jpg",
+        "f-037-01.jpg",
+        "f-039-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-006-01-sz1.jpg",
+      "ground_truth_pid": "F2-006",
+      "actual_rank": null,
+      "top1_wrong_match": "f-006-01.jpg",
+      "wrong_score": 0.7878,
+      "top5_candidates": [
+        "f-006-01.jpg",
+        "f1-001-01.jpg",
+        "f-021-01.jpg",
+        "m-093-01.jpg",
+        "f-027-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-007-01-sz1.jpg",
+      "ground_truth_pid": "F2-007",
+      "actual_rank": null,
+      "top1_wrong_match": "f-007-01.jpg",
+      "wrong_score": 0.8304,
+      "top5_candidates": [
+        "f-007-01.jpg",
+        "f-012-01.jpg",
+        "m-036-01.jpg",
+        "f-037-01.jpg",
+        "f1-001-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-008-01-sz1.jpg",
+      "ground_truth_pid": "F2-008",
+      "actual_rank": null,
+      "top1_wrong_match": "f-008-01.jpg",
+      "wrong_score": 0.8327,
+      "top5_candidates": [
+        "f-008-01.jpg",
+        "m-047-01.jpg",
+        "m-009-01.jpg",
+        "m-046-01.jpg",
+        "m1-028-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-009-01-sz1.jpg",
+      "ground_truth_pid": "F2-009",
+      "actual_rank": null,
+      "top1_wrong_match": "f-009-01.jpg",
+      "wrong_score": 0.8314,
+      "top5_candidates": [
+        "f-009-01.jpg",
+        "m-037-01.jpg",
+        "m-045-01.jpg",
+        "m-088-01.jpg",
+        "f-015-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-010-01-sz1.jpg",
+      "ground_truth_pid": "F20",
+      "actual_rank": null,
+      "top1_wrong_match": "f-010-01.jpg",
+      "wrong_score": 0.8044,
+      "top5_candidates": [
+        "f-010-01.jpg",
+        "m-054-01.jpg",
+        "m-083-01.jpg",
+        "m1-002-01.jpg",
+        "m-088-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-011-01-sz1.jpg",
+      "ground_truth_pid": "F21",
+      "actual_rank": null,
+      "top1_wrong_match": "f-011-01.jpg",
+      "wrong_score": 0.7601,
+      "top5_candidates": [
+        "f-011-01.jpg",
+        "f1-011-01.jpg",
+        "m-009-01.jpg",
+        "f-042-01.jpg",
+        "m1-015-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-012-01-sz1.jpg",
+      "ground_truth_pid": "F22",
+      "actual_rank": null,
+      "top1_wrong_match": "f-012-01.jpg",
+      "wrong_score": 0.8399,
+      "top5_candidates": [
+        "f-012-01.jpg",
+        "m-009-01.jpg",
+        "f-042-01.jpg",
+        "m-083-01.jpg",
+        "m-030-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-013-01-sz1.jpg",
+      "ground_truth_pid": "F23",
+      "actual_rank": null,
+      "top1_wrong_match": "f-013-01.jpg",
+      "wrong_score": 0.8221,
+      "top5_candidates": [
+        "f-013-01.jpg",
+        "m1-031-01.jpg",
+        "f-016-01.jpg",
+        "f-042-01.jpg",
+        "m-025-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-014-01-sz1.jpg",
+      "ground_truth_pid": "F24",
+      "actual_rank": null,
+      "top1_wrong_match": "f-014-01.jpg",
+      "wrong_score": 0.8085,
+      "top5_candidates": [
+        "f-014-01.jpg",
+        "m-051-01.jpg",
+        "f-029-01.jpg",
+        "f-023-01.jpg",
+        "f-009-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-015-01-sz1.jpg",
+      "ground_truth_pid": "F25",
+      "actual_rank": null,
+      "top1_wrong_match": "f-015-01.jpg",
+      "wrong_score": 0.8146,
+      "top5_candidates": [
+        "f-015-01.jpg",
+        "m-088-01.jpg",
+        "m-047-01.jpg",
+        "f-008-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-016-01-sz1.jpg",
+      "ground_truth_pid": "F26",
+      "actual_rank": null,
+      "top1_wrong_match": "f-016-01.jpg",
+      "wrong_score": 0.755,
+      "top5_candidates": [
+        "f-016-01.jpg",
+        "m1-005-01.jpg",
+        "m-083-01.jpg",
+        "m1-015-01.jpg",
+        "m1-039-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-017-01-sz1.jpg",
+      "ground_truth_pid": "F27",
+      "actual_rank": null,
+      "top1_wrong_match": "f-017-01.jpg",
+      "wrong_score": 0.7657,
+      "top5_candidates": [
+        "f-017-01.jpg",
+        "f-038-01.jpg",
+        "m1-024-01.jpg",
+        "f1-014-01.jpg",
+        "f-022-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-018-01-sz1.jpg",
+      "ground_truth_pid": "F28",
+      "actual_rank": null,
+      "top1_wrong_match": "f-018-01.jpg",
+      "wrong_score": 0.7724,
+      "top5_candidates": [
+        "f-018-01.jpg",
+        "f-021-01.jpg",
+        "f-027-01.jpg",
+        "m-088-01.jpg",
+        "f1-001-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-019-01-sz1.jpg",
+      "ground_truth_pid": "F29",
+      "actual_rank": null,
+      "top1_wrong_match": "f-019-01.jpg",
+      "wrong_score": 0.7897,
+      "top5_candidates": [
+        "f-019-01.jpg",
+        "m-018-01.jpg",
+        "m-051-01.jpg",
+        "f1-004-01.jpg",
+        "m1-001-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-020-01-sz1.jpg",
+      "ground_truth_pid": "F2-020",
+      "actual_rank": null,
+      "top1_wrong_match": "f-020-01.jpg",
+      "wrong_score": 0.8343,
+      "top5_candidates": [
+        "f-020-01.jpg",
+        "f1-001-01.jpg",
+        "f-021-01.jpg",
+        "m-093-01.jpg",
+        "f-042-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-021-01-sz1.jpg",
+      "ground_truth_pid": "F2-021",
+      "actual_rank": null,
+      "top1_wrong_match": "f-021-01.jpg",
+      "wrong_score": 0.8576,
+      "top5_candidates": [
+        "f-021-01.jpg",
+        "m-088-01.jpg",
+        "f-015-01.jpg",
+        "f1-001-01.jpg",
+        "m-031-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-022-01-sz1.jpg",
+      "ground_truth_pid": "F2-022",
+      "actual_rank": null,
+      "top1_wrong_match": "f-022-01.jpg",
+      "wrong_score": 0.7428,
+      "top5_candidates": [
+        "f-022-01.jpg",
+        "f-042-01.jpg",
+        "m-083-01.jpg",
+        "m-060-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-023-01-sz1.jpg",
+      "ground_truth_pid": "F2-023",
+      "actual_rank": null,
+      "top1_wrong_match": "f-023-01.jpg",
+      "wrong_score": 0.7749,
+      "top5_candidates": [
+        "f-023-01.jpg",
+        "f-009-01.jpg",
+        "f-014-01.jpg",
+        "m1-001-01.jpg",
+        "f1-004-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-024-01-sz1.jpg",
+      "ground_truth_pid": "F2-024",
+      "actual_rank": null,
+      "top1_wrong_match": "f-024-01.jpg",
+      "wrong_score": 0.7987,
+      "top5_candidates": [
+        "f-024-01.jpg",
+        "m1-002-01.jpg",
+        "m-088-01.jpg",
+        "m-091-01.jpg",
+        "m-037-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-025-01-sz1.jpg",
+      "ground_truth_pid": "F2-025",
+      "actual_rank": null,
+      "top1_wrong_match": "f-038-01.jpg",
+      "wrong_score": 0.7394,
+      "top5_candidates": [
+        "f-038-01.jpg",
+        "f-017-01.jpg",
+        "f-029-01.jpg",
+        "f-025-01.jpg",
+        "f-027-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-026-01-sz1.jpg",
+      "ground_truth_pid": "F2-026",
+      "actual_rank": null,
+      "top1_wrong_match": "f-026-01.jpg",
+      "wrong_score": 0.8379,
+      "top5_candidates": [
+        "f-026-01.jpg",
+        "f1-008-01.jpg",
+        "f1-011-01.jpg",
+        "f-039-01.jpg",
+        "m-096-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-027-01-sz1.jpg",
+      "ground_truth_pid": "F2-027",
+      "actual_rank": null,
+      "top1_wrong_match": "f-027-01.jpg",
+      "wrong_score": 0.822,
+      "top5_candidates": [
+        "f-027-01.jpg",
+        "f-021-01.jpg",
+        "m-019-01.jpg",
+        "m-015-01.jpg",
+        "m1-005-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-028-01-sz1.jpg",
+      "ground_truth_pid": "F2-028",
+      "actual_rank": null,
+      "top1_wrong_match": "f-028-01.jpg",
+      "wrong_score": 0.8187,
+      "top5_candidates": [
+        "f-028-01.jpg",
+        "f-019-01.jpg",
+        "m-070-01.jpg",
+        "m1-036-01.jpg",
+        "f-029-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-029-01-sz1.jpg",
+      "ground_truth_pid": "F2-029",
+      "actual_rank": null,
+      "top1_wrong_match": "f-029-01.jpg",
+      "wrong_score": 0.8472,
+      "top5_candidates": [
+        "f-029-01.jpg",
+        "m-037-01.jpg",
+        "m-027-01.jpg",
+        "m-057-01.jpg",
+        "f-023-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-030-01-sz1.jpg",
+      "ground_truth_pid": "F2-030",
+      "actual_rank": null,
+      "top1_wrong_match": "f-030-01.jpg",
+      "wrong_score": 0.8821,
+      "top5_candidates": [
+        "f-030-01.jpg",
+        "m-083-01.jpg",
+        "m-031-01.jpg",
+        "m-009-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-031-01-sz1.jpg",
+      "ground_truth_pid": "F2-031",
+      "actual_rank": null,
+      "top1_wrong_match": "f-031-01.jpg",
+      "wrong_score": 0.7792,
+      "top5_candidates": [
+        "f-031-01.jpg",
+        "m-066-01.jpg",
+        "m-021-01.jpg",
+        "f-035-01.jpg",
+        "m1-026-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-032-01-sz1.jpg",
+      "ground_truth_pid": "F2-032",
+      "actual_rank": null,
+      "top1_wrong_match": "f-032-01.jpg",
+      "wrong_score": 0.7685,
+      "top5_candidates": [
+        "f-032-01.jpg",
+        "m1-018-01.jpg",
+        "m-018-01.jpg",
+        "m-014-01.jpg",
+        "m1-015-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-033-01-sz1.jpg",
+      "ground_truth_pid": "F2-033",
+      "actual_rank": null,
+      "top1_wrong_match": "f-033-01.jpg",
+      "wrong_score": 0.8325,
+      "top5_candidates": [
+        "f-033-01.jpg",
+        "f-009-01.jpg",
+        "f1-001-01.jpg",
+        "m-037-01.jpg",
+        "f-042-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-034-01-sz1.jpg",
+      "ground_truth_pid": "F2-034",
+      "actual_rank": null,
+      "top1_wrong_match": "f-034-01.jpg",
+      "wrong_score": 0.759,
+      "top5_candidates": [
+        "f-034-01.jpg",
+        "f-021-01.jpg",
+        "f1-001-01.jpg",
+        "f-015-01.jpg",
+        "f-038-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-035-01-sz1.jpg",
+      "ground_truth_pid": "F2-035",
+      "actual_rank": null,
+      "top1_wrong_match": "f-035-01.jpg",
+      "wrong_score": 0.8324,
+      "top5_candidates": [
+        "f-035-01.jpg",
+        "f-042-01.jpg",
+        "m-022-01.jpg",
+        "m-018-01.jpg",
+        "m-009-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-036-01-sz1.jpg",
+      "ground_truth_pid": "F2-036",
+      "actual_rank": null,
+      "top1_wrong_match": "f-036-01.jpg",
+      "wrong_score": 0.8156,
+      "top5_candidates": [
+        "f-036-01.jpg",
+        "m-047-01.jpg",
+        "m-088-01.jpg",
+        "m1-039-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-037-01-sz1.jpg",
+      "ground_truth_pid": "F2-037",
+      "actual_rank": null,
+      "top1_wrong_match": "f-037-01.jpg",
+      "wrong_score": 0.8324,
+      "top5_candidates": [
+        "f-037-01.jpg",
+        "f-042-01.jpg",
+        "m-083-01.jpg",
+        "m-067-01.jpg",
+        "f-012-01.jpg"
+      ]
+    },
+    {
+      "query": "F2-038-01-sz1.jpg",
+      "ground_truth_pid": "F2-038",
+      "actual_rank": null,
+      "top1_wrong_match": "f1-001-01.jpg",
+      "wrong_score": 0.7636,
+      "top5_candidates": [
+        "f1-001-01.jpg",
+        "f-038-01.jpg",
+        "m-036-01.jpg",
+        "f-021-01.jpg",
+        "f-033-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-008-01-sz1.jpg",
+      "ground_truth_pid": "M2-008",
+      "actual_rank": null,
+      "top1_wrong_match": "m-019-01.jpg",
+      "wrong_score": 0.7833,
+      "top5_candidates": [
+        "m-019-01.jpg",
+        "m-015-01.jpg",
+        "m-036-01.jpg",
+        "m-045-01.jpg",
+        "m-030-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-009-01-sz1.jpg",
+      "ground_truth_pid": "M2-009",
+      "actual_rank": null,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.8652,
+      "top5_candidates": [
+        "m-009-01.jpg",
+        "m-047-01.jpg",
+        "m-101-01.jpg",
+        "m-083-01.jpg",
+        "m-053-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-010-01-sz1.jpg",
+      "ground_truth_pid": "M20",
+      "actual_rank": null,
+      "top1_wrong_match": "m-010-01.jpg",
+      "wrong_score": 0.8076,
+      "top5_candidates": [
+        "m-010-01.jpg",
+        "f-016-01.jpg",
+        "m1-007-01.jpg",
+        "m1-031-01.jpg",
+        "f-013-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-011-01-sz1.jpg",
+      "ground_truth_pid": "M21",
+      "actual_rank": null,
+      "top1_wrong_match": "m-011-01.jpg",
+      "wrong_score": 0.8364,
+      "top5_candidates": [
+        "m-011-01.jpg",
+        "m-019-01.jpg",
+        "m1-018-01.jpg",
+        "m-021-01.jpg",
+        "m-027-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-012-01-sz1.jpg",
+      "ground_truth_pid": "M22",
+      "actual_rank": null,
+      "top1_wrong_match": "m-012-01.jpg",
+      "wrong_score": 0.8332,
+      "top5_candidates": [
+        "m-012-01.jpg",
+        "m-009-01.jpg",
+        "m-101-01.jpg",
+        "m-047-01.jpg",
+        "m1-015-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-013-01-sz1.jpg",
+      "ground_truth_pid": "M23",
+      "actual_rank": null,
+      "top1_wrong_match": "m-013-01.jpg",
+      "wrong_score": 0.8335,
+      "top5_candidates": [
+        "m-013-01.jpg",
+        "m-049-01.jpg",
+        "m1-018-01.jpg",
+        "m-045-01.jpg",
+        "m-037-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-014-01-sz1.jpg",
+      "ground_truth_pid": "M24",
+      "actual_rank": null,
+      "top1_wrong_match": "m-014-01.jpg",
+      "wrong_score": 0.8458,
+      "top5_candidates": [
+        "m-014-01.jpg",
+        "m-101-01.jpg",
+        "m-031-01.jpg",
+        "m-018-01.jpg",
+        "m1-018-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-015-01-sz1.jpg",
+      "ground_truth_pid": "M25",
+      "actual_rank": null,
+      "top1_wrong_match": "m-015-01.jpg",
+      "wrong_score": 0.8419,
+      "top5_candidates": [
+        "m-015-01.jpg",
+        "m-036-01.jpg",
+        "m-019-01.jpg",
+        "m-083-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-016-01-sz1.jpg",
+      "ground_truth_pid": "M26",
+      "actual_rank": null,
+      "top1_wrong_match": "m-016-01.jpg",
+      "wrong_score": 0.801,
+      "top5_candidates": [
+        "m-016-01.jpg",
+        "m-101-01.jpg",
+        "m-019-01.jpg",
+        "m-025-01.jpg",
+        "m1-018-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-017-01-sz1.jpg",
+      "ground_truth_pid": "M27",
+      "actual_rank": null,
+      "top1_wrong_match": "m-017-01.jpg",
+      "wrong_score": 0.8299,
+      "top5_candidates": [
+        "m-017-01.jpg",
+        "m-046-01.jpg",
+        "m-047-01.jpg",
+        "m-053-01.jpg",
+        "f-008-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-018-01-sz1.jpg",
+      "ground_truth_pid": "M28",
+      "actual_rank": null,
+      "top1_wrong_match": "m-018-01.jpg",
+      "wrong_score": 0.8433,
+      "top5_candidates": [
+        "m-018-01.jpg",
+        "m-101-01.jpg",
+        "m-039-01.jpg",
+        "f-042-01.jpg",
+        "m-083-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-019-01-sz1.jpg",
+      "ground_truth_pid": "M29",
+      "actual_rank": null,
+      "top1_wrong_match": "m-019-01.jpg",
+      "wrong_score": 0.8476,
+      "top5_candidates": [
+        "m-019-01.jpg",
+        "m-083-01.jpg",
+        "m-030-01.jpg",
+        "m-101-01.jpg",
+        "m-036-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-021-01-sz1.jpg",
+      "ground_truth_pid": "M2-021",
+      "actual_rank": null,
+      "top1_wrong_match": "m-021-01.jpg",
+      "wrong_score": 0.8259,
+      "top5_candidates": [
+        "m-021-01.jpg",
+        "m-101-01.jpg",
+        "m1-038-01.jpg",
+        "m-015-01.jpg",
+        "m-040-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-022-01-sz1.jpg",
+      "ground_truth_pid": "M2-022",
+      "actual_rank": null,
+      "top1_wrong_match": "m-022-01.jpg",
+      "wrong_score": 0.8343,
+      "top5_candidates": [
+        "m-022-01.jpg",
+        "m1-031-01.jpg",
+        "m-089-01.jpg",
+        "m-018-01.jpg",
+        "m1-038-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-023-01-sz1.jpg",
+      "ground_truth_pid": "M2-023",
+      "actual_rank": null,
+      "top1_wrong_match": "m-023-01.jpg",
+      "wrong_score": 0.8575,
+      "top5_candidates": [
+        "m-023-01.jpg",
+        "m-101-01.jpg",
+        "m-039-01.jpg",
+        "m-083-01.jpg",
+        "m-018-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-024-01-sz1.jpg",
+      "ground_truth_pid": "M2-024",
+      "actual_rank": null,
+      "top1_wrong_match": "m-024-01.jpg",
+      "wrong_score": 0.8293,
+      "top5_candidates": [
+        "m-024-01.jpg",
+        "m1-032-01.jpg",
+        "m-047-01.jpg",
+        "m-091-01.jpg",
+        "m1-028-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-025-01-sz1.jpg",
+      "ground_truth_pid": "M2-025",
+      "actual_rank": null,
+      "top1_wrong_match": "m-025-01.jpg",
+      "wrong_score": 0.8349,
+      "top5_candidates": [
+        "m-025-01.jpg",
+        "m-015-01.jpg",
+        "m1-039-01.jpg",
+        "f-036-01.jpg",
+        "m1-010-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-026-01-sz1.jpg",
+      "ground_truth_pid": "M2-026",
+      "actual_rank": null,
+      "top1_wrong_match": "m-026-01.jpg",
+      "wrong_score": 0.802,
+      "top5_candidates": [
+        "m-026-01.jpg",
+        "m-089-01.jpg",
+        "m1-039-01.jpg",
+        "m1-015-01.jpg",
+        "m1-032-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-027-01-sz1.jpg",
+      "ground_truth_pid": "M2-027",
+      "actual_rank": null,
+      "top1_wrong_match": "m-027-01.jpg",
+      "wrong_score": 0.8528,
+      "top5_candidates": [
+        "m-027-01.jpg",
+        "m-047-01.jpg",
+        "m-073-01.jpg",
+        "m-055-01.jpg",
+        "m-045-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-028-01-sz1.jpg",
+      "ground_truth_pid": "M2-028",
+      "actual_rank": null,
+      "top1_wrong_match": "m-028-01.jpg",
+      "wrong_score": 0.8316,
+      "top5_candidates": [
+        "m-028-01.jpg",
+        "m-027-01.jpg",
+        "m-101-01.jpg",
+        "m-073-01.jpg",
+        "m-055-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-029-01-sz1.jpg",
+      "ground_truth_pid": "M2-029",
+      "actual_rank": null,
+      "top1_wrong_match": "m-029-01.jpg",
+      "wrong_score": 0.8432,
+      "top5_candidates": [
+        "m-029-01.jpg",
+        "m-083-01.jpg",
+        "m-101-01.jpg",
+        "m-030-01.jpg",
+        "f-042-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-030-01-sz1.jpg",
+      "ground_truth_pid": "M2-030",
+      "actual_rank": null,
+      "top1_wrong_match": "m-030-01.jpg",
+      "wrong_score": 0.8439,
+      "top5_candidates": [
+        "m-030-01.jpg",
+        "m-101-01.jpg",
+        "m-083-01.jpg",
+        "m-060-01.jpg",
+        "m-036-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-031-01-sz1.jpg",
+      "ground_truth_pid": "M2-031",
+      "actual_rank": null,
+      "top1_wrong_match": "m-031-01.jpg",
+      "wrong_score": 0.8278,
+      "top5_candidates": [
+        "m-031-01.jpg",
+        "m-053-01.jpg",
+        "m-101-01.jpg",
+        "m-088-01.jpg",
+        "m-083-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-032-01-sz1.jpg",
+      "ground_truth_pid": "M2-032",
+      "actual_rank": null,
+      "top1_wrong_match": "m-032-01.jpg",
+      "wrong_score": 0.7881,
+      "top5_candidates": [
+        "m-032-01.jpg",
+        "m-027-01.jpg",
+        "m-046-01.jpg",
+        "m-049-01.jpg",
+        "m-019-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-033-01-sz1.jpg",
+      "ground_truth_pid": "M2-033",
+      "actual_rank": null,
+      "top1_wrong_match": "m-033-01.jpg",
+      "wrong_score": 0.8322,
+      "top5_candidates": [
+        "m-033-01.jpg",
+        "m-036-01.jpg",
+        "m-030-01.jpg",
+        "m-046-01.jpg",
+        "m1-038-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-034-01-sz1.jpg",
+      "ground_truth_pid": "M2-034",
+      "actual_rank": null,
+      "top1_wrong_match": "m-034-01.jpg",
+      "wrong_score": 0.8353,
+      "top5_candidates": [
+        "m-034-01.jpg",
+        "m-056-01.jpg",
+        "m-019-01.jpg",
+        "m-073-01.jpg",
+        "m-055-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-035-01-sz1.jpg",
+      "ground_truth_pid": "M2-035",
+      "actual_rank": null,
+      "top1_wrong_match": "m-035-01.jpg",
+      "wrong_score": 0.8039,
+      "top5_candidates": [
+        "m-035-01.jpg",
+        "f-007-01.jpg",
+        "f1-006-01.jpg",
+        "m1-024-01.jpg",
+        "m-077-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-036-01-sz1.jpg",
+      "ground_truth_pid": "M2-036",
+      "actual_rank": null,
+      "top1_wrong_match": "m-036-01.jpg",
+      "wrong_score": 0.8521,
+      "top5_candidates": [
+        "m-036-01.jpg",
+        "m-030-01.jpg",
+        "m-088-01.jpg",
+        "m-101-01.jpg",
+        "m-019-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-037-01-sz1.jpg",
+      "ground_truth_pid": "M2-037",
+      "actual_rank": null,
+      "top1_wrong_match": "m-037-01.jpg",
+      "wrong_score": 0.8357,
+      "top5_candidates": [
+        "m-037-01.jpg",
+        "m-088-01.jpg",
+        "m-036-01.jpg",
+        "m-083-01.jpg",
+        "m1-039-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-038-01-sz1.jpg",
+      "ground_truth_pid": "M2-038",
+      "actual_rank": null,
+      "top1_wrong_match": "m-038-01.jpg",
+      "wrong_score": 0.8189,
+      "top5_candidates": [
+        "m-038-01.jpg",
+        "m-083-01.jpg",
+        "m1-039-01.jpg",
+        "m-009-01.jpg",
+        "m-019-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-039-01-sz1.jpg",
+      "ground_truth_pid": "M2-039",
+      "actual_rank": null,
+      "top1_wrong_match": "m-039-01.jpg",
+      "wrong_score": 0.8455,
+      "top5_candidates": [
+        "m-039-01.jpg",
+        "m-101-01.jpg",
+        "m-009-01.jpg",
+        "m-030-01.jpg",
+        "m-047-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-040-01-sz1.jpg",
+      "ground_truth_pid": "M2-040",
+      "actual_rank": null,
+      "top1_wrong_match": "m-040-01.jpg",
+      "wrong_score": 0.8301,
+      "top5_candidates": [
+        "m-040-01.jpg",
+        "f-042-01.jpg",
+        "m-044-01.jpg",
+        "m-037-01.jpg",
+        "m1-041-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-041-01-sz1.jpg",
+      "ground_truth_pid": "M2-041",
+      "actual_rank": null,
+      "top1_wrong_match": "m-041-01.jpg",
+      "wrong_score": 0.8344,
+      "top5_candidates": [
+        "m-041-01.jpg",
+        "m-047-01.jpg",
+        "m-053-01.jpg",
+        "m-009-01.jpg",
+        "m-017-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-042-01-sz1.jpg",
+      "ground_truth_pid": "M2-042",
+      "actual_rank": null,
+      "top1_wrong_match": "m-042-01.jpg",
+      "wrong_score": 0.7831,
+      "top5_candidates": [
+        "m-042-01.jpg",
+        "m-088-01.jpg",
+        "m-046-01.jpg",
+        "m-047-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-043-01-sz1.jpg",
+      "ground_truth_pid": "M2-043",
+      "actual_rank": null,
+      "top1_wrong_match": "m-043-01.jpg",
+      "wrong_score": 0.8225,
+      "top5_candidates": [
+        "m-043-01.jpg",
+        "m-101-01.jpg",
+        "m-047-01.jpg",
+        "m-015-01.jpg",
+        "m-083-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-044-01-sz1.jpg",
+      "ground_truth_pid": "M2-044",
+      "actual_rank": null,
+      "top1_wrong_match": "m-044-01.jpg",
+      "wrong_score": 0.8301,
+      "top5_candidates": [
+        "m-044-01.jpg",
+        "m1-005-01.jpg",
+        "m-083-01.jpg",
+        "m1-039-01.jpg",
+        "m-036-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-045-01-sz1.jpg",
+      "ground_truth_pid": "M2-045",
+      "actual_rank": null,
+      "top1_wrong_match": "m-045-01.jpg",
+      "wrong_score": 0.8273,
+      "top5_candidates": [
+        "m-045-01.jpg",
+        "m-015-01.jpg",
+        "m-047-01.jpg",
+        "m-101-01.jpg",
+        "m-100-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-046-01-sz1.jpg",
+      "ground_truth_pid": "M2-046",
+      "actual_rank": null,
+      "top1_wrong_match": "m-046-01.jpg",
+      "wrong_score": 0.8014,
+      "top5_candidates": [
+        "m-046-01.jpg",
+        "m-047-01.jpg",
+        "m-088-01.jpg",
+        "m-101-01.jpg",
+        "m-099-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-047-01-sz1.jpg",
+      "ground_truth_pid": "M2-047",
+      "actual_rank": null,
+      "top1_wrong_match": "m-047-01.jpg",
+      "wrong_score": 0.8659,
+      "top5_candidates": [
+        "m-047-01.jpg",
+        "m-009-01.jpg",
+        "m-101-01.jpg",
+        "m-046-01.jpg",
+        "m1-039-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-048-01-sz1.jpg",
+      "ground_truth_pid": "M2-048",
+      "actual_rank": null,
+      "top1_wrong_match": "m-048-01.jpg",
+      "wrong_score": 0.8274,
+      "top5_candidates": [
+        "m-048-01.jpg",
+        "m-101-01.jpg",
+        "m-009-01.jpg",
+        "m-027-01.jpg",
+        "m-060-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-049-01-sz1.jpg",
+      "ground_truth_pid": "M2-049",
+      "actual_rank": null,
+      "top1_wrong_match": "m-049-01.jpg",
+      "wrong_score": 0.8417,
+      "top5_candidates": [
+        "m-049-01.jpg",
+        "m-083-01.jpg",
+        "m-019-01.jpg",
+        "m-100-01.jpg",
+        "m-101-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-050-01-sz1.jpg",
+      "ground_truth_pid": "M2-050",
+      "actual_rank": null,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7893,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m-050-01.jpg",
+        "m-019-01.jpg",
+        "m1-023-01.jpg",
+        "m-060-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-051-01-sz1.jpg",
+      "ground_truth_pid": "M2-051",
+      "actual_rank": null,
+      "top1_wrong_match": "m-051-01.jpg",
+      "wrong_score": 0.8578,
+      "top5_candidates": [
+        "m-051-01.jpg",
+        "m-027-01.jpg",
+        "m-055-01.jpg",
+        "m-028-01.jpg",
+        "m1-014-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-052-01-sz1.jpg",
+      "ground_truth_pid": "M2-052",
+      "actual_rank": null,
+      "top1_wrong_match": "m-052-01.jpg",
+      "wrong_score": 0.8058,
+      "top5_candidates": [
+        "m-052-01.jpg",
+        "m-047-01.jpg",
+        "m1-035-01.jpg",
+        "m1-034-01.jpg",
+        "m-037-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-053-01-sz1.jpg",
+      "ground_truth_pid": "M2-053",
+      "actual_rank": null,
+      "top1_wrong_match": "m-053-01.jpg",
+      "wrong_score": 0.8528,
+      "top5_candidates": [
+        "m-053-01.jpg",
+        "m-101-01.jpg",
+        "m-041-01.jpg",
+        "m-009-01.jpg",
+        "f-030-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-054-01-sz1.jpg",
+      "ground_truth_pid": "M2-054",
+      "actual_rank": null,
+      "top1_wrong_match": "m-054-01.jpg",
+      "wrong_score": 0.7922,
+      "top5_candidates": [
+        "m-054-01.jpg",
+        "m1-028-01.jpg",
+        "m-047-01.jpg",
+        "m-046-01.jpg",
+        "f-008-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-055-01-sz1.jpg",
+      "ground_truth_pid": "M2-055",
+      "actual_rank": null,
+      "top1_wrong_match": "m-055-01.jpg",
+      "wrong_score": 0.8474,
+      "top5_candidates": [
+        "m-055-01.jpg",
+        "m-101-01.jpg",
+        "m1-039-01.jpg",
+        "m-030-01.jpg",
+        "m-045-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-056-01-sz1.jpg",
+      "ground_truth_pid": "M2-056",
+      "actual_rank": null,
+      "top1_wrong_match": "m-056-01.jpg",
+      "wrong_score": 0.8119,
+      "top5_candidates": [
+        "m-056-01.jpg",
+        "m-083-01.jpg",
+        "m-019-01.jpg",
+        "f-042-01.jpg",
+        "m-030-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-057-01-sz1.jpg",
+      "ground_truth_pid": "M2-057",
+      "actual_rank": null,
+      "top1_wrong_match": "m-045-01.jpg",
+      "wrong_score": 0.7916,
+      "top5_candidates": [
+        "m-045-01.jpg",
+        "m-088-01.jpg",
+        "m-047-01.jpg",
+        "m-009-01.jpg",
+        "m-019-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-058-01-sz1.jpg",
+      "ground_truth_pid": "M2-058",
+      "actual_rank": null,
+      "top1_wrong_match": "m-058-01.jpg",
+      "wrong_score": 0.8028,
+      "top5_candidates": [
+        "m-058-01.jpg",
+        "m-019-01.jpg",
+        "m-053-01.jpg",
+        "m1-036-01.jpg",
+        "m1-041-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-059-01-sz1.jpg",
+      "ground_truth_pid": "M2-059",
+      "actual_rank": null,
+      "top1_wrong_match": "m-059-01.jpg",
+      "wrong_score": 0.8182,
+      "top5_candidates": [
+        "m-059-01.jpg",
+        "m-083-01.jpg",
+        "m-101-01.jpg",
+        "m-047-01.jpg",
+        "m-009-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-060-01-sz1.jpg",
+      "ground_truth_pid": "M2-060",
+      "actual_rank": null,
+      "top1_wrong_match": "m-060-01.jpg",
+      "wrong_score": 0.8509,
+      "top5_candidates": [
+        "m-060-01.jpg",
+        "m-101-01.jpg",
+        "m-031-01.jpg",
+        "m-083-01.jpg",
+        "m-088-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-061-01-sz1.jpg",
+      "ground_truth_pid": "M2-061",
+      "actual_rank": null,
+      "top1_wrong_match": "m-061-01.jpg",
+      "wrong_score": 0.8579,
+      "top5_candidates": [
+        "m-061-01.jpg",
+        "m-083-01.jpg",
+        "m-019-01.jpg",
+        "m-039-01.jpg",
+        "m-018-01.jpg"
+      ]
+    },
+    {
+      "query": "M2-062-01-sz1.jpg",
+      "ground_truth_pid": "M2-062",
+      "actual_rank": null,
+      "top1_wrong_match": "m-062-01.jpg",
+      "wrong_score": 0.8355,
+      "top5_candidates": [
+        "m-062-01.jpg",
+        "m-041-01.jpg",
+        "m-036-01.jpg",
+        "m1-039-01.jpg",
+        "m-053-01.jpg"
+      ]
+    },
+    {
+      "query": "a-sharukh-1.jpg",
+      "ground_truth_pid": "a-sharukh",
+      "actual_rank": 189,
+      "top1_wrong_match": "f1-008-01.jpg",
+      "wrong_score": 0.4532,
+      "top5_candidates": [
+        "f1-008-01.jpg",
+        "f1-011-01.jpg",
+        "f-039-01.jpg",
+        "f1-004-01.jpg",
+        "m-096-01.jpg"
+      ]
+    },
+    {
+      "query": "a-sharukh-2.jpg",
+      "ground_truth_pid": "a-sharukh",
+      "actual_rank": 189,
+      "top1_wrong_match": "f1-015-01.jpg",
+      "wrong_score": 0.4376,
+      "top5_candidates": [
+        "f1-015-01.jpg",
+        "f-024-01.jpg",
+        "m-044-01.jpg",
+        "m-063-01.jpg",
+        "f1-005-01.jpg"
+      ]
+    },
+    {
+      "query": "f1-004-01-sz1.jpg",
+      "ground_truth_pid": "f1-004",
+      "actual_rank": 10,
+      "top1_wrong_match": "m1-018-01.jpg",
+      "wrong_score": 0.7418,
+      "top5_candidates": [
+        "m1-018-01.jpg",
+        "m1-013-01.jpg",
+        "m-009-01.jpg",
+        "f1-001-01.jpg",
+        "m1-034-01.jpg"
+      ]
+    },
+    {
+      "query": "f1-006-01-sz1.jpg",
+      "ground_truth_pid": "f1-006",
+      "actual_rank": 13,
+      "top1_wrong_match": "f1-001-01.jpg",
+      "wrong_score": 0.7981,
+      "top5_candidates": [
+        "f1-001-01.jpg",
+        "m-018-01.jpg",
+        "m1-034-01.jpg",
+        "f-012-01.jpg",
+        "m1-017-01.jpg"
+      ]
+    },
+    {
+      "query": "f1-008-01-sz1.jpg",
+      "ground_truth_pid": "f1-008",
+      "actual_rank": 31,
+      "top1_wrong_match": "f-036-01.jpg",
+      "wrong_score": 0.7516,
+      "top5_candidates": [
+        "f-036-01.jpg",
+        "m1-034-01.jpg",
+        "m-027-01.jpg",
+        "m-037-01.jpg",
+        "f-042-01.jpg"
+      ]
+    },
+    {
+      "query": "f1-011-01-sz1.jpg",
+      "ground_truth_pid": "f11",
+      "actual_rank": 5,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.7405,
+      "top5_candidates": [
+        "m-009-01.jpg",
+        "m1-013-01.jpg",
+        "m-101-01.jpg",
+        "m-047-01.jpg",
+        "f1-011-01.jpg"
+      ]
+    },
+    {
+      "query": "f1-012-01-sz1.jpg",
+      "ground_truth_pid": "f12",
+      "actual_rank": 2,
+      "top1_wrong_match": "f-008-01.jpg",
+      "wrong_score": 0.7595,
+      "top5_candidates": [
+        "f-008-01.jpg",
+        "f1-012-01.jpg",
+        "m-047-01.jpg",
+        "f-015-01.jpg",
+        "m1-034-01.jpg"
+      ]
+    },
+    {
+      "query": "m-065-01-sz1.jpg",
+      "ground_truth_pid": "m-065",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8127,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m-065-01.jpg",
+        "m-039-01.jpg",
+        "m-060-01.jpg",
+        "m-030-01.jpg"
+      ]
+    },
+    {
+      "query": "m-068-01-sz1.jpg",
+      "ground_truth_pid": "m-068",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7664,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m-068-01.jpg",
+        "m-039-01.jpg",
+        "m-028-01.jpg",
+        "m-018-01.jpg"
+      ]
+    },
+    {
+      "query": "m-069-01-sz1.jpg",
+      "ground_truth_pid": "m-069",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-064-01.jpg",
+      "wrong_score": 0.7938,
+      "top5_candidates": [
+        "m-064-01.jpg",
+        "m-069-01.jpg",
+        "m-047-01.jpg",
+        "m-101-01.jpg",
+        "m1-012-01.jpg"
+      ]
+    },
+    {
+      "query": "m-071-01-sz1.jpg",
+      "ground_truth_pid": "m-071",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7802,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m-071-01.jpg",
+        "m-046-01.jpg",
+        "f-030-01.jpg",
+        "m-019-01.jpg"
+      ]
+    },
+    {
+      "query": "m-072-01-sz1.jpg",
+      "ground_truth_pid": "m-072",
+      "actual_rank": 3,
+      "top1_wrong_match": "m-046-01.jpg",
+      "wrong_score": 0.7739,
+      "top5_candidates": [
+        "m-046-01.jpg",
+        "m-047-01.jpg",
+        "m-072-01.jpg",
+        "m-101-01.jpg",
+        "m-045-01.jpg"
+      ]
+    },
+    {
+      "query": "m-073-01-sz1.jpg",
+      "ground_truth_pid": "m-073",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8011,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m-073-01.jpg",
+        "m-030-01.jpg",
+        "m-045-01.jpg",
+        "m-049-01.jpg"
+      ]
+    },
+    {
+      "query": "m-074-01-sz1.jpg",
+      "ground_truth_pid": "m-074",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-047-01.jpg",
+      "wrong_score": 0.785,
+      "top5_candidates": [
+        "m-047-01.jpg",
+        "m-074-01.jpg",
+        "m-101-01.jpg",
+        "m-046-01.jpg",
+        "m-088-01.jpg"
+      ]
+    },
+    {
+      "query": "m-082-01-sz1.jpg",
+      "ground_truth_pid": "m-082",
+      "actual_rank": 7,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7576,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m1-041-01.jpg",
+        "m-018-01.jpg",
+        "m-060-01.jpg",
+        "m1-014-01.jpg"
+      ]
+    },
+    {
+      "query": "m-096-01-sz1.jpg",
+      "ground_truth_pid": "m-096",
+      "actual_rank": 5,
+      "top1_wrong_match": "m1-012-01.jpg",
+      "wrong_score": 0.7744,
+      "top5_candidates": [
+        "m1-012-01.jpg",
+        "m1-028-01.jpg",
+        "m-036-01.jpg",
+        "m-047-01.jpg",
+        "m-096-01.jpg"
+      ]
+    },
+    {
+      "query": "m-100-01-sz1.jpg",
+      "ground_truth_pid": "m-100",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-047-01.jpg",
+      "wrong_score": 0.7989,
+      "top5_candidates": [
+        "m-047-01.jpg",
+        "m-100-01.jpg",
+        "m-053-01.jpg",
+        "m-037-01.jpg",
+        "m1-013-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-003-01-sz1.jpg",
+      "ground_truth_pid": "m1-003",
+      "actual_rank": 7,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7907,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m-060-01.jpg",
+        "m-083-01.jpg",
+        "m-039-01.jpg",
+        "m1-005-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-007-01-sz1.jpg",
+      "ground_truth_pid": "m1-007",
+      "actual_rank": 6,
+      "top1_wrong_match": "m1-031-01.jpg",
+      "wrong_score": 0.7648,
+      "top5_candidates": [
+        "m1-031-01.jpg",
+        "m-061-01.jpg",
+        "m-018-01.jpg",
+        "m-101-01.jpg",
+        "f-016-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-010-01-sz1.jpg",
+      "ground_truth_pid": "m10",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.807,
+      "top5_candidates": [
+        "m-009-01.jpg",
+        "m1-010-01.jpg",
+        "m1-039-01.jpg",
+        "m1-013-01.jpg",
+        "m-047-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-011-01-sz1.jpg",
+      "ground_truth_pid": "m11",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8112,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m1-011-01.jpg",
+        "m-088-01.jpg",
+        "m-045-01.jpg",
+        "m-047-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-016-01-sz1.jpg",
+      "ground_truth_pid": "m16",
+      "actual_rank": 2,
+      "top1_wrong_match": "m1-018-01.jpg",
+      "wrong_score": 0.8151,
+      "top5_candidates": [
+        "m1-018-01.jpg",
+        "m1-016-01.jpg",
+        "m-101-01.jpg",
+        "m-049-01.jpg",
+        "m-073-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-023-01-sz1.jpg",
+      "ground_truth_pid": "m1-023",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-030-01.jpg",
+      "wrong_score": 0.8033,
+      "top5_candidates": [
+        "m-030-01.jpg",
+        "m1-023-01.jpg",
+        "m-019-01.jpg",
+        "m1-039-01.jpg",
+        "m-031-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-027-01-sz1.jpg",
+      "ground_truth_pid": "m1-027",
+      "actual_rank": 4,
+      "top1_wrong_match": "m1-013-01.jpg",
+      "wrong_score": 0.8063,
+      "top5_candidates": [
+        "m1-013-01.jpg",
+        "m-041-01.jpg",
+        "m-012-01.jpg",
+        "m1-027-01.jpg",
+        "m-030-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-033-01-sz1.jpg",
+      "ground_truth_pid": "m1-033",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8103,
+      "top5_candidates": [
+        "m-101-01.jpg",
+        "m1-033-01.jpg",
+        "m-019-01.jpg",
+        "m1-013-01.jpg",
+        "m-083-01.jpg"
+      ]
+    },
+    {
+      "query": "m1-034-01-sz1.jpg",
+      "ground_truth_pid": "m1-034",
+      "actual_rank": 2,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.8134,
+      "top5_candidates": [
+        "m-009-01.jpg",
+        "m1-034-01.jpg",
+        "m-047-01.jpg",
+        "m1-039-01.jpg",
+        "m1-013-01.jpg"
+      ]
+    }
+  ]
+}

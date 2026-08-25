@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "checkpoints": [
+    {
+      "candidate_id": "A",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+      "sha256": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868"
+    },
+    {
+      "candidate_id": "B",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_B_Dual_Encoder_InfoNCE.weights.h5",
+      "sha256": "1c0803a79303bc52828e2241e02dae08c1cd89feb9eea96209cd21e99a155a0d"
+    },
+    {
+      "candidate_id": "C",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_C_Dual_Encoder_Triplet.weights.h5",
+      "sha256": "f9a08d774c1c131c7be1b20031e415a6ed95767f522524083b907ef218d2be60"
+    },
+    {
+      "candidate_id": "D",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_D_Combined_Objective.weights.h5",
+      "sha256": "471c8fe42cc93bd2a1d47b3f42e5bdc1bb9d50dbbf939c1dc9b708a77b86ad05"
+    },
+    {
+      "candidate_id": "E",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_E_Structural_Branch.weights.h5",
+      "sha256": "58e074ecb564ca547c99e108dc91fcfdbf77e5fbf68e9fa168e2c9ff11d53aa8"
+    },
+    {
+      "candidate_id": "F",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_F_Validated_Fusion.weights.h5",
+      "sha256": "76ccfb59444871fe6919f0362dfcf2034fd7240497607248909bcc91b32643f2"
+    },
+    {
+      "candidate_id": "G",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_G_Soft_Demographics.weights.h5",
+      "sha256": "f21ec2219e3e367bae40339051ec356b5b00e22d492babca59620e721fd8847a"
+    }
+  ]
+}

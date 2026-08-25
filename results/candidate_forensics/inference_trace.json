@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-25T13:52:00+05:30",
+  "anomaly_investigated": "Candidates A, B, C, D, and E all produced identical metrics (35.26% Rank-1).",
+  "root_cause_explanation": "In prior evaluation scripts, feature embeddings were computed once using the baseline model before the candidate loop. Inside the loop, the script varied hyperparameter weights (alpha) but did not load distinct model weight checkpoints or recompute embeddings per candidate. Thus, Candidates A through E evaluated on the exact same baseline embeddings.",
+  "exact_fix_applied": "Modified evaluation architecture so every candidate instantiates a unique model, verifies checkpoint SHA-256 hash, invalidates stale feature caches, and recomputes candidate-specific feature embeddings.",
+  "active_baseline_weights_sha256": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868"
+}

@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "audit": [
+    {
+      "candidate_id": "A",
+      "candidate_name": "Candidate_A_Baseline",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    },
+    {
+      "candidate_id": "B",
+      "candidate_name": "Candidate_B_Dual_Encoder_InfoNCE",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_B_Dual_Encoder_InfoNCE.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    },
+    {
+      "candidate_id": "C",
+      "candidate_name": "Candidate_C_Dual_Encoder_Triplet",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_C_Dual_Encoder_Triplet.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    },
+    {
+      "candidate_id": "D",
+      "candidate_name": "Candidate_D_Combined_Objective",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_D_Combined_Objective.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    },
+    {
+      "candidate_id": "E",
+      "candidate_name": "Candidate_E_Structural_Branch",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_E_Structural_Branch.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    },
+    {
+      "candidate_id": "F",
+      "candidate_name": "Candidate_F_Validated_Fusion",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_F_Validated_Fusion.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    },
+    {
+      "candidate_id": "G",
+      "candidate_name": "Candidate_G_Soft_Demographics",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\final_real_repair\\checkpoints\\Candidate_G_Soft_Demographics.weights.h5",
+      "query_embedding_sha256": "7edbdcfa22e37362ca5834b1d677ee11c56fb1d6c01ba9906826911b10536517"
+    }
+  ]
+}

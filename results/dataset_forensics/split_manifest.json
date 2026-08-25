@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "train_count": 20655,
+  "val_count": 1000,
+  "test_count": 679,
+  "disjoint_verified": false
+}

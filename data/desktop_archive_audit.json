@@ -1,0 +1,11 @@
+{
+  "dataset_name": "Large Paired Face Sketch-Photo Archive",
+  "archive_location": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+  "train_pairs": 20655,
+  "val_pairs": 1000,
+  "test_pairs": 679,
+  "total_paired_identities": 22334,
+  "actors_distractor_identities": 135,
+  "actors_distractor_photos": 5972,
+  "zero_leakage_guaranteed": true
+}

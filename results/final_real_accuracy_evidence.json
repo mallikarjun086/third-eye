@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-24T14:52:11Z",
+  "physical_datasets_integrated": [
+    "CUFS (276 files)",
+    "ThirdEye_Composite (2 files)"
+  ],
+  "physical_datasets_blocked": [
+    {
+      "dataset": "IIIT-D Sketch Database",
+      "archive": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\IIITD_SketchDatabase.zip",
+      "status": "BLOCKED \u2014 IIIT-D ARCHIVE PASSWORD REQUIRED",
+      "reason": "717.7 MB archive physically present on Desktop but requires extraction password"
+    },
+    {
+      "dataset": "CUFSF (CUHK FERET)",
+      "status": "NOT_INTEGRATED \u2014 ACCESS PENDING",
+      "reason": "Academic EULA approval required"
+    }
+  ],
+  "total_gallery_identities": 189,
+  "held_out_artist_sketch_rank1": 19.05,
+  "held_out_artist_sketch_rank5": 52.38,
+  "mrr": 0.3581,
+  "median_latency_ms": 182.1,
+  "composite_benchmark_rank1": 100.0,
+  "photo_to_photo_rank1": 100.0,
+  "data_leakage_result": "PASSED_0_PERCENT_OVERLAP"
+}

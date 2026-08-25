@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-08-25T13:44:00+05:30",
+  "active_weights_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+  "active_weights_sha256": "727ad1d6b05f65fefde6149a5e47e35d3d4a063876d0dfeb7178c8b9127b7e4f",
+  "model_architecture": "128-d Cross-Modal MLP Projection Head + Custom Sobel HOG"
+}

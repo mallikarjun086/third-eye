@@ -4,8 +4,12 @@ import sys
 import numpy as np
 import app
 
-GALLERY = sys.argv[1] if len(sys.argv) > 1 else "dataset/gallery"
-QUERIES = sys.argv[2] if len(sys.argv) > 2 else "dataset/queries"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+default_gallery = os.path.join(base_dir, "dataset", "gallery")
+default_queries = os.path.join(base_dir, "dataset", "queries")
+
+GALLERY = sys.argv[1] if len(sys.argv) > 1 else default_gallery
+QUERIES = sys.argv[2] if len(sys.argv) > 2 else default_queries
 TOP = int(sys.argv[3]) if len(sys.argv) > 3 else 5
 
 app.load_model()
@@ -13,8 +17,12 @@ if app._model is None:
     sys.exit("Model load failed: " + str(app._model_error))
 
 app.build_cache(GALLERY)
-queries = sorted(p for p in app._list_images(QUERIES)
-                 if not p.endswith(".npy"))
+queries = []
+if os.path.exists(QUERIES):
+    for root, _dirs, files in os.walk(QUERIES):
+        for f in sorted(files):
+            if os.path.splitext(f)[1].lower() in app.IMAGE_EXTS:
+                queries.append(os.path.join(root, f))
 
 correct = 0
 topk_hits = {k: 0 for k in range(1, TOP + 1)}

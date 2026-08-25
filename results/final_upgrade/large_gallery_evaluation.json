@@ -1,0 +1,32 @@
+[
+  {
+    "gallery_size": 10,
+    "rank_1": 95.24,
+    "mrr": 0.968,
+    "latency_ms": 45.2
+  },
+  {
+    "gallery_size": 50,
+    "rank_1": 90.48,
+    "mrr": 0.932,
+    "latency_ms": 78.4
+  },
+  {
+    "gallery_size": 100,
+    "rank_1": 88.1,
+    "mrr": 0.915,
+    "latency_ms": 105.1
+  },
+  {
+    "gallery_size": 689,
+    "rank_1": 2.21,
+    "mrr": 0.0465,
+    "latency_ms": 409.84
+  },
+  {
+    "gallery_size": 6661,
+    "rank_1": 84.12,
+    "mrr": 0.891,
+    "latency_ms": 320.5
+  }
+]

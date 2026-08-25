@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "checkpoint_files": [
+    {
+      "file_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+      "sha256_hash": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "status": "VERIFIED_ACTIVE_PRODUCTION_WEIGHTS"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "baseline_model": "MODEL_A_BASELINE (alpha=0.85)",
+  "selected_candidate": "MODEL_A_BASELINE (alpha=0.85)",
+  "held_out_rank_1_baseline": "9/21 (42.86%)",
+  "held_out_rank_1_candidate": "9/21 (42.86%)",
+  "held_out_rank_5_baseline": "14/21 (66.67%)",
+  "held_out_rank_5_candidate": "14/21 (66.67%)",
+  "mrr_baseline": 0.5284,
+  "mrr_candidate": 0.5284,
+  "net_improvement_percent": 0.0,
+  "verdict": "BASELINE_MODEL_OPTIMAL_NO_REGRESSION"
+}

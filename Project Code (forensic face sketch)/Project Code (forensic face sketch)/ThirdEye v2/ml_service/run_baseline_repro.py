@@ -44,9 +44,28 @@ def main():
     
     gal_pids = [ee.to_pid(g) for g in gallery_files]
     
-    # Map cache keys by basename
-    gal_facenet = np.array([app._cache[os.path.basename(g)]["face"] for g in gallery_files])
-    gal_hog = np.array([app._cache[os.path.basename(g)]["hog"] for g in gallery_files])
+    # Map cache keys by basename or relative path with on-the-fly compute fallback
+    def get_cached(g_path):
+        base = os.path.basename(g_path)
+        if base in app._cache:
+            return app._cache[base]
+        rel = os.path.relpath(g_path, gallery_dir)
+        if rel in app._cache:
+            return app._cache[rel]
+        for k, v in app._cache.items():
+            if os.path.basename(k) == base:
+                return v
+        # Compute on the fly if missing from cache
+        with open(g_path, "rb") as fh:
+            raw = fh.read()
+        emb = app.embed_image(raw)
+        hog = app.compute_hog(app.hog_grey(raw))
+        entry = {"face": emb, "hog": hog}
+        app._cache[base] = entry
+        return entry
+
+    gal_facenet = np.array([get_cached(g)["face"] for g in gallery_files])
+    gal_hog = np.array([get_cached(g)["hog"] for g in gallery_files])
     
     q_facenet_list, q_hog_list, q_pids = [], [], []
     

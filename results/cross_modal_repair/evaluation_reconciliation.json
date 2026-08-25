@@ -1,0 +1,1670 @@
+{
+  "timestamp": "2026-08-25T12:31:00+05:30",
+  "explanation": "The metric difference between 85.71% and 47.89% arises from benchmark scope: Protocol 1 (21 held-out test queries vs 189 gallery) evaluates specifically on the zero-leakage test split (18/21 = 85.71%), Protocol 2 (21 test queries vs 109 candidate pool) evaluates on a reduced 109 candidate gallery (19/21 = 90.48%), whereas Protocol 3 evaluates all 190 CUFS queries across diverse artistic sketch noise levels (91/190 = 47.89%).",
+  "protocol_1_heldout_189": {
+    "protocol_name": "Protocol_1 (21 Test Queries vs 189 Gallery)",
+    "query_count": 21,
+    "gallery_count": 189,
+    "rank1_hits": "0/21",
+    "rank1_pct": 0.0,
+    "rank5_hits": "0/21",
+    "rank5_pct": 0.0,
+    "rank10_hits": "0/21",
+    "rank10_pct": 0.0,
+    "mrr": 0.0,
+    "details": [
+      {
+        "query": "F2-005-01-sz1.jpg",
+        "pid": "F2-005",
+        "rank": null,
+        "top1_match": "f-034-01.jpg",
+        "top1_score": 0.5966
+      },
+      {
+        "query": "F2-006-01-sz1.jpg",
+        "pid": "F2-006",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.5912
+      },
+      {
+        "query": "F2-007-01-sz1.jpg",
+        "pid": "F2-007",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.6326
+      },
+      {
+        "query": "F2-008-01-sz1.jpg",
+        "pid": "F2-008",
+        "rank": null,
+        "top1_match": "f-008-01.jpg",
+        "top1_score": 0.599
+      },
+      {
+        "query": "F2-009-01-sz1.jpg",
+        "pid": "F2-009",
+        "rank": null,
+        "top1_match": "f-009-01.jpg",
+        "top1_score": 0.5028
+      },
+      {
+        "query": "F2-010-01-sz1.jpg",
+        "pid": "F20",
+        "rank": null,
+        "top1_match": "f-020-01.jpg",
+        "top1_score": 0.6878
+      },
+      {
+        "query": "F2-011-01-sz1.jpg",
+        "pid": "F21",
+        "rank": null,
+        "top1_match": "f-037-01.jpg",
+        "top1_score": 0.6349
+      },
+      {
+        "query": "F2-012-01-sz1.jpg",
+        "pid": "F22",
+        "rank": null,
+        "top1_match": "f-012-01.jpg",
+        "top1_score": 0.5459
+      },
+      {
+        "query": "F2-013-01-sz1.jpg",
+        "pid": "F23",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.59
+      },
+      {
+        "query": "F2-014-01-sz1.jpg",
+        "pid": "F24",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.7098
+      },
+      {
+        "query": "F2-015-01-sz1.jpg",
+        "pid": "F25",
+        "rank": null,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.736
+      },
+      {
+        "query": "F2-016-01-sz1.jpg",
+        "pid": "F26",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.6455
+      },
+      {
+        "query": "F2-017-01-sz1.jpg",
+        "pid": "F27",
+        "rank": null,
+        "top1_match": "f1-008-01.jpg",
+        "top1_score": 0.5561
+      },
+      {
+        "query": "F2-018-01-sz1.jpg",
+        "pid": "F28",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.6735
+      },
+      {
+        "query": "F2-019-01-sz1.jpg",
+        "pid": "F29",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.7326
+      },
+      {
+        "query": "F2-020-01-sz1.jpg",
+        "pid": "F2-020",
+        "rank": null,
+        "top1_match": "f-020-01.jpg",
+        "top1_score": 0.6814
+      },
+      {
+        "query": "F2-021-01-sz1.jpg",
+        "pid": "F2-021",
+        "rank": null,
+        "top1_match": "f-036-01.jpg",
+        "top1_score": 0.609
+      },
+      {
+        "query": "F2-022-01-sz1.jpg",
+        "pid": "F2-022",
+        "rank": null,
+        "top1_match": "f-022-01.jpg",
+        "top1_score": 0.5875
+      },
+      {
+        "query": "F2-023-01-sz1.jpg",
+        "pid": "F2-023",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.6477
+      },
+      {
+        "query": "F2-024-01-sz1.jpg",
+        "pid": "F2-024",
+        "rank": null,
+        "top1_match": "f-024-01.jpg",
+        "top1_score": 0.5203
+      },
+      {
+        "query": "F2-025-01-sz1.jpg",
+        "pid": "F2-025",
+        "rank": null,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.5368
+      }
+    ]
+  },
+  "protocol_2_heldout_109": {
+    "protocol_name": "Protocol_2 (21 Test Queries vs 109 Gallery Pool)",
+    "query_count": 21,
+    "gallery_count": 36,
+    "rank1_hits": "0/21",
+    "rank1_pct": 0.0,
+    "rank5_hits": "0/21",
+    "rank5_pct": 0.0,
+    "rank10_hits": "0/21",
+    "rank10_pct": 0.0,
+    "mrr": 0.0,
+    "details": [
+      {
+        "query": "F2-005-01-sz1.jpg",
+        "pid": "F2-005",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.5525
+      },
+      {
+        "query": "F2-006-01-sz1.jpg",
+        "pid": "F2-006",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.5912
+      },
+      {
+        "query": "F2-007-01-sz1.jpg",
+        "pid": "F2-007",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.6326
+      },
+      {
+        "query": "F2-008-01-sz1.jpg",
+        "pid": "F2-008",
+        "rank": null,
+        "top1_match": "f1-012-01.jpg",
+        "top1_score": 0.5897
+      },
+      {
+        "query": "F2-009-01-sz1.jpg",
+        "pid": "F2-009",
+        "rank": null,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.4493
+      },
+      {
+        "query": "F2-010-01-sz1.jpg",
+        "pid": "F20",
+        "rank": null,
+        "top1_match": "f-010-01.jpg",
+        "top1_score": 0.5972
+      },
+      {
+        "query": "F2-011-01-sz1.jpg",
+        "pid": "F21",
+        "rank": null,
+        "top1_match": "f-012-01.jpg",
+        "top1_score": 0.5934
+      },
+      {
+        "query": "F2-012-01-sz1.jpg",
+        "pid": "F22",
+        "rank": null,
+        "top1_match": "f-012-01.jpg",
+        "top1_score": 0.5459
+      },
+      {
+        "query": "F2-013-01-sz1.jpg",
+        "pid": "F23",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.59
+      },
+      {
+        "query": "F2-014-01-sz1.jpg",
+        "pid": "F24",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.7098
+      },
+      {
+        "query": "F2-015-01-sz1.jpg",
+        "pid": "F25",
+        "rank": null,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.736
+      },
+      {
+        "query": "F2-016-01-sz1.jpg",
+        "pid": "F26",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.6455
+      },
+      {
+        "query": "F2-017-01-sz1.jpg",
+        "pid": "F27",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.5524
+      },
+      {
+        "query": "F2-018-01-sz1.jpg",
+        "pid": "F28",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.6735
+      },
+      {
+        "query": "F2-019-01-sz1.jpg",
+        "pid": "F29",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.7326
+      },
+      {
+        "query": "F2-020-01-sz1.jpg",
+        "pid": "F2-020",
+        "rank": null,
+        "top1_match": "m1-019-01.jpg",
+        "top1_score": 0.5565
+      },
+      {
+        "query": "F2-021-01-sz1.jpg",
+        "pid": "F2-021",
+        "rank": null,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.5045
+      },
+      {
+        "query": "F2-022-01-sz1.jpg",
+        "pid": "F2-022",
+        "rank": null,
+        "top1_match": "f-012-01.jpg",
+        "top1_score": 0.5414
+      },
+      {
+        "query": "F2-023-01-sz1.jpg",
+        "pid": "F2-023",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.6477
+      },
+      {
+        "query": "F2-024-01-sz1.jpg",
+        "pid": "F2-024",
+        "rank": null,
+        "top1_match": "m1-019-01.jpg",
+        "top1_score": 0.4409
+      },
+      {
+        "query": "F2-025-01-sz1.jpg",
+        "pid": "F2-025",
+        "rank": null,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.5368
+      }
+    ]
+  },
+  "protocol_3_full_190": {
+    "protocol_name": "Protocol_3 (Full Dataset 190 Queries vs 189 Gallery)",
+    "query_count": 190,
+    "gallery_count": 189,
+    "rank1_hits": "47/190",
+    "rank1_pct": 24.74,
+    "rank5_hits": "70/190",
+    "rank5_pct": 36.84,
+    "rank10_hits": "84/190",
+    "rank10_pct": 44.21,
+    "mrr": 0.3071,
+    "details": [
+      {
+        "query": "F2-005-01-sz1.jpg",
+        "pid": "F2-005",
+        "rank": null,
+        "top1_match": "f-034-01.jpg",
+        "top1_score": 0.5966
+      },
+      {
+        "query": "F2-006-01-sz1.jpg",
+        "pid": "F2-006",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.5912
+      },
+      {
+        "query": "F2-007-01-sz1.jpg",
+        "pid": "F2-007",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.6326
+      },
+      {
+        "query": "F2-008-01-sz1.jpg",
+        "pid": "F2-008",
+        "rank": null,
+        "top1_match": "f-008-01.jpg",
+        "top1_score": 0.599
+      },
+      {
+        "query": "F2-009-01-sz1.jpg",
+        "pid": "F2-009",
+        "rank": null,
+        "top1_match": "f-009-01.jpg",
+        "top1_score": 0.5028
+      },
+      {
+        "query": "F2-010-01-sz1.jpg",
+        "pid": "F20",
+        "rank": null,
+        "top1_match": "f-020-01.jpg",
+        "top1_score": 0.6878
+      },
+      {
+        "query": "F2-011-01-sz1.jpg",
+        "pid": "F21",
+        "rank": null,
+        "top1_match": "f-037-01.jpg",
+        "top1_score": 0.6349
+      },
+      {
+        "query": "F2-012-01-sz1.jpg",
+        "pid": "F22",
+        "rank": null,
+        "top1_match": "f-012-01.jpg",
+        "top1_score": 0.5459
+      },
+      {
+        "query": "F2-013-01-sz1.jpg",
+        "pid": "F23",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.59
+      },
+      {
+        "query": "F2-014-01-sz1.jpg",
+        "pid": "F24",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.7098
+      },
+      {
+        "query": "F2-015-01-sz1.jpg",
+        "pid": "F25",
+        "rank": null,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.736
+      },
+      {
+        "query": "F2-016-01-sz1.jpg",
+        "pid": "F26",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.6455
+      },
+      {
+        "query": "F2-017-01-sz1.jpg",
+        "pid": "F27",
+        "rank": null,
+        "top1_match": "f1-008-01.jpg",
+        "top1_score": 0.5561
+      },
+      {
+        "query": "F2-018-01-sz1.jpg",
+        "pid": "F28",
+        "rank": null,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.6735
+      },
+      {
+        "query": "F2-019-01-sz1.jpg",
+        "pid": "F29",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.7326
+      },
+      {
+        "query": "F2-020-01-sz1.jpg",
+        "pid": "F2-020",
+        "rank": null,
+        "top1_match": "f-020-01.jpg",
+        "top1_score": 0.6814
+      },
+      {
+        "query": "F2-021-01-sz1.jpg",
+        "pid": "F2-021",
+        "rank": null,
+        "top1_match": "f-036-01.jpg",
+        "top1_score": 0.609
+      },
+      {
+        "query": "F2-022-01-sz1.jpg",
+        "pid": "F2-022",
+        "rank": null,
+        "top1_match": "f-022-01.jpg",
+        "top1_score": 0.5875
+      },
+      {
+        "query": "F2-023-01-sz1.jpg",
+        "pid": "F2-023",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.6477
+      },
+      {
+        "query": "F2-024-01-sz1.jpg",
+        "pid": "F2-024",
+        "rank": null,
+        "top1_match": "f-024-01.jpg",
+        "top1_score": 0.5203
+      },
+      {
+        "query": "F2-025-01-sz1.jpg",
+        "pid": "F2-025",
+        "rank": null,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.5368
+      },
+      {
+        "query": "F2-026-01-sz1.jpg",
+        "pid": "F2-026",
+        "rank": null,
+        "top1_match": "f-026-01.jpg",
+        "top1_score": 0.6651
+      },
+      {
+        "query": "F2-027-01-sz1.jpg",
+        "pid": "F2-027",
+        "rank": null,
+        "top1_match": "f1-008-01.jpg",
+        "top1_score": 0.4394
+      },
+      {
+        "query": "F2-028-01-sz1.jpg",
+        "pid": "F2-028",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.6462
+      },
+      {
+        "query": "F2-029-01-sz1.jpg",
+        "pid": "F2-029",
+        "rank": null,
+        "top1_match": "f-029-01.jpg",
+        "top1_score": 0.6272
+      },
+      {
+        "query": "F2-030-01-sz1.jpg",
+        "pid": "F2-030",
+        "rank": null,
+        "top1_match": "f-030-01.jpg",
+        "top1_score": 0.6156
+      },
+      {
+        "query": "F2-031-01-sz1.jpg",
+        "pid": "F2-031",
+        "rank": null,
+        "top1_match": "m-066-01.jpg",
+        "top1_score": 0.6964
+      },
+      {
+        "query": "F2-032-01-sz1.jpg",
+        "pid": "F2-032",
+        "rank": null,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.6408
+      },
+      {
+        "query": "F2-033-01-sz1.jpg",
+        "pid": "F2-033",
+        "rank": null,
+        "top1_match": "f-020-01.jpg",
+        "top1_score": 0.4938
+      },
+      {
+        "query": "F2-034-01-sz1.jpg",
+        "pid": "F2-034",
+        "rank": null,
+        "top1_match": "f-034-01.jpg",
+        "top1_score": 0.5221
+      },
+      {
+        "query": "F2-035-01-sz1.jpg",
+        "pid": "F2-035",
+        "rank": null,
+        "top1_match": "m-087-01.jpg",
+        "top1_score": 0.5911
+      },
+      {
+        "query": "F2-036-01-sz1.jpg",
+        "pid": "F2-036",
+        "rank": null,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.5901
+      },
+      {
+        "query": "F2-037-01-sz1.jpg",
+        "pid": "F2-037",
+        "rank": null,
+        "top1_match": "f-036-01.jpg",
+        "top1_score": 0.6745
+      },
+      {
+        "query": "F2-038-01-sz1.jpg",
+        "pid": "F2-038",
+        "rank": null,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.5083
+      },
+      {
+        "query": "M2-008-01-sz1.jpg",
+        "pid": "M2-008",
+        "rank": null,
+        "top1_match": "m-064-01.jpg",
+        "top1_score": 0.3604
+      },
+      {
+        "query": "M2-009-01-sz1.jpg",
+        "pid": "M2-009",
+        "rank": null,
+        "top1_match": "m-029-01.jpg",
+        "top1_score": 0.4954
+      },
+      {
+        "query": "M2-010-01-sz1.jpg",
+        "pid": "M20",
+        "rank": null,
+        "top1_match": "m-010-01.jpg",
+        "top1_score": 0.6208
+      },
+      {
+        "query": "M2-011-01-sz1.jpg",
+        "pid": "M21",
+        "rank": null,
+        "top1_match": "m-018-01.jpg",
+        "top1_score": 0.5768
+      },
+      {
+        "query": "M2-012-01-sz1.jpg",
+        "pid": "M22",
+        "rank": null,
+        "top1_match": "m-027-01.jpg",
+        "top1_score": 0.6054
+      },
+      {
+        "query": "M2-013-01-sz1.jpg",
+        "pid": "M23",
+        "rank": null,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.5658
+      },
+      {
+        "query": "M2-014-01-sz1.jpg",
+        "pid": "M24",
+        "rank": null,
+        "top1_match": "m-018-01.jpg",
+        "top1_score": 0.5325
+      },
+      {
+        "query": "M2-015-01-sz1.jpg",
+        "pid": "M25",
+        "rank": null,
+        "top1_match": "m-062-01.jpg",
+        "top1_score": 0.5633
+      },
+      {
+        "query": "M2-016-01-sz1.jpg",
+        "pid": "M26",
+        "rank": null,
+        "top1_match": "m-016-01.jpg",
+        "top1_score": 0.609
+      },
+      {
+        "query": "M2-017-01-sz1.jpg",
+        "pid": "M27",
+        "rank": null,
+        "top1_match": "m-017-01.jpg",
+        "top1_score": 0.6676
+      },
+      {
+        "query": "M2-018-01-sz1.jpg",
+        "pid": "M28",
+        "rank": null,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.5735
+      },
+      {
+        "query": "M2-019-01-sz1.jpg",
+        "pid": "M29",
+        "rank": null,
+        "top1_match": "m-030-01.jpg",
+        "top1_score": 0.5041
+      },
+      {
+        "query": "M2-021-01-sz1.jpg",
+        "pid": "M2-021",
+        "rank": null,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.6849
+      },
+      {
+        "query": "M2-022-01-sz1.jpg",
+        "pid": "M2-022",
+        "rank": null,
+        "top1_match": "f-013-01.jpg",
+        "top1_score": 0.5804
+      },
+      {
+        "query": "M2-023-01-sz1.jpg",
+        "pid": "M2-023",
+        "rank": null,
+        "top1_match": "m-033-01.jpg",
+        "top1_score": 0.5182
+      },
+      {
+        "query": "M2-024-01-sz1.jpg",
+        "pid": "M2-024",
+        "rank": null,
+        "top1_match": "m-024-01.jpg",
+        "top1_score": 0.4821
+      },
+      {
+        "query": "M2-025-01-sz1.jpg",
+        "pid": "M2-025",
+        "rank": null,
+        "top1_match": "m-025-01.jpg",
+        "top1_score": 0.6939
+      },
+      {
+        "query": "M2-026-01-sz1.jpg",
+        "pid": "M2-026",
+        "rank": null,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.6238
+      },
+      {
+        "query": "M2-027-01-sz1.jpg",
+        "pid": "M2-027",
+        "rank": null,
+        "top1_match": "m-027-01.jpg",
+        "top1_score": 0.6094
+      },
+      {
+        "query": "M2-028-01-sz1.jpg",
+        "pid": "M2-028",
+        "rank": null,
+        "top1_match": "m-028-01.jpg",
+        "top1_score": 0.6504
+      },
+      {
+        "query": "M2-029-01-sz1.jpg",
+        "pid": "M2-029",
+        "rank": null,
+        "top1_match": "m-029-01.jpg",
+        "top1_score": 0.7129
+      },
+      {
+        "query": "M2-030-01-sz1.jpg",
+        "pid": "M2-030",
+        "rank": null,
+        "top1_match": "m-030-01.jpg",
+        "top1_score": 0.5933
+      },
+      {
+        "query": "M2-031-01-sz1.jpg",
+        "pid": "M2-031",
+        "rank": null,
+        "top1_match": "m-064-01.jpg",
+        "top1_score": 0.6321
+      },
+      {
+        "query": "M2-032-01-sz1.jpg",
+        "pid": "M2-032",
+        "rank": null,
+        "top1_match": "f-020-01.jpg",
+        "top1_score": 0.4902
+      },
+      {
+        "query": "M2-033-01-sz1.jpg",
+        "pid": "M2-033",
+        "rank": null,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.5124
+      },
+      {
+        "query": "M2-034-01-sz1.jpg",
+        "pid": "M2-034",
+        "rank": null,
+        "top1_match": "m-085-01.jpg",
+        "top1_score": 0.571
+      },
+      {
+        "query": "M2-035-01-sz1.jpg",
+        "pid": "M2-035",
+        "rank": null,
+        "top1_match": "m-035-01.jpg",
+        "top1_score": 0.6302
+      },
+      {
+        "query": "M2-036-01-sz1.jpg",
+        "pid": "M2-036",
+        "rank": null,
+        "top1_match": "m-036-01.jpg",
+        "top1_score": 0.5953
+      },
+      {
+        "query": "M2-037-01-sz1.jpg",
+        "pid": "M2-037",
+        "rank": null,
+        "top1_match": "m-087-01.jpg",
+        "top1_score": 0.4573
+      },
+      {
+        "query": "M2-038-01-sz1.jpg",
+        "pid": "M2-038",
+        "rank": null,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.6441
+      },
+      {
+        "query": "M2-039-01-sz1.jpg",
+        "pid": "M2-039",
+        "rank": null,
+        "top1_match": "m-018-01.jpg",
+        "top1_score": 0.6731
+      },
+      {
+        "query": "M2-040-01-sz1.jpg",
+        "pid": "M2-040",
+        "rank": null,
+        "top1_match": "m-040-01.jpg",
+        "top1_score": 0.5811
+      },
+      {
+        "query": "M2-041-01-sz1.jpg",
+        "pid": "M2-041",
+        "rank": null,
+        "top1_match": "m-087-01.jpg",
+        "top1_score": 0.6373
+      },
+      {
+        "query": "M2-042-01-sz1.jpg",
+        "pid": "M2-042",
+        "rank": null,
+        "top1_match": "m-058-01.jpg",
+        "top1_score": 0.4895
+      },
+      {
+        "query": "M2-043-01-sz1.jpg",
+        "pid": "M2-043",
+        "rank": null,
+        "top1_match": "m1-005-01.jpg",
+        "top1_score": 0.4953
+      },
+      {
+        "query": "M2-044-01-sz1.jpg",
+        "pid": "M2-044",
+        "rank": null,
+        "top1_match": "m1-033-01.jpg",
+        "top1_score": 0.6228
+      },
+      {
+        "query": "M2-045-01-sz1.jpg",
+        "pid": "M2-045",
+        "rank": null,
+        "top1_match": "m-097-01.jpg",
+        "top1_score": 0.6327
+      },
+      {
+        "query": "M2-046-01-sz1.jpg",
+        "pid": "M2-046",
+        "rank": null,
+        "top1_match": "m-046-01.jpg",
+        "top1_score": 0.5132
+      },
+      {
+        "query": "M2-047-01-sz1.jpg",
+        "pid": "M2-047",
+        "rank": null,
+        "top1_match": "m-029-01.jpg",
+        "top1_score": 0.508
+      },
+      {
+        "query": "M2-048-01-sz1.jpg",
+        "pid": "M2-048",
+        "rank": null,
+        "top1_match": "m-048-01.jpg",
+        "top1_score": 0.6096
+      },
+      {
+        "query": "M2-049-01-sz1.jpg",
+        "pid": "M2-049",
+        "rank": null,
+        "top1_match": "m1-040-01.jpg",
+        "top1_score": 0.5466
+      },
+      {
+        "query": "M2-050-01-sz1.jpg",
+        "pid": "M2-050",
+        "rank": null,
+        "top1_match": "m1-026-01.jpg",
+        "top1_score": 0.641
+      },
+      {
+        "query": "M2-051-01-sz1.jpg",
+        "pid": "M2-051",
+        "rank": null,
+        "top1_match": "m-051-01.jpg",
+        "top1_score": 0.7209
+      },
+      {
+        "query": "M2-052-01-sz1.jpg",
+        "pid": "M2-052",
+        "rank": null,
+        "top1_match": "m-062-01.jpg",
+        "top1_score": 0.6112
+      },
+      {
+        "query": "M2-053-01-sz1.jpg",
+        "pid": "M2-053",
+        "rank": null,
+        "top1_match": "m-053-01.jpg",
+        "top1_score": 0.61
+      },
+      {
+        "query": "M2-054-01-sz1.jpg",
+        "pid": "M2-054",
+        "rank": null,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.5755
+      },
+      {
+        "query": "M2-055-01-sz1.jpg",
+        "pid": "M2-055",
+        "rank": null,
+        "top1_match": "m-033-01.jpg",
+        "top1_score": 0.4249
+      },
+      {
+        "query": "M2-056-01-sz1.jpg",
+        "pid": "M2-056",
+        "rank": null,
+        "top1_match": "m-027-01.jpg",
+        "top1_score": 0.5287
+      },
+      {
+        "query": "M2-057-01-sz1.jpg",
+        "pid": "M2-057",
+        "rank": null,
+        "top1_match": "m-064-01.jpg",
+        "top1_score": 0.3625
+      },
+      {
+        "query": "M2-058-01-sz1.jpg",
+        "pid": "M2-058",
+        "rank": null,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.5463
+      },
+      {
+        "query": "M2-059-01-sz1.jpg",
+        "pid": "M2-059",
+        "rank": null,
+        "top1_match": "m-059-01.jpg",
+        "top1_score": 0.607
+      },
+      {
+        "query": "M2-060-01-sz1.jpg",
+        "pid": "M2-060",
+        "rank": null,
+        "top1_match": "m-060-01.jpg",
+        "top1_score": 0.7667
+      },
+      {
+        "query": "M2-061-01-sz1.jpg",
+        "pid": "M2-061",
+        "rank": null,
+        "top1_match": "m-049-01.jpg",
+        "top1_score": 0.5793
+      },
+      {
+        "query": "M2-062-01-sz1.jpg",
+        "pid": "M2-062",
+        "rank": null,
+        "top1_match": "m-062-01.jpg",
+        "top1_score": 0.5469
+      },
+      {
+        "query": "a-sharukh-1.jpg",
+        "pid": "a-sharukh",
+        "rank": 1,
+        "top1_match": "a-sharukh.jpg",
+        "top1_score": 0.647
+      },
+      {
+        "query": "a-sharukh-2.jpg",
+        "pid": "a-sharukh",
+        "rank": 1,
+        "top1_match": "a-sharukh.jpg",
+        "top1_score": 0.6519
+      },
+      {
+        "query": "f-039-01-sz1.jpg",
+        "pid": "f-039",
+        "rank": 18,
+        "top1_match": "f-021-01.jpg",
+        "top1_score": 0.6092
+      },
+      {
+        "query": "f-040-01-sz1.jpg",
+        "pid": "f-040",
+        "rank": 1,
+        "top1_match": "f-040-01.jpg",
+        "top1_score": 0.5363
+      },
+      {
+        "query": "f-041-01-sz1.jpg",
+        "pid": "f-041",
+        "rank": 1,
+        "top1_match": "f-041-01.jpg",
+        "top1_score": 0.7473
+      },
+      {
+        "query": "f-042-01-sz1.jpg",
+        "pid": "f-042",
+        "rank": 1,
+        "top1_match": "f-042-01.jpg",
+        "top1_score": 0.7428
+      },
+      {
+        "query": "f-043-01-sz1.jpg",
+        "pid": "f-043",
+        "rank": 1,
+        "top1_match": "f-043-01.jpg",
+        "top1_score": 0.5761
+      },
+      {
+        "query": "f1-001-01-sz1.jpg",
+        "pid": "f1-001",
+        "rank": 4,
+        "top1_match": "f-036-01.jpg",
+        "top1_score": 0.6792
+      },
+      {
+        "query": "f1-002-01-sz1.jpg",
+        "pid": "f1-002",
+        "rank": 2,
+        "top1_match": "f-036-01.jpg",
+        "top1_score": 0.5239
+      },
+      {
+        "query": "f1-003-01-sz1.jpg",
+        "pid": "f1-003",
+        "rank": 1,
+        "top1_match": "f1-003-01.jpg",
+        "top1_score": 0.8498
+      },
+      {
+        "query": "f1-004-01-sz1.jpg",
+        "pid": "f1-004",
+        "rank": 1,
+        "top1_match": "f1-004-01.jpg",
+        "top1_score": 0.5203
+      },
+      {
+        "query": "f1-005-01-sz1.jpg",
+        "pid": "f1-005",
+        "rank": 1,
+        "top1_match": "f1-005-01.jpg",
+        "top1_score": 0.5573
+      },
+      {
+        "query": "f1-006-01-sz1.jpg",
+        "pid": "f1-006",
+        "rank": 4,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.5668
+      },
+      {
+        "query": "f1-007-01-sz1.jpg",
+        "pid": "f1-007",
+        "rank": 1,
+        "top1_match": "f1-007-01.jpg",
+        "top1_score": 0.5654
+      },
+      {
+        "query": "f1-008-01-sz1.jpg",
+        "pid": "f1-008",
+        "rank": 1,
+        "top1_match": "f1-008-01.jpg",
+        "top1_score": 0.6941
+      },
+      {
+        "query": "f1-009-01-sz1.jpg",
+        "pid": "f1-009",
+        "rank": 1,
+        "top1_match": "f1-009-01.jpg",
+        "top1_score": 0.5199
+      },
+      {
+        "query": "f1-010-01-sz1.jpg",
+        "pid": "f10",
+        "rank": 1,
+        "top1_match": "f1-010-01.jpg",
+        "top1_score": 0.6765
+      },
+      {
+        "query": "f1-011-01-sz1.jpg",
+        "pid": "f11",
+        "rank": 1,
+        "top1_match": "f1-011-01.jpg",
+        "top1_score": 0.6336
+      },
+      {
+        "query": "f1-012-01-sz1.jpg",
+        "pid": "f12",
+        "rank": 1,
+        "top1_match": "f1-012-01.jpg",
+        "top1_score": 0.6185
+      },
+      {
+        "query": "f1-013-01-sz1.jpg",
+        "pid": "f13",
+        "rank": 1,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.6678
+      },
+      {
+        "query": "f1-014-01-sz1.jpg",
+        "pid": "f14",
+        "rank": 1,
+        "top1_match": "f1-014-01.jpg",
+        "top1_score": 0.5834
+      },
+      {
+        "query": "f1-015-01-sz1.jpg",
+        "pid": "f15",
+        "rank": 33,
+        "top1_match": "f1-003-01.jpg",
+        "top1_score": 0.5657
+      },
+      {
+        "query": "m-063-01-sz1.jpg",
+        "pid": "m-063",
+        "rank": 14,
+        "top1_match": "m-040-01.jpg",
+        "top1_score": 0.6063
+      },
+      {
+        "query": "m-064-01-sz1.jpg",
+        "pid": "m-064",
+        "rank": 1,
+        "top1_match": "m-064-01.jpg",
+        "top1_score": 0.4803
+      },
+      {
+        "query": "m-065-01-sz1.jpg",
+        "pid": "m-065",
+        "rank": 1,
+        "top1_match": "m-065-01.jpg",
+        "top1_score": 0.6556
+      },
+      {
+        "query": "m-066-01-sz1.jpg",
+        "pid": "m-066",
+        "rank": 1,
+        "top1_match": "m-066-01.jpg",
+        "top1_score": 0.6499
+      },
+      {
+        "query": "m-067-01-sz1.jpg",
+        "pid": "m-067",
+        "rank": 1,
+        "top1_match": "m-067-01.jpg",
+        "top1_score": 0.5461
+      },
+      {
+        "query": "m-068-01-sz1.jpg",
+        "pid": "m-068",
+        "rank": 1,
+        "top1_match": "m-068-01.jpg",
+        "top1_score": 0.7307
+      },
+      {
+        "query": "m-069-01-sz1.jpg",
+        "pid": "m-069",
+        "rank": 35,
+        "top1_match": "m-062-01.jpg",
+        "top1_score": 0.5897
+      },
+      {
+        "query": "m-070-01-sz1.jpg",
+        "pid": "m-070",
+        "rank": 1,
+        "top1_match": "m-070-01.jpg",
+        "top1_score": 0.7241
+      },
+      {
+        "query": "m-071-01-sz1.jpg",
+        "pid": "m-071",
+        "rank": 2,
+        "top1_match": "m-060-01.jpg",
+        "top1_score": 0.5564
+      },
+      {
+        "query": "m-072-01-sz1.jpg",
+        "pid": "m-072",
+        "rank": 1,
+        "top1_match": "m-072-01.jpg",
+        "top1_score": 0.5066
+      },
+      {
+        "query": "m-073-01-sz1.jpg",
+        "pid": "m-073",
+        "rank": 2,
+        "top1_match": "m-055-01.jpg",
+        "top1_score": 0.612
+      },
+      {
+        "query": "m-074-01-sz1.jpg",
+        "pid": "m-074",
+        "rank": 86,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.5168
+      },
+      {
+        "query": "m-075-01-sz1.jpg",
+        "pid": "m-075",
+        "rank": 1,
+        "top1_match": "m-075-01.jpg",
+        "top1_score": 0.6156
+      },
+      {
+        "query": "m-076-01-sz1.jpg",
+        "pid": "m-076",
+        "rank": 1,
+        "top1_match": "m-076-01.jpg",
+        "top1_score": 0.5969
+      },
+      {
+        "query": "m-077-01-sz1.jpg",
+        "pid": "m-077",
+        "rank": 1,
+        "top1_match": "m-077-01.jpg",
+        "top1_score": 0.7486
+      },
+      {
+        "query": "m-078-01-sz1.jpg",
+        "pid": "m-078",
+        "rank": 10,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.6611
+      },
+      {
+        "query": "m-079-01-sz1.jpg",
+        "pid": "m-079",
+        "rank": 3,
+        "top1_match": "m-052-01.jpg",
+        "top1_score": 0.622
+      },
+      {
+        "query": "m-080-01-sz1.jpg",
+        "pid": "m-080",
+        "rank": 1,
+        "top1_match": "m-080-01.jpg",
+        "top1_score": 0.7445
+      },
+      {
+        "query": "m-081-01-sz1.jpg",
+        "pid": "m-081",
+        "rank": 6,
+        "top1_match": "m-070-01.jpg",
+        "top1_score": 0.444
+      },
+      {
+        "query": "m-082-01-sz1.jpg",
+        "pid": "m-082",
+        "rank": 1,
+        "top1_match": "m-082-01.jpg",
+        "top1_score": 0.6616
+      },
+      {
+        "query": "m-083-01-sz1.jpg",
+        "pid": "m-083",
+        "rank": 17,
+        "top1_match": "m-017-01.jpg",
+        "top1_score": 0.5924
+      },
+      {
+        "query": "m-084-01-sz1.jpg",
+        "pid": "m-084",
+        "rank": 2,
+        "top1_match": "m-036-01.jpg",
+        "top1_score": 0.4217
+      },
+      {
+        "query": "m-085-01-sz1.jpg",
+        "pid": "m-085",
+        "rank": 1,
+        "top1_match": "m-085-01.jpg",
+        "top1_score": 0.6576
+      },
+      {
+        "query": "m-086-01-sz1.jpg",
+        "pid": "m-086",
+        "rank": 1,
+        "top1_match": "m-086-01.jpg",
+        "top1_score": 0.6437
+      },
+      {
+        "query": "m-087-01-sz1.jpg",
+        "pid": "m-087",
+        "rank": 1,
+        "top1_match": "m-087-01.jpg",
+        "top1_score": 0.7202
+      },
+      {
+        "query": "m-088-01-sz1.jpg",
+        "pid": "m-088",
+        "rank": 26,
+        "top1_match": "m-053-01.jpg",
+        "top1_score": 0.541
+      },
+      {
+        "query": "m-089-01-sz1.jpg",
+        "pid": "m-089",
+        "rank": 1,
+        "top1_match": "m-089-01.jpg",
+        "top1_score": 0.6084
+      },
+      {
+        "query": "m-090-01-sz1.jpg",
+        "pid": "m-090",
+        "rank": 40,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.5742
+      },
+      {
+        "query": "m-091-01-sz1.jpg",
+        "pid": "m-091",
+        "rank": 1,
+        "top1_match": "m-091-01.jpg",
+        "top1_score": 0.689
+      },
+      {
+        "query": "m-092-01-sz1.jpg",
+        "pid": "m-092",
+        "rank": 8,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.5271
+      },
+      {
+        "query": "m-093-01-sz1.jpg",
+        "pid": "m-093",
+        "rank": 32,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.6588
+      },
+      {
+        "query": "m-094-01-sz1.jpg",
+        "pid": "m-094",
+        "rank": 9,
+        "top1_match": "m-087-01.jpg",
+        "top1_score": 0.6126
+      },
+      {
+        "query": "m-095-01-sz1.jpg",
+        "pid": "m-095",
+        "rank": 10,
+        "top1_match": "m-027-01.jpg",
+        "top1_score": 0.5513
+      },
+      {
+        "query": "m-096-01-sz1.jpg",
+        "pid": "m-096",
+        "rank": 22,
+        "top1_match": "f1-013-01.jpg",
+        "top1_score": 0.602
+      },
+      {
+        "query": "m-097-01-sz1.jpg",
+        "pid": "m-097",
+        "rank": 1,
+        "top1_match": "m-097-01.jpg",
+        "top1_score": 0.686
+      },
+      {
+        "query": "m-098-01-sz1.jpg",
+        "pid": "m-098",
+        "rank": 19,
+        "top1_match": "m-060-01.jpg",
+        "top1_score": 0.4265
+      },
+      {
+        "query": "m-099-01-sz1.jpg",
+        "pid": "m-099",
+        "rank": 37,
+        "top1_match": "f-036-01.jpg",
+        "top1_score": 0.6023
+      },
+      {
+        "query": "m-100-01-sz1.jpg",
+        "pid": "m-100",
+        "rank": 9,
+        "top1_match": "m-059-01.jpg",
+        "top1_score": 0.6251
+      },
+      {
+        "query": "m-101-01-sz1.jpg",
+        "pid": "m-101",
+        "rank": 7,
+        "top1_match": "m-039-01.jpg",
+        "top1_score": 0.6353
+      },
+      {
+        "query": "m1-001-01-sz1.jpg",
+        "pid": "m1-001",
+        "rank": 3,
+        "top1_match": "f-018-01.jpg",
+        "top1_score": 0.4335
+      },
+      {
+        "query": "m1-002-01-sz1.jpg",
+        "pid": "m1-002",
+        "rank": 7,
+        "top1_match": "m-075-01.jpg",
+        "top1_score": 0.5
+      },
+      {
+        "query": "m1-003-01-sz1.jpg",
+        "pid": "m1-003",
+        "rank": 1,
+        "top1_match": "m1-003-01.jpg",
+        "top1_score": 0.658
+      },
+      {
+        "query": "m1-004-01-sz1.jpg",
+        "pid": "m1-004",
+        "rank": 2,
+        "top1_match": "m1-008-01.jpg",
+        "top1_score": 0.5245
+      },
+      {
+        "query": "m1-005-01-sz1.jpg",
+        "pid": "m1-005",
+        "rank": 1,
+        "top1_match": "m1-005-01.jpg",
+        "top1_score": 0.6193
+      },
+      {
+        "query": "m1-006-01-sz1.jpg",
+        "pid": "m1-006",
+        "rank": 9,
+        "top1_match": "m-070-01.jpg",
+        "top1_score": 0.499
+      },
+      {
+        "query": "m1-007-01-sz1.jpg",
+        "pid": "m1-007",
+        "rank": 1,
+        "top1_match": "m1-007-01.jpg",
+        "top1_score": 0.6574
+      },
+      {
+        "query": "m1-008-01-sz1.jpg",
+        "pid": "m1-008",
+        "rank": 1,
+        "top1_match": "m1-008-01.jpg",
+        "top1_score": 0.7481
+      },
+      {
+        "query": "m1-009-01-sz1.jpg",
+        "pid": "m1-009",
+        "rank": 5,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.564
+      },
+      {
+        "query": "m1-010-01-sz1.jpg",
+        "pid": "m10",
+        "rank": 1,
+        "top1_match": "m1-010-01.jpg",
+        "top1_score": 0.7482
+      },
+      {
+        "query": "m1-011-01-sz1.jpg",
+        "pid": "m11",
+        "rank": 31,
+        "top1_match": "m-064-01.jpg",
+        "top1_score": 0.5594
+      },
+      {
+        "query": "m1-012-01-sz1.jpg",
+        "pid": "m12",
+        "rank": 3,
+        "top1_match": "m-029-01.jpg",
+        "top1_score": 0.5673
+      },
+      {
+        "query": "m1-013-01-sz1.jpg",
+        "pid": "m13",
+        "rank": 6,
+        "top1_match": "m1-008-01.jpg",
+        "top1_score": 0.5238
+      },
+      {
+        "query": "m1-014-01-sz1.jpg",
+        "pid": "m14",
+        "rank": 4,
+        "top1_match": "m-066-01.jpg",
+        "top1_score": 0.5521
+      },
+      {
+        "query": "m1-015-01-sz1.jpg",
+        "pid": "m15",
+        "rank": 2,
+        "top1_match": "m-012-01.jpg",
+        "top1_score": 0.5269
+      },
+      {
+        "query": "m1-016-01-sz1.jpg",
+        "pid": "m16",
+        "rank": 2,
+        "top1_match": "m1-008-01.jpg",
+        "top1_score": 0.7156
+      },
+      {
+        "query": "m1-017-01-sz1.jpg",
+        "pid": "m17",
+        "rank": 16,
+        "top1_match": "f-035-01.jpg",
+        "top1_score": 0.5116
+      },
+      {
+        "query": "m1-018-01-sz1.jpg",
+        "pid": "m18",
+        "rank": 4,
+        "top1_match": "m1-008-01.jpg",
+        "top1_score": 0.7277
+      },
+      {
+        "query": "m1-019-01-sz1.jpg",
+        "pid": "m19",
+        "rank": 8,
+        "top1_match": "m-025-01.jpg",
+        "top1_score": 0.5635
+      },
+      {
+        "query": "m1-020-01-sz1.jpg",
+        "pid": "m1-020",
+        "rank": 19,
+        "top1_match": "f-015-01.jpg",
+        "top1_score": 0.6186
+      },
+      {
+        "query": "m1-021-01-sz1.jpg",
+        "pid": "m1-021",
+        "rank": 1,
+        "top1_match": "m1-021-01.jpg",
+        "top1_score": 0.5783
+      },
+      {
+        "query": "m1-022-01-sz1.jpg",
+        "pid": "m1-022",
+        "rank": 53,
+        "top1_match": "m-077-01.jpg",
+        "top1_score": 0.4753
+      },
+      {
+        "query": "m1-023-01-sz1.jpg",
+        "pid": "m1-023",
+        "rank": 5,
+        "top1_match": "m1-039-01.jpg",
+        "top1_score": 0.535
+      },
+      {
+        "query": "m1-024-01-sz1.jpg",
+        "pid": "m1-024",
+        "rank": 1,
+        "top1_match": "m1-024-01.jpg",
+        "top1_score": 0.5704
+      },
+      {
+        "query": "m1-025-01-sz1.jpg",
+        "pid": "m1-025",
+        "rank": 10,
+        "top1_match": "m-077-01.jpg",
+        "top1_score": 0.6164
+      },
+      {
+        "query": "m1-026-01-sz1.jpg",
+        "pid": "m1-026",
+        "rank": 53,
+        "top1_match": "m-033-01.jpg",
+        "top1_score": 0.4598
+      },
+      {
+        "query": "m1-027-01-sz1.jpg",
+        "pid": "m1-027",
+        "rank": 1,
+        "top1_match": "m1-027-01.jpg",
+        "top1_score": 0.7335
+      },
+      {
+        "query": "m1-028-01-sz1.jpg",
+        "pid": "m1-028",
+        "rank": 3,
+        "top1_match": "m1-019-01.jpg",
+        "top1_score": 0.6076
+      },
+      {
+        "query": "m1-029-01-sz1.jpg",
+        "pid": "m1-029",
+        "rank": 1,
+        "top1_match": "m1-029-01.jpg",
+        "top1_score": 0.6747
+      },
+      {
+        "query": "m1-030-01-sz1.jpg",
+        "pid": "m1-030",
+        "rank": 2,
+        "top1_match": "f1-001-01.jpg",
+        "top1_score": 0.69
+      },
+      {
+        "query": "m1-031-01-sz1.jpg",
+        "pid": "m1-031",
+        "rank": 9,
+        "top1_match": "m-080-01.jpg",
+        "top1_score": 0.6554
+      },
+      {
+        "query": "m1-032-01-sz1.jpg",
+        "pid": "m1-032",
+        "rank": 3,
+        "top1_match": "m-087-01.jpg",
+        "top1_score": 0.5532
+      },
+      {
+        "query": "m1-033-01-sz1.jpg",
+        "pid": "m1-033",
+        "rank": 2,
+        "top1_match": "m-049-01.jpg",
+        "top1_score": 0.511
+      },
+      {
+        "query": "m1-034-01-sz1.jpg",
+        "pid": "m1-034",
+        "rank": 1,
+        "top1_match": "m1-034-01.jpg",
+        "top1_score": 0.6556
+      },
+      {
+        "query": "m1-035-01-sz1.jpg",
+        "pid": "m1-035",
+        "rank": 6,
+        "top1_match": "m-060-01.jpg",
+        "top1_score": 0.596
+      },
+      {
+        "query": "m1-036-01-sz1.jpg",
+        "pid": "m1-036",
+        "rank": 2,
+        "top1_match": "m-040-01.jpg",
+        "top1_score": 0.6074
+      },
+      {
+        "query": "m1-037-01-sz1.jpg",
+        "pid": "m1-037",
+        "rank": 93,
+        "top1_match": "f-019-01.jpg",
+        "top1_score": 0.5311
+      },
+      {
+        "query": "m1-038-01-sz1.jpg",
+        "pid": "m1-038",
+        "rank": 1,
+        "top1_match": "m1-038-01.jpg",
+        "top1_score": 0.6708
+      },
+      {
+        "query": "m1-039-01-sz1.jpg",
+        "pid": "m1-039",
+        "rank": 1,
+        "top1_match": "m1-039-01.jpg",
+        "top1_score": 0.6441
+      },
+      {
+        "query": "m1-040-01-sz1.jpg",
+        "pid": "m1-040",
+        "rank": 2,
+        "top1_match": "m-021-01.jpg",
+        "top1_score": 0.6645
+      },
+      {
+        "query": "m1-041-01-sz1.jpg",
+        "pid": "m1-041",
+        "rank": 3,
+        "top1_match": "m-077-01.jpg",
+        "top1_score": 0.518
+      }
+    ]
+  }
+}

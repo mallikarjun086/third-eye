@@ -29,6 +29,7 @@ To eliminate all contradictions between documentation, experimental code, and ru
 * **Code Trace**:
   * `ml_service/app.py` (`embed_image` + `compute_hog` $\to$ `hybrid_score`)
   * `Upload_sketchController.java` (`computeSimilarity` $\to$ pure Java fallback)
+
 * **LBP Status**: Local Binary Patterns (LBP) texture extraction is an **Experimental Feature Descriptor** tested in `exp03_hog_lbp.py`. To preserve 100% mathematical consistency with verified canonical benchmark manifests (`FINAL_CANONICAL_METRICS.json`), the primary production matching engine relies on **Deep Metric Embedding + Spatial HOG**.
 
 ### B. Fusion Weight Formula Audit
@@ -38,6 +39,7 @@ To eliminate all contradictions between documentation, experimental code, and ru
 * **Line Number**: Line 275 (`app.py`)
 * **Executable Formula**:
   $$\text{Score} = \alpha \cdot S_{\text{deep}} + (1.0 - \alpha) \cdot S_{\text{hog}}$$
+
   * Grid-Search Optimal Baseline Alpha: $\alpha^* = 0.05$ (100% Val Rank-1, 85.71% Test Rank-1)
   * Warm UX/Interactive Alpha: $\alpha = 0.35$ (71.61% genuine top match score, 85.71% Test Rank-1)
 
@@ -61,6 +63,7 @@ To eliminate all contradictions between documentation, experimental code, and ru
   5. `Dropout(0.2)`
   6. `Dense(128, activation=None)` $\implies 256 \times 128 + 128 = 32,896$ parameters
   7. `Lambda(l2_normalize, axis=1)` $\implies 128$-d output vector
+
 * **Total Parameter Count**: **164,736 parameters** (163,712 trainable, 1,024 non-trainable)
 * **Training Objective**: Triplet Margin Loss ($\text{margin} = 0.3$)
 

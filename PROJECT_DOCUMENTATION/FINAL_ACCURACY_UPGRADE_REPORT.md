@@ -59,6 +59,7 @@ This report documents the real, empirical accuracy upgrade and forensic data aud
   * $\text{Train} \cap \text{Validation} = \emptyset$ (0 overlap)
   * $\text{Train} \cap \text{Test} = \emptyset$ (0 overlap)
   * $\text{Validation} \cap \text{Test} = \emptyset$ (0 overlap)
+
 * **Audit Verdict**: **PASSED (ZERO IDENTITY LEAKAGE)**
 
 ---
@@ -112,21 +113,28 @@ Following strict production deployment rules:
 To reproduce all findings from scratch:
 
 ```powershell
+
 # 1. Verify Dataset Physical Inventory
+
 .\.venv\Scripts\python.exe scripts/physical_dataset_inventory.py
 
 # 2. Run Data Leakage Audit
+
 .\.venv\Scripts\python.exe scripts/verify_data_leakage.py
 
 # 3. Execute Baseline Reproduction & Held-Out Test Evaluation
+
 .\.venv\Scripts\python.exe scripts/run_heldout_evaluation.py
 
 # 4. Execute Composite Sketch Benchmark
+
 .\.venv\Scripts\python.exe scripts/run_composite_benchmark.py
 
 # 5. Execute Live Integration Test Suite
+
 .\.venv\Scripts\python.exe scripts/run_live_integration_test.py
 
 # 6. Run Documentation & Repository Consistency Checker
+
 .\.venv\Scripts\python.exe scripts/check_documentation_consistency.py
 ```

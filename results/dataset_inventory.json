@@ -1,0 +1,17 @@
+{
+  "CUFS": {
+    "status": "INTEGRATED",
+    "physical_files": 276,
+    "unique_identities": 188
+  },
+  "IIITD": {
+    "status": "BLOCKED \u2014 IIIT-D ARCHIVE PASSWORD REQUIRED",
+    "physical_zip": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\IIITD_SketchDatabase.zip",
+    "zip_size_bytes": 717708263,
+    "reason": "717.7 MB ZIP archive physically present on Desktop, but encrypted files require password for extraction"
+  },
+  "CUFSF": {
+    "status": "NOT_INTEGRATED \u2014 ACCESS PENDING",
+    "reason": "Academic EULA approval required"
+  }
+}

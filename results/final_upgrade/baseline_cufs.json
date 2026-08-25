@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-08-24T22:50:27Z",
+  "benchmark": "CUFS_HeldOut_Test",
+  "queries_count": 679,
+  "gallery_size": 689,
+  "rank_1": 2.21,
+  "rank_5": 6.19,
+  "rank_10": 8.84,
+  "mrr": 0.0465,
+  "median_rank": 260,
+  "mean_rank": 325.98,
+  "median_latency_ms": 346.24
+}

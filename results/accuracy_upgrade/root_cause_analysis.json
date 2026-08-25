@@ -1,0 +1,77 @@
+{
+  "total_failures": 12,
+  "categorized_failures": [
+    {
+      "query_id": "a-sharukh-1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 63,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "a-sharukh-2.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 32,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f-039-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 173,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f-040-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 2,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-001-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 4,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-002-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 9,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-004-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 12,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-006-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 10,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-007-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 4,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-011-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 4,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-012-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 6,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    },
+    {
+      "query_id": "f1-014-01-sz1.jpg",
+      "category": "SKETCH_PHOTO_DOMAIN_GAP",
+      "ground_truth_rank": 3,
+      "description": "High stroke distortion and texture discrepancy between artist sketch lines and high-frequency photo details."
+    }
+  ]
+}

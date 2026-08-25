@@ -12,6 +12,7 @@
 A thorough, empirical audit was conducted on the live ThirdEye v2 matching engine to investigate the low matching scores (~47% Rank #1) observed during non-artist composite sketch demonstrations.
 
 ### Key Finding & Root Cause Analysis
+
 The low match score (~41%–47%) and impostor misranking during composite sketch searches are **NOT** caused by model weight corruption or dataset missingness. The root cause is a **modality domain mismatch in spatial feature weighting**:
 
 1. **HOG Spatial Gradient Mismatch**: The Spatial HOG feature stream ($3,600\text{-d}$) computes pixel-level gradient orientation histograms. While HOG performs well on artist-shaded pencil sketches ($78\%\text{--}85\%$ correlation), it exhibits high domain noise ($24.61\%$ correlation) when comparing vector composite sketches (clean black strokes on white canvas) against color photographs.

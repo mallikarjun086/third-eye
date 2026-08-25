@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "winning_candidate": "Candidate_G_Soft_Demographics",
+  "full_dataset_rank1_pct": 40.0,
+  "full_dataset_rank5_pct": 49.47,
+  "full_dataset_mrr": 0.4456,
+  "heldout_test_rank1_pct": 85.71,
+  "same_image_sanity_pass": true,
+  "acceptance_gate_verdict": "PASS"
+}

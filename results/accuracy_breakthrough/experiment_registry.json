@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "experiments": [
+    {
+      "candidate_id": "CANDIDATE_A",
+      "candidate_name": "Current_Production_Baseline",
+      "parameters": {
+        "alpha": 0.05,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_B",
+      "candidate_name": "Dual_Encoder_InfoNCE_Objective",
+      "parameters": {
+        "alpha": 0.5,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 37.37,
+        "rank5_pct": 46.84,
+        "mrr": 0.416
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_C",
+      "candidate_name": "Dual_Encoder_Hard_Triplet_Loss",
+      "parameters": {
+        "alpha": 0.7,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 35.26,
+        "rank5_pct": 45.26,
+        "mrr": 0.3956
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_D",
+      "candidate_name": "Dual_Encoder_Combined_Objective",
+      "parameters": {
+        "alpha": 0.85,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 31.05,
+        "rank5_pct": 41.58,
+        "mrr": 0.3564
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_E",
+      "candidate_name": "Best_Dual_Encoder_Structural_Branch",
+      "parameters": {
+        "alpha": 0.15,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 39.47,
+        "rank5_pct": 47.37,
+        "mrr": 0.4352
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_F",
+      "candidate_name": "Best_Dual_Encoder_WITH_Soft_Reranking",
+      "parameters": {
+        "alpha": 0.05,
+        "use_raw": false,
+        "use_demo": true
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    }
+  ]
+}

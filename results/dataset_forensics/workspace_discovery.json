@@ -1,0 +1,58 @@
+{
+  "workspace_root": {
+    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye",
+    "exists": true,
+    "total_files": 31403,
+    "image_files": 1781,
+    "checkpoint_files": 5
+  },
+  "ml_service_root": {
+    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service",
+    "exists": true,
+    "total_files": 501,
+    "image_files": 403,
+    "checkpoint_files": 1
+  },
+  "desktop_archive_paired": {
+    "path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+    "exists": true,
+    "total_files": 44668,
+    "image_files": 44668,
+    "checkpoint_files": 0
+  },
+  "desktop_archive_actors": {
+    "path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive (1)",
+    "exists": true,
+    "total_files": 5975,
+    "image_files": 5972,
+    "checkpoint_files": 1
+  },
+  "iiitd_desktop_zip": {
+    "path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\IIITD_SketchDatabase.zip",
+    "exists": false,
+    "total_files": 0,
+    "image_files": 0,
+    "checkpoint_files": 0
+  },
+  "iiitd_desktop_folder": {
+    "path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\IIITD_SketchDatabase",
+    "exists": true,
+    "total_files": 0,
+    "image_files": 0,
+    "checkpoint_files": 0
+  },
+  "repo_data_dir": {
+    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data",
+    "exists": true,
+    "total_files": 19,
+    "image_files": 0,
+    "checkpoint_files": 0
+  },
+  "repo_results_dir": {
+    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results",
+    "exists": true,
+    "total_files": 43,
+    "image_files": 0,
+    "checkpoint_files": 0
+  }
+}

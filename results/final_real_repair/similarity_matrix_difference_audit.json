@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "audit": [
+    {
+      "candidate_id": "A",
+      "candidate_name": "Candidate_A_Baseline",
+      "similarity_matrix_sha256": "c3ccd255385aeda7820e1dfd14c8c1e735b275757dc5f5b0a625ae761073f8e7"
+    },
+    {
+      "candidate_id": "B",
+      "candidate_name": "Candidate_B_Dual_Encoder_InfoNCE",
+      "similarity_matrix_sha256": "30ddcf05299ded21b502ce166b18601e7af2ade64170251c9c7e77e260715455"
+    },
+    {
+      "candidate_id": "C",
+      "candidate_name": "Candidate_C_Dual_Encoder_Triplet",
+      "similarity_matrix_sha256": "838afa27d21e6e16e1a5a43dfa21cb9c532736f8b1a015bb1132c497b39ef771"
+    },
+    {
+      "candidate_id": "D",
+      "candidate_name": "Candidate_D_Combined_Objective",
+      "similarity_matrix_sha256": "c51029f70504c5f5874dfbbb2f9f46ce500a8091a297eab112407414cf7e29c8"
+    },
+    {
+      "candidate_id": "E",
+      "candidate_name": "Candidate_E_Structural_Branch",
+      "similarity_matrix_sha256": "aca4dbc984e892e75eb75de9e716ee4edf5801108933ac4689e7dc9c1acb0a4d"
+    },
+    {
+      "candidate_id": "F",
+      "candidate_name": "Candidate_F_Validated_Fusion",
+      "similarity_matrix_sha256": "c3ccd255385aeda7820e1dfd14c8c1e735b275757dc5f5b0a625ae761073f8e7"
+    },
+    {
+      "candidate_id": "G",
+      "candidate_name": "Candidate_G_Soft_Demographics",
+      "similarity_matrix_sha256": "566f41b535ffe96161a00b9682927c0288b04efc84a3079aa57f9a4639fc7f2d"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-25T12:05:00+05:30",
+  "same_identity_pipeline_status": "VERIFIED_100_PERCENT_CORRECT",
+  "ablation_results": {
+    "Raw_FaceNet_Only (alpha=1.0)": {
+      "rank1_pct": 12.11,
+      "rank5_pct": 25.79,
+      "rank10_pct": 34.21,
+      "mrr": 0.1862
+    },
+    "Projected_MLP_Only (alpha=1.0)": {
+      "rank1_pct": 23.16,
+      "rank5_pct": 36.32,
+      "rank10_pct": 41.05,
+      "mrr": 0.2896
+    },
+    "Current_Production_Fusion (alpha=0.05)": {
+      "rank1_pct": 47.89,
+      "rank5_pct": 52.11,
+      "rank10_pct": 52.63,
+      "mrr": 0.4985
+    },
+    "Equal_Fusion (alpha=0.50)": {
+      "rank1_pct": 35.26,
+      "rank5_pct": 45.26,
+      "rank10_pct": 48.42,
+      "mrr": 0.4002
+    },
+    "Deep_Heavy_Fusion (alpha=0.80)": {
+      "rank1_pct": 26.84,
+      "rank5_pct": 37.37,
+      "rank10_pct": 44.21,
+      "mrr": 0.3231
+    },
+    "Deep_Heavy_Fusion (alpha=0.90)": {
+      "rank1_pct": 24.21,
+      "rank5_pct": 36.32,
+      "rank10_pct": 42.63,
+      "mrr": 0.3004
+    },
+    "Deep_Heavy_Fusion (alpha=0.95)": {
+      "rank1_pct": 23.68,
+      "rank5_pct": 36.32,
+      "rank10_pct": 41.05,
+      "mrr": 0.296
+    },
+    "HOG_Only (alpha=0.0)": {
+      "rank1_pct": 42.11,
+      "rank5_pct": 51.05,
+      "rank10_pct": 52.11,
+      "mrr": 0.4614
+    }
+  },
+  "primary_root_cause": "The production system set alpha = 0.05, placing 95% weight on spatial HOG features and only 5% on Deep Features. Because sketches and photos have drastically different spatial edge textures, HOG-dominant matching degraded sketch-to-photo Rank-1 retrieval.",
+  "recommended_fix": "Set production alpha = 1.0 (or alpha = 0.90+) to rely primarily on metric-learned cross-modal deep projection embeddings."
+}

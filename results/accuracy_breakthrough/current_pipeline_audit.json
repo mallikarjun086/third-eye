@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "active_backend_model": "FaceNet (Inception-ResNet-v1) + 2-layer MLP Projection Head (128-d)",
+  "weights_sha256": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+  "gradient_updates_verified": true,
+  "feature_cache_status": "L2_NORMALIZED_128D_EMBEDDINGS"
+}

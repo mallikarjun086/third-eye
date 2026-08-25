@@ -1,0 +1,9 @@
+experiment_id,experiment_name,val_rank1_pct,val_rank5_pct,val_mrr,full_rank1_pct
+EXP_0,EXP_0_Current_Production_Pipeline,0.0,0.0,0.0,40.0
+EXP_1,EXP_1_Raw_Pretrained_Photo_FaceNet,0.0,0.0,0.0,12.11
+EXP_2,EXP_2_Current_Projection_Model,0.0,0.0,0.0,4.21
+EXP_3,EXP_3_Dual_Encoder_Contrastive_Loss,0.0,0.0,0.0,37.37
+EXP_4,EXP_4_Dual_Encoder_Hard_Negative_Triplet,0.0,0.0,0.0,35.26
+EXP_5,EXP_5_Best_Combined_Cross_Modal_Objective,0.0,0.0,0.0,40.0
+EXP_6,EXP_6_Edge_Structural_Auxiliary_Representation,0.0,0.0,0.0,39.47
+EXP_7,EXP_7_Best_Model_WITH_Soft_Demographic_Reranking,0.0,0.0,0.0,40.0

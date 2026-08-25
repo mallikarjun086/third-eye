@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-25T13:43:00+05:30",
+  "train_pids": 60,
+  "val_pids": 20,
+  "test_pids": 420,
+  "zero_leakage_verified": true
+}

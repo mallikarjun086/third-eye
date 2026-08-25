@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-08-25T12:00:00+05:30",
+  "active_backend": {
+    "entry_point": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\app.py",
+    "exists": true,
+    "weights_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+    "weights_exists": true,
+    "weights_sha256": "727ad1d6b05f65fefde6149a5e47e35d3d4a063876d0dfeb7178c8b9127b7e4f",
+    "cache_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\dataset_embeddings.npy",
+    "cache_exists": true,
+    "cache_sha256": "8181bb968a0eff5a057c458de094a34c43c39662f8d43d3a1cf916d6fe127a36"
+  },
+  "ml_service_dataset": {
+    "gallery_dir": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery",
+    "gallery_count": 190,
+    "queries_dir": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries",
+    "queries_count": 191
+  },
+  "root_data_datasets": {
+    "cufsf": {
+      "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\cufsf",
+      "photos": 0,
+      "sketches": 0
+    },
+    "iiitd": {
+      "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\iiitd",
+      "files": 9
+    },
+    "lfw": {
+      "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\lfw",
+      "files": 0
+    }
+  }
+}

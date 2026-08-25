@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "mined_hard_negatives_count": 1250,
+  "mining_criterion": "Cosine similarity > 0.65 on incorrect identity pairs during training epochs"
+}

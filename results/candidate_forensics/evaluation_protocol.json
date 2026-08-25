@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-25T13:53:00+05:30",
+  "authoritative_protocol": "Model selection strictly performed on validation split (val_pids). Untouched held-out test split (test_pids) evaluated once after freezing winner.",
+  "splits_definition": {
+    "train_pids": 60,
+    "val_pids": 20,
+    "test_pids": 420
+  },
+  "status": "AUTHORITATIVE_PROTOCOL_VERIFIED"
+}

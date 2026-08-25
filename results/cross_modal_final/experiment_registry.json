@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-08-25T13:44:00+05:30",
+  "experiments": [
+    {
+      "experiment_id": "EXP_0",
+      "experiment_name": "EXP_0_Current_Production_Pipeline",
+      "parameters": {
+        "alpha": 0.05,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_1",
+      "experiment_name": "EXP_1_Raw_Pretrained_Photo_FaceNet",
+      "parameters": {
+        "alpha": 1.0,
+        "use_raw": true,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 12.11,
+        "rank5_pct": 25.79,
+        "mrr": 0.1862
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_2",
+      "experiment_name": "EXP_2_Current_Projection_Model",
+      "parameters": {
+        "alpha": 1.0,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 4.21,
+        "rank5_pct": 8.95,
+        "mrr": 0.0799
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_3",
+      "experiment_name": "EXP_3_Dual_Encoder_Contrastive_Loss",
+      "parameters": {
+        "alpha": 0.5,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 37.37,
+        "rank5_pct": 46.84,
+        "mrr": 0.416
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_4",
+      "experiment_name": "EXP_4_Dual_Encoder_Hard_Negative_Triplet",
+      "parameters": {
+        "alpha": 0.7,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 35.26,
+        "rank5_pct": 45.26,
+        "mrr": 0.3956
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_5",
+      "experiment_name": "EXP_5_Best_Combined_Cross_Modal_Objective",
+      "parameters": {
+        "alpha": 0.05,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_6",
+      "experiment_name": "EXP_6_Edge_Structural_Auxiliary_Representation",
+      "parameters": {
+        "alpha": 0.15,
+        "use_raw": false,
+        "use_demo": false
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 39.47,
+        "rank5_pct": 47.37,
+        "mrr": 0.4352
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "experiment_id": "EXP_7",
+      "experiment_name": "EXP_7_Best_Model_WITH_Soft_Demographic_Reranking",
+      "parameters": {
+        "alpha": 0.05,
+        "use_raw": false,
+        "use_demo": true
+      },
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    }
+  ]
+}

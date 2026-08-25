@@ -1,0 +1,16 @@
+{
+  "declaration": "NO_VERIFIED_ACCURACY_IMPROVEMENT_PRODUCTION_BASELINE_RETAINED",
+  "timestamp": "2026-08-25 00:06:24",
+  "workspace": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye",
+  "physical_images": 50640,
+  "verified_paired_identities": 21679,
+  "identity_leakage": 655,
+  "baseline_rank_1": "9/21 (42.86%)",
+  "candidate_rank_1": "9/21 (42.86%)",
+  "production_decision": "KEEP_EXISTING_PRODUCTION_MODEL",
+  "hashes": {
+    "model_weights": null,
+    "dataset_inventory": "864bf59eed4a46dea923f9624b397ec4f5cdf938733ec3b03b5dd5f57372eec5",
+    "baseline_truth": "9c854ceec9f876ed99bacc3014fa9763e7f22f14ae4ec28bdd04cfb0aa0688c8"
+  }
+}

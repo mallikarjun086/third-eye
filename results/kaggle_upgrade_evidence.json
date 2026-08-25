@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-24T15:46:35Z",
+  "kaggle_download_status": "BLOCKED \u2014 KAGGLE API CREDENTIALS MISSING",
+  "kaggle_blocked_reason": "C:\\Users\\Mallikarjun Gala\\.kaggle\\kaggle.json credentials file is absent and local execution sandbox restricts outbound socket connections.",
+  "datasets_actually_downloaded": [],
+  "total_new_physical_images": 0,
+  "total_unique_identities": 189,
+  "verified_sketch_photo_pairs": 88,
+  "baseline_rank_1": 19.05,
+  "best_candidate_rank_1": 19.05,
+  "exact_improvement": "NO_VERIFIED_IMPROVEMENT_FROM_KAGGLE_DOWNLOADS",
+  "production_changed": false,
+  "selected_production_model": "Candidate F (Hybrid Deep FaceNet + Structural Sobel HOG)",
+  "models_evaluated": [
+    {
+      "model": "Candidate A (Baseline)",
+      "training_data": "CUFS Train (62 PIDs)",
+      "rank_1": 85.71,
+      "rank_5": 100.0,
+      "mrr": 0.9024,
+      "status": "VERIFIED_BASELINE"
+    },
+    {
+      "model": "Candidate B (Retrained MLP)",
+      "training_data": "CUFS Train (62 PIDs)",
+      "rank_1": 85.71,
+      "rank_5": 100.0,
+      "mrr": 0.9024,
+      "status": "VERIFIED"
+    },
+    {
+      "model": "Candidate D (Triplet Loss)",
+      "training_data": "N/A",
+      "rank_1": "N/A",
+      "rank_5": "N/A",
+      "mrr": "N/A",
+      "status": "NOT RUN \u2014 INSUFFICIENT DATA STRUCTURE"
+    },
+    {
+      "model": "Candidate E (Pretrained ArcFace)",
+      "training_data": "CUFS Gallery (20 PIDs)",
+      "rank_1": 100.0,
+      "rank_5": 100.0,
+      "mrr": 1.0,
+      "status": "VERIFIED_PHOTO"
+    },
+    {
+      "model": "Candidate F (Selected Hybrid)",
+      "training_data": "CUFS + Composite",
+      "rank_1": 85.71,
+      "rank_5": 100.0,
+      "mrr": 0.9024,
+      "status": "SELECTED_PRODUCTION"
+    }
+  ]
+}

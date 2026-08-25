@@ -25,8 +25,11 @@ import logging
 from typing import List, Dict, Optional
 
 import numpy as np
+import cv2
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
 from pydantic import BaseModel
+
+from demographic_filter import DemographicEstimator
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("thirdeye-ml")
@@ -43,8 +46,10 @@ _cache: Dict[str, Dict[str, np.ndarray]] = {}
 _cache_mtime: Optional[float] = None
 _cache_dir: Optional[str] = None
 
+CACHE_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 CACHE_FILE = "dataset_embeddings.npy"
+CACHE_VERSION = "v7_multi_ethnic_indian_and_foreign_v1"
 
 TOP_RESULTS = 10
 
@@ -129,15 +134,91 @@ def load_model():
         log.error("Model load failed: %s", e)
 
 
+_face_cascade = None
+
+def get_face_cascade():
+    global _face_cascade
+    if _face_cascade is None:
+        import cv2
+        try:
+            cascade_path = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
+            if os.path.exists(cascade_path):
+                _face_cascade = cv2.CascadeClassifier(cascade_path)
+        except Exception:
+            _face_cascade = None
+    return _face_cascade
+
+
 def crop_face(img_rgb: np.ndarray, target_size: int = 160) -> np.ndarray:
-    """Resize image to target_size square preserving facial features with deterministic center fallback."""
+    """
+    Robust Pro-Level Face Detector & Border Trimmer for Forensic Face Sketches & Photos.
+    Combines OpenCV Haar Cascade detection with non-white canvas trimming to ensure
+    1:1 facial alignment across modalities.
+    """
     import cv2
     if img_rgb is None or img_rgb.size == 0:
         return np.zeros((target_size, target_size, 3), dtype=np.uint8)
     h, w = img_rgb.shape[:2]
     if h == 0 or w == 0:
         return np.zeros((target_size, target_size, 3), dtype=np.uint8)
-    return cv2.resize(img_rgb, (target_size, target_size))
+
+    grey = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY) if len(img_rgb.shape) == 3 else img_rgb
+    
+    # 1. Try Haar Cascade Face Detector for exact facial alignment
+    cascade = get_face_cascade()
+    if cascade is not None:
+        try:
+            faces = cascade.detectMultiScale(grey, scaleFactor=1.1, minNeighbors=4, minSize=(35, 35))
+            if len(faces) > 0:
+                # Pick largest detected face
+                faces = sorted(faces, key=lambda f: f[2] * f[3], reverse=True)
+                fx, fy, fw, fh = faces[0]
+                margin_x = int(fw * 0.20)
+                margin_y = int(fh * 0.20)
+                x1 = max(0, fx - margin_x)
+                y1 = max(0, fy - margin_y)
+                x2 = min(w, fx + fw + margin_x)
+                y2 = min(h, fy + fh + margin_y)
+                face_crop = img_rgb[y1:y2, x1:x2]
+                
+                hc, wc = face_crop.shape[:2]
+                min_dim = min(hc, wc)
+                sy = (hc - min_dim) // 2
+                sx = (wc - min_dim) // 2
+                sq_crop = face_crop[sy:sy + min_dim, sx:sx + min_dim]
+                return cv2.resize(sq_crop, (target_size, target_size), interpolation=cv2.INTER_AREA)
+        except Exception:
+            pass
+
+    # 2. Fallback: Detect non-white border bounding box if image has white canvas padding
+    _, thresh = cv2.threshold(grey, 245, 255, cv2.THRESH_BINARY_INV)
+    coords = cv2.findNonZero(thresh)
+
+    if coords is not None:
+        x, y, bw, bh = cv2.boundingRect(coords)
+        if bw > 30 and bh > 30:
+            margin_x = int(bw * 0.08)
+            margin_y = int(bh * 0.08)
+            x1 = max(0, x - margin_x)
+            y1 = max(0, y - margin_y)
+            x2 = min(w, x + bw + margin_x)
+            y2 = min(h, y + bh + margin_y)
+            img_crop = img_rgb[y1:y2, x1:x2]
+            h_c, w_c = img_crop.shape[:2]
+        else:
+            img_crop = img_rgb
+            h_c, w_c = h, w
+    else:
+        img_crop = img_rgb
+        h_c, w_c = h, w
+
+    # 3. Square crop from center preserving 1:1 facial feature aspect ratio
+    min_dim = min(h_c, w_c)
+    start_y = (h_c - min_dim) // 2
+    start_x = (w_c - min_dim) // 2
+    square_crop = img_crop[start_y:start_y + min_dim, start_x:start_x + min_dim]
+
+    return cv2.resize(square_crop, (target_size, target_size), interpolation=cv2.INTER_AREA)
 
 
 def embed_image(image_bytes: bytes) -> Optional[np.ndarray]:
@@ -234,8 +315,9 @@ def hog_grey(image_bytes: bytes) -> np.ndarray:
     except Exception as e:  # noqa: BLE001
         raise HTTPException(status_code=422, detail=f"Face not detected or unreadable image file. (Details: {e})")
 
-    img = img.resize((HOG_SIZE, HOG_SIZE), Image.Resampling.LANCZOS)
-    gray = cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2GRAY)
+    arr = np.asarray(img)
+    cropped_face = crop_face(arr, target_size=HOG_SIZE)
+    gray = cv2.cvtColor(cropped_face, cv2.COLOR_RGB2GRAY)
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
     enhanced = clahe.apply(gray)
     denoised = cv2.GaussianBlur(enhanced, (3, 3), 0)
@@ -276,7 +358,12 @@ def compute_hog(grey: np.ndarray) -> np.ndarray:
             np.add.at(desc, flat + b1[yy, xx], w * frac[yy, xx])
 
     n = np.linalg.norm(desc)
-    return desc / n if n > 0 else desc
+    if n > 0:
+        desc = desc / n
+        desc = np.sqrt(np.clip(desc, 0.0, None))  # L2-Hys hysteresis square-root normalization
+        n2 = np.linalg.norm(desc)
+        return desc / n2 if n2 > 0 else desc
+    return desc
 
 
 def compute_lbp(grey: np.ndarray) -> np.ndarray:
@@ -302,11 +389,12 @@ def compute_lbp(grey: np.ndarray) -> np.ndarray:
 
 
 def pro_hybrid_score(face_sim: float, hog_sim: float, lbp_sim: float) -> float:
-    """Pro-Level Multi-Metric Fusion: 35% Deep Metric Embedding + 50% Spatial HOG + 15% Texture LBP."""
-    return 0.35 * face_sim + 0.50 * hog_sim + 0.15 * lbp_sim
+    """Pro-Level Multi-Metric Fusion: 88% Deep Metric Embedding + 8% Spatial HOG + 4% Texture LBP."""
+    return 0.88 * face_sim + 0.08 * hog_sim + 0.04 * lbp_sim
 
 
 def hybrid_score(face_sim: float, hog_sim: float) -> float:
+    """Dynamic multi-stream hybrid score using FACE_WEIGHT."""
     return FACE_WEIGHT * face_sim + (1.0 - FACE_WEIGHT) * hog_sim
 
 
@@ -314,12 +402,13 @@ def hybrid_score(face_sim: float, hog_sim: float) -> float:
 
 def _list_images(dataset_dir: str) -> List[str]:
     images = []
-    for root, _dirs, files in os.walk(dataset_dir):
-        if os.path.basename(root).lower() in ["queries", "sketches"]:
-            continue
-        for f in sorted(files):
-            if os.path.splitext(f)[1].lower() in IMAGE_EXTS:
-                images.append(os.path.join(root, f))
+    if os.path.exists(dataset_dir):
+        for root, _dirs, files in os.walk(dataset_dir):
+            if os.path.basename(root).lower() in ["queries", "sketches"]:
+                continue
+            for f in sorted(files):
+                if os.path.splitext(f)[1].lower() in IMAGE_EXTS:
+                    images.append(os.path.join(root, f))
     return images
 
 
@@ -331,19 +420,23 @@ def build_cache(dataset_dir: str, force: bool = False):
     """Embed every image (FaceNet + HOG) and persist to a .npy cache."""
     global _cache, _cache_mtime, _cache_dir
     dataset_dir = os.path.abspath(dataset_dir)
+    base_ml_dir = os.path.dirname(os.path.abspath(__file__))
+    alt_path_gallery = os.path.join(base_ml_dir, "dataset", "gallery")
+    alt_path_all = os.path.join(base_ml_dir, "dataset", "gallery_all")
+
     if not os.path.exists(dataset_dir) or not os.path.isdir(dataset_dir):
-        base_ml_dir = os.path.dirname(os.path.abspath(__file__))
         alt_path_1 = os.path.join(base_ml_dir, dataset_dir)
         folder_name = os.path.basename(os.path.normpath(dataset_dir))
         alt_path_2 = os.path.join(base_ml_dir, "dataset", folder_name)
-        alt_path_3 = os.path.join(base_ml_dir, "dataset", "gallery")
 
-        if os.path.exists(alt_path_1) and os.path.isdir(alt_path_1):
+        if os.path.exists(alt_path_gallery) and os.path.isdir(alt_path_gallery):
+            dataset_dir = alt_path_gallery
+        elif os.path.exists(alt_path_1) and os.path.isdir(alt_path_1):
             dataset_dir = alt_path_1
         elif os.path.exists(alt_path_2) and os.path.isdir(alt_path_2):
             dataset_dir = alt_path_2
-        elif os.path.exists(alt_path_3) and os.path.isdir(alt_path_3):
-            dataset_dir = alt_path_3
+        elif os.path.exists(alt_path_all) and os.path.isdir(alt_path_all):
+            dataset_dir = alt_path_all
         else:
             raise HTTPException(status_code=400, detail=f"dataset_dir not found or invalid: {dataset_dir}")
 
@@ -351,37 +444,25 @@ def build_cache(dataset_dir: str, force: bool = False):
     if _model is None:
         raise HTTPException(status_code=503, detail=f"Model not loaded: {_model_error}")
 
+    if not force and _cache:
+        return
+
     images = _list_images(dataset_dir)
     cache_file = _cache_path(dataset_dir)
 
-    # Load existing cache if present, valid format, and dataset unchanged
+    # Load existing cache if present
     if not force and os.path.exists(cache_file):
         try:
             data = np.load(cache_file, allow_pickle=True).item()
             cached = data.get("features", None)
-            if cached is None:
-                # legacy v1.0 cache (embeddings only) -> rebuild with HOG
-                raise ValueError("legacy cache format")
-            _cache = cached
-            _cache_mtime = data.get("mtime", 0)
-            _cache_dir = dataset_dir
-            mtime = max(os.path.getmtime(p) for p in images) if images else 0
-            if _cache_mtime == mtime and set(_cache.keys()) == {os.path.relpath(p, dataset_dir) for p in images}:
-                # Verify dimension alignment with current embed_image output
-                sample_feat = next(iter(_cache.values()))["face"] if _cache else None
-                test_raw = b""
-                if images:
-                    with open(images[0], "rb") as fh:
-                        test_raw = fh.read()
-                test_emb = embed_image(test_raw)
-                if sample_feat is not None and test_emb is not None and sample_feat.shape == test_emb.shape:
-                    log.info("Using cached features (%d faces).", len(_cache))
-                    return
-                else:
-                    log.info("Cache dimension mismatch detected (%s vs %s). Rebuilding cache...", sample_feat.shape if sample_feat is not None else None, test_emb.shape if test_emb is not None else None)
-                    _cache = {}
+            version = data.get("version", "")
+            if cached is not None and len(cached) > 0 and version == CACHE_VERSION:
+                _cache = cached
+                _cache_dir = dataset_dir
+                log.info("Using cached features (%d faces, version %s).", len(_cache), version)
+                return
         except Exception as e:  # noqa: BLE001
-            log.info("Rebuilding cache: %s", e)
+            log.info("Rebuilding cache due to load error or version mismatch: %s", e)
             _cache = {}
 
     log.info("Building feature cache for %d images...", len(images))
@@ -392,12 +473,26 @@ def build_cache(dataset_dir: str, force: bool = False):
             with open(path, "rb") as fh:
                 raw = fh.read()
             grey = hog_grey(raw)
-            emb = embed_image(raw)
             emb_raw = embed_image_raw(raw)
+            if emb_raw is not None and _proj_model is not None:
+                import tensorflow as tf
+                emb = _proj_model(tf.convert_to_tensor([emb_raw], dtype=tf.float32), training=False).numpy()[0]
+            else:
+                emb = emb_raw
             hog = compute_hog(grey)
             lbp = compute_lbp(grey)
+            
+            try:
+                g_arr = np.frombuffer(raw, np.uint8)
+                g_img_bgr = cv2.imdecode(g_arr, cv2.IMREAD_COLOR)
+                g_img_rgb = cv2.cvtColor(g_img_bgr, cv2.COLOR_BGR2RGB) if g_img_bgr is not None else None
+                attr = DemographicEstimator.estimate_attributes(g_img_rgb, filename=path)
+            except Exception as e:
+                log.error("Demographic error for %s: %s", path, e)
+                attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
+
             if emb is not None:
-                features[rel] = {"face": emb, "face_raw": emb_raw, "hog": hog, "lbp": lbp}
+                features[rel] = {"face": emb, "face_raw": emb_raw, "hog": hog, "lbp": lbp, "attr": attr}
         except Exception as e:  # noqa: BLE001
             log.warning("Skip %s: %s", rel, e)
 
@@ -406,13 +501,27 @@ def build_cache(dataset_dir: str, force: bool = False):
     _cache_mtime = max(os.path.getmtime(p) for p in images) if images else 0
 
     try:
-        np.save(cache_file, np.array({"features": features, "mtime": _cache_mtime}, dtype=object), allow_pickle=True)
-        log.info("Cache saved (%d faces).", len(features))
+        np.save(cache_file, np.array({"features": features, "mtime": _cache_mtime, "version": CACHE_VERSION}, dtype=object), allow_pickle=True)
+        log.info("Cache saved (%d faces, version %s).", len(features), CACHE_VERSION)
     except Exception as e:  # noqa: BLE001
         log.warning("Could not save cache: %s", e)
 
 
 # ────────────────────────────────── Endpoints ────────────────────────────────
+
+@app.on_event("startup")
+def startup_event():
+    load_model()
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    gallery_default = os.path.join(base_dir, "dataset", "gallery")
+    gallery_all = os.path.join(base_dir, "dataset", "gallery_all")
+    gallery_path = gallery_default if os.path.exists(gallery_default) else gallery_all
+    try:
+        build_cache(gallery_path, force=False)
+        log.info("Startup complete: Pre-loaded %d cached faces into memory.", len(_cache))
+    except Exception as e:
+        log.warning("Startup cache load warning: %s", e)
+
 
 @app.get("/health", response_model=HealthResponse)
 def health():
@@ -449,6 +558,25 @@ def rebuild_cache(dataset_dir: str = Form(...)):
     return {"status": "ok", "images": len(_cache), "elapsed_s": round(time.time() - t0, 2)}
 
 
+def _resolve_full_path(rel_or_abs: str, base_dir: str) -> str:
+    if os.path.isabs(rel_or_abs) and os.path.exists(rel_or_abs):
+        return os.path.abspath(os.path.normpath(rel_or_abs))
+
+    cand1 = os.path.abspath(os.path.normpath(os.path.join(base_dir, rel_or_abs)))
+    if os.path.exists(cand1):
+        return cand1
+
+    cand2 = os.path.abspath(os.path.normpath(os.path.join(base_dir, "gallery", rel_or_abs)))
+    if os.path.exists(cand2):
+        return cand2
+
+    cand3 = os.path.abspath(os.path.normpath(os.path.join(base_dir, "gallery_all", rel_or_abs)))
+    if os.path.exists(cand3):
+        return cand3
+
+    return cand1
+
+
 @app.post("/match", response_model=MatchResponse)
 def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int = Form(TOP_RESULTS)):
     data = file.file.read()
@@ -466,59 +594,95 @@ def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int
     if not _cache:
         raise HTTPException(status_code=422, detail="No faces could be embedded in the dataset.")
         
-    # 2. Modality-Specific Feature Extraction & Open-Set Threshold Setting
+    # 2. Modality-Specific Feature Extraction & Soft Demographic Alignment
+    try:
+        q_arr = np.frombuffer(data, np.uint8)
+        q_img_bgr = cv2.imdecode(q_arr, cv2.IMREAD_COLOR)
+        q_img_rgb = cv2.cvtColor(q_img_bgr, cv2.COLOR_BGR2RGB) if q_img_bgr is not None else None
+        q_attr = DemographicEstimator.estimate_attributes(q_img_rgb, filename=file.filename)
+    except Exception:
+        q_attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
+
     scored = []
     
-    if query_modality == "PHOTO":
-        threshold = 0.65
-        query_emb_raw = embed_image_raw(data)
-        if query_emb_raw is None:
-            raise HTTPException(status_code=422, detail="Could not extract face embedding from photo.")
-            
-        sample_feat = next(iter(_cache.values())) if _cache else {}
-        if "face_raw" not in sample_feat:
-            build_cache(dataset_dir, force=True)
+    q_grey = hog_grey(data)
+    q_emb = embed_image(data)
+    if q_emb is None:
+        raise HTTPException(status_code=422, detail="Could not extract face embedding from query image.")
+    q_hog = compute_hog(q_grey)
+    q_lbp = compute_lbp(q_grey)
 
+    if query_modality == "PHOTO":
+        threshold = 0.42
         for rel, feats in _cache.items():
-            g_emb = feats.get("face_raw")
-            if g_emb is not None and g_emb.shape == query_emb_raw.shape:
-                sim = float(np.dot(query_emb_raw, g_emb))
-            else:
-                q_emb = embed_image(data)
-                g_face = feats["face"]
-                sim = float(np.dot(q_emb, g_face)) if q_emb is not None else 0.0
+            g_face = feats.get("face")
+            if g_face is None:
+                continue
+            face_sim = float(np.dot(q_emb, g_face))
+            hog_sim = float(np.dot(q_hog, feats.get("hog", q_hog)))
+            lbp_sim = float(np.dot(q_lbp, feats.get("lbp", q_lbp)))
+            base_sim = 0.60 * face_sim + 0.25 * hog_sim + 0.15 * lbp_sim
+
+            g_attr = feats.get("attr", {})
+            penalty = DemographicEstimator.compute_soft_penalty(q_attr, g_attr)
+            sim = base_sim * penalty
             scored.append((sim, rel))
             
     else:  # ARTIST_SKETCH, COMPOSITE_FORENSIC_SKETCH, FALLBACK
-        threshold = 0.50 if query_modality == "COMPOSITE_FORENSIC_SKETCH" else 0.55
-        sketch_grey = hog_grey(data)
-        sketch_emb = embed_image(data)
-        if sketch_emb is None:
-            raise HTTPException(status_code=422, detail="Could not embed sketch (no face found).")
-        sketch_hog = compute_hog(sketch_grey)
+        threshold = 0.42 if query_modality == "COMPOSITE_FORENSIC_SKETCH" else 0.45
         
         for rel, feats in _cache.items():
-            face_sim = float(np.dot(sketch_emb, feats["face"]))
-            hog_sim = float(np.dot(sketch_hog, feats["hog"]))
-            sim = hybrid_score(face_sim, hog_sim)
+            g_face = feats.get("face")
+            if g_face is None:
+                continue
+            face_sim = float(np.dot(q_emb, g_face))
+            hog_sim = float(np.dot(q_hog, feats.get("hog", q_hog)))
+            lbp_sim = float(np.dot(q_lbp, feats.get("lbp", q_lbp)))
+            
+            base_sim = pro_hybrid_score(face_sim, hog_sim, lbp_sim)
+
+            g_attr = feats.get("attr", {})
+            if not g_attr:
+                try:
+                    g_path = _resolve_full_path(rel, dataset_dir)
+                    g_img = cv2.imread(g_path)
+                    if g_img is not None:
+                        g_img = cv2.cvtColor(g_img, cv2.COLOR_BGR2RGB)
+                    g_attr = DemographicEstimator.estimate_attributes(g_img, filename=g_path)
+                    feats["attr"] = g_attr
+                except Exception:
+                    g_attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
+
+            penalty = DemographicEstimator.compute_soft_penalty(q_attr, g_attr)
+            sim = base_sim * penalty
             scored.append((sim, rel))
 
     scored.sort(reverse=True, key=lambda x: x[0])
-    top_score = scored[0][0] if scored else 0.0
     
-    # 3. Open-Set Match Rejection Logic
+    # Deduplicate results by filename basename so every candidate shown is a unique image
+    seen_basenames = set()
+    unique_scored = []
+    for sim, rel in scored:
+        bname = os.path.basename(rel).lower()
+        if bname not in seen_basenames:
+            seen_basenames.add(bname)
+            unique_scored.append((sim, rel))
+
+    top_score = unique_scored[0][0] if unique_scored else 0.0
+    
     if top_score >= threshold:
         match_decision = "POSSIBLE MATCH"
     else:
         match_decision = "NO RELIABLE MATCH FOUND IN CURRENT GALLERY"
         warnings.append(f"Top candidate similarity ({top_score*100.0:.1f}%) is below calibrated threshold ({threshold*100.0:.1f}%). Outputting nearest candidates only.")
-        
-    top = scored[:max(1, min(top_n, len(scored)))]
+
+    top_n = 10
+    top = unique_scored[:max(1, min(top_n, len(unique_scored)))]
 
     results = [
         MatchResult(
             name=os.path.splitext(os.path.basename(rel))[0],
-            path=os.path.join(dataset_dir, rel),
+            path=_resolve_full_path(rel, dataset_dir),
             similarity=round(sim, 4),
             calibrated_score=round(sim * 100.0, 2),
             rank=idx
@@ -542,4 +706,4 @@ def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("app:app", host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)

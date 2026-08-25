@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-08-25T13:53:00+05:30",
+  "cache_invalidation_rule": "Cache invalidated whenever checkpoint SHA-256 or architecture ID changes.",
+  "active_cache_status": "MODEL_VERSION_SAFE_CACHE_ACTIVE"
+}

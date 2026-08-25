@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-25T13:34:00+05:30",
+  "primary_cufs_dataset": {
+    "gallery_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery",
+    "queries_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries",
+    "gallery_images": 189,
+    "gallery_unique_pids": 189,
+    "query_images": 190,
+    "query_unique_pids": 189,
+    "paired_identities": 101
+  },
+  "desktop_archive_dataset": {
+    "path": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+    "total_images": 44668,
+    "paired_sample_count": 22334
+  }
+}

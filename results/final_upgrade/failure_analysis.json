@@ -1,0 +1,8 @@
+{
+  "total_failures": 664,
+  "failure_categories": {
+    "STRUCTURAL_FEATURE_FAILURE": 27,
+    "DOMAIN_GAP": 151,
+    "DEEP_EMBEDDING_FAILURE": 490
+  }
+}

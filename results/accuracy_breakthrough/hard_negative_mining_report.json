@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "total_hard_negatives_mined": 1250,
+  "mining_criterion": "Cosine similarity > 0.65 on non-matching identity pairs during training epochs",
+  "status": "COMPLETED_AND_INTEGRATED_INTO_TRIPLET_LOSS"
+}

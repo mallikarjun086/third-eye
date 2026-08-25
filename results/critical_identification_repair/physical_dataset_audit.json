@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-08-25T12:10:00+05:30",
+  "cuhk_cufs_active": {
+    "gallery_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\gallery",
+    "gallery_image_count": 189,
+    "gallery_unique_identities": 189,
+    "queries_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\dataset\\queries",
+    "queries_image_count": 190,
+    "queries_unique_identities": 189,
+    "verified_sketch_photo_paired_identities": 1,
+    "status": "PHYSICALLY_VERIFIED_PRIMARY_BENCHMARK"
+  },
+  "cufsf_feret": {
+    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\cufsf",
+    "photo_count": 0,
+    "sketch_count": 0,
+    "status": "NOT_INTEGRATED_REQUIRES_LICENSE_UNPACK"
+  },
+  "iiitd_forensic": {
+    "path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\data\\iiitd",
+    "file_count": 7,
+    "status": "PASSWORD_PROTECTED_OR_UNEXTRACTED"
+  },
+  "desktop_archive_inventory": {
+    "searched_directory": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop",
+    "found_related_folders": [
+      "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\IIITD_SketchDatabase",
+      "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye"
+    ],
+    "note": "Only physically present readable files in repository workspace are counted to prevent non-reproducible evaluation."
+  }
+}

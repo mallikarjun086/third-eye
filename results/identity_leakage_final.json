@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-24T23:40:35Z",
+  "train_pids_count": 20655,
+  "val_pids_count": 1000,
+  "test_pids_count": 679,
+  "train_val_overlap": 384,
+  "train_test_overlap": 271,
+  "val_test_overlap": 0,
+  "status": "FAILED_LEAKAGE_DETECTED"
+}

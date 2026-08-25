@@ -1,0 +1,804 @@
+{
+  "timestamp": "2026-08-25T13:34:00+05:30",
+  "total_failures": 114,
+  "failures": [
+    {
+      "query": "F2-005-01-sz1.jpg",
+      "ground_truth_pid": "F2-005",
+      "rank": null,
+      "top1_wrong_match": "f-020-01.jpg",
+      "wrong_score": 0.6918
+    },
+    {
+      "query": "F2-006-01-sz1.jpg",
+      "ground_truth_pid": "F2-006",
+      "rank": null,
+      "top1_wrong_match": "f-006-01.jpg",
+      "wrong_score": 0.7878
+    },
+    {
+      "query": "F2-007-01-sz1.jpg",
+      "ground_truth_pid": "F2-007",
+      "rank": null,
+      "top1_wrong_match": "f-007-01.jpg",
+      "wrong_score": 0.8304
+    },
+    {
+      "query": "F2-008-01-sz1.jpg",
+      "ground_truth_pid": "F2-008",
+      "rank": null,
+      "top1_wrong_match": "f-008-01.jpg",
+      "wrong_score": 0.8327
+    },
+    {
+      "query": "F2-009-01-sz1.jpg",
+      "ground_truth_pid": "F2-009",
+      "rank": null,
+      "top1_wrong_match": "f-009-01.jpg",
+      "wrong_score": 0.8314
+    },
+    {
+      "query": "F2-010-01-sz1.jpg",
+      "ground_truth_pid": "F20",
+      "rank": null,
+      "top1_wrong_match": "f-010-01.jpg",
+      "wrong_score": 0.8044
+    },
+    {
+      "query": "F2-011-01-sz1.jpg",
+      "ground_truth_pid": "F21",
+      "rank": null,
+      "top1_wrong_match": "f-011-01.jpg",
+      "wrong_score": 0.7601
+    },
+    {
+      "query": "F2-012-01-sz1.jpg",
+      "ground_truth_pid": "F22",
+      "rank": null,
+      "top1_wrong_match": "f-012-01.jpg",
+      "wrong_score": 0.8399
+    },
+    {
+      "query": "F2-013-01-sz1.jpg",
+      "ground_truth_pid": "F23",
+      "rank": null,
+      "top1_wrong_match": "f-013-01.jpg",
+      "wrong_score": 0.8221
+    },
+    {
+      "query": "F2-014-01-sz1.jpg",
+      "ground_truth_pid": "F24",
+      "rank": null,
+      "top1_wrong_match": "f-014-01.jpg",
+      "wrong_score": 0.8085
+    },
+    {
+      "query": "F2-015-01-sz1.jpg",
+      "ground_truth_pid": "F25",
+      "rank": null,
+      "top1_wrong_match": "f-015-01.jpg",
+      "wrong_score": 0.8146
+    },
+    {
+      "query": "F2-016-01-sz1.jpg",
+      "ground_truth_pid": "F26",
+      "rank": null,
+      "top1_wrong_match": "f-016-01.jpg",
+      "wrong_score": 0.755
+    },
+    {
+      "query": "F2-017-01-sz1.jpg",
+      "ground_truth_pid": "F27",
+      "rank": null,
+      "top1_wrong_match": "f-017-01.jpg",
+      "wrong_score": 0.7657
+    },
+    {
+      "query": "F2-018-01-sz1.jpg",
+      "ground_truth_pid": "F28",
+      "rank": null,
+      "top1_wrong_match": "f-018-01.jpg",
+      "wrong_score": 0.7724
+    },
+    {
+      "query": "F2-019-01-sz1.jpg",
+      "ground_truth_pid": "F29",
+      "rank": null,
+      "top1_wrong_match": "f-019-01.jpg",
+      "wrong_score": 0.7897
+    },
+    {
+      "query": "F2-020-01-sz1.jpg",
+      "ground_truth_pid": "F2-020",
+      "rank": null,
+      "top1_wrong_match": "f-020-01.jpg",
+      "wrong_score": 0.8343
+    },
+    {
+      "query": "F2-021-01-sz1.jpg",
+      "ground_truth_pid": "F2-021",
+      "rank": null,
+      "top1_wrong_match": "f-021-01.jpg",
+      "wrong_score": 0.8576
+    },
+    {
+      "query": "F2-022-01-sz1.jpg",
+      "ground_truth_pid": "F2-022",
+      "rank": null,
+      "top1_wrong_match": "f-022-01.jpg",
+      "wrong_score": 0.7428
+    },
+    {
+      "query": "F2-023-01-sz1.jpg",
+      "ground_truth_pid": "F2-023",
+      "rank": null,
+      "top1_wrong_match": "f-023-01.jpg",
+      "wrong_score": 0.7749
+    },
+    {
+      "query": "F2-024-01-sz1.jpg",
+      "ground_truth_pid": "F2-024",
+      "rank": null,
+      "top1_wrong_match": "f-024-01.jpg",
+      "wrong_score": 0.7987
+    },
+    {
+      "query": "F2-025-01-sz1.jpg",
+      "ground_truth_pid": "F2-025",
+      "rank": null,
+      "top1_wrong_match": "f-038-01.jpg",
+      "wrong_score": 0.7394
+    },
+    {
+      "query": "F2-026-01-sz1.jpg",
+      "ground_truth_pid": "F2-026",
+      "rank": null,
+      "top1_wrong_match": "f-026-01.jpg",
+      "wrong_score": 0.8379
+    },
+    {
+      "query": "F2-027-01-sz1.jpg",
+      "ground_truth_pid": "F2-027",
+      "rank": null,
+      "top1_wrong_match": "f-027-01.jpg",
+      "wrong_score": 0.822
+    },
+    {
+      "query": "F2-028-01-sz1.jpg",
+      "ground_truth_pid": "F2-028",
+      "rank": null,
+      "top1_wrong_match": "f-028-01.jpg",
+      "wrong_score": 0.8187
+    },
+    {
+      "query": "F2-029-01-sz1.jpg",
+      "ground_truth_pid": "F2-029",
+      "rank": null,
+      "top1_wrong_match": "f-029-01.jpg",
+      "wrong_score": 0.8472
+    },
+    {
+      "query": "F2-030-01-sz1.jpg",
+      "ground_truth_pid": "F2-030",
+      "rank": null,
+      "top1_wrong_match": "f-030-01.jpg",
+      "wrong_score": 0.8821
+    },
+    {
+      "query": "F2-031-01-sz1.jpg",
+      "ground_truth_pid": "F2-031",
+      "rank": null,
+      "top1_wrong_match": "f-031-01.jpg",
+      "wrong_score": 0.7792
+    },
+    {
+      "query": "F2-032-01-sz1.jpg",
+      "ground_truth_pid": "F2-032",
+      "rank": null,
+      "top1_wrong_match": "f-032-01.jpg",
+      "wrong_score": 0.7685
+    },
+    {
+      "query": "F2-033-01-sz1.jpg",
+      "ground_truth_pid": "F2-033",
+      "rank": null,
+      "top1_wrong_match": "f-033-01.jpg",
+      "wrong_score": 0.8325
+    },
+    {
+      "query": "F2-034-01-sz1.jpg",
+      "ground_truth_pid": "F2-034",
+      "rank": null,
+      "top1_wrong_match": "f-034-01.jpg",
+      "wrong_score": 0.759
+    },
+    {
+      "query": "F2-035-01-sz1.jpg",
+      "ground_truth_pid": "F2-035",
+      "rank": null,
+      "top1_wrong_match": "f-035-01.jpg",
+      "wrong_score": 0.8324
+    },
+    {
+      "query": "F2-036-01-sz1.jpg",
+      "ground_truth_pid": "F2-036",
+      "rank": null,
+      "top1_wrong_match": "f-036-01.jpg",
+      "wrong_score": 0.8156
+    },
+    {
+      "query": "F2-037-01-sz1.jpg",
+      "ground_truth_pid": "F2-037",
+      "rank": null,
+      "top1_wrong_match": "f-037-01.jpg",
+      "wrong_score": 0.8324
+    },
+    {
+      "query": "F2-038-01-sz1.jpg",
+      "ground_truth_pid": "F2-038",
+      "rank": null,
+      "top1_wrong_match": "f1-001-01.jpg",
+      "wrong_score": 0.7636
+    },
+    {
+      "query": "M2-008-01-sz1.jpg",
+      "ground_truth_pid": "M2-008",
+      "rank": null,
+      "top1_wrong_match": "m-019-01.jpg",
+      "wrong_score": 0.7833
+    },
+    {
+      "query": "M2-009-01-sz1.jpg",
+      "ground_truth_pid": "M2-009",
+      "rank": null,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.8652
+    },
+    {
+      "query": "M2-010-01-sz1.jpg",
+      "ground_truth_pid": "M20",
+      "rank": null,
+      "top1_wrong_match": "m-010-01.jpg",
+      "wrong_score": 0.8076
+    },
+    {
+      "query": "M2-011-01-sz1.jpg",
+      "ground_truth_pid": "M21",
+      "rank": null,
+      "top1_wrong_match": "m-011-01.jpg",
+      "wrong_score": 0.8364
+    },
+    {
+      "query": "M2-012-01-sz1.jpg",
+      "ground_truth_pid": "M22",
+      "rank": null,
+      "top1_wrong_match": "m-012-01.jpg",
+      "wrong_score": 0.8332
+    },
+    {
+      "query": "M2-013-01-sz1.jpg",
+      "ground_truth_pid": "M23",
+      "rank": null,
+      "top1_wrong_match": "m-013-01.jpg",
+      "wrong_score": 0.8335
+    },
+    {
+      "query": "M2-014-01-sz1.jpg",
+      "ground_truth_pid": "M24",
+      "rank": null,
+      "top1_wrong_match": "m-014-01.jpg",
+      "wrong_score": 0.8458
+    },
+    {
+      "query": "M2-015-01-sz1.jpg",
+      "ground_truth_pid": "M25",
+      "rank": null,
+      "top1_wrong_match": "m-015-01.jpg",
+      "wrong_score": 0.8419
+    },
+    {
+      "query": "M2-016-01-sz1.jpg",
+      "ground_truth_pid": "M26",
+      "rank": null,
+      "top1_wrong_match": "m-016-01.jpg",
+      "wrong_score": 0.801
+    },
+    {
+      "query": "M2-017-01-sz1.jpg",
+      "ground_truth_pid": "M27",
+      "rank": null,
+      "top1_wrong_match": "m-017-01.jpg",
+      "wrong_score": 0.8299
+    },
+    {
+      "query": "M2-018-01-sz1.jpg",
+      "ground_truth_pid": "M28",
+      "rank": null,
+      "top1_wrong_match": "m-018-01.jpg",
+      "wrong_score": 0.8433
+    },
+    {
+      "query": "M2-019-01-sz1.jpg",
+      "ground_truth_pid": "M29",
+      "rank": null,
+      "top1_wrong_match": "m-019-01.jpg",
+      "wrong_score": 0.8476
+    },
+    {
+      "query": "M2-021-01-sz1.jpg",
+      "ground_truth_pid": "M2-021",
+      "rank": null,
+      "top1_wrong_match": "m-021-01.jpg",
+      "wrong_score": 0.8259
+    },
+    {
+      "query": "M2-022-01-sz1.jpg",
+      "ground_truth_pid": "M2-022",
+      "rank": null,
+      "top1_wrong_match": "m-022-01.jpg",
+      "wrong_score": 0.8343
+    },
+    {
+      "query": "M2-023-01-sz1.jpg",
+      "ground_truth_pid": "M2-023",
+      "rank": null,
+      "top1_wrong_match": "m-023-01.jpg",
+      "wrong_score": 0.8575
+    },
+    {
+      "query": "M2-024-01-sz1.jpg",
+      "ground_truth_pid": "M2-024",
+      "rank": null,
+      "top1_wrong_match": "m-024-01.jpg",
+      "wrong_score": 0.8293
+    },
+    {
+      "query": "M2-025-01-sz1.jpg",
+      "ground_truth_pid": "M2-025",
+      "rank": null,
+      "top1_wrong_match": "m-025-01.jpg",
+      "wrong_score": 0.8349
+    },
+    {
+      "query": "M2-026-01-sz1.jpg",
+      "ground_truth_pid": "M2-026",
+      "rank": null,
+      "top1_wrong_match": "m-026-01.jpg",
+      "wrong_score": 0.802
+    },
+    {
+      "query": "M2-027-01-sz1.jpg",
+      "ground_truth_pid": "M2-027",
+      "rank": null,
+      "top1_wrong_match": "m-027-01.jpg",
+      "wrong_score": 0.8528
+    },
+    {
+      "query": "M2-028-01-sz1.jpg",
+      "ground_truth_pid": "M2-028",
+      "rank": null,
+      "top1_wrong_match": "m-028-01.jpg",
+      "wrong_score": 0.8316
+    },
+    {
+      "query": "M2-029-01-sz1.jpg",
+      "ground_truth_pid": "M2-029",
+      "rank": null,
+      "top1_wrong_match": "m-029-01.jpg",
+      "wrong_score": 0.8432
+    },
+    {
+      "query": "M2-030-01-sz1.jpg",
+      "ground_truth_pid": "M2-030",
+      "rank": null,
+      "top1_wrong_match": "m-030-01.jpg",
+      "wrong_score": 0.8439
+    },
+    {
+      "query": "M2-031-01-sz1.jpg",
+      "ground_truth_pid": "M2-031",
+      "rank": null,
+      "top1_wrong_match": "m-031-01.jpg",
+      "wrong_score": 0.8278
+    },
+    {
+      "query": "M2-032-01-sz1.jpg",
+      "ground_truth_pid": "M2-032",
+      "rank": null,
+      "top1_wrong_match": "m-032-01.jpg",
+      "wrong_score": 0.7881
+    },
+    {
+      "query": "M2-033-01-sz1.jpg",
+      "ground_truth_pid": "M2-033",
+      "rank": null,
+      "top1_wrong_match": "m-033-01.jpg",
+      "wrong_score": 0.8322
+    },
+    {
+      "query": "M2-034-01-sz1.jpg",
+      "ground_truth_pid": "M2-034",
+      "rank": null,
+      "top1_wrong_match": "m-034-01.jpg",
+      "wrong_score": 0.8353
+    },
+    {
+      "query": "M2-035-01-sz1.jpg",
+      "ground_truth_pid": "M2-035",
+      "rank": null,
+      "top1_wrong_match": "m-035-01.jpg",
+      "wrong_score": 0.8039
+    },
+    {
+      "query": "M2-036-01-sz1.jpg",
+      "ground_truth_pid": "M2-036",
+      "rank": null,
+      "top1_wrong_match": "m-036-01.jpg",
+      "wrong_score": 0.8521
+    },
+    {
+      "query": "M2-037-01-sz1.jpg",
+      "ground_truth_pid": "M2-037",
+      "rank": null,
+      "top1_wrong_match": "m-037-01.jpg",
+      "wrong_score": 0.8357
+    },
+    {
+      "query": "M2-038-01-sz1.jpg",
+      "ground_truth_pid": "M2-038",
+      "rank": null,
+      "top1_wrong_match": "m-038-01.jpg",
+      "wrong_score": 0.8189
+    },
+    {
+      "query": "M2-039-01-sz1.jpg",
+      "ground_truth_pid": "M2-039",
+      "rank": null,
+      "top1_wrong_match": "m-039-01.jpg",
+      "wrong_score": 0.8455
+    },
+    {
+      "query": "M2-040-01-sz1.jpg",
+      "ground_truth_pid": "M2-040",
+      "rank": null,
+      "top1_wrong_match": "m-040-01.jpg",
+      "wrong_score": 0.8301
+    },
+    {
+      "query": "M2-041-01-sz1.jpg",
+      "ground_truth_pid": "M2-041",
+      "rank": null,
+      "top1_wrong_match": "m-041-01.jpg",
+      "wrong_score": 0.8344
+    },
+    {
+      "query": "M2-042-01-sz1.jpg",
+      "ground_truth_pid": "M2-042",
+      "rank": null,
+      "top1_wrong_match": "m-042-01.jpg",
+      "wrong_score": 0.7831
+    },
+    {
+      "query": "M2-043-01-sz1.jpg",
+      "ground_truth_pid": "M2-043",
+      "rank": null,
+      "top1_wrong_match": "m-043-01.jpg",
+      "wrong_score": 0.8225
+    },
+    {
+      "query": "M2-044-01-sz1.jpg",
+      "ground_truth_pid": "M2-044",
+      "rank": null,
+      "top1_wrong_match": "m-044-01.jpg",
+      "wrong_score": 0.8301
+    },
+    {
+      "query": "M2-045-01-sz1.jpg",
+      "ground_truth_pid": "M2-045",
+      "rank": null,
+      "top1_wrong_match": "m-045-01.jpg",
+      "wrong_score": 0.8273
+    },
+    {
+      "query": "M2-046-01-sz1.jpg",
+      "ground_truth_pid": "M2-046",
+      "rank": null,
+      "top1_wrong_match": "m-046-01.jpg",
+      "wrong_score": 0.8014
+    },
+    {
+      "query": "M2-047-01-sz1.jpg",
+      "ground_truth_pid": "M2-047",
+      "rank": null,
+      "top1_wrong_match": "m-047-01.jpg",
+      "wrong_score": 0.8659
+    },
+    {
+      "query": "M2-048-01-sz1.jpg",
+      "ground_truth_pid": "M2-048",
+      "rank": null,
+      "top1_wrong_match": "m-048-01.jpg",
+      "wrong_score": 0.8274
+    },
+    {
+      "query": "M2-049-01-sz1.jpg",
+      "ground_truth_pid": "M2-049",
+      "rank": null,
+      "top1_wrong_match": "m-049-01.jpg",
+      "wrong_score": 0.8417
+    },
+    {
+      "query": "M2-050-01-sz1.jpg",
+      "ground_truth_pid": "M2-050",
+      "rank": null,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7893
+    },
+    {
+      "query": "M2-051-01-sz1.jpg",
+      "ground_truth_pid": "M2-051",
+      "rank": null,
+      "top1_wrong_match": "m-051-01.jpg",
+      "wrong_score": 0.8578
+    },
+    {
+      "query": "M2-052-01-sz1.jpg",
+      "ground_truth_pid": "M2-052",
+      "rank": null,
+      "top1_wrong_match": "m-052-01.jpg",
+      "wrong_score": 0.8058
+    },
+    {
+      "query": "M2-053-01-sz1.jpg",
+      "ground_truth_pid": "M2-053",
+      "rank": null,
+      "top1_wrong_match": "m-053-01.jpg",
+      "wrong_score": 0.8528
+    },
+    {
+      "query": "M2-054-01-sz1.jpg",
+      "ground_truth_pid": "M2-054",
+      "rank": null,
+      "top1_wrong_match": "m-054-01.jpg",
+      "wrong_score": 0.7922
+    },
+    {
+      "query": "M2-055-01-sz1.jpg",
+      "ground_truth_pid": "M2-055",
+      "rank": null,
+      "top1_wrong_match": "m-055-01.jpg",
+      "wrong_score": 0.8474
+    },
+    {
+      "query": "M2-056-01-sz1.jpg",
+      "ground_truth_pid": "M2-056",
+      "rank": null,
+      "top1_wrong_match": "m-056-01.jpg",
+      "wrong_score": 0.8119
+    },
+    {
+      "query": "M2-057-01-sz1.jpg",
+      "ground_truth_pid": "M2-057",
+      "rank": null,
+      "top1_wrong_match": "m-045-01.jpg",
+      "wrong_score": 0.7916
+    },
+    {
+      "query": "M2-058-01-sz1.jpg",
+      "ground_truth_pid": "M2-058",
+      "rank": null,
+      "top1_wrong_match": "m-058-01.jpg",
+      "wrong_score": 0.8028
+    },
+    {
+      "query": "M2-059-01-sz1.jpg",
+      "ground_truth_pid": "M2-059",
+      "rank": null,
+      "top1_wrong_match": "m-059-01.jpg",
+      "wrong_score": 0.8182
+    },
+    {
+      "query": "M2-060-01-sz1.jpg",
+      "ground_truth_pid": "M2-060",
+      "rank": null,
+      "top1_wrong_match": "m-060-01.jpg",
+      "wrong_score": 0.8509
+    },
+    {
+      "query": "M2-061-01-sz1.jpg",
+      "ground_truth_pid": "M2-061",
+      "rank": null,
+      "top1_wrong_match": "m-061-01.jpg",
+      "wrong_score": 0.8579
+    },
+    {
+      "query": "M2-062-01-sz1.jpg",
+      "ground_truth_pid": "M2-062",
+      "rank": null,
+      "top1_wrong_match": "m-062-01.jpg",
+      "wrong_score": 0.8355
+    },
+    {
+      "query": "a-sharukh-1.jpg",
+      "ground_truth_pid": "a-sharukh",
+      "rank": 189,
+      "top1_wrong_match": "f1-008-01.jpg",
+      "wrong_score": 0.4532
+    },
+    {
+      "query": "a-sharukh-2.jpg",
+      "ground_truth_pid": "a-sharukh",
+      "rank": 189,
+      "top1_wrong_match": "f1-015-01.jpg",
+      "wrong_score": 0.4376
+    },
+    {
+      "query": "f1-004-01-sz1.jpg",
+      "ground_truth_pid": "f1-004",
+      "rank": 10,
+      "top1_wrong_match": "m1-018-01.jpg",
+      "wrong_score": 0.7418
+    },
+    {
+      "query": "f1-006-01-sz1.jpg",
+      "ground_truth_pid": "f1-006",
+      "rank": 13,
+      "top1_wrong_match": "f1-001-01.jpg",
+      "wrong_score": 0.7981
+    },
+    {
+      "query": "f1-008-01-sz1.jpg",
+      "ground_truth_pid": "f1-008",
+      "rank": 31,
+      "top1_wrong_match": "f-036-01.jpg",
+      "wrong_score": 0.7516
+    },
+    {
+      "query": "f1-011-01-sz1.jpg",
+      "ground_truth_pid": "f11",
+      "rank": 5,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.7405
+    },
+    {
+      "query": "f1-012-01-sz1.jpg",
+      "ground_truth_pid": "f12",
+      "rank": 2,
+      "top1_wrong_match": "f-008-01.jpg",
+      "wrong_score": 0.7595
+    },
+    {
+      "query": "m-065-01-sz1.jpg",
+      "ground_truth_pid": "m-065",
+      "rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8127
+    },
+    {
+      "query": "m-068-01-sz1.jpg",
+      "ground_truth_pid": "m-068",
+      "rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7664
+    },
+    {
+      "query": "m-069-01-sz1.jpg",
+      "ground_truth_pid": "m-069",
+      "rank": 2,
+      "top1_wrong_match": "m-064-01.jpg",
+      "wrong_score": 0.7938
+    },
+    {
+      "query": "m-071-01-sz1.jpg",
+      "ground_truth_pid": "m-071",
+      "rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7802
+    },
+    {
+      "query": "m-072-01-sz1.jpg",
+      "ground_truth_pid": "m-072",
+      "rank": 3,
+      "top1_wrong_match": "m-046-01.jpg",
+      "wrong_score": 0.7739
+    },
+    {
+      "query": "m-073-01-sz1.jpg",
+      "ground_truth_pid": "m-073",
+      "rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8011
+    },
+    {
+      "query": "m-074-01-sz1.jpg",
+      "ground_truth_pid": "m-074",
+      "rank": 2,
+      "top1_wrong_match": "m-047-01.jpg",
+      "wrong_score": 0.785
+    },
+    {
+      "query": "m-082-01-sz1.jpg",
+      "ground_truth_pid": "m-082",
+      "rank": 7,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7576
+    },
+    {
+      "query": "m-096-01-sz1.jpg",
+      "ground_truth_pid": "m-096",
+      "rank": 5,
+      "top1_wrong_match": "m1-012-01.jpg",
+      "wrong_score": 0.7744
+    },
+    {
+      "query": "m-100-01-sz1.jpg",
+      "ground_truth_pid": "m-100",
+      "rank": 2,
+      "top1_wrong_match": "m-047-01.jpg",
+      "wrong_score": 0.7989
+    },
+    {
+      "query": "m1-003-01-sz1.jpg",
+      "ground_truth_pid": "m1-003",
+      "rank": 7,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.7907
+    },
+    {
+      "query": "m1-007-01-sz1.jpg",
+      "ground_truth_pid": "m1-007",
+      "rank": 6,
+      "top1_wrong_match": "m1-031-01.jpg",
+      "wrong_score": 0.7648
+    },
+    {
+      "query": "m1-010-01-sz1.jpg",
+      "ground_truth_pid": "m10",
+      "rank": 2,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.807
+    },
+    {
+      "query": "m1-011-01-sz1.jpg",
+      "ground_truth_pid": "m11",
+      "rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8112
+    },
+    {
+      "query": "m1-016-01-sz1.jpg",
+      "ground_truth_pid": "m16",
+      "rank": 2,
+      "top1_wrong_match": "m1-018-01.jpg",
+      "wrong_score": 0.8151
+    },
+    {
+      "query": "m1-023-01-sz1.jpg",
+      "ground_truth_pid": "m1-023",
+      "rank": 2,
+      "top1_wrong_match": "m-030-01.jpg",
+      "wrong_score": 0.8033
+    },
+    {
+      "query": "m1-027-01-sz1.jpg",
+      "ground_truth_pid": "m1-027",
+      "rank": 4,
+      "top1_wrong_match": "m1-013-01.jpg",
+      "wrong_score": 0.8063
+    },
+    {
+      "query": "m1-033-01-sz1.jpg",
+      "ground_truth_pid": "m1-033",
+      "rank": 2,
+      "top1_wrong_match": "m-101-01.jpg",
+      "wrong_score": 0.8103
+    },
+    {
+      "query": "m1-034-01-sz1.jpg",
+      "ground_truth_pid": "m1-034",
+      "rank": 2,
+      "top1_wrong_match": "m-009-01.jpg",
+      "wrong_score": 0.8134
+    }
+  ]
+}

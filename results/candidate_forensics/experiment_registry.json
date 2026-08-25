@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-08-25T13:53:00+05:30",
+  "experiments": [
+    {
+      "candidate_id": "CANDIDATE_A",
+      "candidate_name": "Candidate_A_Production_Baseline",
+      "checkpoint_sha256": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_B",
+      "candidate_name": "Candidate_B_Dual_Encoder_InfoNCE",
+      "checkpoint_sha256": "0d00e469b99eee9bc37f871d14013ffb0013301e68a378297662a6171d5ad47d",
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 37.37,
+        "rank5_pct": 46.84,
+        "mrr": 0.416
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_C",
+      "candidate_name": "Candidate_C_Dual_Encoder_Triplet",
+      "checkpoint_sha256": "b56f314a45ececbfdc2dbc5813961f91a772250d681ccf383595434556436d2a",
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 35.26,
+        "rank5_pct": 45.26,
+        "mrr": 0.3956
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_D",
+      "candidate_name": "Candidate_D_Dual_Encoder_Combined",
+      "checkpoint_sha256": "ec4d1a1f6f5091c978cc513b99f072ca74923ccc6cfb3c65a804a1e798aea100",
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 31.05,
+        "rank5_pct": 41.58,
+        "mrr": 0.3564
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_E",
+      "candidate_name": "Candidate_E_Best_Structural_Branch",
+      "checkpoint_sha256": "0107423776f1b6ace27d6bf1ab039b583f120a9ac1b88c6f35bedfc32a444ae1",
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 39.47,
+        "rank5_pct": 47.37,
+        "mrr": 0.4352
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    },
+    {
+      "candidate_id": "CANDIDATE_F",
+      "candidate_name": "Candidate_F_Winner_Soft_Demographics",
+      "checkpoint_sha256": "12e81e7e1b1305a4cc0d299ece9d09ed1bbd70c08b0da33be8d5ede0c51d817b",
+      "validation_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      },
+      "full_dataset_results": {
+        "rank1_pct": 40.0,
+        "rank5_pct": 49.47,
+        "mrr": 0.4456
+      },
+      "heldout_test_results": {
+        "rank1_pct": 0.0,
+        "rank5_pct": 0.0,
+        "mrr": 0.0
+      }
+    }
+  ]
+}

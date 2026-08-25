@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "ablations": [
+    {
+      "candidate_id": "A",
+      "candidate_name": "Candidate_A_Baseline",
+      "full_dataset_rank1_pct": 40.0,
+      "full_dataset_rank5_pct": 49.47,
+      "full_dataset_mrr": 0.4456
+    },
+    {
+      "candidate_id": "B",
+      "candidate_name": "Candidate_B_Dual_Encoder_InfoNCE",
+      "full_dataset_rank1_pct": 37.37,
+      "full_dataset_rank5_pct": 46.84,
+      "full_dataset_mrr": 0.416
+    },
+    {
+      "candidate_id": "C",
+      "candidate_name": "Candidate_C_Dual_Encoder_Triplet",
+      "full_dataset_rank1_pct": 35.26,
+      "full_dataset_rank5_pct": 45.26,
+      "full_dataset_mrr": 0.3956
+    },
+    {
+      "candidate_id": "D",
+      "candidate_name": "Candidate_D_Combined_Objective",
+      "full_dataset_rank1_pct": 31.05,
+      "full_dataset_rank5_pct": 41.58,
+      "full_dataset_mrr": 0.3564
+    },
+    {
+      "candidate_id": "E",
+      "candidate_name": "Candidate_E_Structural_Branch",
+      "full_dataset_rank1_pct": 39.47,
+      "full_dataset_rank5_pct": 47.37,
+      "full_dataset_mrr": 0.4352
+    },
+    {
+      "candidate_id": "F",
+      "candidate_name": "Candidate_F_Validated_Fusion",
+      "full_dataset_rank1_pct": 40.0,
+      "full_dataset_rank5_pct": 49.47,
+      "full_dataset_mrr": 0.4456
+    },
+    {
+      "candidate_id": "G",
+      "candidate_name": "Candidate_G_Soft_Demographics",
+      "full_dataset_rank1_pct": 40.0,
+      "full_dataset_rank5_pct": 49.47,
+      "full_dataset_mrr": 0.4456
+    }
+  ]
+}

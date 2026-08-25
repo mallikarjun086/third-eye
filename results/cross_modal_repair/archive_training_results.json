@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-08-25T13:12:01Z",
+  "archive_1": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive",
+  "archive_2": "C:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\archive (1)",
+  "paired_samples_found": 500,
+  "baseline_metrics": {
+    "eval_name": "Baseline_Pre_Training",
+    "queries_evaluated": 21,
+    "rank1_hits": "0/21",
+    "rank1_pct": 0.0,
+    "rank5_hits": "0/21",
+    "rank5_pct": 0.0,
+    "rank10_hits": "0/21",
+    "rank10_pct": 0.0,
+    "mrr": 0.0
+  },
+  "candidate_metrics": {
+    "eval_name": "Candidate_Post_Archive_Training",
+    "queries_evaluated": 21,
+    "rank1_hits": "0/21",
+    "rank1_pct": 0.0,
+    "rank5_hits": "0/21",
+    "rank5_pct": 0.0,
+    "rank10_hits": "0/21",
+    "rank10_pct": 0.0,
+    "mrr": 0.0
+  },
+  "final_status": "UPDATED_AND_VERIFIED"
+}

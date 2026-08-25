@@ -1,0 +1,37 @@
+[
+  {
+    "model_id": "MODEL_A_BASELINE",
+    "alpha": 0.85,
+    "val_rank_1": 85.71,
+    "val_mrr": 0.9024,
+    "status": "LOCKED_OPTIMAL"
+  },
+  {
+    "model_id": "MODEL_B_ALPHA_070",
+    "alpha": 0.7,
+    "val_rank_1": 80.95,
+    "val_mrr": 0.8651,
+    "status": "REJECTED_LOWER_RANK1"
+  },
+  {
+    "model_id": "MODEL_C_ALPHA_090",
+    "alpha": 0.9,
+    "val_rank_1": 85.71,
+    "val_mrr": 0.8988,
+    "status": "REJECTED_LOWER_MRR"
+  },
+  {
+    "model_id": "MODEL_D_SOBEL_ONLY",
+    "alpha": 0.0,
+    "val_rank_1": 42.86,
+    "val_mrr": 0.5412,
+    "status": "REJECTED_LOW_ACCURACY"
+  },
+  {
+    "model_id": "MODEL_E_FACENET_ONLY",
+    "alpha": 1.0,
+    "val_rank_1": 80.95,
+    "val_mrr": 0.8712,
+    "status": "REJECTED_LOWER_RANK1"
+  }
+]

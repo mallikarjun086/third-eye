@@ -1,0 +1,44 @@
+[
+  {
+    "model": "Candidate A (Baseline)",
+    "dataset": "CUFS Train (62 PIDs)",
+    "rank_1": 85.71,
+    "mrr": 0.9024,
+    "status": "BASELINE"
+  },
+  {
+    "model": "Candidate B (Retrained MLP)",
+    "dataset": "CUFS Train (62 PIDs)",
+    "rank_1": 85.71,
+    "mrr": 0.9024,
+    "status": "COMPLETED"
+  },
+  {
+    "model": "Candidate C (Triplet Loss)",
+    "dataset": "N/A",
+    "rank_1": "N/A",
+    "mrr": "N/A",
+    "status": "NOT RUN \u2014 INSUFFICIENT TRAINING STRUCTURE"
+  },
+  {
+    "model": "Candidate D (Pretrained ArcFace)",
+    "dataset": "CUFS Gallery (20 PIDs)",
+    "rank_1": 100.0,
+    "mrr": 1.0,
+    "status": "COMPLETED_PHOTO"
+  },
+  {
+    "model": "Candidate E (Residual MLP)",
+    "dataset": "CUFS Train (62 PIDs)",
+    "rank_1": 85.71,
+    "mrr": 0.9024,
+    "status": "COMPLETED"
+  },
+  {
+    "model": "Candidate F (Hybrid Deep + HOG)",
+    "dataset": "CUFS + Composite",
+    "rank_1": 85.71,
+    "mrr": 0.9024,
+    "status": "SELECTED_PRODUCTION"
+  }
+]

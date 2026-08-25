@@ -1,0 +1,8 @@
+{
+  "score_type": "RETRIEVAL_SIMILARITY_SCORE",
+  "ui_label": "MATCH SIMILARITY SCORE",
+  "optimal_threshold": 0.65,
+  "far_at_optimal": 0.012,
+  "frr_at_optimal": 0.048,
+  "eer": 0.028
+}

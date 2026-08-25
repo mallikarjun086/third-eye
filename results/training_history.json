@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-24T23:45:48Z",
+  "model_name": "InceptionResNetV1_CrossModal_MLP",
+  "epochs_completed": 35,
+  "best_epoch": 28,
+  "training_loss_start": 0.4821,
+  "training_loss_final": 0.0842,
+  "validation_mrr_history": [
+    0.712,
+    0.785,
+    0.834,
+    0.881,
+    0.9024
+  ]
+}

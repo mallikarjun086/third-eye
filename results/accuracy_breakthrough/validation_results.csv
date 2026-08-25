@@ -1,0 +1,7 @@
+candidate_id,candidate_name,val_rank1_pct,val_rank5_pct,val_mrr,full_rank1_pct
+CANDIDATE_A,Current_Production_Baseline,0.0,0.0,0.0,40.0
+CANDIDATE_B,Dual_Encoder_InfoNCE_Objective,0.0,0.0,0.0,37.37
+CANDIDATE_C,Dual_Encoder_Hard_Triplet_Loss,0.0,0.0,0.0,35.26
+CANDIDATE_D,Dual_Encoder_Combined_Objective,0.0,0.0,0.0,31.05
+CANDIDATE_E,Best_Dual_Encoder_Structural_Branch,0.0,0.0,0.0,39.47
+CANDIDATE_F,Best_Dual_Encoder_WITH_Soft_Reranking,0.0,0.0,0.0,40.0

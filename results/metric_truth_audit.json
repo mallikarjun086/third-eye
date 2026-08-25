@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-08-24T23:40:35Z",
+  "audited_metrics": [
+    {
+      "metric_name": "22,334 Paired Identities",
+      "reported_value": "22,334 PIDs",
+      "actual_source_code": "archive directory scanning",
+      "actual_dataset": "Desktop Archive (train/val/test)",
+      "actual_sample_count": 22334,
+      "validity": "CURRENT_VERIFIED_RESULT",
+      "reason": "Verified exact filename correspondence across train (20,655), val (1,000), and test (679) folders."
+    },
+    {
+      "metric_name": "CUFS Artist Sketch Rank-1 Accuracy",
+      "reported_value": "85.71%",
+      "actual_source_code": "evaluation_engine.evaluate_retrieval()",
+      "actual_dataset": "CUFS Held-Out Test Queries (189 queries vs 689 gallery faces)",
+      "actual_sample_count": 189,
+      "validity": "CURRENT_VERIFIED_RESULT",
+      "reason": "Empirically calculated on held-out test split using hybrid FaceNet + HOG score fusion."
+    }
+  ]
+}

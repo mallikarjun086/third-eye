@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-08-25T13:53:00+05:30",
+  "proofs": [
+    {
+      "candidate_id": "CANDIDATE_A",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\Project Code (forensic face sketch)\\Project Code (forensic face sketch)\\ThirdEye v2\\ml_service\\experiments\\exp05_cross_modal\\best_cross_modal_model.weights.h5",
+      "sha256_before": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "sha256_after": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "parameters_changed": false,
+      "param_delta": 0.0,
+      "status": "BASELINE_FROZEN"
+    },
+    {
+      "candidate_id": "CANDIDATE_B",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\candidate_forensics\\checkpoints\\Candidate_B_Dual_Encoder_InfoNCE.weights.h5",
+      "sha256_before": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "sha256_after": "0d00e469b99eee9bc37f871d14013ffb0013301e68a378297662a6171d5ad47d",
+      "parameters_changed": true,
+      "max_parameter_delta": 0.001186,
+      "status": "GENUINELY_TRAINED_AND_SAVED"
+    },
+    {
+      "candidate_id": "CANDIDATE_C",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\candidate_forensics\\checkpoints\\Candidate_C_Dual_Encoder_Triplet.weights.h5",
+      "sha256_before": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "sha256_after": "b56f314a45ececbfdc2dbc5813961f91a772250d681ccf383595434556436d2a",
+      "parameters_changed": true,
+      "max_parameter_delta": 0.001187,
+      "status": "GENUINELY_TRAINED_AND_SAVED"
+    },
+    {
+      "candidate_id": "CANDIDATE_D",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\candidate_forensics\\checkpoints\\Candidate_D_Dual_Encoder_Combined.weights.h5",
+      "sha256_before": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "sha256_after": "ec4d1a1f6f5091c978cc513b99f072ca74923ccc6cfb3c65a804a1e798aea100",
+      "parameters_changed": true,
+      "max_parameter_delta": 0.001178,
+      "status": "GENUINELY_TRAINED_AND_SAVED"
+    },
+    {
+      "candidate_id": "CANDIDATE_E",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\candidate_forensics\\checkpoints\\Candidate_E_Best_Structural_Branch.weights.h5",
+      "sha256_before": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "sha256_after": "0107423776f1b6ace27d6bf1ab039b583f120a9ac1b88c6f35bedfc32a444ae1",
+      "parameters_changed": true,
+      "max_parameter_delta": 0.001199,
+      "status": "GENUINELY_TRAINED_AND_SAVED"
+    },
+    {
+      "candidate_id": "CANDIDATE_F",
+      "checkpoint_path": "c:\\Users\\Mallikarjun Gala\\OneDrive\\Desktop\\Third-Eye\\results\\candidate_forensics\\checkpoints\\Candidate_F_Winner_Soft_Demographics.weights.h5",
+      "sha256_before": "1180740a151e3e143b21c310c1b7d1934b9787f9d46195e5e5885a7255403868",
+      "sha256_after": "12e81e7e1b1305a4cc0d299ece9d09ed1bbd70c08b0da33be8d5ede0c51d817b",
+      "parameters_changed": true,
+      "max_parameter_delta": 0.001198,
+      "status": "GENUINELY_TRAINED_AND_SAVED"
+    }
+  ]
+}

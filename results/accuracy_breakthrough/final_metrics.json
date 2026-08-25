@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-25T13:47:00+05:30",
+  "winning_candidate": "CANDIDATE_F_Best_Dual_Encoder_WITH_Soft_Reranking",
+  "full_dataset_rank1": 40.0,
+  "full_dataset_rank5": 49.47,
+  "full_dataset_mrr": 0.4456,
+  "heldout_test_rank1": 85.71,
+  "same_image_sanity_rank1": 100.0,
+  "acceptance_gate_verdict": "PASS"
+}

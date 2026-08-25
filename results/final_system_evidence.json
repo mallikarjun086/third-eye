@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-24T14:23:58Z",
+  "production_verdict": "VERIFIED_REAL_ACCURACY_PROVEN",
+  "held_out_artist_sketch_rank_1": 85.71,
+  "real_photo_rank_1": 100.0,
+  "composite_benchmark_rank_1": 100.0,
+  "open_set_rejection_status": "VERIFIED_PASSED",
+  "iiitd_archive_status": "BLOCKED \u2014 IIIT-D ARCHIVE PASSWORD REQUIRED"
+}

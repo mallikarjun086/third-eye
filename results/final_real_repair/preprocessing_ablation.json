@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-08-25T13:56:00+05:30",
+  "sketch_preprocessing": "Grayscale + CLAHE + Gaussian Blur (3x3) + Sobel HOG 3600-d",
+  "photo_preprocessing": "Face Crop (160x160) + Inception-ResNet-v1 Embedder",
+  "verdict": "Dual-Stream Deep + HOG Fusion yields maximum Rank-1 accuracy"
+}

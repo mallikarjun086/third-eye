@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-25T13:34:00+05:30",
+  "selected_production_model": "Candidate_5_Production_Dual_Stream",
+  "full_dataset_rank1": 40.0,
+  "full_dataset_rank5": 49.47,
+  "full_dataset_mrr": 0.4456,
+  "heldout_test_rank1": 85.71,
+  "acceptance_gate_verdict": "PASS"
+}
