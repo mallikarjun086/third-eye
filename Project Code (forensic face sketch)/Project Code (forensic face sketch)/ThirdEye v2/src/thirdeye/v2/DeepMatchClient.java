@@ -75,6 +75,57 @@ public class DeepMatchClient {
         return this.authToken;
     }
 
+    /**
+     * Fetches Explainable AI (XAI) side-by-side matching heatmap PNG bytes.
+     */
+    public byte[] fetchMatchHeatmap(File sketchFile, String candidatePath) throws IOException {
+        if (authToken == null || authToken.isEmpty()) {
+            try { fetchAuthToken(); } catch (Exception ignored) {}
+        }
+        String b = "----ThirdEyeXAI" + System.nanoTime();
+        StringBuilder bodyStr = new StringBuilder();
+        bodyStr.append("--").append(b).append("\r\n");
+        bodyStr.append("Content-Disposition: form-data; name=\"file\"; filename=\"").append(sketchFile.getName()).append("\"\r\n");
+        bodyStr.append("Content-Type: application/octet-stream\r\n\r\n");
+
+        byte[] headBytes = bodyStr.toString().getBytes(StandardCharsets.UTF_8);
+        byte[] fileBytes = Files.readAllBytes(sketchFile.toPath());
+
+        StringBuilder tailStr = new StringBuilder();
+        tailStr.append("\r\n--").append(b).append("\r\n");
+        tailStr.append("Content-Disposition: form-data; name=\"candidate_path\"\r\n\r\n");
+        tailStr.append(candidatePath);
+        tailStr.append("\r\n--").append(b).append("--\r\n");
+        byte[] tailBytes = tailStr.toString().getBytes(StandardCharsets.UTF_8);
+
+        byte[] body = new byte[headBytes.length + fileBytes.length + tailBytes.length];
+        System.arraycopy(headBytes, 0, body, 0, headBytes.length);
+        System.arraycopy(fileBytes, 0, body, headBytes.length, fileBytes.length);
+        System.arraycopy(tailBytes, 0, body, headBytes.length + fileBytes.length, tailBytes.length);
+
+        HttpRequest.Builder reqBuilder = HttpRequest.newBuilder(URI.create(baseUrl + "/explain"))
+                .timeout(Duration.ofSeconds(60))
+                .header("Content-Type", "multipart/form-data; boundary=" + b)
+                .POST(HttpRequest.BodyPublishers.ofByteArray(body));
+
+        if (authToken != null && !authToken.isEmpty()) {
+            reqBuilder.header("Authorization", "Bearer " + authToken);
+        }
+
+        try {
+            HttpResponse<byte[]> resp = http.send(reqBuilder.build(), HttpResponse.BodyHandlers.ofByteArray());
+            if (resp.statusCode() == 200) {
+                return resp.body();
+            } else {
+                throw new IOException("XAI Heatmap request failed with HTTP " + resp.statusCode());
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IOException("Interrupted while fetching XAI heatmap", e);
+        }
+    }
+
+
     /** Result row for a single ranked suspect. */
     public static class Match {
         public String name;
@@ -84,13 +135,17 @@ public class DeepMatchClient {
         public int rank;
     }
 
-    /** Detailed response holder containing modality, pipeline selection, and open-set match decision. */
+    /** Detailed response holder containing modality, pipeline selection, open-set match decision, and soft biometric filter stats. */
     public static class MatchResponseHolder {
         public String status = "ok";
         public String queryModality = "UNKNOWN";
         public String selectedPipeline = "UNKNOWN";
         public String matchDecision = "POSSIBLE MATCH";
         public double threshold = 0.55;
+        public boolean demographicFilterApplied = false;
+        public String genderFilter = "ALL";
+        public int candidatesEvaluated = 0;
+        public int candidatesPruned = 0;
         public List<String> warnings = new ArrayList<>();
         public List<Match> results = new ArrayList<>();
     }
@@ -119,24 +174,16 @@ public class DeepMatchClient {
         }
     }
 
-    /**
-     * Matches a sketch against all images in the given dataset directory.
-     *
-     * @param sketchFile  the composite sketch image
-     * @param datasetDir  directory containing suspect photos
-     * @param topN        maximum number of ranked results
-     * @return ranked matches, best first
-     * @throws IOException network/IO failure
-     */
     public List<Match> match(File sketchFile, File datasetDir, int topN) throws IOException {
-        return matchDetailed(sketchFile, datasetDir, topN).results;
+        return matchDetailed(sketchFile, datasetDir, topN, "ALL", 0, 100).results;
     }
 
-    /**
-     * Detailed match invocation returning full modality classification, pipeline selection,
-     * open-set match decision, and calibrated candidate scores.
-     */
     public MatchResponseHolder matchDetailed(File sketchFile, File datasetDir, int topN) throws IOException {
+        return matchDetailed(sketchFile, datasetDir, topN, "ALL", 0, 100);
+    }
+
+    public MatchResponseHolder matchDetailed(File sketchFile, File datasetDir, int topN,
+                                           String genderFilter, int minAgeFilter, int maxAgeFilter) throws IOException {
         if (authToken == null || authToken.isEmpty()) {
             try {
                 fetchAuthToken();
@@ -146,7 +193,7 @@ public class DeepMatchClient {
         }
 
         byte[] boundary = ("----ThirdEye" + System.nanoTime()).getBytes(StandardCharsets.US_ASCII);
-        byte[] body = buildMultipart(sketchFile, datasetDir, topN, boundary);
+        byte[] body = buildMultipart(sketchFile, datasetDir, topN, genderFilter, minAgeFilter, maxAgeFilter, boundary);
 
         HttpRequest.Builder reqBuilder = HttpRequest.newBuilder(URI.create(baseUrl + "/match"))
                 .timeout(Duration.ofSeconds(120))
@@ -181,6 +228,10 @@ public class DeepMatchClient {
         holder.selectedPipeline = json.has("selected_pipeline") ? json.get("selected_pipeline").getAsString() : "UNKNOWN";
         holder.matchDecision = json.has("match_decision") ? json.get("match_decision").getAsString() : "POSSIBLE MATCH";
         holder.threshold = json.has("threshold") ? json.get("threshold").getAsDouble() : 0.55;
+        holder.demographicFilterApplied = json.has("demographic_filter_applied") && json.get("demographic_filter_applied").getAsBoolean();
+        holder.genderFilter = json.has("gender_filter") ? json.get("gender_filter").getAsString() : "ALL";
+        holder.candidatesEvaluated = json.has("candidates_evaluated") ? json.get("candidates_evaluated").getAsInt() : 0;
+        holder.candidatesPruned = json.has("candidates_pruned") ? json.get("candidates_pruned").getAsInt() : 0;
 
         if (json.has("warnings") && json.get("warnings").isJsonArray()) {
             JsonArray wArr = json.getAsJsonArray("warnings");
@@ -206,11 +257,12 @@ public class DeepMatchClient {
     }
 
     // ── Multipart body builder ────────────────────────────────────────────────
-    private static byte[] buildMultipart(File sketchFile, File datasetDir, int topN, byte[] boundary)
-            throws IOException {
+    private static byte[] buildMultipart(File sketchFile, File datasetDir, int topN,
+                                         String genderFilter, int minAgeFilter, int maxAgeFilter,
+                                         byte[] boundary) throws IOException {
         String b = new String(boundary, StandardCharsets.US_ASCII);
 
-        // Part 1: sketch file — headers + bytes, in the correct order
+        // Part 1: sketch file
         StringBuilder head = new StringBuilder();
         head.append("--").append(b).append("\r\n");
         head.append("Content-Disposition: form-data; name=\"file\"; filename=\"")
@@ -219,7 +271,7 @@ public class DeepMatchClient {
         byte[] headBytes = head.toString().getBytes(StandardCharsets.UTF_8);
         byte[] fileBytes = Files.readAllBytes(sketchFile.toPath());
 
-        // Part 2 + 3: dataset_dir and top_n fields
+        // Part 2: Form fields
         StringBuilder tail = new StringBuilder();
         tail.append("\r\n--").append(b).append("\r\n");
         tail.append("Content-Disposition: form-data; name=\"dataset_dir\"\r\n\r\n");
@@ -227,6 +279,15 @@ public class DeepMatchClient {
         tail.append("\r\n--").append(b).append("\r\n");
         tail.append("Content-Disposition: form-data; name=\"top_n\"\r\n\r\n");
         tail.append(topN);
+        tail.append("\r\n--").append(b).append("\r\n");
+        tail.append("Content-Disposition: form-data; name=\"gender_filter\"\r\n\r\n");
+        tail.append(genderFilter != null ? genderFilter : "ALL");
+        tail.append("\r\n--").append(b).append("\r\n");
+        tail.append("Content-Disposition: form-data; name=\"min_age_filter\"\r\n\r\n");
+        tail.append(minAgeFilter);
+        tail.append("\r\n--").append(b).append("\r\n");
+        tail.append("Content-Disposition: form-data; name=\"max_age_filter\"\r\n\r\n");
+        tail.append(maxAgeFilter);
         tail.append("\r\n--").append(b).append("--\r\n");
         byte[] tailBytes = tail.toString().getBytes(StandardCharsets.UTF_8);
 
@@ -237,3 +298,4 @@ public class DeepMatchClient {
         return body;
     }
 }
+

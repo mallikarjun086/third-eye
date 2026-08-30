@@ -140,7 +140,60 @@ class TestThirdEyeMLService(unittest.TestCase):
         )
         self.assertEqual(valid_resp.status_code, 422)
 
+    def test_09_xai_explain_endpoint(self):
+        """Verify POST /explain generates visual matching heatmaps for authenticated clients."""
+        token = app.create_access_token({"sub": "test_client"})
+        headers = {"Authorization": f"Bearer {token}"}
+        
+        # Test 404 on non-existent candidate path
+        img = Image.new("RGB", (160, 160), color=(200, 200, 200))
+        buf = io.BytesIO()
+        img.save(buf, format="PNG")
+        q_bytes = buf.getvalue()
+
+        resp = client.post(
+            "/explain",
+            files={"file": ("sketch.png", q_bytes, "image/png")},
+            data={"candidate_path": "non_existent_suspect_123.jpg"},
+            headers=headers
+        )
+        self.assertEqual(resp.status_code, 404)
+
+    def test_10_recommend_elements_endpoint(self):
+        """Verify POST /recommend_elements returns anatomical compatibility recommendations."""
+        token = app.create_access_token({"sub": "test_client"})
+        headers = {"Authorization": f"Bearer {token}"}
+        resp = client.post(
+            "/recommend_elements",
+            data={"face_shape": "OVAL", "eyes_style": "SMALL_EYES"},
+            headers=headers
+        )
+        self.assertEqual(resp.status_code, 200)
+        data = resp.json()
+        self.assertEqual(data["status"], "ok")
+        self.assertIn("recommended_nose_styles", data)
+
+    def test_11_synthesize_skin_tone_endpoint(self):
+        """Verify POST /synthesize generates colorized preview with selected skin tone."""
+        token = app.create_access_token({"sub": "test_client"})
+        headers = {"Authorization": f"Bearer {token}"}
+        img = Image.new("RGB", (160, 160), color=(200, 200, 200))
+        buf = io.BytesIO()
+        img.save(buf, format="PNG")
+        q_bytes = buf.getvalue()
+
+        resp = client.post(
+            "/synthesize",
+            files={"file": ("sketch.png", q_bytes, "image/png")},
+            data={"skin_tone": "FAIR"},
+            headers=headers
+        )
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.headers["content-type"], "image/png")
+
 
 if __name__ == "__main__":
     unittest.main()
+
+
 

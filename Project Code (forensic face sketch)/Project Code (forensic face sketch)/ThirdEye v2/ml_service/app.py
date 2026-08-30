@@ -32,6 +32,9 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 
 from demographic_filter import DemographicEstimator
+from xai_explainer import XAIExplainer
+from element_recommender import ElementRecommender
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("thirdeye-ml")
@@ -141,6 +144,10 @@ class MatchResponse(BaseModel):
     warnings: List[str]
     count: int
     results: List[MatchResult]
+    demographic_filter_applied: Optional[bool] = False
+    gender_filter: Optional[str] = "ALL"
+    candidates_evaluated: Optional[int] = 0
+    candidates_pruned: Optional[int] = 0
 
 
 class HealthResponse(BaseModel):
@@ -583,16 +590,57 @@ def startup_event():
 
 
 @app.post("/synthesize")
-def synthesize(file: UploadFile = File(...), token_data: dict = Depends(verify_token)):
+def synthesize(
+    file: UploadFile = File(...),
+    skin_tone: str = Form("WHEATISH"),
+    token_data: dict = Depends(verify_token)
+):
     data = file.file.read()
     if not data or len(data) < 10:
         raise HTTPException(status_code=422, detail="Empty or invalid sketch image file.")
     try:
-        rendered_png = GenerativeSynthesizer.synthesize_photo_from_sketch(data)
+        rendered_png = GenerativeSynthesizer.synthesize_photo_from_sketch(data, skin_tone=skin_tone)
         from fastapi.responses import Response
         return Response(content=rendered_png, media_type="image/png")
     except Exception as e:
         raise HTTPException(status_code=422, detail=f"Synthesis failed: {e}")
+
+
+
+@app.post("/explain")
+def explain_match(
+    file: UploadFile = File(...),
+    candidate_path: str = Form(...),
+    token_data: dict = Depends(verify_token)
+):
+    q_data = file.file.read()
+    if not q_data or len(q_data) < 10:
+        raise HTTPException(status_code=422, detail="Empty or invalid sketch image file.")
+    
+    full_cand_path = _resolve_full_path(candidate_path, _cache_dir or "")
+    if not os.path.exists(full_cand_path):
+        raise HTTPException(status_code=404, detail=f"Candidate image file not found: {candidate_path}")
+
+    try:
+        with open(full_cand_path, "rb") as fh:
+            c_data = fh.read()
+        heatmap_png = XAIExplainer.generate_heatmap_comparison(q_data, c_data, similarity_score=0.85)
+        from fastapi.responses import Response
+        return Response(content=heatmap_png, media_type="image/png")
+    except Exception as e:
+        raise HTTPException(status_code=422, detail=f"XAI heatmap generation failed: {e}")
+
+
+@app.post("/recommend_elements")
+def recommend_elements(
+    face_shape: str = Form("OVAL"),
+    eyes_style: str = Form("DEFAULT"),
+    token_data: dict = Depends(verify_token)
+):
+    return ElementRecommender.recommend(face_shape, eyes_style)
+
+
+
 
 
 
@@ -667,6 +715,9 @@ def match(
     file: UploadFile = File(...),
     dataset_dir: str = Form(...),
     top_n: int = Form(TOP_RESULTS),
+    gender_filter: str = Form("ALL"),
+    min_age_filter: int = Form(0),
+    max_age_filter: int = Form(100),
     token_data: dict = Depends(verify_token)
 ):
     data = file.file.read()
@@ -694,6 +745,8 @@ def match(
         q_attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
 
     scored = []
+    candidates_evaluated = 0
+    candidates_pruned = 0
     
     q_grey = hog_grey(data)
     q_emb = embed_image(data)
@@ -702,50 +755,53 @@ def match(
     q_hog = compute_hog(q_grey)
     q_lbp = compute_lbp(q_grey)
 
-    if query_modality == "PHOTO":
-        threshold = 0.42
-        for rel, feats in _cache.items():
-            g_face = feats.get("face")
-            if g_face is None:
-                continue
-            face_sim = float(np.dot(q_emb, g_face))
-            hog_sim = float(np.dot(q_hog, feats.get("hog", q_hog)))
-            lbp_sim = float(np.dot(q_lbp, feats.get("lbp", q_lbp)))
-            base_sim = 0.60 * face_sim + 0.25 * hog_sim + 0.15 * lbp_sim
+    target_gender = gender_filter.upper().strip() if gender_filter else "ALL"
 
-            g_attr = feats.get("attr", {})
-            penalty = DemographicEstimator.compute_soft_penalty(q_attr, g_attr)
-            sim = base_sim * penalty
-            scored.append((sim, rel))
-            
-    else:  # ARTIST_SKETCH, COMPOSITE_FORENSIC_SKETCH, FALLBACK
-        threshold = 0.42 if query_modality == "COMPOSITE_FORENSIC_SKETCH" else 0.45
-        
-        for rel, feats in _cache.items():
-            g_face = feats.get("face")
-            if g_face is None:
+    for rel, feats in _cache.items():
+        g_face = feats.get("face")
+        if g_face is None:
+            continue
+        candidates_evaluated += 1
+
+        g_attr = feats.get("attr", {})
+        if not g_attr:
+            try:
+                g_path = _resolve_full_path(rel, dataset_dir)
+                g_img = cv2.imread(g_path)
+                if g_img is not None:
+                    g_img = cv2.cvtColor(g_img, cv2.COLOR_BGR2RGB)
+                g_attr = DemographicEstimator.estimate_attributes(g_img, filename=g_path)
+                feats["attr"] = g_attr
+            except Exception:
+                g_attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
+
+        # Apply Biometric Pre-Filtering
+        cand_gender = g_attr.get("gender", "UNKNOWN")
+        cand_age = g_attr.get("age_est", 30)
+
+        # 1. Gender Filter Check
+        if target_gender in ("MALE", "FEMALE") and cand_gender in ("MALE", "FEMALE"):
+            if cand_gender != target_gender:
+                candidates_pruned += 1
                 continue
-            face_sim = float(np.dot(q_emb, g_face))
-            hog_sim = float(np.dot(q_hog, feats.get("hog", q_hog)))
-            lbp_sim = float(np.dot(q_lbp, feats.get("lbp", q_lbp)))
-            
+
+        # 2. Age Range Check
+        if (min_age_filter > 0 or max_age_filter < 100) and (cand_age < min_age_filter or cand_age > max_age_filter):
+            candidates_pruned += 1
+            continue
+
+        face_sim = float(np.dot(q_emb, g_face))
+        hog_sim = float(np.dot(q_hog, feats.get("hog", q_hog)))
+        lbp_sim = float(np.dot(q_lbp, feats.get("lbp", q_lbp)))
+        
+        if query_modality == "PHOTO":
+            base_sim = 0.60 * face_sim + 0.25 * hog_sim + 0.15 * lbp_sim
+        else:
             base_sim = pro_hybrid_score(face_sim, hog_sim, lbp_sim)
 
-            g_attr = feats.get("attr", {})
-            if not g_attr:
-                try:
-                    g_path = _resolve_full_path(rel, dataset_dir)
-                    g_img = cv2.imread(g_path)
-                    if g_img is not None:
-                        g_img = cv2.cvtColor(g_img, cv2.COLOR_BGR2RGB)
-                    g_attr = DemographicEstimator.estimate_attributes(g_img, filename=g_path)
-                    feats["attr"] = g_attr
-                except Exception:
-                    g_attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
-
-            penalty = DemographicEstimator.compute_soft_penalty(q_attr, g_attr)
-            sim = base_sim * penalty
-            scored.append((sim, rel))
+        penalty = DemographicEstimator.compute_soft_penalty(q_attr, g_attr)
+        sim = base_sim * penalty
+        scored.append((sim, rel))
 
     scored.sort(reverse=True, key=lambda x: x[0])
     
@@ -758,6 +814,7 @@ def match(
             seen_basenames.add(bname)
             unique_scored.append((sim, rel))
 
+    threshold = 0.42 if query_modality in ("PHOTO", "COMPOSITE_FORENSIC_SKETCH") else 0.45
     top_score = unique_scored[0][0] if unique_scored else 0.0
     
     if top_score >= threshold:
@@ -766,8 +823,8 @@ def match(
         match_decision = "NO RELIABLE MATCH FOUND IN CURRENT GALLERY"
         warnings.append(f"Top candidate similarity ({top_score*100.0:.1f}%) is below calibrated threshold ({threshold*100.0:.1f}%). Outputting nearest candidates only.")
 
-    top_n = 10
-    top = unique_scored[:max(1, min(top_n, len(unique_scored)))]
+    top_n = max(1, min(top_n, len(unique_scored))) if unique_scored else 0
+    top = unique_scored[:top_n]
 
     results = [
         MatchResult(
@@ -790,7 +847,12 @@ def match(
         warnings=warnings,
         count=len(results),
         results=results,
+        demographic_filter_applied=(target_gender in ("MALE", "FEMALE") or min_age_filter > 0 or max_age_filter < 100),
+        gender_filter=target_gender,
+        candidates_evaluated=candidates_evaluated,
+        candidates_pruned=candidates_pruned,
     )
+
 
 
 if __name__ == "__main__":
