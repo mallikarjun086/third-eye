@@ -40,11 +40,14 @@ class TestThirdEyeMLService(unittest.TestCase):
         self.assertIsNone(data["model_error"])
 
     def test_02_empty_image_validation(self):
-        """Verify POST /embed rejects empty or invalid byte payloads with HTTP 422."""
-        response = client.post("/embed", files={"file": ("empty.jpg", b"", "image/jpeg")})
+        """Verify POST /embed rejects empty or invalid byte payloads with HTTP 422 when authenticated."""
+        token = app.create_access_token({"sub": "test_client"})
+        headers = {"Authorization": f"Bearer {token}"}
+
+        response = client.post("/embed", files={"file": ("empty.jpg", b"", "image/jpeg")}, headers=headers)
         self.assertEqual(response.status_code, 422)
 
-        response_corrupt = client.post("/embed", files={"file": ("bad.jpg", b"NOT_AN_IMAGE_PAYLOAD", "image/jpeg")})
+        response_corrupt = client.post("/embed", files={"file": ("bad.jpg", b"NOT_AN_IMAGE_PAYLOAD", "image/jpeg")}, headers=headers)
         self.assertEqual(response_corrupt.status_code, 422)
 
     def test_03_crop_face_fallback(self):
@@ -107,6 +110,37 @@ class TestThirdEyeMLService(unittest.TestCase):
 
         self.assertEqual(current_hash, lock["model_checkpoint_lock"]["sha256"])
 
+    def test_08_jwt_authentication_flow(self):
+        """Verify JWT token issuance, HTTP 401 on unauthenticated access, and successful auth."""
+        # 1. Unauthenticated request to /embed should return 401
+        unauth_resp = client.post("/embed", files={"file": ("empty.jpg", b"", "image/jpeg")})
+        self.assertEqual(unauth_resp.status_code, 401)
+
+        # 2. Request token from /auth/token
+        token_resp = client.post("/auth/token", json={"client_id": "test_client"})
+        self.assertEqual(token_resp.status_code, 200)
+        token_data = token_resp.json()
+        self.assertEqual(token_data["status"], "ok")
+        self.assertIn("access_token", token_data)
+        token = token_data["access_token"]
+
+        # 3. Invalid token should return 401
+        invalid_resp = client.post(
+            "/embed",
+            files={"file": ("empty.jpg", b"", "image/jpeg")},
+            headers={"Authorization": "Bearer invalid_token_123"}
+        )
+        self.assertEqual(invalid_resp.status_code, 401)
+
+        # 4. Valid token should bypass authentication check (validation error 422 for empty file instead of 401)
+        valid_resp = client.post(
+            "/embed",
+            files={"file": ("empty.jpg", b"", "image/jpeg")},
+            headers={"Authorization": f"Bearer {token}"}
+        )
+        self.assertEqual(valid_resp.status_code, 422)
+
 
 if __name__ == "__main__":
     unittest.main()
+

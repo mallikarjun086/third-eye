@@ -28,6 +28,7 @@ public class DeepMatchClient {
 
     private final String baseUrl;
     private final HttpClient http;
+    private String authToken;
 
     public DeepMatchClient() {
         this(DEFAULT_BASE_URL);
@@ -39,6 +40,39 @@ public class DeepMatchClient {
                 .connectTimeout(Duration.ofSeconds(5))
                 .version(HttpClient.Version.HTTP_1_1)
                 .build();
+    }
+
+    /** Fetches a new JWT access token from the ML service. */
+    public String fetchAuthToken() throws IOException {
+        JsonObject reqJson = new JsonObject();
+        reqJson.addProperty("client_id", "thirdeye_desktop_client");
+
+        HttpRequest req = HttpRequest.newBuilder(URI.create(baseUrl + "/auth/token"))
+                .timeout(Duration.ofSeconds(10))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(reqJson.toString()))
+                .build();
+        try {
+            HttpResponse<String> resp = http.send(req, HttpResponse.BodyHandlers.ofString());
+            if (resp.statusCode() == 200) {
+                JsonObject json = JsonParser.parseString(resp.body()).getAsJsonObject();
+                this.authToken = json.get("access_token").getAsString();
+                return this.authToken;
+            } else {
+                throw new IOException("Failed to obtain JWT token from ML service: HTTP " + resp.statusCode());
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IOException("Interrupted while fetching JWT token", e);
+        }
+    }
+
+    public void setAuthToken(String token) {
+        this.authToken = token;
+    }
+
+    public String getAuthToken() {
+        return this.authToken;
     }
 
     /** Result row for a single ranked suspect. */
@@ -103,14 +137,27 @@ public class DeepMatchClient {
      * open-set match decision, and calibrated candidate scores.
      */
     public MatchResponseHolder matchDetailed(File sketchFile, File datasetDir, int topN) throws IOException {
+        if (authToken == null || authToken.isEmpty()) {
+            try {
+                fetchAuthToken();
+            } catch (Exception e) {
+                System.err.println("Warning: Could not pre-fetch JWT token: " + e.getMessage());
+            }
+        }
+
         byte[] boundary = ("----ThirdEye" + System.nanoTime()).getBytes(StandardCharsets.US_ASCII);
         byte[] body = buildMultipart(sketchFile, datasetDir, topN, boundary);
 
-        HttpRequest req = HttpRequest.newBuilder(URI.create(baseUrl + "/match"))
+        HttpRequest.Builder reqBuilder = HttpRequest.newBuilder(URI.create(baseUrl + "/match"))
                 .timeout(Duration.ofSeconds(120))
                 .header("Content-Type", "multipart/form-data; boundary=" + new String(boundary, StandardCharsets.US_ASCII))
-                .POST(HttpRequest.BodyPublishers.ofByteArray(body))
-                .build();
+                .POST(HttpRequest.BodyPublishers.ofByteArray(body));
+
+        if (authToken != null && !authToken.isEmpty()) {
+            reqBuilder.header("Authorization", "Bearer " + authToken);
+        }
+
+        HttpRequest req = reqBuilder.build();
 
         HttpResponse<String> resp;
         try {

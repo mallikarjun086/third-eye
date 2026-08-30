@@ -26,7 +26,9 @@ from typing import List, Dict, Optional
 
 import numpy as np
 import cv2
-from fastapi import FastAPI, File, UploadFile, Form, HTTPException
+import jwt
+from fastapi import FastAPI, File, UploadFile, Form, HTTPException, Depends, Security
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 
 from demographic_filter import DemographicEstimator
@@ -34,7 +36,58 @@ from demographic_filter import DemographicEstimator
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("thirdeye-ml")
 
-app = FastAPI(title="ThirdEye ML Service", version="1.1.0")
+app = FastAPI(title="ThirdEye ML Service", version="1.2.0 (JWT Secured)")
+
+# JWT Authentication Config
+JWT_SECRET_KEY = os.environ.get("THIRDEYE_JWT_SECRET", "thirdeye_v2_forensic_secure_jwt_secret_key_2026")
+JWT_ALGORITHM = "HS256"
+JWT_EXPIRATION_SECONDS = 86400  # 24 hours
+
+security = HTTPBearer(auto_error=False)
+
+
+class TokenRequest(BaseModel):
+    client_id: str = "thirdeye_desktop_client"
+    secret_key: Optional[str] = None
+
+
+class TokenResponse(BaseModel):
+    status: str
+    access_token: str
+    token_type: str = "bearer"
+    expires_in: int
+
+
+def create_access_token(data: dict, expires_delta: Optional[int] = None) -> str:
+    to_encode = data.copy()
+    expire = time.time() + (expires_delta or JWT_EXPIRATION_SECONDS)
+    to_encode.update({"exp": int(expire)})
+    return jwt.encode(to_encode, JWT_SECRET_KEY, algorithm=JWT_ALGORITHM)
+
+
+def verify_token(credentials: Optional[HTTPAuthorizationCredentials] = Depends(security)) -> dict:
+    if not credentials or not credentials.credentials:
+        raise HTTPException(
+            status_code=401,
+            detail="Missing or invalid HTTP Authorization Bearer token.",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    token = credentials.credentials
+    try:
+        payload = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
+        return payload
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(
+            status_code=401,
+            detail="JWT token has expired. Please authenticate again.",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    except jwt.PyJWTError as e:
+        raise HTTPException(
+            status_code=401,
+            detail=f"Invalid JWT token: {str(e)}",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
 
 # Lazy-loaded FaceNet model and Cross-Modal Projection Head
 _model = None
@@ -65,6 +118,10 @@ _face_weight_cache = None
 
 
 from query_router import QueryRouter
+from faiss_index_manager import FAISSIndexManager
+from generative_synth import GenerativeSynthesizer
+
+faiss_indexer = FAISSIndexManager(dimension=128)
 
 class MatchResult(BaseModel):
     name: str
@@ -459,7 +516,8 @@ def build_cache(dataset_dir: str, force: bool = False):
             if cached is not None and len(cached) > 0 and version == CACHE_VERSION:
                 _cache = cached
                 _cache_dir = dataset_dir
-                log.info("Using cached features (%d faces, version %s).", len(_cache), version)
+                faiss_indexer.build_index(_cache)
+                log.info("Using cached features (%d faces, version %s, FAISS index ready).", len(_cache), version)
                 return
         except Exception as e:  # noqa: BLE001
             log.info("Rebuilding cache due to load error or version mismatch: %s", e)
@@ -499,6 +557,7 @@ def build_cache(dataset_dir: str, force: bool = False):
     _cache = features
     _cache_dir = dataset_dir
     _cache_mtime = max(os.path.getmtime(p) for p in images) if images else 0
+    faiss_indexer.build_index(_cache)
 
     try:
         np.save(cache_file, np.array({"features": features, "mtime": _cache_mtime, "version": CACHE_VERSION}, dtype=object), allow_pickle=True)
@@ -518,9 +577,23 @@ def startup_event():
     gallery_path = gallery_default if os.path.exists(gallery_default) else gallery_all
     try:
         build_cache(gallery_path, force=False)
-        log.info("Startup complete: Pre-loaded %d cached faces into memory.", len(_cache))
+        log.info("Startup complete: Pre-loaded %d cached faces into memory & FAISS index.", len(_cache))
     except Exception as e:
         log.warning("Startup cache load warning: %s", e)
+
+
+@app.post("/synthesize")
+def synthesize(file: UploadFile = File(...), token_data: dict = Depends(verify_token)):
+    data = file.file.read()
+    if not data or len(data) < 10:
+        raise HTTPException(status_code=422, detail="Empty or invalid sketch image file.")
+    try:
+        rendered_png = GenerativeSynthesizer.synthesize_photo_from_sketch(data)
+        from fastapi.responses import Response
+        return Response(content=rendered_png, media_type="image/png")
+    except Exception as e:
+        raise HTTPException(status_code=422, detail=f"Synthesis failed: {e}")
+
 
 
 @app.get("/health", response_model=HealthResponse)
@@ -539,8 +612,20 @@ def health():
     )
 
 
+@app.post("/auth/token", response_model=TokenResponse)
+def get_token(req: Optional[TokenRequest] = None):
+    client = req.client_id if req else "thirdeye_desktop_client"
+    token = create_access_token({"sub": client, "role": "officer"})
+    return TokenResponse(
+        status="ok",
+        access_token=token,
+        token_type="bearer",
+        expires_in=JWT_EXPIRATION_SECONDS
+    )
+
+
 @app.post("/embed")
-def embed(file: UploadFile = File(...)):
+def embed(file: UploadFile = File(...), token_data: dict = Depends(verify_token)):
     data = file.file.read()
     if not data or len(data) < 10:
         raise HTTPException(status_code=422, detail="Empty or invalid image file uploaded.")
@@ -551,7 +636,7 @@ def embed(file: UploadFile = File(...)):
 
 
 @app.post("/rebuild_cache")
-def rebuild_cache(dataset_dir: str = Form(...)):
+def rebuild_cache(dataset_dir: str = Form(...), token_data: dict = Depends(verify_token)):
     dataset_dir = os.path.abspath(dataset_dir)
     t0 = time.time()
     build_cache(dataset_dir, force=True)
@@ -578,7 +663,12 @@ def _resolve_full_path(rel_or_abs: str, base_dir: str) -> str:
 
 
 @app.post("/match", response_model=MatchResponse)
-def match(file: UploadFile = File(...), dataset_dir: str = Form(...), top_n: int = Form(TOP_RESULTS)):
+def match(
+    file: UploadFile = File(...),
+    dataset_dir: str = Form(...),
+    top_n: int = Form(TOP_RESULTS),
+    token_data: dict = Depends(verify_token)
+):
     data = file.file.read()
     if not data or len(data) < 10:
         raise HTTPException(status_code=422, detail="Empty or invalid image file uploaded.")
