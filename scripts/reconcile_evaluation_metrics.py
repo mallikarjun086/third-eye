@@ -93,6 +93,8 @@ def main():
                 fused = app.FACE_WEIGHT * deep_sim + (1.0 - app.FACE_WEIGHT) * hog_sim
                 scores.append((fused, g["pid"], g["path"]))
 
+            if not scores:
+                continue
             scores.sort(key=lambda x: x[0], reverse=True)
             top1_pid = scores[0][1]
             is_hit = (top1_pid == q["pid"])
@@ -135,21 +137,20 @@ def main():
             "details": details
         }
 
-    # Protocol 1: 21 Test Queries vs FULL 189 Gallery
-    # Filtering test set queries by test_pids
-    test_queries = [q for q in all_queries if q["pid"] in test_pids]
-    if len(test_queries) < 21:
-        # sample first 21
-        test_queries = all_queries[:21]
+    # Protocol 1: 21 Test Queries vs FULL Gallery
+    test_queries = all_queries[:21]
 
-    eval_21_vs_189 = run_eval(test_queries, gallery, "Protocol_1 (21 Test Queries vs 189 Gallery)")
+    eval_21_vs_189 = run_eval(test_queries, gallery, "Protocol_1 (21 Test Queries vs Full Gallery)")
     
     # Protocol 2: 21 Test Queries vs 109 Candidate Pool (Filtered gallery)
-    gal_109 = [g for g in gallery if g["pid"] in test_pids or len(g["pid"]) <= 3][:109]
+    test_pids_set = {q["pid"] for q in test_queries}
+    gen_gal = [g for g in gallery if g["pid"] in test_pids_set]
+    dis_gal = [g for g in gallery if g["pid"] not in test_pids_set]
+    gal_109 = (gen_gal + dis_gal)[:109]
     eval_21_vs_109 = run_eval(test_queries, gal_109, "Protocol_2 (21 Test Queries vs 109 Gallery Pool)")
 
-    # Protocol 3: Full Dataset (190 Queries vs 189 Gallery)
-    eval_190_vs_189 = run_eval(all_queries, gallery, "Protocol_3 (Full Dataset 190 Queries vs 189 Gallery)")
+    # Protocol 3: Full Dataset (190 Queries vs Full Gallery)
+    eval_190_vs_189 = run_eval(all_queries, gallery, "Protocol_3 (Full Dataset 190 Queries vs Full Gallery)")
 
     reconciliation = {
         "timestamp": "2026-08-25T12:31:00+05:30",

@@ -94,7 +94,17 @@
                     <mainClass>thirdeye.v2.ThirdEyeV2</mainClass>
                 </configuration>
             </plugin>
+            <!-- Exec Plugin for direct execution -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>thirdeye.v2.ThirdEyeV2</mainClass>
+                </configuration>
+            </plugin>
         <!-- ThirdEye v2 - Forensic Face Sketch System -->
         </plugins>
+
     </build>
 </project>

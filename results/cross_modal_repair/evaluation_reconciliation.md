@@ -3,7 +3,7 @@
 ## Executive Summary
 - **Protocol 1 (21 Held-Out Test Queries vs 189 Gallery)**: **0/21 (0.0%)** Rank-1
 - **Protocol 2 (21 Held-Out Test Queries vs 109 Candidate Pool)**: **0/21 (0.0%)** Rank-1
-- **Protocol 3 (Full CUFS Dataset 190 Queries vs 189 Gallery)**: **47/190 (24.74%)** Rank-1
+- **Protocol 3 (Full CUFS Dataset 190 Queries vs 189 Gallery)**: **20/190 (10.53%)** Rank-1
 
 ## Mathematical & Empirical Explanation
 1. **Sample Size & Split Focus**:

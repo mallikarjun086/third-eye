@@ -75,56 +75,14 @@ public class DeepMatchClient {
         return this.authToken;
     }
 
-    /**
-     * Fetches Explainable AI (XAI) side-by-side matching heatmap PNG bytes.
-     */
-    public byte[] fetchMatchHeatmap(File sketchFile, String candidatePath) throws IOException {
-        if (authToken == null || authToken.isEmpty()) {
-            try { fetchAuthToken(); } catch (Exception ignored) {}
-        }
-        String b = "----ThirdEyeXAI" + System.nanoTime();
-        StringBuilder bodyStr = new StringBuilder();
-        bodyStr.append("--").append(b).append("\r\n");
-        bodyStr.append("Content-Disposition: form-data; name=\"file\"; filename=\"").append(sketchFile.getName()).append("\"\r\n");
-        bodyStr.append("Content-Type: application/octet-stream\r\n\r\n");
-
-        byte[] headBytes = bodyStr.toString().getBytes(StandardCharsets.UTF_8);
-        byte[] fileBytes = Files.readAllBytes(sketchFile.toPath());
-
-        StringBuilder tailStr = new StringBuilder();
-        tailStr.append("\r\n--").append(b).append("\r\n");
-        tailStr.append("Content-Disposition: form-data; name=\"candidate_path\"\r\n\r\n");
-        tailStr.append(candidatePath);
-        tailStr.append("\r\n--").append(b).append("--\r\n");
-        byte[] tailBytes = tailStr.toString().getBytes(StandardCharsets.UTF_8);
-
-        byte[] body = new byte[headBytes.length + fileBytes.length + tailBytes.length];
-        System.arraycopy(headBytes, 0, body, 0, headBytes.length);
-        System.arraycopy(fileBytes, 0, body, headBytes.length, fileBytes.length);
-        System.arraycopy(tailBytes, 0, body, headBytes.length + fileBytes.length, tailBytes.length);
-
-        HttpRequest.Builder reqBuilder = HttpRequest.newBuilder(URI.create(baseUrl + "/explain"))
-                .timeout(Duration.ofSeconds(60))
-                .header("Content-Type", "multipart/form-data; boundary=" + b)
-                .POST(HttpRequest.BodyPublishers.ofByteArray(body));
-
-        if (authToken != null && !authToken.isEmpty()) {
-            reqBuilder.header("Authorization", "Bearer " + authToken);
-        }
-
-        try {
-            HttpResponse<byte[]> resp = http.send(reqBuilder.build(), HttpResponse.BodyHandlers.ofByteArray());
-            if (resp.statusCode() == 200) {
-                return resp.body();
-            } else {
-                throw new IOException("XAI Heatmap request failed with HTTP " + resp.statusCode());
-            }
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new IOException("Interrupted while fetching XAI heatmap", e);
-        }
+    public static class XAIBreakdown {
+        public double eyesMatch;
+        public double noseMatch;
+        public double mouthMatch;
+        public double contourMatch;
+        public double overallXaiConfidence;
+        public String heatmapB64;
     }
-
 
     /** Result row for a single ranked suspect. */
     public static class Match {
@@ -133,6 +91,7 @@ public class DeepMatchClient {
         public double similarity;
         public double calibratedScore;
         public int rank;
+        public XAIBreakdown xaiBreakdown;
     }
 
     /** Detailed response holder containing modality, pipeline selection, open-set match decision, and soft biometric filter stats. */
@@ -250,16 +209,37 @@ public class DeepMatchClient {
                 m.similarity = o.has("similarity") ? o.get("similarity").getAsDouble() : 0.0;
                 m.calibratedScore = o.has("calibrated_score") ? o.get("calibrated_score").getAsDouble() : (m.similarity * 100.0);
                 m.rank = o.has("rank") ? o.get("rank").getAsInt() : (i + 1);
+
+                if (o.has("xai_breakdown") && !o.get("xai_breakdown").isJsonNull()) {
+                    JsonObject xb = o.getAsJsonObject("xai_breakdown");
+                    XAIBreakdown xai = new XAIBreakdown();
+                    xai.eyesMatch = xb.has("eyes_match") ? xb.get("eyes_match").getAsDouble() : 0.0;
+                    xai.noseMatch = xb.has("nose_match") ? xb.get("nose_match").getAsDouble() : 0.0;
+                    xai.mouthMatch = xb.has("mouth_match") ? xb.get("mouth_match").getAsDouble() : 0.0;
+                    xai.contourMatch = xb.has("contour_match") ? xb.get("contour_match").getAsDouble() : 0.0;
+                    xai.overallXaiConfidence = xb.has("overall_xai_confidence") ? xb.get("overall_xai_confidence").getAsDouble() : 0.0;
+                    xai.heatmapB64 = xb.has("heatmap_b64") ? xb.get("heatmap_b64").getAsString() : "";
+                    m.xaiBreakdown = xai;
+                }
+
                 holder.results.add(m);
             }
         }
         return holder;
     }
 
+
     // ── Multipart body builder ────────────────────────────────────────────────
     private static byte[] buildMultipart(File sketchFile, File datasetDir, int topN,
                                          String genderFilter, int minAgeFilter, int maxAgeFilter,
                                          byte[] boundary) throws IOException {
+        if (sketchFile == null || !sketchFile.exists() || !sketchFile.isFile()) {
+            throw new IllegalArgumentException("Invalid or non-existent sketch file: " + sketchFile);
+        }
+        if (datasetDir == null || !datasetDir.exists()) {
+            throw new IllegalArgumentException("Invalid or non-existent dataset directory: " + datasetDir);
+        }
+
         String b = new String(boundary, StandardCharsets.US_ASCII);
 
         // Part 1: sketch file

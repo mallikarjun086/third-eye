@@ -1451,7 +1451,9 @@ public class DashboardController implements Initializable {
                     guidelinesCanvas.setVisible(false);
                 }
 
-                Image snapshot = sketch.snapshot(null, null);
+                SnapshotParameters params = new SnapshotParameters();
+                params.setFill(Color.WHITE);
+                Image snapshot = sketch.snapshot(params, null);
 
                 // Restore grid if it was on
                 if (gridWasVisible && guidelinesCanvas != null) {
@@ -1482,7 +1484,9 @@ public class DashboardController implements Initializable {
                 guidelinesCanvas.setVisible(false);
             }
 
-            Image snapshot = sketch.snapshot(null, null);
+            SnapshotParameters params = new SnapshotParameters();
+            params.setFill(Color.WHITE);
+            Image snapshot = sketch.snapshot(params, null);
 
             if (gridWasVisible && guidelinesCanvas != null) {
                 guidelinesCanvas.setVisible(true);
@@ -3180,6 +3184,23 @@ public class DashboardController implements Initializable {
     private void setStatusMessage(String msg) {
         if (statusBarLabel != null) {
             statusBarLabel.setText(msg);
+        }
+    }
+
+    @FXML
+    private void onBackToMenu(MouseEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("menu.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("ThirdEye — Main Menu");
+            stage.setScene(scene);
+            stage.setResizable(true);
+            stage.show();
+            ((Node) event.getSource()).getScene().getWindow().hide();
+        } catch (IOException e) {
+            Logger.getLogger(getClass().getName()).log(java.util.logging.Level.SEVERE, null, e);
         }
     }
 }

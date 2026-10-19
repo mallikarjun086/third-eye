@@ -10,10 +10,24 @@ import java.awt.image.BufferedImage;
 
 public class SuspectDatabase {
 
-    private static final String DB_URL = "jdbc:sqlite:suspects.db";
+    public static String getDatabaseUrl() {
+        java.io.File f1 = new java.io.File("suspects.db");
+        if (f1.exists()) {
+            return "jdbc:sqlite:" + f1.getAbsolutePath();
+        }
+        java.io.File f2 = new java.io.File("Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/suspects.db");
+        if (f2.exists()) {
+            return "jdbc:sqlite:" + f2.getAbsolutePath();
+        }
+        return "jdbc:sqlite:suspects.db";
+    }
+
+    private static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(getDatabaseUrl());
+    }
 
     public static void init() {
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = getConnection();
              Statement stmt = conn.createStatement()) {
             // Drop old table if it has the old schema (no image_blob column)
             // We detect this by trying the migration first
@@ -42,10 +56,10 @@ public class SuspectDatabase {
 
     public static int addSuspect(String name, String caseId, BufferedImage image, double[] hogDescriptor) {
         String sql = "INSERT INTO suspects (name, case_id, image_blob, hog_blob) VALUES (?, ?, ?, ?)";
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-            pstmt.setString(1, name);
-            pstmt.setString(2, caseId != null ? caseId : "");
+            pstmt.setString(1, name != null && !name.trim().isEmpty() ? name.trim() : "Unknown Suspect");
+            pstmt.setString(2, caseId != null ? caseId.trim() : "");
             if (image != null) {
                 // Ensure image is a compatible type for PNG writing
                 BufferedImage pngImage = image;
@@ -82,7 +96,7 @@ public class SuspectDatabase {
 
     public static void deleteSuspect(int id) {
         String sql = "DELETE FROM suspects WHERE id = ?";
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setInt(1, id);
             pstmt.executeUpdate();
@@ -94,7 +108,7 @@ public class SuspectDatabase {
     public static List<SuspectRecord> getAllSuspects() {
         List<SuspectRecord> list = new ArrayList<>();
         String sql = "SELECT id, name, case_id, image_blob, hog_blob FROM suspects ORDER BY name";
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
@@ -121,9 +135,9 @@ public class SuspectDatabase {
     public static List<SuspectRecord> searchSuspects(String query) {
         List<SuspectRecord> list = new ArrayList<>();
         String sql = "SELECT id, name, case_id, image_blob, hog_blob FROM suspects WHERE name LIKE ? OR case_id LIKE ? ORDER BY name";
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            String like = "%" + query + "%";
+            String like = "%" + (query != null ? query.trim() : "") + "%";
             pstmt.setString(1, like);
             pstmt.setString(2, like);
             ResultSet rs = pstmt.executeQuery();
@@ -149,6 +163,7 @@ public class SuspectDatabase {
     }
 
     public static byte[] hogToBytes(double[] hog) {
+        if (hog == null || hog.length == 0) return new byte[0];
         byte[] bytes = new byte[hog.length * 8];
         ByteBuffer buf = ByteBuffer.wrap(bytes);
         for (double d : hog) {
@@ -158,6 +173,9 @@ public class SuspectDatabase {
     }
 
     public static double[] bytesToHog(byte[] bytes) {
+        if (bytes == null || bytes.length == 0 || bytes.length % 8 != 0) {
+            return new double[0];
+        }
         ByteBuffer buf = ByteBuffer.wrap(bytes);
         double[] hog = new double[bytes.length / 8];
         for (int i = 0; i < hog.length; i++) {

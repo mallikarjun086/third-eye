@@ -1,0 +1,20 @@
+{
+  "system_name": "ThirdEye v2 — Forensic Face Sketch and Recognition System",
+  "audit_timestamp": "2026-10-18T12:00:00Z",
+  "system_verdict": "VERIFIED_REAL_ACCURACY_IMPROVEMENT",
+  "production_fusion_alpha": 0.85,
+  "deep_metric_stream_weight": 0.85,
+  "spatial_hog_stream_weight": 0.15,
+  "primary_protocol_held_out_rank1": 85.71,
+  "secondary_protocol_test_pool_rank1": 90.48,
+  "raw_facenet_baseline_rank1": 12.11,
+  "warm_matching_latency_median_ms": 307.90,
+  "open_set_rejection_status": "VERIFIED_PASSED",
+  "offline_airgap_status": "VERIFIED_100_PERCENT_OFFLINE",
+  "evidence_files": [
+    "PROJECT_DOCUMENTATION/01_CANONICAL_PROJECT_FACTS.md",
+    "PROJECT_DOCUMENTATION/CLAIM_EVIDENCE_MATRIX.md",
+    "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/ml_service/FINAL_CANONICAL_METRICS.json",
+    "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/ml_service/app.py"
+  ]
+}

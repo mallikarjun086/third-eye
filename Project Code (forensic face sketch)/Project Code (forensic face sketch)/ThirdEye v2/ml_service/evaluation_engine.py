@@ -14,9 +14,13 @@ from typing import Dict, List, Tuple, Any
 
 def to_pid(name: str) -> str:
     import re
-    base = os.path.splitext(os.path.basename(name))[0]
-    base = re.sub(r'-\d+$', '', base)
-    base = base.replace('-01-sz1', '').replace('-01', '')
+    base = os.path.splitext(os.path.basename(name))[0].lower()
+    base = re.sub(r'-sz\d+$', '', base)
+    base = re.sub(r'[-_](?:01|02|1|2)$', '', base)
+    if base.startswith("f2-"):
+        base = "f-" + base[3:]
+    elif base.startswith("m2-"):
+        base = "m-" + base[3:]
     return base
 
 def build_identity_splits(

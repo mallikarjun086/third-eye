@@ -12,23 +12,26 @@ import numpy as np
 from PIL import Image
 
 class GenerativeSynthesizer:
-    """Neural & edge-guided sketch-to-photo reference synthesizer with skin tone colorization."""
+    """Neural & edge-guided sketch-to-photo reference synthesizer."""
 
-    SKIN_PALETTES = {
+    SKIN_TONES = {
         "FAIR": [235, 205, 185],
-        "WHEATISH": [215, 175, 145],
-        "MEDIUM": [185, 140, 110],
-        "DARK": [120, 85, 65]
+        "MEDIUM": [215, 175, 150],
+        "WARM_BROWN": [170, 120, 90],
+        "DEEP_BROWN": [100, 65, 45]
     }
 
-    @classmethod
-    def synthesize_photo_from_sketch(cls, sketch_bytes: bytes, skin_tone: str = "WHEATISH") -> bytes:
+    @staticmethod
+    def synthesize_photo_from_sketch(sketch_bytes: bytes, skin_tone: str = "MEDIUM") -> bytes:
         """
         Converts line sketch bytes into a photorealistic rendered RGB face image.
-        Applies CLAHE edge smoothing, bilateral skin-texture synthesis, and adaptive lighting with selected skin tone.
+        Applies CLAHE edge smoothing, bilateral skin-texture synthesis, and adaptive lighting.
         """
         if not sketch_bytes or len(sketch_bytes) < 10:
             raise ValueError("Invalid sketch image payload.")
+
+        tone_key = str(skin_tone).upper().strip()
+        rgb_palette = GenerativeSynthesizer.SKIN_TONES.get(tone_key, GenerativeSynthesizer.SKIN_TONES["MEDIUM"])
 
         img_pil = Image.open(io.BytesIO(sketch_bytes)).convert("RGB")
         img_np = np.array(img_pil)
@@ -41,11 +44,10 @@ class GenerativeSynthesizer:
         # 2. Invert lines to extract structural edges
         _, inv_edges = cv2.threshold(norm_gray, 220, 255, cv2.THRESH_BINARY_INV)
 
-        # 3. Create realistic base skin palette based on selected skin_tone
+        # 3. Create realistic base skin palette
         h, w = gray.shape
-        palette = cls.SKIN_PALETTES.get((skin_tone or "WHEATISH").upper().strip(), cls.SKIN_PALETTES["WHEATISH"])
         skin_base = np.zeros((h, w, 3), dtype=np.uint8)
-        skin_base[:, :] = palette
+        skin_base[:, :] = rgb_palette
 
         # 4. Smooth skin areas using Bilateral Filter
         smoothed_skin = cv2.bilateralFilter(skin_base, d=9, sigmaColor=75, sigmaSpace=75)
@@ -53,7 +55,6 @@ class GenerativeSynthesizer:
         # 5. Overlay structural pencil features onto skin base
         edge_mask_3ch = cv2.cvtColor(inv_edges, cv2.COLOR_GRAY2RGB)
         rendered = cv2.addWeighted(smoothed_skin, 0.75, 255 - edge_mask_3ch, 0.35, 0)
-
 
         # 6. Apply soft ambient highlight
         y_coords, x_coords = np.ogrid[:h, :w]
@@ -70,3 +71,4 @@ class GenerativeSynthesizer:
         buf = io.BytesIO()
         out_pil.save(buf, format="PNG")
         return buf.getvalue()
+

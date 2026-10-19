@@ -11,12 +11,22 @@ import java.sql.Statement;
  */
 public class connectdb {
 
-    private static final String DB_URL = "jdbc:sqlite:login.sqlite";
+    private static String getDatabaseUrl() {
+        java.io.File f1 = new java.io.File("login.sqlite");
+        if (f1.exists()) {
+            return "jdbc:sqlite:" + f1.getAbsolutePath();
+        }
+        java.io.File f2 = new java.io.File("Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/login.sqlite");
+        if (f2.exists()) {
+            return "jdbc:sqlite:" + f2.getAbsolutePath();
+        }
+        return "jdbc:sqlite:login.sqlite";
+    }
 
     public static Connection ConnectDB() {
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection conn = DriverManager.getConnection(DB_URL);
+            Connection conn = DriverManager.getConnection(getDatabaseUrl());
             initDatabase(conn);
             return conn;
         } catch (SQLException | ClassNotFoundException e) {

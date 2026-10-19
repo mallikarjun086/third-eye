@@ -140,60 +140,68 @@ class TestThirdEyeMLService(unittest.TestCase):
         )
         self.assertEqual(valid_resp.status_code, 422)
 
-    def test_09_xai_explain_endpoint(self):
-        """Verify POST /explain generates visual matching heatmaps for authenticated clients."""
-        token = app.create_access_token({"sub": "test_client"})
-        headers = {"Authorization": f"Bearer {token}"}
-        
-        # Test 404 on non-existent candidate path
-        img = Image.new("RGB", (160, 160), color=(200, 200, 200))
-        buf = io.BytesIO()
-        img.save(buf, format="PNG")
-        q_bytes = buf.getvalue()
+    def test_09_xai_explainer_flow(self):
+        """Verify SpatialXAIExplainer computes regional match confidence and base64 heatmap PNG."""
+        from xai_explainer import SpatialXAIExplainer
+        import numpy as np
 
-        resp = client.post(
-            "/explain",
-            files={"file": ("sketch.png", q_bytes, "image/png")},
-            data={"candidate_path": "non_existent_suspect_123.jpg"},
-            headers=headers
-        )
-        self.assertEqual(resp.status_code, 404)
+        sketch_dummy = np.random.randint(0, 255, (160, 160), dtype=np.uint8)
+        photo_dummy = np.random.randint(0, 255, (160, 160), dtype=np.uint8)
 
-    def test_10_recommend_elements_endpoint(self):
-        """Verify POST /recommend_elements returns anatomical compatibility recommendations."""
-        token = app.create_access_token({"sub": "test_client"})
-        headers = {"Authorization": f"Bearer {token}"}
-        resp = client.post(
+        xai_res = SpatialXAIExplainer.explain_alignment(sketch_dummy, photo_dummy)
+        self.assertIn("eyes_match", xai_res)
+        self.assertIn("nose_match", xai_res)
+        self.assertIn("mouth_match", xai_res)
+        self.assertIn("contour_match", xai_res)
+        self.assertIn("overall_xai_confidence", xai_res)
+        self.assertIn("heatmap_b64", xai_res)
+        self.assertTrue(xai_res["heatmap_b64"].startswith("data:image/png;base64,"))
+
+    def test_10_element_recommender_flow(self):
+        """Verify ElementRecommender and /recommend_elements endpoint return anatomical recommendations."""
+        from element_recommender import ElementRecommender
+        rec = ElementRecommender.get_recommendations({"face_shape": "OVAL", "eyes_style": "almond_eyes_01"})
+        self.assertEqual(rec["status"], "ok")
+        self.assertEqual(rec["detected_face_shape"], "OVAL")
+        self.assertIn("recommended_noses", rec)
+        self.assertIn("recommended_mouths", rec)
+        self.assertIn("recommended_chins", rec)
+
+        # Test authenticated REST endpoint
+        token_resp = client.post("/auth/token", json={"client_id": "test_client"})
+        token = token_resp.json()["access_token"]
+        api_resp = client.post(
             "/recommend_elements",
-            data={"face_shape": "OVAL", "eyes_style": "SMALL_EYES"},
-            headers=headers
+            json={"face_shape": "SQUARE", "eyes_style": "wide_eyes"},
+            headers={"Authorization": f"Bearer {token}"}
         )
-        self.assertEqual(resp.status_code, 200)
-        data = resp.json()
-        self.assertEqual(data["status"], "ok")
-        self.assertIn("recommended_nose_styles", data)
+        self.assertEqual(api_resp.status_code, 200)
+        res_data = api_resp.json()
+        self.assertEqual(res_data["detected_face_shape"], "SQUARE")
+        self.assertEqual(res_data["eye_spacing_category"], "WIDE_SET")
 
-    def test_11_synthesize_skin_tone_endpoint(self):
-        """Verify POST /synthesize generates colorized preview with selected skin tone."""
-        token = app.create_access_token({"sub": "test_client"})
-        headers = {"Authorization": f"Bearer {token}"}
-        img = Image.new("RGB", (160, 160), color=(200, 200, 200))
+    def test_11_skin_tone_colorization_flow(self):
+        """Verify GenerativeSynthesizer generates colorized PNG renderings for all skin tone palettes."""
+        from generative_synth import GenerativeSynthesizer
+        from PIL import Image
+        import io
+
+        # Create 160x160 white image with black circle as dummy sketch
+        img = Image.new("RGB", (160, 160), color="white")
         buf = io.BytesIO()
-        img.save(buf, format="PNG")
-        q_bytes = buf.getvalue()
+        img.save(buf, format="JPEG")
+        sketch_bytes = buf.getvalue()
 
-        resp = client.post(
-            "/synthesize",
-            files={"file": ("sketch.png", q_bytes, "image/png")},
-            data={"skin_tone": "FAIR"},
-            headers=headers
-        )
-        self.assertEqual(resp.status_code, 200)
-        self.assertEqual(resp.headers["content-type"], "image/png")
+        for tone in ["FAIR", "MEDIUM", "WARM_BROWN", "DEEP_BROWN"]:
+            png_bytes = GenerativeSynthesizer.synthesize_photo_from_sketch(sketch_bytes, skin_tone=tone)
+            self.assertTrue(len(png_bytes) > 50)
+            res_img = Image.open(io.BytesIO(png_bytes))
+            self.assertEqual(res_img.mode, "RGB")
 
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
 

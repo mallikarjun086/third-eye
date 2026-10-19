@@ -22,24 +22,39 @@ import io
 import os
 import time
 import logging
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
+from contextlib import asynccontextmanager
 
 import numpy as np
 import cv2
+import cv2.data
 import jwt
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException, Depends, Security
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 
 from demographic_filter import DemographicEstimator
-from xai_explainer import XAIExplainer
-from element_recommender import ElementRecommender
-
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("thirdeye-ml")
 
-app = FastAPI(title="ThirdEye ML Service", version="1.2.0 (JWT Secured)")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    load_model()
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    gallery_default = os.path.join(base_dir, "dataset", "gallery")
+    gallery_all = os.path.join(base_dir, "dataset", "gallery_all")
+    gallery_path = gallery_default if os.path.exists(gallery_default) else gallery_all
+    try:
+        build_cache(gallery_path, force=False)
+        log.info("Startup complete: Pre-loaded %d cached faces into memory & FAISS index.", len(_cache))
+    except Exception as e:
+        log.warning("Startup cache load warning: %s", e)
+    yield
+
+
+app = FastAPI(title="ThirdEye ML Service", version="1.2.0 (JWT Secured)", lifespan=lifespan)
 
 # JWT Authentication Config
 JWT_SECRET_KEY = os.environ.get("THIRDEYE_JWT_SECRET", "thirdeye_v2_forensic_secure_jwt_secret_key_2026")
@@ -97,8 +112,8 @@ _model = None
 _proj_model = None
 _model_error: Optional[str] = None
 
-# In-memory cache: relative path -> dict(face=128d projected embedding, hog=HOG vector)
-_cache: Dict[str, Dict[str, np.ndarray]] = {}
+# In-memory cache: relative path -> dict(face=128d projected embedding, hog=HOG vector, etc.)
+_cache: Dict[str, Dict[str, Any]] = {}
 _cache_mtime: Optional[float] = None
 _cache_dir: Optional[str] = None
 
@@ -123,8 +138,36 @@ _face_weight_cache = None
 from query_router import QueryRouter
 from faiss_index_manager import FAISSIndexManager
 from generative_synth import GenerativeSynthesizer
+from xai_explainer import SpatialXAIExplainer
+from element_recommender import ElementRecommender
 
 faiss_indexer = FAISSIndexManager(dimension=128)
+
+class RecommendationRequest(BaseModel):
+    face_shape: Optional[str] = "OVAL"
+    eyes_style: Optional[str] = "default"
+    hair_style: Optional[str] = "default"
+
+
+class RecommendationResponse(BaseModel):
+    status: str
+    detected_face_shape: str
+    eye_spacing_category: str
+    proportion_ratio: str
+    recommended_noses: List[str]
+    recommended_mouths: List[str]
+    recommended_chins: List[str]
+    compatibility_score: float
+    guidance_note: str
+
+class XAIBreakdown(BaseModel):
+    eyes_match: float
+    nose_match: float
+    mouth_match: float
+
+    contour_match: float
+    overall_xai_confidence: float
+    heatmap_b64: Optional[str] = ""
 
 class MatchResult(BaseModel):
     name: str
@@ -132,6 +175,7 @@ class MatchResult(BaseModel):
     similarity: float
     calibrated_score: float
     rank: int
+    xai_breakdown: Optional[XAIBreakdown] = None
 
 
 class MatchResponse(BaseModel):
@@ -203,7 +247,6 @@ _face_cascade = None
 def get_face_cascade():
     global _face_cascade
     if _face_cascade is None:
-        import cv2
         try:
             cascade_path = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
             if os.path.exists(cascade_path):
@@ -213,11 +256,49 @@ def get_face_cascade():
     return _face_cascade
 
 
+def _pad_to_square(img: np.ndarray, target_size: int = 160) -> np.ndarray:
+    """Pad image to square aspect ratio without cutting off facial landmarks, then resize."""
+    h, w = img.shape[:2]
+    if h == w:
+        return cv2.resize(img, (target_size, target_size), interpolation=cv2.INTER_AREA)
+    max_dim = max(h, w)
+    corners = [img[0, 0], img[0, -1], img[-1, 0], img[-1, -1]]
+    corner_mean = float(np.mean(corners))
+    fill_color = 255 if corner_mean > 127 else 0
+    if len(img.shape) == 3:
+        square = np.full((max_dim, max_dim, img.shape[2]), fill_color, dtype=img.dtype)
+    else:
+        square = np.full((max_dim, max_dim), fill_color, dtype=img.dtype)
+    y_off = (max_dim - h) // 2
+    x_off = (max_dim - w) // 2
+    square[y_off:y_off + h, x_off:x_off + w] = img
+    return cv2.resize(square, (target_size, target_size), interpolation=cv2.INTER_AREA)
+
+
+def decode_image_bytes(image_bytes: bytes) -> np.ndarray:
+    """Decode raw image bytes ensuring transparent RGBA is cleanly composited onto white background."""
+    if not image_bytes or len(image_bytes) < 10:
+        raise HTTPException(status_code=422, detail="Empty or invalid image payload.")
+    from PIL import Image
+    try:
+        img = Image.open(io.BytesIO(image_bytes))
+        if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info):
+            bg = Image.new("RGB", img.size, (255, 255, 255))
+            rgba = img.convert("RGBA")
+            bg.paste(rgba, mask=rgba.split()[3])
+            img = bg
+        else:
+            img = img.convert("RGB")
+        return np.asarray(img)
+    except Exception as e:
+        raise HTTPException(status_code=422, detail=f"Face not detected or unreadable image file. (Details: {e})")
+
+
 def crop_face(img_rgb: np.ndarray, target_size: int = 160) -> np.ndarray:
     """
     Robust Pro-Level Face Detector & Border Trimmer for Forensic Face Sketches & Photos.
     Combines OpenCV Haar Cascade detection with non-white canvas trimming to ensure
-    1:1 facial alignment across modalities.
+    1:1 facial alignment across modalities while preserving complete forehead and chin landmarks.
     """
     import cv2
     if img_rgb is None or img_rgb.size == 0:
@@ -244,13 +325,7 @@ def crop_face(img_rgb: np.ndarray, target_size: int = 160) -> np.ndarray:
                 x2 = min(w, fx + fw + margin_x)
                 y2 = min(h, fy + fh + margin_y)
                 face_crop = img_rgb[y1:y2, x1:x2]
-                
-                hc, wc = face_crop.shape[:2]
-                min_dim = min(hc, wc)
-                sy = (hc - min_dim) // 2
-                sx = (wc - min_dim) // 2
-                sq_crop = face_crop[sy:sy + min_dim, sx:sx + min_dim]
-                return cv2.resize(sq_crop, (target_size, target_size), interpolation=cv2.INTER_AREA)
+                return _pad_to_square(face_crop, target_size)
         except Exception:
             pass
 
@@ -268,39 +343,18 @@ def crop_face(img_rgb: np.ndarray, target_size: int = 160) -> np.ndarray:
             x2 = min(w, x + bw + margin_x)
             y2 = min(h, y + bh + margin_y)
             img_crop = img_rgb[y1:y2, x1:x2]
-            h_c, w_c = img_crop.shape[:2]
-        else:
-            img_crop = img_rgb
-            h_c, w_c = h, w
-    else:
-        img_crop = img_rgb
-        h_c, w_c = h, w
+            return _pad_to_square(img_crop, target_size)
 
-    # 3. Square crop from center preserving 1:1 facial feature aspect ratio
-    min_dim = min(h_c, w_c)
-    start_y = (h_c - min_dim) // 2
-    start_x = (w_c - min_dim) // 2
-    square_crop = img_crop[start_y:start_y + min_dim, start_x:start_x + min_dim]
-
-    return cv2.resize(square_crop, (target_size, target_size), interpolation=cv2.INTER_AREA)
+    return _pad_to_square(img_rgb, target_size)
 
 
 def embed_image(image_bytes: bytes) -> Optional[np.ndarray]:
     """Return a normalized projected embedding for raw image bytes, or None."""
-    if not image_bytes or len(image_bytes) < 10:
-        raise HTTPException(status_code=422, detail="Empty or invalid image payload.")
-
     load_model()
     if _model is None:
         raise HTTPException(status_code=503, detail=f"Model not loaded: {_model_error}")
 
-    from PIL import Image
-    try:
-        img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    except Exception as e:  # noqa: BLE001
-        raise HTTPException(status_code=422, detail=f"Face not detected or unreadable image file. Please provide a clear frontal sketch/photo. (Details: {e})")
-
-    arr = np.asarray(img)
+    arr = decode_image_bytes(image_bytes)
     arr = crop_face(arr, target_size=160)
 
     try:
@@ -322,20 +376,11 @@ def embed_image(image_bytes: bytes) -> Optional[np.ndarray]:
 
 def embed_image_raw(image_bytes: bytes) -> Optional[np.ndarray]:
     """Return raw 512-d L2-normalized FaceNet embedding (without projection head)."""
-    if not image_bytes or len(image_bytes) < 10:
-        raise HTTPException(status_code=422, detail="Empty or invalid image payload.")
-
     load_model()
     if _model is None:
         raise HTTPException(status_code=503, detail=f"Model not loaded: {_model_error}")
 
-    from PIL import Image
-    try:
-        img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    except Exception as e:  # noqa: BLE001
-        raise HTTPException(status_code=422, detail=f"Face not detected or unreadable image file. (Details: {e})")
-
-    arr = np.asarray(img)
+    arr = decode_image_bytes(image_bytes)
     arr = crop_face(arr, target_size=160)
 
     try:
@@ -369,17 +414,7 @@ def _face_weight_map(cells_x: int, cells_y: int) -> np.ndarray:
 
 def hog_grey(image_bytes: bytes) -> np.ndarray:
     """Decode image, apply CLAHE contrast enhancement and Gaussian smoothing, return greyscale."""
-    if not image_bytes or len(image_bytes) < 10:
-        raise HTTPException(status_code=422, detail="Empty or invalid image payload.")
-
-    import cv2
-    from PIL import Image
-    try:
-        img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    except Exception as e:  # noqa: BLE001
-        raise HTTPException(status_code=422, detail=f"Face not detected or unreadable image file. (Details: {e})")
-
-    arr = np.asarray(img)
+    arr = decode_image_bytes(image_bytes)
     cropped_face = crop_face(arr, target_size=HOG_SIZE)
     gray = cv2.cvtColor(cropped_face, cv2.COLOR_RGB2GRAY)
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
@@ -531,7 +566,7 @@ def build_cache(dataset_dir: str, force: bool = False):
             _cache = {}
 
     log.info("Building feature cache for %d images...", len(images))
-    features: Dict[str, Dict[str, np.ndarray]] = {}
+    features: Dict[str, Dict[str, Any]] = {}
     for path in images:
         rel = os.path.relpath(path, dataset_dir)
         try:
@@ -575,24 +610,11 @@ def build_cache(dataset_dir: str, force: bool = False):
 
 # ────────────────────────────────── Endpoints ────────────────────────────────
 
-@app.on_event("startup")
-def startup_event():
-    load_model()
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    gallery_default = os.path.join(base_dir, "dataset", "gallery")
-    gallery_all = os.path.join(base_dir, "dataset", "gallery_all")
-    gallery_path = gallery_default if os.path.exists(gallery_default) else gallery_all
-    try:
-        build_cache(gallery_path, force=False)
-        log.info("Startup complete: Pre-loaded %d cached faces into memory & FAISS index.", len(_cache))
-    except Exception as e:
-        log.warning("Startup cache load warning: %s", e)
-
 
 @app.post("/synthesize")
 def synthesize(
     file: UploadFile = File(...),
-    skin_tone: str = Form("WHEATISH"),
+    skin_tone: str = Form("MEDIUM"),
     token_data: dict = Depends(verify_token)
 ):
     data = file.file.read()
@@ -607,56 +629,31 @@ def synthesize(
 
 
 
-@app.post("/explain")
-def explain_match(
-    file: UploadFile = File(...),
-    candidate_path: str = Form(...),
-    token_data: dict = Depends(verify_token)
-):
-    q_data = file.file.read()
-    if not q_data or len(q_data) < 10:
-        raise HTTPException(status_code=422, detail="Empty or invalid sketch image file.")
-    
-    full_cand_path = _resolve_full_path(candidate_path, _cache_dir or "")
-    if not os.path.exists(full_cand_path):
-        raise HTTPException(status_code=404, detail=f"Candidate image file not found: {candidate_path}")
 
+@app.post("/recommend_elements", response_model=RecommendationResponse)
+def recommend_elements(req: RecommendationRequest, credentials: Optional[HTTPAuthorizationCredentials] = Depends(security)):
     try:
-        with open(full_cand_path, "rb") as fh:
-            c_data = fh.read()
-        heatmap_png = XAIExplainer.generate_heatmap_comparison(q_data, c_data, similarity_score=0.85)
-        from fastapi.responses import Response
-        return Response(content=heatmap_png, media_type="image/png")
+        data_dict = req.model_dump() if hasattr(req, "model_dump") else req.dict()
+        rec_dict = ElementRecommender.get_recommendations(data_dict)
+        return RecommendationResponse(**rec_dict)
     except Exception as e:
-        raise HTTPException(status_code=422, detail=f"XAI heatmap generation failed: {e}")
-
-
-@app.post("/recommend_elements")
-def recommend_elements(
-    face_shape: str = Form("OVAL"),
-    eyes_style: str = Form("DEFAULT"),
-    token_data: dict = Depends(verify_token)
-):
-    return ElementRecommender.recommend(face_shape, eyes_style)
-
-
-
+        raise HTTPException(status_code=422, detail=f"Recommendation error: {e}")
 
 
 
 @app.get("/health", response_model=HealthResponse)
+@app.head("/health")
 def health():
-    load_model()
     dataset_dir = _cache_dir
-    images = _list_images(dataset_dir) if dataset_dir else []
+    img_count = len(_cache) if _cache else (len(_list_images(dataset_dir)) if dataset_dir else 0)
     return HealthResponse(
         status="ok",
         api_status="UP",
         model_loaded=_model is not None,
         model_error=_model_error,
         dataset_dir=dataset_dir,
-        dataset_images=len(images),
-        cache_built=_cache_dir is not None,
+        dataset_images=img_count,
+        cache_built=bool(_cache),
     )
 
 
@@ -740,7 +737,7 @@ def match(
         q_arr = np.frombuffer(data, np.uint8)
         q_img_bgr = cv2.imdecode(q_arr, cv2.IMREAD_COLOR)
         q_img_rgb = cv2.cvtColor(q_img_bgr, cv2.COLOR_BGR2RGB) if q_img_bgr is not None else None
-        q_attr = DemographicEstimator.estimate_attributes(q_img_rgb, filename=file.filename)
+        q_attr = DemographicEstimator.estimate_attributes(q_img_rgb, filename=file.filename or "")
     except Exception:
         q_attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
 
@@ -749,6 +746,12 @@ def match(
     candidates_pruned = 0
     
     q_grey = hog_grey(data)
+    if q_grey is None or float(np.std(q_grey)) < 10.0:
+        raise HTTPException(
+            status_code=422,
+            detail="Blank sketch canvas detected (no facial lines or features drawn). Please draw or upload a valid facial sketch before running gallery search."
+        )
+
     q_emb = embed_image(data)
     if q_emb is None:
         raise HTTPException(status_code=422, detail="Could not extract face embedding from query image.")
@@ -756,6 +759,7 @@ def match(
     q_lbp = compute_lbp(q_grey)
 
     target_gender = gender_filter.upper().strip() if gender_filter else "ALL"
+
 
     for rel, feats in _cache.items():
         g_face = feats.get("face")
@@ -777,7 +781,10 @@ def match(
 
         # Apply Biometric Pre-Filtering
         cand_gender = g_attr.get("gender", "UNKNOWN")
-        cand_age = g_attr.get("age_est", 30)
+        try:
+            cand_age = int(g_attr.get("age_est", 30))
+        except (ValueError, TypeError):
+            cand_age = 30
 
         # 1. Gender Filter Check
         if target_gender in ("MALE", "FEMALE") and cand_gender in ("MALE", "FEMALE"):
@@ -826,16 +833,30 @@ def match(
     top_n = max(1, min(top_n, len(unique_scored))) if unique_scored else 0
     top = unique_scored[:top_n]
 
-    results = [
-        MatchResult(
-            name=os.path.splitext(os.path.basename(rel))[0],
-            path=_resolve_full_path(rel, dataset_dir),
-            similarity=round(sim, 4),
-            calibrated_score=round(sim * 100.0, 2),
-            rank=idx
+    results = []
+    for idx, (sim, rel) in enumerate(top, start=1):
+        g_path = _resolve_full_path(rel, dataset_dir)
+        try:
+            g_img = cv2.imread(g_path, cv2.IMREAD_GRAYSCALE)
+            if g_img is not None and q_grey is not None:
+                xai_dict = SpatialXAIExplainer.explain_alignment(q_grey, g_img)
+                xai_obj = XAIBreakdown(**xai_dict)
+            else:
+                xai_obj = None
+        except Exception:
+            xai_obj = None
+
+        results.append(
+            MatchResult(
+                name=os.path.splitext(os.path.basename(rel))[0],
+                path=g_path,
+                similarity=round(sim, 4),
+                calibrated_score=round(sim * 100.0, 2),
+                rank=idx,
+                xai_breakdown=xai_obj
+            )
         )
-        for idx, (sim, rel) in enumerate(top, start=1)
-    ]
+
     
     return MatchResponse(
         status="ok",

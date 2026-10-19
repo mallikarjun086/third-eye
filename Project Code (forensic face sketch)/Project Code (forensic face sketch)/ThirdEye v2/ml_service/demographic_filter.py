@@ -1,5 +1,6 @@
 import os
 import re
+from typing import Optional, Dict, Any
 import numpy as np
 import cv2
 
@@ -12,7 +13,7 @@ class DemographicEstimator:
     """
 
     @staticmethod
-    def estimate_attributes(crop_rgb: np.ndarray, filename: str = "") -> dict:
+    def estimate_attributes(crop_rgb: Optional[np.ndarray] = None, filename: Optional[str] = "") -> Dict[str, Any]:
         # 1. Metadata / Prefix / Keyword Resolution
         if filename:
             bname = os.path.basename(filename).lower()
@@ -85,18 +86,20 @@ class DemographicEstimator:
             return {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0, "facial_hair": False}
 
     @staticmethod
-    def compute_soft_penalty(q_attr: dict, g_attr: dict) -> float:
+    def compute_soft_penalty(q_attr: Dict[str, Any], g_attr: Dict[str, Any]) -> float:
         """
         Calculates demographic similarity multiplier.
-        Enforces HARD GENDER EXCLUSION (0.0 multiplier) when male query is compared to female gallery suspect (or vice-versa),
-        guaranteeing that male sketches NEVER match female suspect photos.
+        Applies a calibrated soft penalty (0.85) when both query and gallery have high-confidence
+        conflicting genders, while preventing false rejections caused by sketch stroke artifacts.
         """
         q_gen = q_attr.get("gender", "UNKNOWN")
         g_gen = g_attr.get("gender", "UNKNOWN")
+        q_conf = float(q_attr.get("gender_conf", 0.0))
+        g_conf = float(g_attr.get("gender_conf", 0.0))
 
-        # Hard Exclusion for Gender Mismatch in Forensic Matching
+        # Soft Exclusion for Confident Gender Mismatch
         if q_gen in ("MALE", "FEMALE") and g_gen in ("MALE", "FEMALE"):
-            if q_gen != g_gen:
-                return 0.0  # HARD GENDER FILTER: Completely zero out cross-gender match scores
+            if q_gen != g_gen and q_conf >= 0.85 and g_conf >= 0.85:
+                return 0.85
 
         return 1.0

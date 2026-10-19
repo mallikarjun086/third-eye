@@ -17,3 +17,13 @@ __pycache__/
 .venv/
 .idea/
 **/ml_service/dataset/
+
+# Assistant & IDE configuration
+.agent/
+.agents/
+.gemini/
+.gsd/
+
+# Temporary databases at root
+/login.sqlite
+/suspects.db

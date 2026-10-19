@@ -4,47 +4,47 @@
     "split": "TRAIN"
   },
   {
-    "pid": "f-041",
+    "pid": "f",
     "split": "TRAIN"
   },
   {
-    "pid": "f-042",
+    "pid": "f",
     "split": "TRAIN"
   },
   {
-    "pid": "f-043",
+    "pid": "f",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-001",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-002",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-003",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-004",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-005",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-006",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-007",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
-    "pid": "f1-008",
+    "pid": "f1",
     "split": "TRAIN"
   },
   {
@@ -68,175 +68,175 @@
     "split": "TRAIN"
   },
   {
-    "pid": "m-064",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-066",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-067",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-068",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-069",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-070",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-072",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-073",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-075",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-076",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-077",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-080",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-081",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-082",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-084",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-085",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-086",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-087",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-089",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-091",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-095",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m-097",
+    "pid": "m",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-003",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-005",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-006",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-007",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-008",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-021",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-023",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-024",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-027",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-028",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-029",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-030",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-032",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-034",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-035",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m1-040",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m10",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m12",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m13",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m15",
+    "pid": "m1",
     "split": "TRAIN"
   },
   {
-    "pid": "m16",
+    "pid": "m1",
     "split": "TRAIN"
   }
 ]

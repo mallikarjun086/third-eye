@@ -30,19 +30,24 @@ public class ForensicReportGenerator {
             outputDir = new File(System.getProperty("user.home"), "Desktop");
         }
 
+        String safeCaseId = (caseId != null && !caseId.trim().isEmpty()) ? caseId.trim() : "UNASSIGNED_CASE";
+        String safeOfficerId = (officerId != null && !officerId.trim().isEmpty()) ? officerId.trim() : "ANONYMOUS_INVESTIGATOR";
+        String safeDecision = (matchDecision != null && !matchDecision.trim().isEmpty()) ? matchDecision.trim() : "UNKNOWN";
+        String sketchName = (sketchFile != null) ? sketchFile.getName() : "UNSPECIFIED_SKETCH";
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         SimpleDateFormat fileDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
         String timestampStr = dateFormat.format(new Date());
         String fileTag = fileDateFormat.format(new Date());
 
-        String reportFileName = "Forensic_Audit_Report_" + caseId.replaceAll("[^a-zA-Z0-9_-]", "_") + "_" + fileTag + ".html";
+        String reportFileName = "Forensic_Audit_Report_" + safeCaseId.replaceAll("[^a-zA-Z0-9_-]", "_") + "_" + fileTag + ".html";
         File reportFile = new File(outputDir, reportFileName);
 
         String sketchHash = computeSHA256(sketchFile);
 
         StringBuilder sb = new StringBuilder();
         sb.append("<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n");
-        sb.append("<title>Forensic Case Audit Report - ").append(caseId).append("</title>\n");
+        sb.append("<title>Forensic Case Audit Report - ").append(escapeHtml(safeCaseId)).append("</title>\n");
         sb.append("<style>\n");
         sb.append("body { font-family: 'Segoe UI', Tahoma, Helvetica, Arial, sans-serif; background: #080c18; color: #d0deff; margin: 0; padding: 30px; }\n");
         sb.append(".container { max-width: 900px; margin: auto; background: #0f152d; padding: 30px; border-radius: 10px; border: 1px solid #1e2d5a; box-shadow: 0 0 20px rgba(0,0,0,0.5); }\n");
@@ -70,18 +75,18 @@ public class ForensicReportGenerator {
         sb.append("</div>\n");
 
         sb.append("<div class=\"meta-grid\">\n");
-        sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Case Reference ID:</span> ").append(caseId).append("</div>\n");
-        sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Investigating Officer ID:</span> ").append(officerId).append("</div>\n");
+        sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Case Reference ID:</span> ").append(escapeHtml(safeCaseId)).append("</div>\n");
+        sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Investigating Officer ID:</span> ").append(escapeHtml(safeOfficerId)).append("</div>\n");
         sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Timestamp:</span> ").append(timestampStr).append("</div>\n");
         sb.append("<div class=\"meta-item\"><span class=\"meta-label\">System Code Name:</span> ThirdEye v2 (JWT Secured + FAISS)</div>\n");
-        sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Query Sketch File:</span> ").append(sketchFile.getName()).append("</div>\n");
+        sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Query Sketch File:</span> ").append(escapeHtml(sketchName)).append("</div>\n");
         sb.append("<div class=\"meta-item\"><span class=\"meta-label\">Calibrated Decision Threshold:</span> ").append(String.format("%.1f%%", threshold * 100.0)).append("</div>\n");
         sb.append("</div>\n");
 
-        boolean isMatch = "POSSIBLE MATCH".equalsIgnoreCase(matchDecision);
+        boolean isMatch = "POSSIBLE MATCH".equalsIgnoreCase(safeDecision);
         sb.append("<div style=\"text-align: center; margin-top: 20px;\">\n");
         sb.append("<span class=\"badge-decision ").append(isMatch ? "badge-match" : "badge-nomatch").append("\">");
-        sb.append("OFFICIAL VERDICT: ").append(matchDecision).append("</span>\n");
+        sb.append("OFFICIAL VERDICT: ").append(escapeHtml(safeDecision)).append("</span>\n");
         sb.append("</div>\n");
 
         sb.append("<div style=\"margin-top: 20px; background: #131c3b; padding: 12px; border-radius: 6px;\">\n");
@@ -137,5 +142,14 @@ public class ForensicReportGenerator {
         } catch (Exception e) {
             return "ERROR_COMPUTING_HASH: " + e.getMessage();
         }
+    }
+
+    private static String escapeHtml(String input) {
+        if (input == null) return "";
+        return input.replace("&", "&amp;")
+                    .replace("<", "&lt;")
+                    .replace(">", "&gt;")
+                    .replace("\"", "&quot;")
+                    .replace("'", "&#39;");
     }
 }

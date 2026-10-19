@@ -294,12 +294,14 @@ public class Upload_sketchController implements Initializable {
      */
     private File findGalleryFolder() {
         File[] candidates = {
+            new File("ml_service/dataset/gallery"),
+            new File("dataset/gallery"),
+            new File(System.getProperty("user.dir") + "/ml_service/dataset/gallery"),
+            new File(System.getProperty("user.dir") + "/dataset/gallery"),
             new File("ml_service/dataset"),
             new File("dataset"),
             new File(System.getProperty("user.dir") + "/ml_service/dataset"),
-            new File(System.getProperty("user.dir") + "/dataset"),
-            new File("ml_service/dataset/gallery"),
-            new File("dataset/gallery")
+            new File(System.getProperty("user.dir") + "/dataset")
         };
         for (File c : candidates) {
             if (c.isDirectory()) {

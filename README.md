@@ -19,7 +19,7 @@ To bridge the severe **cross-modal domain gap** between sparse black-and-white l
 
 1. **Metric-Learned Deep Feature Stream**: A 512-dimensional FaceNet (`Inception-ResNet-v1`) embedding projected through a custom 2-layer MLP Projection Head (164,736 parameters) trained via Triplet Margin Loss ($\text{margin}=0.3$).
 2. **Spatial Shape Feature Stream**: Contrast Limited Adaptive Histogram Equalization (CLAHE, `clipLimit=2.0`), $3 \times 3$ Gaussian blur, and an elliptical face-mask weighted **Histograms of Oriented Gradients (HOG)** descriptor (3,600 dimensions).
-3. **Late Score Fusion**: A weighted fusion engine ($\alpha^* = 0.05$) combining deep semantic embeddings with spatial shape descriptors ($S = 0.05 S_{\text{deep}} + 0.95 S_{\text{hog}}$).
+3. **Late Score Fusion**: A calibrated dual-stream fusion engine ($\alpha^* = 0.85$) combining deep metric-projected embeddings with spatial shape descriptors ($S = 0.85 S_{\text{deep}} + 0.15 S_{\text{hog}}$).
 
 ---
 
@@ -40,11 +40,11 @@ To bridge the severe **cross-modal domain gap** between sparse black-and-white l
 | Referenced Research Paper | Primary Methodology | Literature Limitation | How ThirdEye v2 Outperforms |
 | --- | --- | --- | --- |
 | **CHEHRA** (Mohan et al., *IJARSCT*, 2022) | Drag-and-drop web UI + AWS Rekognition API | Cloud dependency; privacy risk for suspect data | **100% Offline & Air-Gapped** local execution |
-| **RecogniPro** (Shaikh et al., *IJCRT*, 2024) | Web sketch creation + cloud deep learning | Cloud network latency; lacks spatial feature fusion | Dual-Stream Late Fusion ($S = 0.05 S_{\text{deep}} + 0.95 S_{\text{hog}}$) |
+| **RecogniPro** (Shaikh et al., *IJCRT*, 2024) | Web sketch creation + cloud deep learning | Cloud network latency; lacks spatial feature fusion | Dual-Stream Late Fusion ($S = 0.85 S_{\text{deep}} + 0.15 S_{\text{hog}}$) |
 | **X-Bridge** (Itole et al., *IJECE*, 2024) | GAN image-to-image photo synthesis | High compute; GAN hallucinations distort identity | Structural metric projection head (**Zero Hallucination**) |
 | **GenAI Police Sketches** (Sádaba-Campo et al., *BDCC*, 2025) | Text-to-Image Diffusion (Stable Diffusion / ControlNet) | Non-reproducible; questionable court admissibility | **Deterministic component assembly (100% Court-Admissible)** |
 | **Forensic Sketch** (Pushpalatha et al., *IJRASET*, 2025) | Layered assembly + basic CNN feature maps | Low cross-modal accuracy (high domain gap drop) | **85.71% Rank-1 Accuracy** vs. 12.11% raw CNN baseline |
-| **AI-Driven Sketch** (Pasunuri et al., *ICCSCE*, 2025) | Element recommendations + visual feature highlights | Cloud dependency; unoptimized fusion weighting | Empirically optimized late fusion ($\alpha^* = 0.05$) |
+| **AI-Driven Sketch** (Pasunuri et al., *ICCSCE*, 2025) | Element recommendations + visual feature highlights | Cloud dependency; unoptimized fusion weighting | Empirically optimized late fusion ($\alpha^* = 0.85$) |
 
 *For full details, read [`PROJECT_DOCUMENTATION/RESEARCH_PAPER_GAP_ANALYSIS.md`](file:///c:/Users/Mallikarjun%20Gala/OneDrive/Desktop/Third-Eye/PROJECT_DOCUMENTATION/RESEARCH_PAPER_GAP_ANALYSIS.md).*
 
@@ -152,7 +152,7 @@ Third-Eye/
 │       │   └── ml_service/                       # Python ML Microservice
 │       │       ├── app.py                        # FastAPI Server & Model Warmup
 │       │       ├── requirements.txt              # Service Dependencies
-│       │       ├── run_tests.py                  # Automated Test Suite (7/7 Pass)
+│       │       ├── run_tests.py                  # Automated Test Suite (11/11 Pass)
 │       │       ├── FINAL_CANONICAL_METRICS.json  # Authoritative Metric Manifest
 │       │       └── split_manifest.json           # Identity Split Definition (60/20/21)
 │       └── ThirdEye_FaceMatch/                   # [LEGACY PROTOTYPE - ARCHIVED]
@@ -178,7 +178,7 @@ Third-Eye/
 cd "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/ml_service"
 
 # Activate Virtual Environment (if using .venv)
-..\..\..\..\..\.venv\Scripts\Activate.ps1
+..\..\..\..\.venv\Scripts\Activate.ps1
 
 # Install required dependencies
 pip install -r requirements.txt
@@ -210,7 +210,7 @@ cd "Project Code (forensic face sketch)/Project Code (forensic face sketch)/Thir
 python run_tests.py
 ```
 
-*Expected Output*: `Ran 7 tests in 46.801s - OK`
+*Expected Output*: `Ran 11 tests in ~25s - OK`
 
 ---
 

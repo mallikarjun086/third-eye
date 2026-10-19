@@ -126,9 +126,14 @@ def main():
         api_available = False
 
     if api_available:
+        try:
+            token_resp = requests.post("http://127.0.0.1:8000/auth/token", json={"client_id": "test_client"}, timeout=5)
+            headers = {"Authorization": f"Bearer {token_resp.json()['access_token']}"} if token_resp.status_code == 200 else {}
+        except Exception:
+            headers = {}
         for g in gallery_files[:20]:
             with open(g, "rb") as fh:
-                resp = requests.post(api_url, files={"file": ("img.png", fh, "image/png")}, data={"dataset_dir": gallery_dir, "top_n": "5"}, timeout=10)
+                resp = requests.post(api_url, files={"file": ("img.png", fh, "image/png")}, data={"dataset_dir": gallery_dir, "top_n": "5"}, headers=headers, timeout=10)
             if resp.status_code == 200:
                 res_data = resp.json()
                 results = res_data.get("results", [])
@@ -208,8 +213,8 @@ def main():
             else:
                 hog_sim = 0.0
 
-            # Late fusion alpha = 0.05
-            fused_score = 0.05 * deep_sim + 0.95 * hog_sim
+            # Production calibrated fusion using FACE_WEIGHT
+            fused_score = app.FACE_WEIGHT * deep_sim + (1.0 - app.FACE_WEIGHT) * hog_sim
             scores.append((fused_score, g_pid, g))
 
         # Sort descending

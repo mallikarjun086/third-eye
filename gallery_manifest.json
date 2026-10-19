@@ -7,1319 +7,3685 @@
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-005",
+    "identity_id": "f",
     "image_filename": "f-005-01.jpg",
     "sha256": "b78f0e141c270e33f3646c2cf548ada259011a9ee1a9434781b8f9b50c86c403",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-006",
+    "identity_id": "f",
     "image_filename": "f-006-01.jpg",
     "sha256": "53cb0147eb7848250303b7d516c9ebc395a4d90cafba91313bd165e44c46e7f1",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-007",
+    "identity_id": "f",
     "image_filename": "f-007-01.jpg",
     "sha256": "ae2299357c99d0ba9957c679799015b81f26e6999c406a0c520499d744a37cb2",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-008",
+    "identity_id": "f",
     "image_filename": "f-008-01.jpg",
     "sha256": "5bf68cbe5e55c4c8f1f92c01d7f46351f27c6ca32b959839b691006dc46139ff",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-009",
+    "identity_id": "f",
     "image_filename": "f-009-01.jpg",
     "sha256": "64d03d05fff213fd490f0022439fcb87ef851b46e1374676c2f0d2644721010a",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f0",
+    "identity_id": "f",
     "image_filename": "f-010-01.jpg",
     "sha256": "c91e4ee1462090a61bffb28db50c65b530826a93a8775f5f722c0017f1773f8f",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1",
+    "identity_id": "f",
     "image_filename": "f-011-01.jpg",
     "sha256": "0b6c03ce3e58521d27a2567a5077eddc35a9184f7d40fae20a06739bd368f722",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f2",
+    "identity_id": "f",
     "image_filename": "f-012-01.jpg",
     "sha256": "812ffdb2d8e49dd13d04f3efe709104f7a68315a04f2c3d3859771e0cc1102b6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f3",
+    "identity_id": "f",
     "image_filename": "f-013-01.jpg",
     "sha256": "ad3c602718dad5148d1c61251228f20243babbdbc0042d50a5b718c434eb8817",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f4",
+    "identity_id": "f",
     "image_filename": "f-014-01.jpg",
     "sha256": "ea9bcf03042720041a82ebeea13910e7e622babb604c349bbf2ba0a033994f6f",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f5",
+    "identity_id": "f",
     "image_filename": "f-015-01.jpg",
     "sha256": "034044f8b97ad1c10b5395780fbe581ca6eed6123aacbf126f55298d6cea0862",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f6",
+    "identity_id": "f",
     "image_filename": "f-016-01.jpg",
     "sha256": "f36cf2f030e67b70f13a8b3f804c6fb086959bc47e6ed669a6e4a58b0487639b",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f7",
+    "identity_id": "f",
     "image_filename": "f-017-01.jpg",
     "sha256": "3e65a30bff510307172790758f3f29a3ee7f9b792f1289c9ec1eff84ac833ca9",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f8",
+    "identity_id": "f",
     "image_filename": "f-018-01.jpg",
     "sha256": "e77ba31ff77bfe093b1fedd3a30287517d592546fd877242d2efa0b00fc65fa0",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f9",
+    "identity_id": "f",
     "image_filename": "f-019-01.jpg",
     "sha256": "45588212b6472cd9d785dfc9454a8d94886024ff870d4105a440a673c6e6ce4f",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-020",
+    "identity_id": "f",
     "image_filename": "f-020-01.jpg",
     "sha256": "800041a1dcc31ab116ef89ae218677814b5fdfd2ba967e7e259bf904826f7828",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-021",
+    "identity_id": "f",
     "image_filename": "f-021-01.jpg",
     "sha256": "9f6645361fa4d79dbf1d7c1510a97d0d8e4da629b97a28b06496d881707a2b7e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-022",
+    "identity_id": "f",
     "image_filename": "f-022-01.jpg",
     "sha256": "ff5c53ddf0d93149adb8532e7a20efa29815902fbf3d8146a24ecfd4f5e63553",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-023",
+    "identity_id": "f",
     "image_filename": "f-023-01.jpg",
     "sha256": "3c23f587df3ce878af47820f87e7f52d67c6eadb4755d3ee005e278f1ca287a3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-024",
+    "identity_id": "f",
     "image_filename": "f-024-01.jpg",
     "sha256": "20a1adee4ae5b99aa9d7dd9a61589cb343c8b3139dd5c4d1ed6ecf49c3b92743",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-025",
+    "identity_id": "f",
     "image_filename": "f-025-01.jpg",
     "sha256": "07b6cfe2a901469fd9eb9f5f8509f82c532932916d8730b2679bb26bf405d394",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-026",
+    "identity_id": "f",
     "image_filename": "f-026-01.jpg",
     "sha256": "a2433f1aa97fe0559a010e165239a2736c6b7bdd726fc397ce11cf5d0c8e9d95",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-027",
+    "identity_id": "f",
     "image_filename": "f-027-01.jpg",
     "sha256": "23433969fbbe42d1aa8ebf9cde267665e129417dfc72b8f87c7da39a5ca844c3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-028",
+    "identity_id": "f",
     "image_filename": "f-028-01.jpg",
     "sha256": "4fbe92f22994782cae87909c9bce91a8e9d372a9878c5976bafbce520761dbcb",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-029",
+    "identity_id": "f",
     "image_filename": "f-029-01.jpg",
     "sha256": "8c0811808fcac30e0143d02c0df0dc55852bf247d586bcfb87164c0f4b3aa615",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-030",
+    "identity_id": "f",
     "image_filename": "f-030-01.jpg",
     "sha256": "b70fe133ab8b4ef9e4c7ed39b4f2e4f30027f7643c6202a3aea3adbe4318d213",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-031",
+    "identity_id": "f",
     "image_filename": "f-031-01.jpg",
     "sha256": "c521f0ded49bd3518749222402d0cd67568e4ec3e4d3dc7f09cd974b5dd33c6e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-032",
+    "identity_id": "f",
     "image_filename": "f-032-01.jpg",
     "sha256": "a04d4afbf3c1ae1cfa4ad67284608057bfab4517b3ac1e7f958011a0645d4519",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-033",
+    "identity_id": "f",
     "image_filename": "f-033-01.jpg",
     "sha256": "975a2b29ba6f8a9f6da3c2bd90b821e9240528c81bc5d4036462b8e6874736af",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-034",
+    "identity_id": "f",
     "image_filename": "f-034-01.jpg",
     "sha256": "642443e34f3a442617936c0bc9ef6783a30c1a4615b4b7267f25babdb80e1be2",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-035",
+    "identity_id": "f",
     "image_filename": "f-035-01.jpg",
     "sha256": "8fb75a2468bc67143cc0e1361515fe25a8265e6c40ef8b45304920d941d85f26",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-036",
+    "identity_id": "f",
     "image_filename": "f-036-01.jpg",
     "sha256": "209b36e54ee835f90cf3ddaa8d4dc12954077d4c5db4a780eb915c16fb7e22d9",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-037",
+    "identity_id": "f",
     "image_filename": "f-037-01.jpg",
     "sha256": "532ebaa8d306046addff5f52cd99cfcff137de02521c2ea6fa09e9a7c7bd6890",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-038",
+    "identity_id": "f",
     "image_filename": "f-038-01.jpg",
     "sha256": "f16589070946480cc40a2078998ef355864041cf66462e9941d9fd76cea33eae",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-039",
+    "identity_id": "f",
     "image_filename": "f-039-01.jpg",
     "sha256": "9cdc99f48a36e0431751a9e06738d83a3e4929d302c49f7609a5c06d0bbaad80",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-040",
+    "identity_id": "f",
     "image_filename": "f-040-01.jpg",
     "sha256": "7dcd87c603244e47fd2b44d521b840e78f53a4b6dcad3471d3fb773f0102f0cc",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-041",
+    "identity_id": "f",
     "image_filename": "f-041-01.jpg",
     "sha256": "555c09a2a3238c5ac46aae9897d68c1201db89b5263c0964ae129447a20c32ac",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-042",
+    "identity_id": "f",
     "image_filename": "f-042-01.jpg",
     "sha256": "bacfcb4eac6c96aa43d0e81509e648b0d0f6390793ec72743c02640b70641b3f",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f-043",
+    "identity_id": "f",
     "image_filename": "f-043-01.jpg",
     "sha256": "78ef957961a82e69f50cc540af24a112288eb887b458a5288bda6877195d0309",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-001",
+    "identity_id": "f1",
     "image_filename": "f1-001-01.jpg",
     "sha256": "a4ad4af88f7fe7d5b44a57701f96fbdfe78345bfc14b78064e0780b2b2eb6c10",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-002",
+    "identity_id": "f1",
     "image_filename": "f1-002-01.jpg",
     "sha256": "43a3b036a91a08f3199d1fb9c3bcf4b37d67b08bc7752db634383fb63d0d532e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-003",
+    "identity_id": "f1",
     "image_filename": "f1-003-01.jpg",
     "sha256": "c93ee03096708efb43b1044a8de4104c9739b8092bcc60e53b36676b93fbe551",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-004",
+    "identity_id": "f1",
     "image_filename": "f1-004-01.jpg",
     "sha256": "17ab03689bcf9782a7b34fe010d473d5eb3fcd66b0fc68d7ccb2334e245e96f3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-005",
+    "identity_id": "f1",
     "image_filename": "f1-005-01.jpg",
     "sha256": "76ce502d3a24620fdbb86be464fb6c515a73d9ebd818505e9d47d60cd42ae4b5",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-006",
+    "identity_id": "f1",
     "image_filename": "f1-006-01.jpg",
     "sha256": "e8915193f2eef809f4c98116fa798ad5e12f344cdfd25ad2b0ba15d1170e65b3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-007",
+    "identity_id": "f1",
     "image_filename": "f1-007-01.jpg",
     "sha256": "d0ed713767827284ffc0eaea968b2d7ca551e2e078213f29702b69ef18af3e79",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-008",
+    "identity_id": "f1",
     "image_filename": "f1-008-01.jpg",
     "sha256": "0c060bbf0b0cbc804d3bb7da9313385c160954c1c9d1be45e235b6cd2ce30350",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f1-009",
+    "identity_id": "f1",
     "image_filename": "f1-009-01.jpg",
     "sha256": "fe059f80c685c183847aee8bffcc7d1d523a3fa8ba4efc8aaac0f98d1e2ee261",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f10",
+    "identity_id": "f1",
     "image_filename": "f1-010-01.jpg",
     "sha256": "4eb854e84b438e9cda14a8ea5668c1a6de3b41162c9f116411c4c098e9650507",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f11",
+    "identity_id": "f1",
     "image_filename": "f1-011-01.jpg",
     "sha256": "43510d27fbf8ea79cde4704a312a00cd1642a151bbd6f01a91097c0173320d66",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f12",
+    "identity_id": "f1",
     "image_filename": "f1-012-01.jpg",
     "sha256": "178fc40b96c4dbfaef86d0467ccbe4d3afb5e55514275cb01a1ff9fec888ac2d",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f13",
+    "identity_id": "f1",
     "image_filename": "f1-013-01.jpg",
     "sha256": "43dbba3fec1794ea94946fc6f56e133dfdf501d55207872db05b67099d6a91b6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f14",
+    "identity_id": "f1",
     "image_filename": "f1-014-01.jpg",
     "sha256": "c28f992b3548d1919b3b7aa6140da38990ddb39a3706c33c859aa0cf96183df8",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "f15",
+    "identity_id": "f1",
     "image_filename": "f1-015-01.jpg",
     "sha256": "b8433e2f6c05b48ff78409f63ca0809782e97dfb53162397efb2cf55b9dc01f2",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-008",
+    "identity_id": "f_anushka_shetty",
+    "image_filename": "f_anushka_shetty_1.jpg",
+    "sha256": "fd8473af696fd8c3b62a480b20c247308a1596646dcf79013e7e2e704cebf649",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_anushka_shetty",
+    "image_filename": "f_anushka_shetty_2.jpg",
+    "sha256": "b91f5cf52ad6a1a9b42214fd1ed37cc0f0802bbad78a3bc665abae3fd26f9640",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_aruna_irani",
+    "image_filename": "f_aruna_irani_1.jpg",
+    "sha256": "95c644441981b8f6eefea1e92b35a914728b85edf81d2e16687d031d53be54e6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_aruna_irani",
+    "image_filename": "f_aruna_irani_2.jpg",
+    "sha256": "4094ab174e0af28c625b1070b03cb7e85b5b5aca2a2381997b101434f8ce0928",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_deepika_padukone",
+    "image_filename": "f_deepika_padukone_1.jpg",
+    "sha256": "ba4ef210eb1b533f0e5f1d8bfc5f49540012d29a790cf7c8d3603a34824658db",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_deepika_padukone",
+    "image_filename": "f_deepika_padukone_2.jpg",
+    "sha256": "df3c06a64a6070b193b1180fc05f6fbd4976586647d2f6f305b2add2a59f7aff",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_deepti_naval",
+    "image_filename": "f_deepti_naval_1.jpg",
+    "sha256": "122c531ad34a7ab63323a0142f42f82ffd31a85fb42e7973adebb9ac04f307bd",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_deepti_naval",
+    "image_filename": "f_deepti_naval_2.jpg",
+    "sha256": "be51b26682c4e753d3d5119b43dc940d0df877a65d34f0eb582b67b534fc5126",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_dimple_kapadia",
+    "image_filename": "f_dimple_kapadia_1.jpg",
+    "sha256": "71ea7d8ef0092f9b958dedc7ff127103e035e70d3d079ee18f318747f10e5a52",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_dimple_kapadia",
+    "image_filename": "f_dimple_kapadia_2.jpg",
+    "sha256": "c77dc2ba816ab9d109feeadcf6d4615304379fd11f326bc4757851845f6ffdc8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_farida_jalal",
+    "image_filename": "f_farida_jalal_1.jpg",
+    "sha256": "498c4e8a8dc90ca2a463a5ff375ed8744e6f13d15e5b3229d174745d2a123219",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_farida_jalal",
+    "image_filename": "f_farida_jalal_2.jpg",
+    "sha256": "ba41486ac6e971d03e8bcbef28e29ef1725d79bae5f7ec36cfc70562641135c2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_huma_qureshi",
+    "image_filename": "f_huma_qureshi_1.jpg",
+    "sha256": "127d87313f98ac94c0eaf06371bc48c40639d24b248997c65b18c2e62f4ebeb3",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_huma_qureshi",
+    "image_filename": "f_huma_qureshi_2.jpg",
+    "sha256": "7530be8e523fa3dd3d31faa87a2965e21575f2b468a01f883dae7c3cdb278ddd",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_kajol",
+    "image_filename": "f_kajol_1.jpg",
+    "sha256": "593be20a747aab3db54b12ffa75468641482b7d25ab0bbcda0a56a0eba860994",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_kajol",
+    "image_filename": "f_kajol_2.jpg",
+    "sha256": "b19b85c09e802c0f640c1d02b4801a922c005b6639ac3783ae8ffb97982fd3ce",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_kangana_ranaut",
+    "image_filename": "f_kangana_ranaut_1.jpg",
+    "sha256": "a75ec398fe2223a0af65e82b1fe9ac01c98b97219d52989c529a4fb4706683e4",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_kangana_ranaut",
+    "image_filename": "f_kangana_ranaut_2.jpg",
+    "sha256": "981e4eb8987abb96fcf7a666cb8c0915999fd3e7500c00c5c22d212a1791cb0d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_konkona_sen_sharma",
+    "image_filename": "f_konkona_sen_sharma_1.jpg",
+    "sha256": "c1d9dd42f07009d39878ab7be1fc4b879ff54ffc105223fbd5a17c4a7d017751",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_konkona_sen_sharma",
+    "image_filename": "f_konkona_sen_sharma_2.jpg",
+    "sha256": "6d3002a01a497efb662fd62b36e41fafa505b1419852a7497bb345be6c24a7d6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_lara_dutta",
+    "image_filename": "f_lara_dutta_1.jpg",
+    "sha256": "d75bf991a4445982d6acd5c83cc84c9326ce88fa5328034b4f9fb168e492c276",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_lara_dutta",
+    "image_filename": "f_lara_dutta_2.jpg",
+    "sha256": "a18790a72ffeb936aa2fb5fb68dd5e86244ac7e8f407cc0dd4ea351fa02c6dac",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_madhuri_dixit",
+    "image_filename": "f_madhuri_dixit_1.jpg",
+    "sha256": "c48f9db923299ee0f34a103968795dc946f7b25ad7a2251a6a4b1e60bbc6fee0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_madhuri_dixit",
+    "image_filename": "f_madhuri_dixit_2.jpg",
+    "sha256": "2a24ec50d427e74e0d95faa90bf4f7046c8ac087396baa43987345b65a5b658e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_mita_vashisht",
+    "image_filename": "f_mita_vashisht_1.jpg",
+    "sha256": "0a09f9f2de47f8aa911f4e8a4471f844d4cfb071f7e574005c9e19a8b012f39e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_mita_vashisht",
+    "image_filename": "f_mita_vashisht_2.jpg",
+    "sha256": "aa886e2b4a207cab93ab49205dea78bb401a36f43713ba21b3d6bc33423212e9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_nandita_das",
+    "image_filename": "f_nandita_das_1.jpg",
+    "sha256": "6eda264bdf51cbd6f01806eaf611df85ffe2e595cef170bb50e7480f7f12432f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_nandita_das",
+    "image_filename": "f_nandita_das_2.jpg",
+    "sha256": "543e7ee336659a0d04c31f96b4e65fe6bd3117c687efd4c7d8a0c8e0a0bcb2e9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_nargis",
+    "image_filename": "f_nargis_1.jpg",
+    "sha256": "fb3072d8ea2ac12ce83b0080e837c7eab517e4f4661acff02fc7e131b58af4d0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_nargis",
+    "image_filename": "f_nargis_2.jpg",
+    "sha256": "8d7f994caeb40a281d79801a8da13a1235ebeeaeca4577ef02315809761da1c0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_nirupa_roy",
+    "image_filename": "f_nirupa_roy_1.jpg",
+    "sha256": "2b0d705e78801c17319f2539d031de33dda038fd35371de7682bbea37c772fc8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_nirupa_roy",
+    "image_filename": "f_nirupa_roy_2.jpg",
+    "sha256": "e4ff87a13cd522d9f68a62a529bc38e3755734a937e194d1e8a18208d115b16b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_pooja_bhatt",
+    "image_filename": "f_pooja_bhatt_1.jpg",
+    "sha256": "8070b78effcbb5e01d6bb4941efb83e2bb21b9002a4240378bd2c9b7fffa79f0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_pooja_bhatt",
+    "image_filename": "f_pooja_bhatt_2.jpg",
+    "sha256": "5250fe65b0bcb949639d77d40f6bddbb963d807924b1e8f3e946b7e7d11aa2b0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_priyanka_chopra",
+    "image_filename": "f_priyanka_chopra_1.jpg",
+    "sha256": "eaf1f3b9234f67d3926881849bb5afeecef1f47e634c147c92352fef5497ca24",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_priyanka_chopra",
+    "image_filename": "f_priyanka_chopra_2.jpg",
+    "sha256": "093c605504258d8266466731a41dea1f0be3765ffe22248281a2c1e9b08e1659",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_radhika_apte",
+    "image_filename": "f_radhika_apte_1.jpg",
+    "sha256": "9b60711524dc20b8a85366ac2684ee21375699ae2071e71383497f97b3f2b4b8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_radhika_apte",
+    "image_filename": "f_radhika_apte_2.jpg",
+    "sha256": "8800dd2942bd4c59f3404c7ed8dd0488f8512fef037145d17be454bde026a9d8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_rakhee_gulzar",
+    "image_filename": "f_rakhee_gulzar_1.jpg",
+    "sha256": "96db983f79d683a65b16aaa22e50e2b59b92916ceb2aa71a6546419edba3a1a0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_rakhee_gulzar",
+    "image_filename": "f_rakhee_gulzar_2.jpg",
+    "sha256": "43577a94231f8a68bd78c1ca0676476d255787fa5610d052468c4642d4dc20b9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_ramya_krishnan",
+    "image_filename": "f_ramya_krishnan_1.jpg",
+    "sha256": "c717ae29f8905659e24897ab28ecd0f38734f1cb194bcbe97a1a6873820a7e81",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_ramya_krishnan",
+    "image_filename": "f_ramya_krishnan_2.jpg",
+    "sha256": "fbed49433832153386a0136491e001c3bb0084288bc3034ed2c081a09a970c90",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_rani_mukerji",
+    "image_filename": "f_rani_mukerji_1.jpg",
+    "sha256": "193acaa1d59b7c7f6b0a698653f02b96207a4cfd093f51de3f7e2886dc65b794",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_rani_mukerji",
+    "image_filename": "f_rani_mukerji_2.jpg",
+    "sha256": "2e1d769fb53979dacd21898fff868bbc97394aca57d8aa39998146ce0760a6f1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_ratna_pathak_shah",
+    "image_filename": "f_ratna_pathak_shah_1.jpg",
+    "sha256": "dd5d3299feef5b537554a0449e2c41847cb09f329e20d83a5bb722909d3c86ec",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_ratna_pathak_shah",
+    "image_filename": "f_ratna_pathak_shah_2.jpg",
+    "sha256": "8d71a742f8d7ee0d81d865590f13c8c59c53db44e307072a4c4b2c9bd5cd6019",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_rekha",
+    "image_filename": "f_rekha_1.jpg",
+    "sha256": "a48ad14f479230d4935be8e560909d4a104f7c1339c5664ba2c7ed7244837a7d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_rekha",
+    "image_filename": "f_rekha_2.jpg",
+    "sha256": "4da6f29888f042d84d23bef9bf23b28953842689028cae357d8f66560e54ee60",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_richa_chadha",
+    "image_filename": "f_richa_chadha_1.jpg",
+    "sha256": "919f77a15fede37a746168feff3cab1fbe2535dbcc33a2d85a6a4d616e98aabc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_richa_chadha",
+    "image_filename": "f_richa_chadha_2.jpg",
+    "sha256": "412845cd1a5d24545c0f1f7185617a83d88b47b9630d2dc543c83b016c008ab6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_shabana_azmi",
+    "image_filename": "f_shabana_azmi_1.jpg",
+    "sha256": "9474ee186a9bb686dc991dc09f7e2dc0b5d60ebcce8b50e0014b2ac1417ca13b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_shabana_azmi",
+    "image_filename": "f_shabana_azmi_2.jpg",
+    "sha256": "9599d015be1c262e06ffa253c92ce4b98550c9fc6b3f92921aea3d6264015f52",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_sharmila_tagore",
+    "image_filename": "f_sharmila_tagore_1.jpg",
+    "sha256": "b24b162dbc425f5bf63ba4008be2f033055c141c2e36fb284d5ed0012533d7eb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_sharmila_tagore",
+    "image_filename": "f_sharmila_tagore_2.jpg",
+    "sha256": "2f6c943d5c10431e2373040608f1b2a2973efa9adf87b1cfb53608911859098e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_smita_patil",
+    "image_filename": "f_smita_patil_1.jpg",
+    "sha256": "868d84c581e1338e2d03cc20ebc215acc150f46c10c6b71665b2800409588f4f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_smita_patil",
+    "image_filename": "f_smita_patil_2.jpg",
+    "sha256": "e058c485f5e1239cf09ab6bcacca6a8d46950a040481ce72634f0c4d0c2c2ae6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_sridevi",
+    "image_filename": "f_sridevi_1.jpg",
+    "sha256": "ecd3bfca20b70bc7c2cac81fe7946181a904bfb37531aae73494bad51cbf539c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_sridevi",
+    "image_filename": "f_sridevi_2.jpg",
+    "sha256": "3ef48587a47831915f3d41db9c4d7a4aa2d97cc81e3f6c2bf4318187c3cbea94",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_tabu",
+    "image_filename": "f_tabu_1.jpg",
+    "sha256": "fb193cbaf437f5f9ea4897066fc91965b0356f18fca74729d0b4dc425b4f9471",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_tabu",
+    "image_filename": "f_tabu_2.jpg",
+    "sha256": "c2b7a2882d6d7fbd4ed824721bbaffef4065a5d0efe795f9847cfa39689f7da2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_vidya_balan",
+    "image_filename": "f_vidya_balan_1.jpg",
+    "sha256": "6267af12022366245ea993998a4dc7d950b0156387a7c086dcba6fe19351def9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_vidya_balan",
+    "image_filename": "f_vidya_balan_2.jpg",
+    "sha256": "dc8a5d8e75445be0070fa8efe4cdee72199168d5eabebe67fffe15720de5ccab",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_waheeda_rehman",
+    "image_filename": "f_waheeda_rehman_1.jpg",
+    "sha256": "9c8988080dbf125356b800e4e2972bccedad1364ae42348c1cda96fbb6b97652",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_waheeda_rehman",
+    "image_filename": "f_waheeda_rehman_2.jpg",
+    "sha256": "85ea8ffcf4a3ce0beb6508480ac07319e1facc080750ba6ba415d39069cbc9cb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_zarina_wahab",
+    "image_filename": "f_zarina_wahab_1.jpg",
+    "sha256": "a6029b697ba642b0df129c64200ddd31d97c4532a1fc46286896e9bcd5b59a19",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_zarina_wahab",
+    "image_filename": "f_zarina_wahab_2.jpg",
+    "sha256": "4811d1463792b4d85323437415eae144ff7205f4d8f2e2d285dee2e93985f980",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_zeenat_aman",
+    "image_filename": "f_zeenat_aman_1.jpg",
+    "sha256": "2215ae99d78a797791c685d6b974955419551755b269bf817c9d1a61dc1c65dc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "f_zeenat_aman",
+    "image_filename": "f_zeenat_aman_2.jpg",
+    "sha256": "bd8894926f41f9a4f13001dd88a9a2fdabfda6c085c0b464250b044a3b1ca3db",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m",
     "image_filename": "m-008-01.jpg",
     "sha256": "2e68cde8fe6b1d6b068b786271d2bcf781d59a006fb0fd9fb340a51c7f1756d3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-009",
+    "identity_id": "m",
     "image_filename": "m-009-01.jpg",
     "sha256": "21bffa4ce0fb4155620343b1f0e0fbd02027697eb3bf33642f9b22f279dddf7e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m0",
+    "identity_id": "m",
     "image_filename": "m-010-01.jpg",
     "sha256": "2c5c2276469d2d2abf4c3679afebbee8239f270a18ab9844f3459dfb94527206",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1",
+    "identity_id": "m",
     "image_filename": "m-011-01.jpg",
     "sha256": "7e5be360e9327b23596e023b4ff8c806036165cb48f90b70f1e0c131bb691f06",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m2",
+    "identity_id": "m",
     "image_filename": "m-012-01.jpg",
     "sha256": "08fefc894eda2ae03faf34fc79979f2b1e41f2ee0e40aa9f1234cae1bb1bd1dc",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m3",
+    "identity_id": "m",
     "image_filename": "m-013-01.jpg",
     "sha256": "968980169bcc48c6d1441446e22f21114f4eff0c3f9f96abfdfbf37b92489bc1",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m4",
+    "identity_id": "m",
     "image_filename": "m-014-01.jpg",
     "sha256": "d53e7d2d8e2e0b22ecc0ecbd24b52304dda5333029b10e9bf8cf1b13d9b89926",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m5",
+    "identity_id": "m",
     "image_filename": "m-015-01.jpg",
     "sha256": "545cfde920e75bb985ae19de6ff41de5adbf0a34b6d07e7c6ad12ec0624d9b11",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m6",
+    "identity_id": "m",
     "image_filename": "m-016-01.jpg",
     "sha256": "16355407a3383b1a2937ed329d5d332dd087a6408b851bbe4ab3ec2f8f805af2",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m7",
+    "identity_id": "m",
     "image_filename": "m-017-01.jpg",
     "sha256": "6cbbe2344fd15493b36ec6fa6ced86bb0ede38371e537e290c025d064a0a72c8",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m8",
+    "identity_id": "m",
     "image_filename": "m-018-01.jpg",
     "sha256": "ed0bfefd9b9b27a4e16eb09543601ae0d00d9a04157e33573cd0297726294147",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m9",
+    "identity_id": "m",
     "image_filename": "m-019-01.jpg",
     "sha256": "220069db6136acdcbc41e0807285ca622acb593d3836fd8c35dd0a3a48527d54",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-021",
+    "identity_id": "m",
     "image_filename": "m-021-01.jpg",
     "sha256": "609a1580c01829476b0ab5eaf57a7f556c8693d9e5824cd894adef91fc0e3888",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-022",
+    "identity_id": "m",
     "image_filename": "m-022-01.jpg",
     "sha256": "a822f8ffd4162b509953b4fb26a2406e72d3b373de74783f1dfc76cfe8b99bb2",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-023",
+    "identity_id": "m",
     "image_filename": "m-023-01.jpg",
     "sha256": "460355be892ca5c14f202807afba04f8c7b34e9e3cec00d1d2c66e6df44fb14d",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-024",
+    "identity_id": "m",
     "image_filename": "m-024-01.jpg",
     "sha256": "14e7e15b9932ed16bade1b0190a9886f5cdf9a5776c3c6697d383af5db0f62c6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-025",
+    "identity_id": "m",
     "image_filename": "m-025-01.jpg",
     "sha256": "a1359eb6df84297ecc67f821c171536d2a6f569bc955b47cbb20e565b3ab174e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-026",
+    "identity_id": "m",
     "image_filename": "m-026-01.jpg",
     "sha256": "a155e0b40cfb6a6afe5babe5c1ecb6efd17a47d74e3d20dd2b3ebe56b6f0090e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-027",
+    "identity_id": "m",
     "image_filename": "m-027-01.jpg",
     "sha256": "788d3c77ba8b596c08faabea555d8da78ae54ea4298dc9d5a21e99f873cf45a9",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-028",
+    "identity_id": "m",
     "image_filename": "m-028-01.jpg",
     "sha256": "c5e23095d8e081a3809648337bcb642d83cf1701b4790dbd0476a25587dfbefe",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-029",
+    "identity_id": "m",
     "image_filename": "m-029-01.jpg",
     "sha256": "68eb11ca9fe8b1052b241e73f3481831484b33a2def59a13b8fe418e001756f6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-030",
+    "identity_id": "m",
     "image_filename": "m-030-01.jpg",
     "sha256": "9cbfa7d0ce08a180067655149c94c51601127089f6cb10412ffdb6716a60b767",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-031",
+    "identity_id": "m",
     "image_filename": "m-031-01.jpg",
     "sha256": "abc9c85785cde1b5fcb60cd171214dca7a583aefc6747c5428d77df2c076c0b6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-032",
+    "identity_id": "m",
     "image_filename": "m-032-01.jpg",
     "sha256": "3c97815202c1520b5d6c01599c866e878e8448bd3d070b544745fa14edc3ccc0",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-033",
+    "identity_id": "m",
     "image_filename": "m-033-01.jpg",
     "sha256": "3547e8b388a1959ec5bde0f05518526b5e577fa447aefe48c85b2c35e497dc0a",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-034",
+    "identity_id": "m",
     "image_filename": "m-034-01.jpg",
     "sha256": "0ad3c21792bcd6a81e2152c20f6fc249e3b4e2d18dfbcc22fc7610e7769f130b",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-035",
+    "identity_id": "m",
     "image_filename": "m-035-01.jpg",
     "sha256": "d7e7118cba18f83429870cd6407a4196108bda92166b7143ded4dac510c559b9",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-036",
+    "identity_id": "m",
     "image_filename": "m-036-01.jpg",
     "sha256": "34c656feb82a3507c3dede76dabc8233811de368e3d7e309b3b4a15381804f53",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-037",
+    "identity_id": "m",
     "image_filename": "m-037-01.jpg",
     "sha256": "8ea7f1d8ca01230974fc6524c4dfcc9e0f32968226e9b7d58626a9c96dfe7f92",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-038",
+    "identity_id": "m",
     "image_filename": "m-038-01.jpg",
     "sha256": "3e16b4fd617f7066ad2b6e61c68b141f4265b01746af8ddc12a7869c2701f812",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-039",
+    "identity_id": "m",
     "image_filename": "m-039-01.jpg",
     "sha256": "fc25166b4270e057577329e7027e29cfc3cff0a00f6981c856806660d7c7ef7f",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-040",
+    "identity_id": "m",
     "image_filename": "m-040-01.jpg",
     "sha256": "83f83348efd18d1991a1156d85a9413590399966f4d7f581119d0965cdef6169",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-041",
+    "identity_id": "m",
     "image_filename": "m-041-01.jpg",
     "sha256": "14fe9f3bfc32f067e3b86249e02829b4e9665b0a323a92c3a074a8ca3a987042",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-042",
+    "identity_id": "m",
     "image_filename": "m-042-01.jpg",
     "sha256": "d3a6d260ef2ca6b5bda3ada153d9f1b694f08892981c2546e0c33255d84c9920",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-043",
+    "identity_id": "m",
     "image_filename": "m-043-01.jpg",
     "sha256": "45c3b7051a1915142ff079a4412cb2c7bcc53f3d934137c1749cd3764d4ba55a",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-044",
+    "identity_id": "m",
     "image_filename": "m-044-01.jpg",
     "sha256": "12a3ea93e2e1f6bf9c089bc165c7b5c94f34145fd24757a7785b30f42c79d245",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-045",
+    "identity_id": "m",
     "image_filename": "m-045-01.jpg",
     "sha256": "84b8084a45d0695b345e7192df1bd401211572f5eaeaacaefda7d8da9d8ebfee",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-046",
+    "identity_id": "m",
     "image_filename": "m-046-01.jpg",
     "sha256": "e5f5b455e0eba0f24f3a9c89e8a5ec5206df192ba095d8532ca674f8faef0963",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-047",
+    "identity_id": "m",
     "image_filename": "m-047-01.jpg",
     "sha256": "ba4c19b3ae5fc649e8c419e0434735a664c3e4060cabd386fc166f5f530b1909",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-048",
+    "identity_id": "m",
     "image_filename": "m-048-01.jpg",
     "sha256": "7e29df6634cdf4146379922e0e340da1ce0590d046abeadfb869ed7d34cbd4d7",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-049",
+    "identity_id": "m",
     "image_filename": "m-049-01.jpg",
     "sha256": "77d15192960cec2271db6ba6cf346c23b32ff74b35f006e02f55211413053e9d",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-050",
+    "identity_id": "m",
     "image_filename": "m-050-01.jpg",
     "sha256": "6020b751f0348698b213a6d8a3a75bbe31a12a39d7fe585676be663f7a6839d5",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-051",
+    "identity_id": "m",
     "image_filename": "m-051-01.jpg",
     "sha256": "7c958435fcf99f0b0238639092b868cbb3adb5a971696ea20af6891b914107f0",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-052",
+    "identity_id": "m",
     "image_filename": "m-052-01.jpg",
     "sha256": "ed1f4897025b7b9f3140fa0d31f94e6d0f5e1bab395b7378da9f741c07e81473",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-053",
+    "identity_id": "m",
     "image_filename": "m-053-01.jpg",
     "sha256": "fa898366a7590b75cf6df72592c776febf3a6fe45045a0ab778164a0447987e7",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-054",
+    "identity_id": "m",
     "image_filename": "m-054-01.jpg",
     "sha256": "e9cfb2c7ba34da19427afad8660c5e5df038dcff3b1745acf70875d482217c34",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-055",
+    "identity_id": "m",
     "image_filename": "m-055-01.jpg",
     "sha256": "dc01385442a82588fd82c6ff0064b4270acec8cb94d89a8760e4b6b4381ab244",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-056",
+    "identity_id": "m",
     "image_filename": "m-056-01.jpg",
     "sha256": "3597a25f1c49abe98487ff87c3376ebe7d6565fa161332cee1ad3e7b0961c40d",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-057",
+    "identity_id": "m",
     "image_filename": "m-057-01.jpg",
     "sha256": "f0d540ec7b82d46b3ee0fd15a9b8af1e98b692b3724c60147474e1d300bae3e6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-058",
+    "identity_id": "m",
     "image_filename": "m-058-01.jpg",
     "sha256": "33a1379b344f4eb3627721f72a62d8a5a7296c892b86fb15cebc809b89ff4ead",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-059",
+    "identity_id": "m",
     "image_filename": "m-059-01.jpg",
     "sha256": "dbfd3e967b86801e72a3ca9f4381383f20902da47aa3f2b2c77b7d904b716793",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-060",
+    "identity_id": "m",
     "image_filename": "m-060-01.jpg",
     "sha256": "57f2ff0767dd7945a2ba72d63493ffc0277ff3cf85be24dc82e1ba38238db01b",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-061",
+    "identity_id": "m",
     "image_filename": "m-061-01.jpg",
     "sha256": "66ff1a2d8bc807cfa05f8bf7c11735d6e91d34e4f6750eb36c31efb02576b478",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-062",
+    "identity_id": "m",
     "image_filename": "m-062-01.jpg",
     "sha256": "fc0b7e247fd7d0b4c9a41efe8eb31d993e4202987de81e210d3e35180d7e2b03",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-063",
+    "identity_id": "m",
     "image_filename": "m-063-01.jpg",
     "sha256": "9f8b3eb5a2a2bbf332cd9dc0118f26af4e72a141736fdadc2bcc3f651b702922",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-064",
+    "identity_id": "m",
     "image_filename": "m-064-01.jpg",
     "sha256": "fa09f23cb410f7accaee27b072bce25f08c4091f8e858ed904ca8fea01971075",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-065",
+    "identity_id": "m",
     "image_filename": "m-065-01.jpg",
     "sha256": "d478f2982423cd13a81da7d197570209ad564f7b2c0457743668fab903df3a8b",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-066",
+    "identity_id": "m",
     "image_filename": "m-066-01.jpg",
     "sha256": "a2d91422bf560faa153d2ac348ff92f05ea4f3eb4ccd9a7cb22feb7c5ffb6a9c",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-067",
+    "identity_id": "m",
     "image_filename": "m-067-01.jpg",
     "sha256": "8bcd8ca8ed32e26ee048301ac9f0415e3b718d027c06c923ac15c19cf35433eb",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-068",
+    "identity_id": "m",
     "image_filename": "m-068-01.jpg",
     "sha256": "a1af55ab13251665f576ca37fd213cc7fcf70c0d49fd76537b50ef511b03d786",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-069",
+    "identity_id": "m",
     "image_filename": "m-069-01.jpg",
     "sha256": "812b2ec9899def9a72779180f7518eda48ce06a86dc7d287aa217f4bab2ef805",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-070",
+    "identity_id": "m",
     "image_filename": "m-070-01.jpg",
     "sha256": "9adfb90cbbf70a1cb0e58334d29ecf7613847e5007f0fd821281ac3b3f09dc5c",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-071",
+    "identity_id": "m",
     "image_filename": "m-071-01.jpg",
     "sha256": "cf82f9ab5950a311387c354f7976db162249c6050654beba75ec8770f4a4f6c7",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-072",
+    "identity_id": "m",
     "image_filename": "m-072-01.jpg",
     "sha256": "986049fcf816fa4f97fb99043b1c5850df907d4a0b94c70891a0974fae0a9cb6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-073",
+    "identity_id": "m",
     "image_filename": "m-073-01.jpg",
     "sha256": "9c819a99a7a8cad1d1af00702d38533cc332149f13244d29bd4d0bd0245b98a3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-074",
+    "identity_id": "m",
     "image_filename": "m-074-01.jpg",
     "sha256": "66e3e0f1caff4c81c1dad0ad682c8b7188144f25316ee5088310028ab835d860",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-075",
+    "identity_id": "m",
     "image_filename": "m-075-01.jpg",
     "sha256": "5c5e8a223a6ee27f503c1aa40454065ad56e8728d21dd81de68965a3eef6bde5",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-076",
+    "identity_id": "m",
     "image_filename": "m-076-01.jpg",
     "sha256": "9eb3ac723798fc2efec7c7ee6f7b24bbb53a54115dbc23edef1dbc98fbba9fa3",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-077",
+    "identity_id": "m",
     "image_filename": "m-077-01.jpg",
     "sha256": "baaad3db9aa27d624873f0459449ddb4e39f5819f82599003f5d75b6108c61ee",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-078",
+    "identity_id": "m",
     "image_filename": "m-078-01.jpg",
     "sha256": "0d54b04db80f4f9b3373d2df20f7f65649121ab343ba683e229a552f51acff6a",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-079",
+    "identity_id": "m",
     "image_filename": "m-079-01.jpg",
     "sha256": "3ffd06c4fbcf4efe68074e8c6682ddf25f3e02eaa8e49234232d2e39a7dc7952",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-080",
+    "identity_id": "m",
     "image_filename": "m-080-01.jpg",
     "sha256": "508d5f6056ccd438d79a6153deb23525cf56c6ad6c77dbe4ecba5ee854297104",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-081",
+    "identity_id": "m",
     "image_filename": "m-081-01.jpg",
     "sha256": "75b8adc20d9811d1bac9536d2ff7ea870868866480610d50e83b5e7f6e918adc",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-082",
+    "identity_id": "m",
     "image_filename": "m-082-01.jpg",
     "sha256": "8d8a8c3f698ec346b69f174be5d6a25f5a27811adc73689a435eab0f459d6357",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-083",
+    "identity_id": "m",
     "image_filename": "m-083-01.jpg",
     "sha256": "7620b35e05c55a3d77197150997b4b22e1554dba6aa3ce56cf8531a713703372",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-084",
+    "identity_id": "m",
     "image_filename": "m-084-01.jpg",
     "sha256": "b804c27be9527ba9bca01cdf644d224cd0eac9551500ec977d0f1128d1656472",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-085",
+    "identity_id": "m",
     "image_filename": "m-085-01.jpg",
     "sha256": "a2d4e6b6bf19dc101eb1cf77c2f48e02e87be31cfec9ac34951bc127660ae748",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-086",
+    "identity_id": "m",
     "image_filename": "m-086-01.jpg",
     "sha256": "dbe704ce169180c37a64e124effe0925ba4ed6899d4ac7a5b6a3795409840869",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-087",
+    "identity_id": "m",
     "image_filename": "m-087-01.jpg",
     "sha256": "e6c435f98289420cb39b3bcb5c16c7a56225d96d29805aa3fa973d7ec0504ec5",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-088",
+    "identity_id": "m",
     "image_filename": "m-088-01.jpg",
     "sha256": "1f39a26a4d1717986c65c9dcc1fe223ffcb9b7a067ecad2b645e776f574fc15e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-089",
+    "identity_id": "m",
     "image_filename": "m-089-01.jpg",
     "sha256": "c41632d83dc69ea7510fc191c46f777faf5d526227b36693c491dde3754bc937",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-090",
+    "identity_id": "m",
     "image_filename": "m-090-01.jpg",
     "sha256": "37bbfeea3742da5d30d532c5b06eef27d96079d473bf44f8d1a3dddf12e6bfca",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-091",
+    "identity_id": "m",
     "image_filename": "m-091-01.jpg",
     "sha256": "fcfa600f77e130660cb692f24ec71e96f1e0d6dd56a05d565f3d937ec8e75747",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-092",
+    "identity_id": "m",
     "image_filename": "m-092-01.jpg",
     "sha256": "2976bdd9b3be3788a90c05921f9143bbabd271af9ad9992c23fbac445fcb0d78",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-093",
+    "identity_id": "m",
     "image_filename": "m-093-01.jpg",
     "sha256": "56d6ab4f6f56e98366550de54b6ab9bd399a7e67bff4580b460bb72a2e9bb1bb",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-094",
+    "identity_id": "m",
     "image_filename": "m-094-01.jpg",
     "sha256": "0c9abaeb267a69a1c0a539e973cb51c3dc9a5953ffb7e1e0d79a0cc40bbd1202",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-095",
+    "identity_id": "m",
     "image_filename": "m-095-01.jpg",
     "sha256": "facf3c50093b623f1931493124fd6536f1622bf41c87112b4e5364426301d510",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-096",
+    "identity_id": "m",
     "image_filename": "m-096-01.jpg",
     "sha256": "4aad93bfce31fc60e248d7080ecd250e96c94a39b8d936383d49c7c99b7f325c",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-097",
+    "identity_id": "m",
     "image_filename": "m-097-01.jpg",
     "sha256": "e0c02b3506ec99c27982564e7d19f7ca76feee38a3785309c2f039ecf873f8d5",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-098",
+    "identity_id": "m",
     "image_filename": "m-098-01.jpg",
     "sha256": "0e02db11b77bf6de018300e131183ec19b9c68153417535f651ff171ababcdc6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-099",
+    "identity_id": "m",
     "image_filename": "m-099-01.jpg",
     "sha256": "70e4fabb62e1c1ab0163ad31ea8b56940986f6e3ce71b9959b3300e947e3caa1",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-100",
+    "identity_id": "m",
     "image_filename": "m-100-01.jpg",
     "sha256": "bd3646a3aefbe2b3b0830003a8d020da93c36ec3984d78fa8032cb2f348f9b17",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m-101",
+    "identity_id": "m",
     "image_filename": "m-101-01.jpg",
     "sha256": "17f32f99c597f1302d41e655eaa1c9c90c0ee853cefdef7a5850e2f14a8db6fd",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-001",
+    "identity_id": "m1",
     "image_filename": "m1-001-01.jpg",
     "sha256": "2932e5f3ca5280acf5636bfbe671b4d179fff5fd4a9648d6d361fcf661396984",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-002",
+    "identity_id": "m1",
     "image_filename": "m1-002-01.jpg",
     "sha256": "6952335f0dcb32cfb9c349ba8265ce3761c74f3b3f9c2e672e389a6cb1c5f864",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-003",
+    "identity_id": "m1",
     "image_filename": "m1-003-01.jpg",
     "sha256": "331dd5ca73d06611c9bf8545c8c46853134c0299716a2092ca7b36739e47c5c7",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-004",
+    "identity_id": "m1",
     "image_filename": "m1-004-01.jpg",
     "sha256": "0ea3faeb8a55058f35cd881b7a00db2db6ad09659c9742d9c1d15174b418a1b6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-005",
+    "identity_id": "m1",
     "image_filename": "m1-005-01.jpg",
     "sha256": "f5bade893d2d9bc49eaecfc0179538ab8487290b4fabcd6c1c3d29a9d024285f",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-006",
+    "identity_id": "m1",
     "image_filename": "m1-006-01.jpg",
     "sha256": "68f526e5b30852ee19abea93ebfc230f7662feb8e730cc6f5c3c941f589cce23",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-007",
+    "identity_id": "m1",
     "image_filename": "m1-007-01.jpg",
     "sha256": "e7dc5270acd5d1f4ceb6cd3896e02a38e90701c093f6f1110fa3bd0dda8e3f85",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-008",
+    "identity_id": "m1",
     "image_filename": "m1-008-01.jpg",
     "sha256": "88d41c7ba172a73c1a90574b549dd6979d9ef920def94e0bdca4c8860f7b5dc9",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-009",
+    "identity_id": "m1",
     "image_filename": "m1-009-01.jpg",
     "sha256": "257e44612b236c43e263f29437d9c3b585166a43eb12a0c3cf1111ba64058be1",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m10",
+    "identity_id": "m1",
     "image_filename": "m1-010-01.jpg",
     "sha256": "17f8bc778b91e44107cc89455b4ddc17ac0ce0f97878f58f8d0076189d85beec",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m11",
+    "identity_id": "m1",
     "image_filename": "m1-011-01.jpg",
     "sha256": "28c20b5904dc02ecf2d3979a64f3e853cf45eb98965e7fba76739c7134bc94d8",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m12",
+    "identity_id": "m1",
     "image_filename": "m1-012-01.jpg",
     "sha256": "c4666827969e699e6741256a0f30e67f8553258da99566db0a05e2ee9df0730c",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m13",
+    "identity_id": "m1",
     "image_filename": "m1-013-01.jpg",
     "sha256": "3e870099c5ea76aae9bb71723c5781f931a7186c7c3d9c7ed6f458db077d575e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m14",
+    "identity_id": "m1",
     "image_filename": "m1-014-01.jpg",
     "sha256": "c19c741f38b27cd14b6b9c77ce305ce6a26dc5d92af680301c311a9847a5e350",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m15",
+    "identity_id": "m1",
     "image_filename": "m1-015-01.jpg",
     "sha256": "4f5098ebb471cfcad1c1e51fda129797666d598c432f1df9cb5f4faa0c6e00ea",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m16",
+    "identity_id": "m1",
     "image_filename": "m1-016-01.jpg",
     "sha256": "78a933ed3f784ced1298a126dc756512b2caf59b2a398e892c1ed47de5959e24",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m17",
+    "identity_id": "m1",
     "image_filename": "m1-017-01.jpg",
     "sha256": "0419b54443b62b79c06746b295a66a0c87269b1341a97f6c03e9e843154f96cc",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m18",
+    "identity_id": "m1",
     "image_filename": "m1-018-01.jpg",
     "sha256": "3bc661aa15db44ec77d0444287b2d5edb78998020ca071d3e06ee83d0dcce166",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m19",
+    "identity_id": "m1",
     "image_filename": "m1-019-01.jpg",
     "sha256": "fed7223b038c06275d911859832fc244c833d214e42979d73f6978988f58fff4",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-020",
+    "identity_id": "m1",
     "image_filename": "m1-020-01.jpg",
     "sha256": "e9abe2c47ec919d4576caba6a97d06931216d01658142e81e7ae12b8dd78c342",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-021",
+    "identity_id": "m1",
     "image_filename": "m1-021-01.jpg",
     "sha256": "d17ccfdc06d25b4aaa5ff64c32b1eabebb746bbc65e440869e85531b1e988cb0",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-022",
+    "identity_id": "m1",
     "image_filename": "m1-022-01.jpg",
     "sha256": "9bef6d953ffe621e4c2c758f22ae395704da5cf27d4a5a3b514a0e6d7001ff28",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-023",
+    "identity_id": "m1",
     "image_filename": "m1-023-01.jpg",
     "sha256": "6774ec77ac673fa68d35792a6b9e4042e906542d47d81c1ec7f570998347f4ff",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-024",
+    "identity_id": "m1",
     "image_filename": "m1-024-01.jpg",
     "sha256": "6f08fbab4d0412a7f821c057ade8978f37c7a22e3322275e8349aeb8213a1c96",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-025",
+    "identity_id": "m1",
     "image_filename": "m1-025-01.jpg",
     "sha256": "406fd9126c9f5ecb394b80ffad5acf6a88229603a501dd722eb703f5c2cadc55",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-026",
+    "identity_id": "m1",
     "image_filename": "m1-026-01.jpg",
     "sha256": "ff4222f37520fea4e8db9fbf7dff0d588b2a9432633c71c1c0e1179e8d2a7edf",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-027",
+    "identity_id": "m1",
     "image_filename": "m1-027-01.jpg",
     "sha256": "1846ce0c6fd1d89f45e73fd75db1d6dac09e62757ebed00d23d8a759525afcb6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-028",
+    "identity_id": "m1",
     "image_filename": "m1-028-01.jpg",
     "sha256": "b0e2d560f2af942764c7183e78f9c5367538c1e00d5799b4157d8acf6bb3cc74",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-029",
+    "identity_id": "m1",
     "image_filename": "m1-029-01.jpg",
     "sha256": "f70489012ed74969fa0c9080f57f402f4a9635a728d2bdd777a9cc25f2736054",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-030",
+    "identity_id": "m1",
     "image_filename": "m1-030-01.jpg",
     "sha256": "a0e10a39255ca5addf7ce0552b703c304cfc4ba7790c8cdef5a7921e65ff0f4b",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-031",
+    "identity_id": "m1",
     "image_filename": "m1-031-01.jpg",
     "sha256": "fe037853eda484fc6e44ba90073725f73a6556d808ff18ba2e376e906072b74e",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-032",
+    "identity_id": "m1",
     "image_filename": "m1-032-01.jpg",
     "sha256": "0358ea1962ec21391117112cb8838487c90b6c76bffa5d7266df9b136f0eeafa",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-033",
+    "identity_id": "m1",
     "image_filename": "m1-033-01.jpg",
     "sha256": "d801c454492037295a7ef8b9ddac06f9a457ce30e47583c8e11a8cbcde3ec308",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-034",
+    "identity_id": "m1",
     "image_filename": "m1-034-01.jpg",
     "sha256": "2761c0fc174773b5f798054479cd9191613682f0b7fa34963868ee7c11b81709",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-035",
+    "identity_id": "m1",
     "image_filename": "m1-035-01.jpg",
     "sha256": "42fbd247f23db1aa97c8801f8c8856a191ae3faaec2813fffbf9242490c13bc7",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-036",
+    "identity_id": "m1",
     "image_filename": "m1-036-01.jpg",
     "sha256": "a1d5538772bf261b1f8c433655c29ad90a87da4cd3068728dcf320dee56902b0",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-037",
+    "identity_id": "m1",
     "image_filename": "m1-037-01.jpg",
     "sha256": "8d0b928e23c2387d22fdf6d6768ada41ad9462e53f3921b557f5723144230a54",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-038",
+    "identity_id": "m1",
     "image_filename": "m1-038-01.jpg",
     "sha256": "2712a4d527f42ee56c6a1fcd1b03ada40e053bc1f36cecf6ffebb1a73c327faa",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-039",
+    "identity_id": "m1",
     "image_filename": "m1-039-01.jpg",
     "sha256": "f42c386d8c5762f20dc7004c16e2cbc447d49ec0a931535f5dd0fec9742c33ae",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-040",
+    "identity_id": "m1",
     "image_filename": "m1-040-01.jpg",
     "sha256": "5ec7871e1d3e068832410cb3e58b462e589fb3ee775bdb24a6241401327b2cf6",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
   },
   {
-    "identity_id": "m1-041",
+    "identity_id": "m1",
     "image_filename": "m1-041-01.jpg",
     "sha256": "5834c16b4ac2d84c26af417e58f3e8bd072dcac61b877a857425461f009eb5a8",
     "modality": "PHOTO",
     "source_dataset": "CUFS"
+  },
+  {
+    "identity_id": "m_abhay_deol",
+    "image_filename": "m_abhay_deol_1.jpg",
+    "sha256": "7690e27d9a0c28ba95da13475c4e9a4c499fc0faf58442c618eae4e9d1fa54ec",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_abhay_deol",
+    "image_filename": "m_abhay_deol_2.jpg",
+    "sha256": "fb5c1047858378e6a9083223083b22bb6cfe08d5756ffd47c4443be6030234a3",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_adil_hussain",
+    "image_filename": "m_adil_hussain_1.jpg",
+    "sha256": "922d083c629ae68d9826b3b46180c09ff24b7c7eec531142c1439ca097922ec8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_adil_hussain",
+    "image_filename": "m_adil_hussain_2.jpg",
+    "sha256": "2636397a30cf31970bd66a44b715c040df3638ee2f92c42d3ecc774a3b2d94b6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ajay_devgn",
+    "image_filename": "m_ajay_devgn_1.jpg",
+    "sha256": "3933695bb2cdb55ea9d414245c69a5d4c1973539a39a9f814330dbfe5a456315",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ajay_devgn",
+    "image_filename": "m_ajay_devgn_2.jpg",
+    "sha256": "aa1c2d0e690b5c81aae6e1712f086a2f2715d6fb3658a1460e39bfe4d8775c07",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_akshay_kumar",
+    "image_filename": "m_akshay_kumar_1.jpg",
+    "sha256": "a797cf5c9dd98325b85be9a8baf05104e7d83504fbda4072eda6a875fb2f2d1c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_akshay_kumar",
+    "image_filename": "m_akshay_kumar_2.jpg",
+    "sha256": "18334bf63e44cf62a0dc63c518d5a3eb25c8d6db91ba40ba29643da36a249ca6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_akshaye_khanna",
+    "image_filename": "m_akshaye_khanna_1.jpg",
+    "sha256": "ca4753fc6fef815598a9be378ef78e6f78772dba665baa59e0eea2db0cb5f282",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_akshaye_khanna",
+    "image_filename": "m_akshaye_khanna_2.jpg",
+    "sha256": "cf37312fc26ce01d562e48d0d3c147fcde450554306a99405b621379df646cf7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amitabh_bachchan",
+    "image_filename": "m_amitabh_bachchan_1.jpg",
+    "sha256": "31dfd2f6b006009858fd548a4a341baa9e77bdcd5d07b3e92b1e3f83564e5cd1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amitabh_bachchan",
+    "image_filename": "m_amitabh_bachchan_2.jpg",
+    "sha256": "84175c72a33b643048131d07c15a7066857f73191111c1fbc1c8f114dda51fe1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amjad_khan",
+    "image_filename": "m_amjad_khan_1.jpg",
+    "sha256": "f1434de3341a1b5763f7396a0f48fd835ab452bf5d9c3e5983cf90925105c578",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amjad_khan",
+    "image_filename": "m_amjad_khan_2.jpg",
+    "sha256": "be738e7be6402125ca5696d7c91695882a5ec1164fbfa7a97cdf082809ed01dc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amol_palekar",
+    "image_filename": "m_amol_palekar_1.jpg",
+    "sha256": "5b0170e2b8276cd2c5d6179c1e4b21322a37af78b39d68ff459c7620ff254f49",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amol_palekar",
+    "image_filename": "m_amol_palekar_2.jpg",
+    "sha256": "3534758cf0dd527ed7b90c39a1f03882de965ea29b22f6a12a38863eda36e566",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amole_gupte",
+    "image_filename": "m_amole_gupte_1.jpg",
+    "sha256": "d355e9a7c862946f61be23fdd852d666f1af749dca0f130c48b700027e73507d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amole_gupte",
+    "image_filename": "m_amole_gupte_2.jpg",
+    "sha256": "9c916a58a8b1a359cfda32fc0236cd2f3c9d7a664c898061f0e0b9c95047f619",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amrish_puri",
+    "image_filename": "m_amrish_puri_1.jpg",
+    "sha256": "27c3a47feb96ba8f3b25db85bd53cf5f664566e43ebbbbf5d9b812808de5a1c7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_amrish_puri",
+    "image_filename": "m_amrish_puri_2.jpg",
+    "sha256": "4816fc4dec70f6d2b4fa4b444165740f82256b65c8c161332497d95685d83f15",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_anil_kapoor",
+    "image_filename": "m_anil_kapoor_1.jpg",
+    "sha256": "45b2f23ed6af2f37f3953b373d023bd05203793cf37f2e4eb30e209119932d15",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_anil_kapoor",
+    "image_filename": "m_anil_kapoor_2.jpg",
+    "sha256": "eefc5e8c3e6542f7f0749d32d6124412d6b40d7a1bc94b1a231c38fc275a3eef",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_annu_kapoor",
+    "image_filename": "m_annu_kapoor_1.jpg",
+    "sha256": "ebf9e86c5ba646d5baa4f7e89a4214e0b564f6f83f01bfd998755cf45ada99e6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_annu_kapoor",
+    "image_filename": "m_annu_kapoor_2.jpg",
+    "sha256": "1ab35089849c9c88114ab4cf930eafb36dd1aafb6f9b85c75435ef7b66a6e2a4",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_anupam_kher",
+    "image_filename": "m_anupam_kher_1.jpg",
+    "sha256": "e6e77708a4d769ee896c9d5a3c0525b76b01ff301abcba1844f27eb9b047cdde",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_anupam_kher",
+    "image_filename": "m_anupam_kher_2.jpg",
+    "sha256": "b465d604a872755968f513ef8667999c8b0e906251b2f311b20f541750bd5cf0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_anushka_shetty",
+    "image_filename": "m_anushka_shetty_1.jpg",
+    "sha256": "fd8473af696fd8c3b62a480b20c247308a1596646dcf79013e7e2e704cebf649",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_anushka_shetty",
+    "image_filename": "m_anushka_shetty_2.jpg",
+    "sha256": "b91f5cf52ad6a1a9b42214fd1ed37cc0f0802bbad78a3bc665abae3fd26f9640",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_arshad_warsi",
+    "image_filename": "m_arshad_warsi_1.jpg",
+    "sha256": "721eb67b74c659f695851381a37d12129a3fd639e008a76bf7156ecbae249faf",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_arshad_warsi",
+    "image_filename": "m_arshad_warsi_2.jpg",
+    "sha256": "cb8be49c33ec5fa5919e10ba57f11ef2cc2620516d44ce08219d12fec6b6d579",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_aruna_irani",
+    "image_filename": "m_aruna_irani_1.jpg",
+    "sha256": "95c644441981b8f6eefea1e92b35a914728b85edf81d2e16687d031d53be54e6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_aruna_irani",
+    "image_filename": "m_aruna_irani_2.jpg",
+    "sha256": "4094ab174e0af28c625b1070b03cb7e85b5b5aca2a2381997b101434f8ce0928",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ashish_vidyarthi",
+    "image_filename": "m_ashish_vidyarthi_1.jpg",
+    "sha256": "0c1ee0058b3d2af076e0214f81bbc54a72d7939e29ff001022e10937822f5b13",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ashish_vidyarthi",
+    "image_filename": "m_ashish_vidyarthi_2.jpg",
+    "sha256": "08b70be84eecd1f4532de351ae4750fdade1e810b263871aea4d357c534b809a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_asrani",
+    "image_filename": "m_asrani_1.jpg",
+    "sha256": "38e60640d3561fecaf0694280599b9eb40681a196573dc3f07d9945e34c2c037",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_asrani",
+    "image_filename": "m_asrani_2.jpg",
+    "sha256": "1eaef1a2aaf41820747f467381e6faf5c24fbb370ad034837fa297843604f3f8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_atul_kulkarni",
+    "image_filename": "m_atul_kulkarni_1.jpg",
+    "sha256": "33b5a558caa243cbddd98ed670d9ee78a3c3dda4563e160a2649aa3c62d82755",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_atul_kulkarni",
+    "image_filename": "m_atul_kulkarni_2.jpg",
+    "sha256": "4ff06defbcfe43b3d7c2212f49fa07d054ce973e6deb1cdf62b45749e4769f23",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ayushmann_khurrana",
+    "image_filename": "m_ayushmann_khurrana_1.jpg",
+    "sha256": "32751488130c5aa411f3f01d1137e0aaddac8da05dd60f042c776b5b88d39b34",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ayushmann_khurrana",
+    "image_filename": "m_ayushmann_khurrana_2.jpg",
+    "sha256": "1ee5f95ec61dfbc7c46e1043ba1e76fdaecd3203799159ca6e7e2ac9e152d7fe",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_boman_irani",
+    "image_filename": "m_boman_irani_1.jpg",
+    "sha256": "e1c04b9f484f00cd07c5dd7d0f02318d11d37b139edd55f462c52e365c1a62d7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_boman_irani",
+    "image_filename": "m_boman_irani_2.jpg",
+    "sha256": "076227c800f71ddb4a48559563bc239f4b82fa80d5c716c9ab16905afa5247ec",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_chiranjeevi",
+    "image_filename": "m_chiranjeevi_1.jpg",
+    "sha256": "5a8474804a4d1de4a9fb8ea49a1dfddbcc08d86881bd84a50218d28fad30a2e2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_chiranjeevi",
+    "image_filename": "m_chiranjeevi_2.jpg",
+    "sha256": "f516c97ec0ac327c656720fb36d22003ad6e34417ee2a10878add9a42947380d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_chunky_panday",
+    "image_filename": "m_chunky_panday_1.jpg",
+    "sha256": "95f2c9a645557e00ca5a0c662ed2d3a365f5e30168344bf14178a9f63be50c05",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_chunky_panday",
+    "image_filename": "m_chunky_panday_2.jpg",
+    "sha256": "a9821afd2fde4a8af3cd4c45b53d4fb93dd9989a3cc85e39fc7c4e8f06f19e85",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_danny_denzongpa",
+    "image_filename": "m_danny_denzongpa_1.jpg",
+    "sha256": "5a73b541dc1543e319cb1a233721e945e685026b45a3b81f7af13c35d1105756",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_danny_denzongpa",
+    "image_filename": "m_danny_denzongpa_2.jpg",
+    "sha256": "76251eff2c12fb7b1821ccc18c453aa5795498d90c3e7b738c4daeabefaff86e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_darsheel_safary",
+    "image_filename": "m_darsheel_safary_1.jpg",
+    "sha256": "1bee66ac88e7b423e5c1a911a8cf61710867d594764341e5c6c69fd13a4db2a7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_darsheel_safary",
+    "image_filename": "m_darsheel_safary_2.jpg",
+    "sha256": "c94ec651a19cd2d0a45d78940048157fb8e9aecf16138c190977472afe34e8c2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_deepika_padukone",
+    "image_filename": "m_deepika_padukone_1.jpg",
+    "sha256": "ba4ef210eb1b533f0e5f1d8bfc5f49540012d29a790cf7c8d3603a34824658db",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_deepika_padukone",
+    "image_filename": "m_deepika_padukone_2.jpg",
+    "sha256": "df3c06a64a6070b193b1180fc05f6fbd4976586647d2f6f305b2add2a59f7aff",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_deepti_naval",
+    "image_filename": "m_deepti_naval_1.jpg",
+    "sha256": "122c531ad34a7ab63323a0142f42f82ffd31a85fb42e7973adebb9ac04f307bd",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_deepti_naval",
+    "image_filename": "m_deepti_naval_2.jpg",
+    "sha256": "be51b26682c4e753d3d5119b43dc940d0df877a65d34f0eb582b67b534fc5126",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dev_anand",
+    "image_filename": "m_dev_anand_1.jpg",
+    "sha256": "67366e7734b2bec4a8b56ba9008ee7c626a921b80b18df84597046f4acee43ad",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dev_anand",
+    "image_filename": "m_dev_anand_2.jpg",
+    "sha256": "6d2c6537e6fba375f3255d8a2cbdcd02a5479068ede692da0cb19bd749e7e047",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dharmendra",
+    "image_filename": "m_dharmendra_1.jpg",
+    "sha256": "cb1edae8125ad980ab3c4bf083e1f9ba3d9e3f8754a6e0e8ab144ff1fc25212a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dharmendra",
+    "image_filename": "m_dharmendra_2.jpg",
+    "sha256": "f5d3a1e96897f7655d0650d7c7f7829801c44d659cbe06b0eeebf0b8085b646f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dilip_kumar",
+    "image_filename": "m_dilip_kumar_1.jpg",
+    "sha256": "7a587a6f431835090fc0b189c97b91b691b37975bd2062c9a0df4caec580a702",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dilip_kumar",
+    "image_filename": "m_dilip_kumar_2.jpg",
+    "sha256": "a7862081b5d9eb9ed819814683e3b364c6fae17c4c893fee644fece56b245f7d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dimple_kapadia",
+    "image_filename": "m_dimple_kapadia_1.jpg",
+    "sha256": "71ea7d8ef0092f9b958dedc7ff127103e035e70d3d079ee18f318747f10e5a52",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_dimple_kapadia",
+    "image_filename": "m_dimple_kapadia_2.jpg",
+    "sha256": "c77dc2ba816ab9d109feeadcf6d4615304379fd11f326bc4757851845f6ffdc8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_farhan_akhtar",
+    "image_filename": "m_farhan_akhtar_1.jpg",
+    "sha256": "fd16a49c49d2f190ca1023fd0ba0ebce9b31f417473b4e359b196b5719fa488b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_farhan_akhtar",
+    "image_filename": "m_farhan_akhtar_2.jpg",
+    "sha256": "07978d2ad3e7794791d9a132e973a15f3b4c9915d638c037d213b86e1fdb5da6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_farida_jalal",
+    "image_filename": "m_farida_jalal_1.jpg",
+    "sha256": "498c4e8a8dc90ca2a463a5ff375ed8744e6f13d15e5b3229d174745d2a123219",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_farida_jalal",
+    "image_filename": "m_farida_jalal_2.jpg",
+    "sha256": "ba41486ac6e971d03e8bcbef28e29ef1725d79bae5f7ec36cfc70562641135c2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_farooq_shaikh",
+    "image_filename": "m_farooq_shaikh_1.jpg",
+    "sha256": "d5f0774dd5696b579ea6f24ad5bd5a02832a4915d3bf4927b9a93fcf572d4fe1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_farooq_shaikh",
+    "image_filename": "m_farooq_shaikh_2.jpg",
+    "sha256": "e8b3ec2f78a230189430078d4839d2872263bc8472fd1697b96a3b544600cd49",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_girish_karnad",
+    "image_filename": "m_girish_karnad_1.jpg",
+    "sha256": "0f34bc13804211f98d7ff52c935af48b95bd4018c5407928f5892bae922d2cbc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_girish_karnad",
+    "image_filename": "m_girish_karnad_2.jpg",
+    "sha256": "dc0d28113afa966a045d501307c59e2f1ac05fc81289ab5fa87e67c8f10ac54a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_govinda",
+    "image_filename": "m_govinda_1.jpg",
+    "sha256": "6659597a9688810a85ecbc4c38a52f0eda8cdf5094e8c5f89591e990498440b2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_govinda",
+    "image_filename": "m_govinda_2.jpg",
+    "sha256": "b482bf3a62959ba74bfb66edeaf7379204a05729874d20a89c8acb7f02693e36",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_gulshan_grover",
+    "image_filename": "m_gulshan_grover_1.jpg",
+    "sha256": "e3c2e4b872e313c8416dd07366bc425b6214fc2af5234b1589e2718e7ed80200",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_gulshan_grover",
+    "image_filename": "m_gulshan_grover_2.jpg",
+    "sha256": "6cd646b59a209bf523bf58318468b3277881f31feacecaffd55daec3815e43de",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_hrithik_roshan",
+    "image_filename": "m_hrithik_roshan_1.jpg",
+    "sha256": "779c34b521521b0ca1b731e415f7c5725e39f8b77a85270da0482fce68b06531",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_hrithik_roshan",
+    "image_filename": "m_hrithik_roshan_2.jpg",
+    "sha256": "0975c9e511a3f7a18d16ecabbd706d4375cca8e934031a98b49b0a9d93df08cb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_huma_qureshi",
+    "image_filename": "m_huma_qureshi_1.jpg",
+    "sha256": "127d87313f98ac94c0eaf06371bc48c40639d24b248997c65b18c2e62f4ebeb3",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_huma_qureshi",
+    "image_filename": "m_huma_qureshi_2.jpg",
+    "sha256": "7530be8e523fa3dd3d31faa87a2965e21575f2b468a01f883dae7c3cdb278ddd",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_irrfan_khan",
+    "image_filename": "m_irrfan_khan_1.jpg",
+    "sha256": "4eb0e924154b11df3b16cb2fbc44d79c819bc03403624be4ba42524523427953",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_irrfan_khan",
+    "image_filename": "m_irrfan_khan_2.jpg",
+    "sha256": "ea0ab4c6fd4a2bb47daddb88bc580fba1cb5cea33fbf7928339a3e532a764fa7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_jaspal_bhatti",
+    "image_filename": "m_jaspal_bhatti_1.jpg",
+    "sha256": "769e8235539e84bc9eb6ac18bf7f7beeb68d9578db6c05d1bf09eb55d74b8606",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_jaspal_bhatti",
+    "image_filename": "m_jaspal_bhatti_2.jpg",
+    "sha256": "91c792d6243185bda7f564eb4834749edad975957820dbe8dd20f6d2e18bc75f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_jeetendra",
+    "image_filename": "m_jeetendra_1.jpg",
+    "sha256": "de7d3282698343847f4d27b6e32c7d6ba1df23f0dbf08204850cfa60d087b0a9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_jeetendra",
+    "image_filename": "m_jeetendra_2.jpg",
+    "sha256": "5f57f760b05206f469a52934e112ccd32207abcdc9a2bbbdc4e3b6babb8e3188",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_jimmy_sheirgill",
+    "image_filename": "m_jimmy_sheirgill_1.jpg",
+    "sha256": "a5950c6637b026d13d9baae2641193233881318ab8219a6395db1b26d27569be",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_jimmy_sheirgill",
+    "image_filename": "m_jimmy_sheirgill_2.jpg",
+    "sha256": "e176b4962dbfc86956bf055f22968d7613c78bde0c49a70b00233579ce22d13b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_johnny_lever",
+    "image_filename": "m_johnny_lever_1.jpg",
+    "sha256": "5682221c56393894683a23f0d80357720678b8666e01e4e5e806da6ebfd8cf54",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_johnny_lever",
+    "image_filename": "m_johnny_lever_2.jpg",
+    "sha256": "656db10beac1a5c4bad223fe84db08fbb6ffbe17896336351935b497288e33e8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kader_khan",
+    "image_filename": "m_kader_khan_1.jpg",
+    "sha256": "d058fb19178c3b4526f8876e7adbde0c7542081eaa08aba470f445ea609aae86",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kader_khan",
+    "image_filename": "m_kader_khan_2.jpg",
+    "sha256": "dac1a9a1ef29d75412912ba32565b5d066a30572eca29d6a439cd8389d823eb8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kajol",
+    "image_filename": "m_kajol_1.jpg",
+    "sha256": "593be20a747aab3db54b12ffa75468641482b7d25ab0bbcda0a56a0eba860994",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kajol",
+    "image_filename": "m_kajol_2.jpg",
+    "sha256": "b19b85c09e802c0f640c1d02b4801a922c005b6639ac3783ae8ffb97982fd3ce",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kalki_koechlin",
+    "image_filename": "m_kalki_koechlin_1.jpg",
+    "sha256": "2cc5c73816b12b0ca6e0ea31a7232bddb59a534d72e997e126a5a308817d55fb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kalki_koechlin",
+    "image_filename": "m_kalki_koechlin_2.jpg",
+    "sha256": "e64e84d0d4273b6fbd77f2084ab3a00e2dca5f6667ffe25a55d8905d57d09b12",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kamal_haasan",
+    "image_filename": "m_kamal_haasan_1.jpg",
+    "sha256": "b6a27479b4cfdcd9531b167dc934abda6f10dc4ceec62c907b2277421e7a7104",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kamal_haasan",
+    "image_filename": "m_kamal_haasan_2.jpg",
+    "sha256": "9370378cf23334da9e54db385341fc461701304ae2a0036efa9f05e08bc98800",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kangana_ranaut",
+    "image_filename": "m_kangana_ranaut_1.jpg",
+    "sha256": "a75ec398fe2223a0af65e82b1fe9ac01c98b97219d52989c529a4fb4706683e4",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kangana_ranaut",
+    "image_filename": "m_kangana_ranaut_2.jpg",
+    "sha256": "981e4eb8987abb96fcf7a666cb8c0915999fd3e7500c00c5c22d212a1791cb0d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kay_kay_menon",
+    "image_filename": "m_kay_kay_menon_1.jpg",
+    "sha256": "f727da688fd02a58cc8f225ee684d8e08e95cb258206def90ca462a095ad787f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kay_kay_menon",
+    "image_filename": "m_kay_kay_menon_2.jpg",
+    "sha256": "09356a9fd627bc6d35018e3f6351d7a1738f18c76183c4a0754d93636f8186c7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_konkona_sen_sharma",
+    "image_filename": "m_konkona_sen_sharma_1.jpg",
+    "sha256": "c1d9dd42f07009d39878ab7be1fc4b879ff54ffc105223fbd5a17c4a7d017751",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_konkona_sen_sharma",
+    "image_filename": "m_konkona_sen_sharma_2.jpg",
+    "sha256": "6d3002a01a497efb662fd62b36e41fafa505b1419852a7497bb345be6c24a7d6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kulbhushan_kharbanda",
+    "image_filename": "m_kulbhushan_kharbanda_1.jpg",
+    "sha256": "eb3b435b77a75c1f6eeecfec81e731cfce689043f6d03fb7bd6ce9703b9208a1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_kulbhushan_kharbanda",
+    "image_filename": "m_kulbhushan_kharbanda_2.jpg",
+    "sha256": "897b67f2d6db17fc993f64da3c3d5e0ee2038243e4e216401b03866f28e9a7a8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_lara_dutta",
+    "image_filename": "m_lara_dutta_1.jpg",
+    "sha256": "d75bf991a4445982d6acd5c83cc84c9326ce88fa5328034b4f9fb168e492c276",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_lara_dutta",
+    "image_filename": "m_lara_dutta_2.jpg",
+    "sha256": "a18790a72ffeb936aa2fb5fb68dd5e86244ac7e8f407cc0dd4ea351fa02c6dac",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_madhavan",
+    "image_filename": "m_madhavan_1.jpg",
+    "sha256": "63f6ff53763b6df151ac9a52ea6edf339fff0dc0dee6f696bffaff09e6114a29",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_madhavan",
+    "image_filename": "m_madhavan_2.jpg",
+    "sha256": "b6cbd37b7b5a4c4d6697e4e705a280ef52d50a16a0c990a39aaf27843cf061ac",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_madhuri_dixit",
+    "image_filename": "m_madhuri_dixit_1.jpg",
+    "sha256": "c48f9db923299ee0f34a103968795dc946f7b25ad7a2251a6a4b1e60bbc6fee0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_madhuri_dixit",
+    "image_filename": "m_madhuri_dixit_2.jpg",
+    "sha256": "2a24ec50d427e74e0d95faa90bf4f7046c8ac087396baa43987345b65a5b658e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mammootty",
+    "image_filename": "m_mammootty_1.jpg",
+    "sha256": "771f879bc3b44122a2d9dbec9def236064a6b2304589279ef656dbab98ead26a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mammootty",
+    "image_filename": "m_mammootty_2.jpg",
+    "sha256": "69a99febece14e558abaa8bbb15c038661defc57e8d518ae59c809d9e5b2be5d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_manoj_bajpayee",
+    "image_filename": "m_manoj_bajpayee_1.jpg",
+    "sha256": "4273cf180ae5bfc025b5f35773724ec4028b49168ad519dbf8a73ce827e3826e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_manoj_bajpayee",
+    "image_filename": "m_manoj_bajpayee_2.jpg",
+    "sha256": "4f1f8a5db4758ba69a661a29482225e1e87289c7b60ff466f9851a7f7be57691",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_manoj_pahwa",
+    "image_filename": "m_manoj_pahwa_1.jpg",
+    "sha256": "565350a119a69206cc440adb1ebe55aeddec2da947de7ba296c66c80f56b885e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_manoj_pahwa",
+    "image_filename": "m_manoj_pahwa_2.jpg",
+    "sha256": "dcd25cf0bbb45f2321d9ee2d848033e7042bf0005788d9adf0726e56074e90a5",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mehmood",
+    "image_filename": "m_mehmood_1.jpg",
+    "sha256": "39f6cfaf92d66bbe2f0eadab8024f3981aa40b506d6be0f3b28cff5d1553b9ae",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mehmood",
+    "image_filename": "m_mehmood_2.jpg",
+    "sha256": "454231e3b0c266defce4c9c2e4927f2067e2f3896e42deb4207a9ffbaed3b39c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mita_vashisht",
+    "image_filename": "m_mita_vashisht_1.jpg",
+    "sha256": "0a09f9f2de47f8aa911f4e8a4471f844d4cfb071f7e574005c9e19a8b012f39e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mita_vashisht",
+    "image_filename": "m_mita_vashisht_2.jpg",
+    "sha256": "aa886e2b4a207cab93ab49205dea78bb401a36f43713ba21b3d6bc33423212e9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mithun_chakraborty",
+    "image_filename": "m_mithun_chakraborty_1.jpg",
+    "sha256": "f73d8618e42505fe88d0916175f03825097c13df1112c9863c352b69d4885928",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mithun_chakraborty",
+    "image_filename": "m_mithun_chakraborty_2.jpg",
+    "sha256": "af0bd16bad48f8a4872006a74f3964353d30308366fe0d5afdbc9f45d0bf9afb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mohanlal",
+    "image_filename": "m_mohanlal_1.jpg",
+    "sha256": "36c86722fbf17382547814c89b6738180ed2058ae1b67fedc39099b1ddcbdadc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mohanlal",
+    "image_filename": "m_mohanlal_2.jpg",
+    "sha256": "e380a9ade8ad74bc1fdf9b00be900fc547bf5c397522f35d9e258145c4ee7a73",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mohnish_bahl",
+    "image_filename": "m_mohnish_bahl_1.jpg",
+    "sha256": "b0ab690d890c26f799b5574abab32b68954c8600cde13cb239d58e450c1040d6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mohnish_bahl",
+    "image_filename": "m_mohnish_bahl_2.jpg",
+    "sha256": "857df3a1dafa197ce9c4acb9bac2976a5bcea175a4e717ad05b492e60e5165aa",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mukesh_khanna",
+    "image_filename": "m_mukesh_khanna_1.jpg",
+    "sha256": "42eb1e00dcccf6a2e248304638e5f66019eb66ec551cc828b949d942e4539bed",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mukesh_khanna",
+    "image_filename": "m_mukesh_khanna_2.jpg",
+    "sha256": "4874a4a852159ec70b6e18ece5d5ccb9ebbff1972adf9e689c24bd1aa81d0eda",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mukul_dev",
+    "image_filename": "m_mukul_dev_1.jpg",
+    "sha256": "86c37c6d0e5908f26c6889be573c60d54d9b264268727fe79af6522353f6a4a9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_mukul_dev",
+    "image_filename": "m_mukul_dev_2.jpg",
+    "sha256": "d7af93d5b43fdfc288492e63683103f3da2a3621e9580299eacee3255b6d3360",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nagarjuna_akkineni",
+    "image_filename": "m_nagarjuna_akkineni_1.jpg",
+    "sha256": "a88f2a0bb1d7ddcdea01170f71eba80b4705d493b98a93869dd39d871c598d08",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nagarjuna_akkineni",
+    "image_filename": "m_nagarjuna_akkineni_2.jpg",
+    "sha256": "23be6acf4a277d3619f956ee2565fd938856e28fa6c8e683a9900913cb7f8365",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nana_patekar",
+    "image_filename": "m_nana_patekar_1.jpg",
+    "sha256": "24544e145a8f7c3a45b465fa8664824f3381eb65da339bef74c3ad6f8b0b71e0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nana_patekar",
+    "image_filename": "m_nana_patekar_2.jpg",
+    "sha256": "901301ef29d5ebb0a8fc0e2bf4b69664db66fdd24f612ecc7449379fb0abb2bb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nandita_das",
+    "image_filename": "m_nandita_das_1.jpg",
+    "sha256": "6eda264bdf51cbd6f01806eaf611df85ffe2e595cef170bb50e7480f7f12432f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nandita_das",
+    "image_filename": "m_nandita_das_2.jpg",
+    "sha256": "543e7ee336659a0d04c31f96b4e65fe6bd3117c687efd4c7d8a0c8e0a0bcb2e9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nargis",
+    "image_filename": "m_nargis_1.jpg",
+    "sha256": "fb3072d8ea2ac12ce83b0080e837c7eab517e4f4661acff02fc7e131b58af4d0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nargis",
+    "image_filename": "m_nargis_2.jpg",
+    "sha256": "8d7f994caeb40a281d79801a8da13a1235ebeeaeca4577ef02315809761da1c0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_naseeruddin_shah",
+    "image_filename": "m_naseeruddin_shah_1.jpg",
+    "sha256": "9d85274298181cec04251464f34baa62dd2ac765e3e5a1cce3d98707b841d16b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_naseeruddin_shah",
+    "image_filename": "m_naseeruddin_shah_2.jpg",
+    "sha256": "f5b1aeba3250e977eeb0ed582c04eb7cb27c816d5428a2919009d2f8d0aaa83e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_navin_nischol",
+    "image_filename": "m_navin_nischol_1.jpg",
+    "sha256": "9bb042f88bfd78487403a723d2fe11b505c87d5d50103073fd296ebe9d91058e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_navin_nischol",
+    "image_filename": "m_navin_nischol_2.jpg",
+    "sha256": "5b8daf2a4bebfeffb212cbef0bc74a039361acea76118afe485a87c41a4333b8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nawazuddin_siddiqui",
+    "image_filename": "m_nawazuddin_siddiqui_1.jpg",
+    "sha256": "d47fd0fff1a76a502e640533c3f629d2e7dba036a4d065560de7f83655fccc61",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nawazuddin_siddiqui",
+    "image_filename": "m_nawazuddin_siddiqui_2.jpg",
+    "sha256": "451beb517ce8c44d1b5be0e4e6f39cbc4e5bfca6078d8755b9c7b89278baf31d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_neeraj_kabi",
+    "image_filename": "m_neeraj_kabi_1.jpg",
+    "sha256": "f9ee44f5308281d955c44209fe8f01206b63d106e1963b1c8bfa2ef872771668",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_neeraj_kabi",
+    "image_filename": "m_neeraj_kabi_2.jpg",
+    "sha256": "f9b3459158df07ae41270bcda9985c824806fd2d828e06aa46d3b5711d878b1a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nirupa_roy",
+    "image_filename": "m_nirupa_roy_1.jpg",
+    "sha256": "2b0d705e78801c17319f2539d031de33dda038fd35371de7682bbea37c772fc8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_nirupa_roy",
+    "image_filename": "m_nirupa_roy_2.jpg",
+    "sha256": "e4ff87a13cd522d9f68a62a529bc38e3755734a937e194d1e8a18208d115b16b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_om_puri",
+    "image_filename": "m_om_puri_1.jpg",
+    "sha256": "2e73751510d35358ee963d5508bcda905e3532a18ccf82b406f01d378a5084e4",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_om_puri",
+    "image_filename": "m_om_puri_2.jpg",
+    "sha256": "5757b5328a9de67027ac568edf06095ee901254b6d9cc4ec88928b868f16d118",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pankaj_kapur",
+    "image_filename": "m_pankaj_kapur_1.jpg",
+    "sha256": "eb2060bdf79b82dc02bd85c25270fa9f4da3d652663d2640cf3582630a664e1b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pankaj_kapur",
+    "image_filename": "m_pankaj_kapur_2.jpg",
+    "sha256": "65a9a6241933f0fc61da8e89ab9f87dc4d21aed54293e64b60fdf257aff947bf",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pankaj_tripathi",
+    "image_filename": "m_pankaj_tripathi_1.jpg",
+    "sha256": "b129f054049838af32c518d0e64e2ca45c3cf95bbfbc9cb6f38d99c392be8bb5",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pankaj_tripathi",
+    "image_filename": "m_pankaj_tripathi_2.jpg",
+    "sha256": "2ab54bf407fa11fc7aeec0c047ad05a42d85cc8c4441c19653ce5c4c649b0aec",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_paresh_rawal",
+    "image_filename": "m_paresh_rawal_1.jpg",
+    "sha256": "cd1af9291a3365905859347c5907dedcff74cca8ef6f0a0b4820fa79d8191111",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_paresh_rawal",
+    "image_filename": "m_paresh_rawal_2.jpg",
+    "sha256": "d63c4bdf9503745ed35c3ee31bb06a420a1463b3c250e67fcf3f538d58f06360",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pawan_malhotra",
+    "image_filename": "m_pawan_malhotra_1.jpg",
+    "sha256": "f5f30a353e291f2020feb1e561a42f9b56eae9e14bac3a1b468fa3f29c508043",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pawan_malhotra",
+    "image_filename": "m_pawan_malhotra_2.jpg",
+    "sha256": "1e0b845e31a63f5dece4b8f70035fc2659bf04810c25d0abe4a8385fe634bb0d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pooja_bhatt",
+    "image_filename": "m_pooja_bhatt_1.jpg",
+    "sha256": "8070b78effcbb5e01d6bb4941efb83e2bb21b9002a4240378bd2c9b7fffa79f0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pooja_bhatt",
+    "image_filename": "m_pooja_bhatt_2.jpg",
+    "sha256": "5250fe65b0bcb949639d77d40f6bddbb963d807924b1e8f3e946b7e7d11aa2b0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prabhas",
+    "image_filename": "m_prabhas_1.jpg",
+    "sha256": "dbcff8043fa5569cc40f2722e3f6e773c28d7183d7d9ac122510dfbfaf645650",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prabhas",
+    "image_filename": "m_prabhas_2.jpg",
+    "sha256": "d0e048a133098b551e011ebb7150d5c2f68ee2de31de87de78eb477066dc6177",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prabhu_deva",
+    "image_filename": "m_prabhu_deva_1.jpg",
+    "sha256": "0236dec764f3621ba62d8258e53941c01216adbfb9816c80e42d4c66517c6213",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prabhu_deva",
+    "image_filename": "m_prabhu_deva_2.jpg",
+    "sha256": "4b56d563437e66ae6bc2ae1b21e74747246a9d3dbe92da0620a11ab7368fe44a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prakash_raj",
+    "image_filename": "m_prakash_raj_1.jpg",
+    "sha256": "c803956f3a16f497b9d9682ea56c893a78f913e16daac5701b70ef74610f675e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prakash_raj",
+    "image_filename": "m_prakash_raj_2.jpg",
+    "sha256": "b8bb8b256810dc5ef6929587f9af9c87c67adb190fd723d7d6fec33f6bce167d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pran",
+    "image_filename": "m_pran_1.jpg",
+    "sha256": "dcdc6888025f0162b39162ba72b9998c7ff9ee35c2461b1f3de844f72e238e6a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_pran",
+    "image_filename": "m_pran_2.jpg",
+    "sha256": "a10608e11c36a9565b61c9f5328b3684b5af7310f410fad3c03d0cdd6c7d3fe2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prem_chopra",
+    "image_filename": "m_prem_chopra_1.jpg",
+    "sha256": "305cafafe30ce4774c8943711a509ddab9643f0478cc906c19a11fd19d1e8aa1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_prem_chopra",
+    "image_filename": "m_prem_chopra_2.jpg",
+    "sha256": "bec75c42afce82a377a1d53ef6482b255884c02282d665ec136043171d316550",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_priyanka_chopra",
+    "image_filename": "m_priyanka_chopra_1.jpg",
+    "sha256": "eaf1f3b9234f67d3926881849bb5afeecef1f47e634c147c92352fef5497ca24",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_priyanka_chopra",
+    "image_filename": "m_priyanka_chopra_2.jpg",
+    "sha256": "093c605504258d8266466731a41dea1f0be3765ffe22248281a2c1e9b08e1659",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_raaj_kumar",
+    "image_filename": "m_raaj_kumar_1.jpg",
+    "sha256": "7894ff98b8ce63ffc59eb893adc4086dd5bc0153aa00f97334112fb5bfa7cb5c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_raaj_kumar",
+    "image_filename": "m_raaj_kumar_2.jpg",
+    "sha256": "eacc9b6294927fe93d15929df95125e8ee6d06bea972d680fe79005bdf694a94",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_radhika_apte",
+    "image_filename": "m_radhika_apte_1.jpg",
+    "sha256": "9b60711524dc20b8a85366ac2684ee21375699ae2071e71383497f97b3f2b4b8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_radhika_apte",
+    "image_filename": "m_radhika_apte_2.jpg",
+    "sha256": "8800dd2942bd4c59f3404c7ed8dd0488f8512fef037145d17be454bde026a9d8",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rahul_bose",
+    "image_filename": "m_rahul_bose_1.jpg",
+    "sha256": "4bc7c74b636fb222b926c7ad93d62c66b4e16460bdb6bbd1afde0fe9d8d579cb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rahul_bose",
+    "image_filename": "m_rahul_bose_2.jpg",
+    "sha256": "85d7293d905f9f193141edcc871762d59cb4231a23f6fe51650f0136c1442521",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_raj_babbar",
+    "image_filename": "m_raj_babbar_1.jpg",
+    "sha256": "221ad6a70a864639fa098960109f7911e52e165c239e036af1fef662423e2805",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_raj_babbar",
+    "image_filename": "m_raj_babbar_2.jpg",
+    "sha256": "e027ae4d3ca4728bcbbb71e982140d0dcfffbdb75c7ea7e6ce07c6c44a865e89",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_raj_kapoor",
+    "image_filename": "m_raj_kapoor_1.jpg",
+    "sha256": "f3c4ef16f852f8cfd750b03ad473814bbdd2d09be5f3ee4cf20cb1554b6e8bf6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_raj_kapoor",
+    "image_filename": "m_raj_kapoor_2.jpg",
+    "sha256": "6f5aeef5225605fe2fc9fa3ae0f13995b36693d7c7a38924f9f86ce3baf1f24f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajat_kapoor",
+    "image_filename": "m_rajat_kapoor_1.jpg",
+    "sha256": "9c1d96da281b858a3e15b56c9cec3d6da89c902e30d453f3a81024b0b60cec60",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajat_kapoor",
+    "image_filename": "m_rajat_kapoor_2.jpg",
+    "sha256": "35f4df252b48be5f075fda5751670f0cbe1398845786c0a7e6d53f6202263a86",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajesh_khanna",
+    "image_filename": "m_rajesh_khanna_1.jpg",
+    "sha256": "40d937de972d65dcd5c517bb3a5f561513da8ca65018558a6a3190df49601760",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajesh_khanna",
+    "image_filename": "m_rajesh_khanna_2.jpg",
+    "sha256": "94088755659fbd7e02fad734ddd27144520bb6683fc10c9e4b1ed1a257a7a4a4",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajinikanth",
+    "image_filename": "m_rajinikanth_1.jpg",
+    "sha256": "4390e684afff70791d4c493aec5b670a6476017d0e8b84d5d97924aec27a0dfc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajinikanth",
+    "image_filename": "m_rajinikanth_2.jpg",
+    "sha256": "d31c4e7c48f5de76aa1679e48f743f3fce3227ef2b548948214d6af2e6c6b497",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajit_kapoor",
+    "image_filename": "m_rajit_kapoor_1.jpg",
+    "sha256": "91c18a6bbfe11584616c757179fe738a42787296899c7c93aecf372cb1b01ba0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajit_kapoor",
+    "image_filename": "m_rajit_kapoor_2.jpg",
+    "sha256": "1f2187b474c9fe9d877f35dcc7fb1fb83c6d5a006bcd0b25960ea2500219608d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajkummar_rao",
+    "image_filename": "m_rajkummar_rao_1.jpg",
+    "sha256": "a224a0c2c9c82142da2a901b40e80049f4fb58831b0201891505e36f50132227",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajkummar_rao",
+    "image_filename": "m_rajkummar_rao_2.jpg",
+    "sha256": "0f31c697ce0922be7eba99df5e6777d7da41d063ec976210e18e7c852db50876",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajpal_yadav",
+    "image_filename": "m_rajpal_yadav_1.jpg",
+    "sha256": "3f286ae99fdf4d28a33230b3a0179add330e7eaf8103ea3e75bed1064461cd79",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rajpal_yadav",
+    "image_filename": "m_rajpal_yadav_2.jpg",
+    "sha256": "4f61ef5f0535c0f2c0c136be6df93c3cc3f3d30b9341b358b599e5273c0acfcf",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rakhee_gulzar",
+    "image_filename": "m_rakhee_gulzar_1.jpg",
+    "sha256": "96db983f79d683a65b16aaa22e50e2b59b92916ceb2aa71a6546419edba3a1a0",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rakhee_gulzar",
+    "image_filename": "m_rakhee_gulzar_2.jpg",
+    "sha256": "43577a94231f8a68bd78c1ca0676476d255787fa5610d052468c4642d4dc20b9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ramya_krishnan",
+    "image_filename": "m_ramya_krishnan_1.jpg",
+    "sha256": "c717ae29f8905659e24897ab28ecd0f38734f1cb194bcbe97a1a6873820a7e81",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ramya_krishnan",
+    "image_filename": "m_ramya_krishnan_2.jpg",
+    "sha256": "fbed49433832153386a0136491e001c3bb0084288bc3034ed2c081a09a970c90",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ranbir_kapoor",
+    "image_filename": "m_ranbir_kapoor_1.jpg",
+    "sha256": "2ebd80b884a48333b03d390d777f668bd3144f76b25eddefbc24bd7d959f981d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ranbir_kapoor",
+    "image_filename": "m_ranbir_kapoor_2.jpg",
+    "sha256": "d3e5af1a033d61e81a92940a5b76a0dfde7f088ef80744823780b96c350e13f3",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_randeep_hooda",
+    "image_filename": "m_randeep_hooda_1.jpg",
+    "sha256": "b344c9601434e551f81bee3bf4f8b0eba7e181f185fec4ba6aae903a6a990dd1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_randeep_hooda",
+    "image_filename": "m_randeep_hooda_2.jpg",
+    "sha256": "23c1d0570cc8e888246436908d26eee9155c8c43138e81d2f59cfbd752ddb322",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rani_mukerji",
+    "image_filename": "m_rani_mukerji_1.jpg",
+    "sha256": "193acaa1d59b7c7f6b0a698653f02b96207a4cfd093f51de3f7e2886dc65b794",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rani_mukerji",
+    "image_filename": "m_rani_mukerji_2.jpg",
+    "sha256": "2e1d769fb53979dacd21898fff868bbc97394aca57d8aa39998146ce0760a6f1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ranveer_singh",
+    "image_filename": "m_ranveer_singh_1.jpg",
+    "sha256": "d1db8c2bf03b18def27c8c906398f4f707e8ed3ad84c7e14401a78975f2f1466",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ranveer_singh",
+    "image_filename": "m_ranveer_singh_2.jpg",
+    "sha256": "6218672c287429dcfa4aa093d370f77eae23e878d21f32c59a7bbd29a6e850ee",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ranvir_shorey",
+    "image_filename": "m_ranvir_shorey_1.jpg",
+    "sha256": "39fffeb5081c556d9e306497b71cc59d8423454485fcf2e8b04a8ac2eafd5ffa",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ranvir_shorey",
+    "image_filename": "m_ranvir_shorey_2.jpg",
+    "sha256": "50fd68aa769c3747ed87c920f93ba9fb9533d921d5b7b9f280cf3c94d9bc4f2f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ratna_pathak_shah",
+    "image_filename": "m_ratna_pathak_shah_1.jpg",
+    "sha256": "dd5d3299feef5b537554a0449e2c41847cb09f329e20d83a5bb722909d3c86ec",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_ratna_pathak_shah",
+    "image_filename": "m_ratna_pathak_shah_2.jpg",
+    "sha256": "8d71a742f8d7ee0d81d865590f13c8c59c53db44e307072a4c4b2c9bd5cd6019",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rekha",
+    "image_filename": "m_rekha_1.jpg",
+    "sha256": "a48ad14f479230d4935be8e560909d4a104f7c1339c5664ba2c7ed7244837a7d",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rekha",
+    "image_filename": "m_rekha_2.jpg",
+    "sha256": "4da6f29888f042d84d23bef9bf23b28953842689028cae357d8f66560e54ee60",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_richa_chadha",
+    "image_filename": "m_richa_chadha_1.jpg",
+    "sha256": "919f77a15fede37a746168feff3cab1fbe2535dbcc33a2d85a6a4d616e98aabc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_richa_chadha",
+    "image_filename": "m_richa_chadha_2.jpg",
+    "sha256": "412845cd1a5d24545c0f1f7185617a83d88b47b9630d2dc543c83b016c008ab6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rishi_kapoor",
+    "image_filename": "m_rishi_kapoor_1.jpg",
+    "sha256": "8c7d50d2a5b1a9f0c1d53905c46818ce3df8faf9270a4afcde345b51f011cf76",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_rishi_kapoor",
+    "image_filename": "m_rishi_kapoor_2.jpg",
+    "sha256": "a5911e71c7e967554c95337caccdfcb5b5af8fb1dcd70c60a1bd6d1d7a161279",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_riteish_deshmukh",
+    "image_filename": "m_riteish_deshmukh_1.jpg",
+    "sha256": "c5f7af0963a4e54439f0ac0fda32fcf0b2b223b7dd04049aa8c39b596bfcbcb3",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_riteish_deshmukh",
+    "image_filename": "m_riteish_deshmukh_2.jpg",
+    "sha256": "ccce8c2a94c0156a7a35637fb05f2bc5d0747a28ff978b6d141699ce9de495d9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sachin_khedekar",
+    "image_filename": "m_sachin_khedekar_1.jpg",
+    "sha256": "6d058456658d460aa9b493951d89ed5e48c616228d4d6a66a56fbb930481dc3e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sachin_khedekar",
+    "image_filename": "m_sachin_khedekar_2.jpg",
+    "sha256": "51a3c97850793dba18dd294946d737b7aee1258d6d5756ee2d1067b9f993ed58",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_saeed_jaffrey",
+    "image_filename": "m_saeed_jaffrey_1.jpg",
+    "sha256": "963fef4480a54c524f802472d447f21323203f510e7b85b5ae39a9faf4b1fa65",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_saeed_jaffrey",
+    "image_filename": "m_saeed_jaffrey_2.jpg",
+    "sha256": "599f0fa52abd37aa8faf19de174a7b7e43259aa07c823fa16671b1923bf27435",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_saif_ali_khan",
+    "image_filename": "m_saif_ali_khan_1.jpg",
+    "sha256": "d571538864799428d18bd7f4604e7181d6024f2e35c1e190bba9ceaae28b37b1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_saif_ali_khan",
+    "image_filename": "m_saif_ali_khan_2.jpg",
+    "sha256": "ab45d3b1a8238e8c6cdd3864333e4860788c6c952f33b72949688ab53f8c0340",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_salman_khan",
+    "image_filename": "m_salman_khan_1.jpg",
+    "sha256": "4ba27c2805910999619e5e540b398b5ebe4fdf35238bab70fff5468584d4cb77",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_salman_khan",
+    "image_filename": "m_salman_khan_2.jpg",
+    "sha256": "1092cba1d4031aeb47de3877371187316f900c6f68d3c2ae053895955b505b92",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sanjay_dutt",
+    "image_filename": "m_sanjay_dutt_1.jpg",
+    "sha256": "84ce93cfbf3899508bca4387e5f65053485ac309aeae647a6e7bf9840a24d435",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sanjay_dutt",
+    "image_filename": "m_sanjay_dutt_2.jpg",
+    "sha256": "c47bd73818b61eace614d4bb8bdc43461ce4d5966da4f54f37daf351ef8b88c7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sanjay_mishra",
+    "image_filename": "m_sanjay_mishra_1.jpg",
+    "sha256": "4e9a195cfe380e02d5c6837606375cf79be36f6ae56243868a13cc4bffe37587",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sanjay_mishra",
+    "image_filename": "m_sanjay_mishra_2.jpg",
+    "sha256": "2878039cd5b8c4aa5e01fe85a15b5f5985073ad01ff1cf5a05d14d53e51d08d2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shabana_azmi",
+    "image_filename": "m_shabana_azmi_1.jpg",
+    "sha256": "9474ee186a9bb686dc991dc09f7e2dc0b5d60ebcce8b50e0014b2ac1417ca13b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shabana_azmi",
+    "image_filename": "m_shabana_azmi_2.jpg",
+    "sha256": "9599d015be1c262e06ffa253c92ce4b98550c9fc6b3f92921aea3d6264015f52",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shah_rukh_khan",
+    "image_filename": "m_shah_rukh_khan_1.jpg",
+    "sha256": "b7a620c470d7f3385ba97805e45d8be114abb03d5385abb888bd88f9c7fb8cec",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shah_rukh_khan",
+    "image_filename": "m_shah_rukh_khan_2.jpg",
+    "sha256": "e8f74c0d966fcc6462d28e2476c4527e45500b6825480f5b0c7f71bc3fa260de",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sharman_joshi",
+    "image_filename": "m_sharman_joshi_1.jpg",
+    "sha256": "9afea84973938eddd522c0e6ad48a17bd7ed6f3bea9eace0c0b8d4cd9c118c65",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sharman_joshi",
+    "image_filename": "m_sharman_joshi_2.jpg",
+    "sha256": "1136c6c5a02bcdab8a57ade99a279c2e8084e97fba508f19851e2fd9fa9cd897",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sharmila_tagore",
+    "image_filename": "m_sharmila_tagore_1.jpg",
+    "sha256": "b24b162dbc425f5bf63ba4008be2f033055c141c2e36fb284d5ed0012533d7eb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sharmila_tagore",
+    "image_filename": "m_sharmila_tagore_2.jpg",
+    "sha256": "2f6c943d5c10431e2373040608f1b2a2973efa9adf87b1cfb53608911859098e",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shashi_kapoor",
+    "image_filename": "m_shashi_kapoor_1.jpg",
+    "sha256": "de770c8329a59db18696fcf6a454266258c438394ff30bcf774415d2096355ff",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shashi_kapoor",
+    "image_filename": "m_shashi_kapoor_2.jpg",
+    "sha256": "e5efdaaab593f369f365df6d67a5454c6a74cc08bd78596cd0c52eaba95aa355",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shreyas_talpade",
+    "image_filename": "m_shreyas_talpade_1.jpg",
+    "sha256": "c69fd5b08f850d8a609ecba8e8f1539bd8589d7345a20f5040c37e0c6e25e898",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_shreyas_talpade",
+    "image_filename": "m_shreyas_talpade_2.jpg",
+    "sha256": "03d7731cfef39d7069c865d2059379587b083c584ab0780bf2a57c3f80731020",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_smita_patil",
+    "image_filename": "m_smita_patil_1.jpg",
+    "sha256": "868d84c581e1338e2d03cc20ebc215acc150f46c10c6b71665b2800409588f4f",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_smita_patil",
+    "image_filename": "m_smita_patil_2.jpg",
+    "sha256": "e058c485f5e1239cf09ab6bcacca6a8d46950a040481ce72634f0c4d0c2c2ae6",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_soumitra_chatterjee",
+    "image_filename": "m_soumitra_chatterjee_1.jpg",
+    "sha256": "7546abfe253f8c51000fba9088c6fa0d9946b961f99ee5d8e0cbce3ff8a91bb1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_soumitra_chatterjee",
+    "image_filename": "m_soumitra_chatterjee_2.jpg",
+    "sha256": "4093e776fcc4c5b3ac7b54a7b79fa1a64725797460cfbd9afefc8b154a36c30a",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sridevi",
+    "image_filename": "m_sridevi_1.jpg",
+    "sha256": "ecd3bfca20b70bc7c2cac81fe7946181a904bfb37531aae73494bad51cbf539c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sridevi",
+    "image_filename": "m_sridevi_2.jpg",
+    "sha256": "3ef48587a47831915f3d41db9c4d7a4aa2d97cc81e3f6c2bf4318187c3cbea94",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sunil_shetty",
+    "image_filename": "m_sunil_shetty_1.jpg",
+    "sha256": "fcf59b63a9f1080985db2dff4b8c3cb43fad587b87db27d2ca2aec0e9395e9e2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sunil_shetty",
+    "image_filename": "m_sunil_shetty_2.jpg",
+    "sha256": "bd76b9293aaa4a460ffee625d600d88f012fd465d589ec4c36b0e6dfb998fef7",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sunny_deol",
+    "image_filename": "m_sunny_deol_1.jpg",
+    "sha256": "c684547d215e6e74871b0fac88718bb22c1c6d720ec51ccfe386db05b7454155",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_sunny_deol",
+    "image_filename": "m_sunny_deol_2.jpg",
+    "sha256": "33fcf582f366e7f8a4eb9e9022dbdce2711d8f68285f04137838d1885ddfe91c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_tabu",
+    "image_filename": "m_tabu_1.jpg",
+    "sha256": "fb193cbaf437f5f9ea4897066fc91965b0356f18fca74729d0b4dc425b4f9471",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_tabu",
+    "image_filename": "m_tabu_2.jpg",
+    "sha256": "c2b7a2882d6d7fbd4ed824721bbaffef4065a5d0efe795f9847cfa39689f7da2",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_tinnu_anand",
+    "image_filename": "m_tinnu_anand_1.jpg",
+    "sha256": "179fe6e7746719beaa884da73310b3499ef0d326a756d423e621d308c24b7349",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_tinnu_anand",
+    "image_filename": "m_tinnu_anand_2.jpg",
+    "sha256": "c7be10775568b59b888a2b009fbb34f598d911c2e56b4cb577118d8947fdf8e1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_utpal_dutt",
+    "image_filename": "m_utpal_dutt_1.jpg",
+    "sha256": "ebfd24f64d5bc2fcdb247a222bf4993cc31fd6738fe22249273f8a54e58bfa0c",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_utpal_dutt",
+    "image_filename": "m_utpal_dutt_2.jpg",
+    "sha256": "0a4178d5e16f4417b106a9f66992a94e634a5a34142222e5130488fc8671462b",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_varun_dhawan",
+    "image_filename": "m_varun_dhawan_1.jpg",
+    "sha256": "48ada49d9a1e5a153429c9f54bbf502e4d45576639efd4516807b80335f8b180",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_varun_dhawan",
+    "image_filename": "m_varun_dhawan_2.jpg",
+    "sha256": "b484653a527c21a05e7292fab108fa4ef6943adcc549c7ed30c76890f30c38ce",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_vidya_balan",
+    "image_filename": "m_vidya_balan_1.jpg",
+    "sha256": "6267af12022366245ea993998a4dc7d950b0156387a7c086dcba6fe19351def9",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_vidya_balan",
+    "image_filename": "m_vidya_balan_2.jpg",
+    "sha256": "dc8a5d8e75445be0070fa8efe4cdee72199168d5eabebe67fffe15720de5ccab",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_vinod_khanna",
+    "image_filename": "m_vinod_khanna_1.jpg",
+    "sha256": "87984bf30c92ae10f149b2069dc4a674c8107873284adc8d5ef8af48639b75b1",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_vinod_khanna",
+    "image_filename": "m_vinod_khanna_2.jpg",
+    "sha256": "dfbd4a5fcdcb87aef4815e1022e449b5033fa642b4945b57651d281a426e9644",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_waheeda_rehman",
+    "image_filename": "m_waheeda_rehman_1.jpg",
+    "sha256": "9c8988080dbf125356b800e4e2972bccedad1364ae42348c1cda96fbb6b97652",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_waheeda_rehman",
+    "image_filename": "m_waheeda_rehman_2.jpg",
+    "sha256": "85ea8ffcf4a3ce0beb6508480ac07319e1facc080750ba6ba415d39069cbc9cb",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_zarina_wahab",
+    "image_filename": "m_zarina_wahab_1.jpg",
+    "sha256": "a6029b697ba642b0df129c64200ddd31d97c4532a1fc46286896e9bcd5b59a19",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_zarina_wahab",
+    "image_filename": "m_zarina_wahab_2.jpg",
+    "sha256": "4811d1463792b4d85323437415eae144ff7205f4d8f2e2d285dee2e93985f980",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_zeenat_aman",
+    "image_filename": "m_zeenat_aman_1.jpg",
+    "sha256": "2215ae99d78a797791c685d6b974955419551755b269bf817c9d1a61dc1c65dc",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
+  },
+  {
+    "identity_id": "m_zeenat_aman",
+    "image_filename": "m_zeenat_aman_2.jpg",
+    "sha256": "bd8894926f41f9a4f13001dd88a9a2fdabfda6c085c0b464250b044a3b1ca3db",
+    "modality": "PHOTO",
+    "source_dataset": "EXTENDED_INDIAN"
   }
 ]
