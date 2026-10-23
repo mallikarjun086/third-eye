@@ -99,9 +99,9 @@ def main():
     for q in queries_data:
         scores = []
         for g in gallery_data:
-            deep_sim = float(np.dot(q["emb"], g["emb"]))
+            deep_sim = float(np.dot(np.asarray(q["emb"]), np.asarray(g["emb"])))
             if q["hog"] is not None and g["hog"] is not None:
-                hog_sim = float(np.dot(q["hog"], g["hog"]))
+                hog_sim = float(np.dot(np.asarray(q["hog"]), np.asarray(g["hog"])))
             else:
                 hog_sim = 0.0
 
@@ -129,11 +129,11 @@ def main():
                 rank10 += 1
 
         rec = {
-            "query_filename": os.path.basename(q["path"]),
+            "query_filename": os.path.basename(str(q["path"])),
             "ground_truth_pid": q["pid"],
             "rank": rank if rank is not None else "NOT_FOUND",
             "top1_matched_pid": top1_match_pid,
-            "top1_matched_filename": os.path.basename(top1_match_path),
+            "top1_matched_filename": os.path.basename(str(top1_match_path)),
             "top1_score": top1_score,
             "status": "CORRECT" if rank == 1 else "FAILED"
         }
@@ -141,10 +141,10 @@ def main():
 
         if rank != 1:
             failure_records.append({
-                "query_filename": os.path.basename(q["path"]),
+                "query_filename": os.path.basename(str(q["path"])),
                 "ground_truth_pid": q["pid"],
                 "actual_rank": rank,
-                "top1_incorrect_match": os.path.basename(top1_match_path),
+                "top1_incorrect_match": os.path.basename(str(top1_match_path)),
                 "top1_incorrect_pid": top1_match_pid,
                 "incorrect_score": top1_score,
                 "failure_category": "CROSS_MODAL_DOMAIN_GAP" if rank and rank <= 10 else "HIGH_NOISE_OR_DISTORTION"

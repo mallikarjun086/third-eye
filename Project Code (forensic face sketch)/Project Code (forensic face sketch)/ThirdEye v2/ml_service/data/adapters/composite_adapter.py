@@ -1,5 +1,8 @@
 import os
-from .base_adapter import BaseAdapter
+try:
+    from adapters.base_adapter import BaseAdapter
+except ImportError:
+    from .base_adapter import BaseAdapter
 
 class CompositeAdapter(BaseAdapter):
     """Adapter for ThirdEye Internal Composite Sketches."""

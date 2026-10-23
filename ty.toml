@@ -1,0 +1,5 @@
+[environment]
+extra-paths = [
+    "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/ml_service",
+    "Project Code (forensic face sketch)/Project Code (forensic face sketch)/ThirdEye v2/ml_service/data"
+]

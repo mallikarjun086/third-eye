@@ -7,6 +7,8 @@ import hashlib
 import time
 import numpy as np
 import tensorflow as tf
+import keras
+from keras import layers, models, optimizers
 import cv2
 
 WORKSPACE = r"c:\Users\Mallikarjun Gala\OneDrive\Desktop\Third-Eye"
@@ -93,13 +95,13 @@ def main():
         ckpt_paths[cid] = cand_ckpt_path
 
         # Build candidate MLP Projection Head
-        proj_head = tf.keras.Sequential([
-            tf.keras.layers.Dense(256, activation='relu', input_shape=(512,)),
-            tf.keras.layers.BatchNormalization(),
-            tf.keras.layers.Dropout(0.2),
-            tf.keras.layers.Dense(128)
+        proj_head = models.Sequential([
+            layers.Dense(256, activation='relu', input_shape=(512,)),
+            layers.BatchNormalization(),
+            layers.Dropout(0.2),
+            layers.Dense(128)
         ])
-        proj_head.compile(optimizer=tf.keras.optimizers.Adam(1e-4), loss='mse')
+        proj_head.compile(optimizer=optimizers.Adam(1e-4), loss='mse')
         if os.path.exists(base_weights_path):
             proj_head.load_weights(base_weights_path)
 
@@ -206,8 +208,8 @@ def main():
         for q in query_subset:
             scores = []
             for g in gallery_data:
-                deep_sim = float(np.dot(q["emb"], g["emb"]))
-                hog_sim = float(np.dot(q["hog"], g["hog"])) if q["hog"] is not None and g["hog"] is not None else 0.0
+                deep_sim = float(np.dot(np.asarray(q["emb"]), np.asarray(g["emb"])))
+                hog_sim = float(np.dot(np.asarray(q["hog"]), np.asarray(g["hog"]))) if q["hog"] is not None and g["hog"] is not None else 0.0
                 base_sim = alpha * deep_sim + (1.0 - alpha) * hog_sim
 
                 if use_demo:
@@ -239,10 +241,10 @@ def main():
                     rank10 += 1
 
             query_recs.append({
-                "query": os.path.basename(q["path"]),
+                "query": os.path.basename(str(q["path"])),
                 "ground_truth_pid": q["pid"],
                 "rank": rank if rank is not None else "NOT_FOUND",
-                "top1_match": os.path.basename(top1_path),
+                "top1_match": os.path.basename(str(top1_path)),
                 "top1_score": top1_score
             })
 

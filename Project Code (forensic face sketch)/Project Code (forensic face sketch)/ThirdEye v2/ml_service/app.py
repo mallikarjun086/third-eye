@@ -515,6 +515,36 @@ def _cache_path(dataset_dir: str) -> str:
     return os.path.join(dataset_dir, CACHE_FILE)
 
 
+def _extract_image_features(path: str, dataset_dir: str) -> Optional[Dict[str, Any]]:
+    try:
+        with open(path, "rb") as fh:
+            raw = fh.read()
+        grey = hog_grey(raw)
+        emb_raw = embed_image_raw(raw)
+        if emb_raw is not None and _proj_model is not None:
+            import tensorflow as tf
+            emb = _proj_model(tf.convert_to_tensor([emb_raw], dtype=tf.float32), training=False).numpy()[0]
+        else:
+            emb = emb_raw
+        hog = compute_hog(grey)
+        lbp = compute_lbp(grey)
+        
+        try:
+            g_arr = np.frombuffer(raw, np.uint8)
+            g_img_bgr = cv2.imdecode(g_arr, cv2.IMREAD_COLOR)
+            g_img_rgb = cv2.cvtColor(g_img_bgr, cv2.COLOR_BGR2RGB) if g_img_bgr is not None else None
+            attr = DemographicEstimator.estimate_attributes(g_img_rgb, filename=path)
+        except Exception as e:
+            log.error("Demographic error for %s: %s", path, e)
+            attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
+
+        if emb is not None:
+            return {"face": emb, "face_raw": emb_raw, "hog": hog, "lbp": lbp, "attr": attr}
+    except Exception as e:  # noqa: BLE001
+        log.warning("Skip %s: %s", path, e)
+    return None
+
+
 def build_cache(dataset_dir: str, force: bool = False):
     """Embed every image (FaceNet + HOG) and persist to a .npy cache."""
     global _cache, _cache_mtime, _cache_dir
@@ -543,58 +573,71 @@ def build_cache(dataset_dir: str, force: bool = False):
     if _model is None:
         raise HTTPException(status_code=503, detail=f"Model not loaded: {_model_error}")
 
-    if not force and _cache:
-        return
-
     images = _list_images(dataset_dir)
     cache_file = _cache_path(dataset_dir)
 
-    # Load existing cache if present
+    # 1. If cache is already loaded in memory, check if any newly added images need indexing
+    if not force and _cache and _cache_dir == dataset_dir:
+        missing_images = [p for p in images if os.path.relpath(p, dataset_dir) not in _cache]
+        if not missing_images:
+            return
+        log.info("Incremental cache sync: found %d new images to embed...", len(missing_images))
+        for path in missing_images:
+            rel = os.path.relpath(path, dataset_dir)
+            feat = _extract_image_features(path, dataset_dir)
+            if feat is not None:
+                _cache[rel] = feat
+        _cache_mtime = max(os.path.getmtime(p) for p in images) if images else 0
+        faiss_indexer.build_index(_cache)
+        try:
+            np.save(cache_file, np.array({"features": _cache, "mtime": _cache_mtime, "version": CACHE_VERSION}, dtype=object), allow_pickle=True)
+            log.info("Incremental cache updated and saved (%d total faces).", len(_cache))
+        except Exception as e:  # noqa: BLE001
+            log.warning("Could not save cache: %s", e)
+        return
+
+    # 2. Load existing persistent cache if present
     if not force and os.path.exists(cache_file):
         try:
             data = np.load(cache_file, allow_pickle=True).item()
             cached = data.get("features", None)
             version = data.get("version", "")
             if cached is not None and len(cached) > 0 and version == CACHE_VERSION:
-                _cache = cached
+                missing_images = [p for p in images if os.path.relpath(p, dataset_dir) not in cached]
+                if not missing_images:
+                    _cache = cached
+                    _cache_dir = dataset_dir
+                    faiss_indexer.build_index(_cache)
+                    log.info("Using cached features (%d faces, version %s, FAISS index ready).", len(_cache), version)
+                    return
+                log.info("Incremental cache sync from file: embedding %d new images...", len(missing_images))
+                features = dict(cached)
+                for path in missing_images:
+                    rel = os.path.relpath(path, dataset_dir)
+                    feat = _extract_image_features(path, dataset_dir)
+                    if feat is not None:
+                        features[rel] = feat
+                _cache = features
                 _cache_dir = dataset_dir
+                _cache_mtime = max(os.path.getmtime(p) for p in images) if images else 0
                 faiss_indexer.build_index(_cache)
-                log.info("Using cached features (%d faces, version %s, FAISS index ready).", len(_cache), version)
+                try:
+                    np.save(cache_file, np.array({"features": features, "mtime": _cache_mtime, "version": CACHE_VERSION}, dtype=object), allow_pickle=True)
+                    log.info("Incremental cache saved (%d total faces).", len(features))
+                except Exception as e:  # noqa: BLE001
+                    log.warning("Could not save cache: %s", e)
                 return
         except Exception as e:  # noqa: BLE001
             log.info("Rebuilding cache due to load error or version mismatch: %s", e)
             _cache = {}
 
-    log.info("Building feature cache for %d images...", len(images))
+    log.info("Building full feature cache for %d images...", len(images))
     features: Dict[str, Dict[str, Any]] = {}
     for path in images:
         rel = os.path.relpath(path, dataset_dir)
-        try:
-            with open(path, "rb") as fh:
-                raw = fh.read()
-            grey = hog_grey(raw)
-            emb_raw = embed_image_raw(raw)
-            if emb_raw is not None and _proj_model is not None:
-                import tensorflow as tf
-                emb = _proj_model(tf.convert_to_tensor([emb_raw], dtype=tf.float32), training=False).numpy()[0]
-            else:
-                emb = emb_raw
-            hog = compute_hog(grey)
-            lbp = compute_lbp(grey)
-            
-            try:
-                g_arr = np.frombuffer(raw, np.uint8)
-                g_img_bgr = cv2.imdecode(g_arr, cv2.IMREAD_COLOR)
-                g_img_rgb = cv2.cvtColor(g_img_bgr, cv2.COLOR_BGR2RGB) if g_img_bgr is not None else None
-                attr = DemographicEstimator.estimate_attributes(g_img_rgb, filename=path)
-            except Exception as e:
-                log.error("Demographic error for %s: %s", path, e)
-                attr = {"gender": "UNKNOWN", "gender_conf": 0.0, "age_est": 30, "age_conf": 0.0}
-
-            if emb is not None:
-                features[rel] = {"face": emb, "face_raw": emb_raw, "hog": hog, "lbp": lbp, "attr": attr}
-        except Exception as e:  # noqa: BLE001
-            log.warning("Skip %s: %s", rel, e)
+        feat = _extract_image_features(path, dataset_dir)
+        if feat is not None:
+            features[rel] = feat
 
     _cache = features
     _cache_dir = dataset_dir

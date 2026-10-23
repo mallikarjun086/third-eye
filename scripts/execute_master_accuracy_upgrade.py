@@ -198,9 +198,9 @@ def main():
 
     for f_rec in failures:
         # Categorize
-        if f_rec["ground_truth_rank"] <= 5:
+        if int(f_rec["ground_truth_rank"]) <= 5:
             cat = "STRUCTURAL_FEATURE_FAILURE"
-        elif f_rec["top_similarity"] < 0.60:
+        elif float(f_rec["top_similarity"]) < 0.60:
             cat = "DOMAIN_GAP"
         else:
             cat = "DEEP_EMBEDDING_FAILURE"

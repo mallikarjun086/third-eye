@@ -1,8 +1,13 @@
 import os
 import json
-from .dataset_loader import DatasetLoader
-from .dataset_validator import DatasetValidator
-from .leakage_audit import LeakageAudit
+try:
+    from dataset_loader import DatasetLoader
+    from dataset_validator import DatasetValidator
+    from leakage_audit import LeakageAudit
+except ImportError:
+    from .dataset_loader import DatasetLoader
+    from .dataset_validator import DatasetValidator
+    from .leakage_audit import LeakageAudit
 
 def build_all_manifests(ml_service_dir):
     loader = DatasetLoader(ml_service_dir)

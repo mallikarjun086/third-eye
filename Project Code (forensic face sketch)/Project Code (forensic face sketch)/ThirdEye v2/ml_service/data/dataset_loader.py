@@ -1,7 +1,12 @@
 import os
-from .adapters.cufs_adapter import CUFSAdapter
-from .adapters.cufsf_adapter import CUFSFAdapter
-from .adapters.iiitd_adapter import IIITDAdapter
+try:
+    from adapters.cufs_adapter import CUFSAdapter
+    from adapters.cufsf_adapter import CUFSFAdapter
+    from adapters.iiitd_adapter import IIITDAdapter
+except ImportError:
+    from .adapters.cufs_adapter import CUFSAdapter
+    from .adapters.cufsf_adapter import CUFSFAdapter
+    from .adapters.iiitd_adapter import IIITDAdapter
 
 class DatasetLoader:
     def __init__(self, ml_service_dir):

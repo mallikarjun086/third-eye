@@ -1,9 +1,14 @@
 import os
 import json
 from PIL import Image
-from .adapters.cufs_adapter import CUFSAdapter
-from .adapters.composite_adapter import CompositeAdapter
-from .dataset_validator import DatasetValidator
+try:
+    from adapters.cufs_adapter import CUFSAdapter
+    from adapters.composite_adapter import CompositeAdapter
+    from dataset_validator import DatasetValidator
+except ImportError:
+    from .adapters.cufs_adapter import CUFSAdapter
+    from .adapters.composite_adapter import CompositeAdapter
+    from .dataset_validator import DatasetValidator
 
 def build_manifests(ml_service_dir, output_dir):
     cufs = CUFSAdapter(ml_service_dir)

@@ -99,12 +99,12 @@ def main():
             scores = []
             for g in gallery:
                 if use_raw and q["raw_emb"] is not None and g["raw_emb"] is not None:
-                    deep_sim = float(np.dot(q["raw_emb"], g["raw_emb"]))
+                    deep_sim = float(np.dot(np.asarray(q["raw_emb"]), np.asarray(g["raw_emb"])))
                 else:
-                    deep_sim = float(np.dot(q["proj_emb"], g["proj_emb"]))
+                    deep_sim = float(np.dot(np.asarray(q["proj_emb"]), np.asarray(g["proj_emb"])))
 
                 if q["hog"] is not None and g["hog"] is not None:
-                    hog_sim = float(np.dot(q["hog"], g["hog"]))
+                    hog_sim = float(np.dot(np.asarray(q["hog"]), np.asarray(g["hog"])))
                 else:
                     hog_sim = 0.0
 

@@ -415,9 +415,9 @@ def main():
         "failures_fixed_from_baseline": 0,
         "new_regressions_introduced": 0,
         "failure_categories": {
-            "STRUCTURAL_FEATURE_FAILURE": sum(1 for r in failures if r["ground_truth_rank"] <= 5),
-            "DOMAIN_GAP": sum(1 for r in failures if r["top_similarity"] < 0.60),
-            "DEEP_EMBEDDING_FAILURE": sum(1 for r in failures if r["ground_truth_rank"] > 5 and r["top_similarity"] >= 0.60)
+            "STRUCTURAL_FEATURE_FAILURE": sum(1 for r in failures if int(r["ground_truth_rank"]) <= 5),
+            "DOMAIN_GAP": sum(1 for r in failures if float(r["top_similarity"]) < 0.60),
+            "DEEP_EMBEDDING_FAILURE": sum(1 for r in failures if int(r["ground_truth_rank"]) > 5 and float(r["top_similarity"]) >= 0.60)
         }
     }
     with open(os.path.join(res_final_dir, "failure_analysis.json"), "w") as f:
